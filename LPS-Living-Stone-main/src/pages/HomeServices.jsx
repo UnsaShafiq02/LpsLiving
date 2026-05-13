@@ -83,7 +83,8 @@ useEffect(() => {
     <section className="w-full bg-[#ECE5DD] overflow-hidden font-['Neogrotesk']">
 
       {/* ================= HERO ================= */}
-<div className="relative w-full min-h-[85vh] md:min-h-[60vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden">
+{/* <div className="relative w-full min-h-[30vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
+<div className="relative w-full min-h-[75vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden">
         <video
           src={heroVideo}
           autoPlay
@@ -172,14 +173,16 @@ useEffect(() => {
 //   transition shadow-lg
 // "
 className="
-  w-[60px] h-[60px] sm:w-[90px] sm:h-[90px]
+  w-[75px] h-[75px] sm:w-[150px] sm:h-[150px]
   flex items-center justify-center
   text-center
 
-  text-[10px] sm:text-xs font-semibold leading-tight
-  px-2
+  text-[10px] sm:text-base lg:text-lg
+  font-semibold leading-tight
+  px-3
 
-  rounded-full  
+  rounded-full
+
   bg-[#224C26] text-white
 
   hover:bg-white hover:text-[#224C26]
@@ -214,14 +217,15 @@ className="
 //   transition shadow-lg
 // "
 className="
-  w-[60px] h-[60px] sm:w-[90px] sm:h-[90px]
+  w-[75px] h-[75px] sm:w-[150px] sm:h-[150px]
   flex items-center justify-center
   text-center
 
-  text-[10px] sm:text-xs font-semibold leading-tight
-  px-2
+  text-[10px] sm:text-base lg:text-lg
+  font-semibold leading-tight
+  px-3
 
-  rounded-full   /* 🔥 THIS MAKES IT A BALL */
+  rounded-full
 
   bg-[#224C26] text-white
 
@@ -257,14 +261,15 @@ className="
 //   transition shadow-lg
 // "
 className="
-  w-[60px] h-[60px] sm:w-[90px] sm:h-[90px]
+  w-[75px] h-[75px] sm:w-[150px] sm:h-[150px]
   flex items-center justify-center
   text-center
 
-  text-[10px] sm:text-xs font-semibold leading-tight
-  px-2
+  text-[10px] sm:text-base lg:text-lg
+  font-semibold leading-tight
+  px-3
 
-  rounded-full   /* 🔥 THIS MAKES IT A BALL */
+  rounded-full
 
   bg-[#224C26] text-white
 
@@ -292,8 +297,7 @@ className="
       At <span className="text-[#224C26] font-semibold">
         LPS Living Stone,
       </span>{" "}
-      we provide modern accounting and tax solutions designed for businesses and individuals, focused on clarity, compliance, and sustainable financial growth.
-    </h1>
+ we provide modern accounting and tax solutions designed for businesses and individuals, focused on clarity, compliance, sustainable financial growth, strategic planning, risk management, and long-term business success.    </h1>
 
   </div>
 </section>
