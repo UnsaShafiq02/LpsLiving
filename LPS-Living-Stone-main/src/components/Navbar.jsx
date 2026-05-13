@@ -35,20 +35,18 @@ const Navbar = () => {
           initial={{ y: -60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-         className={`
-  transition-all duration-500 border-b
+        className={`
+  transition-all duration-500 border-b backdrop-blur-lg
   ${isScrolled
-    ? 'bg-white shadow-md border-gray-200 py-3'
-    : 'bg-white py-5 border-transparent'
+    ? 'bg-white/100 shadow-md border-gray-200 py-3'
+    : 'bg-white/98 py-5 border-[#f1f1f1]'
   }
 `}
         >
 
           {/* glow */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className="absolute top-[-100px] left-[10%] w-72 h-72 bg-[#224C26]/10 blur-3xl rounded-full" />
-            <div className="absolute bottom-[-100px] right-[10%] w-72 h-72 bg-[#224C26]/10 blur-3xl rounded-full" />
-          </div>
+         <div className="absolute top-[-100px] left-[10%] w-72 h-72 bg-white/40 blur-3xl rounded-full" />
+<div className="absolute bottom-[-100px] right-[10%] w-72 h-72 bg-white/30 blur-3xl rounded-full" />
 
           <div className="relative max-w-[1500px] mx-auto px-6 flex items-center justify-between">
 
