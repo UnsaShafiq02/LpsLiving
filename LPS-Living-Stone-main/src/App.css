@@ -1,0 +1,15 @@
+/* ADD THIS IN index.css or global.css */
+
+@layer utilities {
+  .rotate-y-90 {
+    transform: rotateY(90deg);
+  }
+
+  .-rotate-y-90 {
+    transform: rotateY(-90deg);
+  }
+
+  .rotate-y-0 {
+    transform: rotateY(0deg);
+  }
+}
