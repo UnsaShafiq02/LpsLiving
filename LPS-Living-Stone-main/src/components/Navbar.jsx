@@ -29,17 +29,26 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full z-[999]">
+      <header className="fixed top-0 left-0 w-full z-[999]">
 
         <motion.nav
           initial={{ y: -60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-        className={`
-  transition-all duration-500 border-b backdrop-blur-lg
+//         className={`
+//   transition-all duration-500 border-b backdrop-blur-lg
+//   ${isScrolled
+//     // ? 'bg-white/100 shadow-md border-gray-200 py-3'
+//     // : 'bg-white/98 py-5 border-[#f1f1f1]'
+//     ? 'bg-white/92 shadow-md border-gray-200 py-3'
+//   : 'bg-transparent border-transparent py-5'
+//   }
+// `}
+className={`
+  transition-all duration-500 border-b
   ${isScrolled
-    ? 'bg-white/100 shadow-md border-gray-200 py-3'
-    : 'bg-white/98 py-5 border-[#f1f1f1]'
+   ? 'bg-white/92 shadow-md border-gray-200 py-3'
+  : 'bg-white md:bg-transparent border-transparent py-3 md:py-5'
   }
 `}
         >
@@ -55,13 +64,15 @@ const Navbar = () => {
                 src={logo}
                 alt="logo"
                 className={`transition-all duration-300 ${
-  isScrolled ? 'h-27' : 'h-28'
+  isScrolled
+    ? 'h-12 sm:h-16 lg:h-20'
+    : 'h-14 sm:h-18 lg:h-24'
 }`}
               />
 
               <div className="leading-tight">
                 <h1 className="text-[#0D2040] font-black text-xl sm:text-2xl tracking-wide">
-                  Living Stone
+                  Livingstone
                 </h1>
                 <p className="text-[#224C26] text-xs font-semibold tracking-[0.25em] uppercase">
                   Chartered Accountants

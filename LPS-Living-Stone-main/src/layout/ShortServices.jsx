@@ -50,7 +50,7 @@ const ShortServices = () => {
             rounded-3xl
             overflow-hidden
             border border-[#E5E7EB]
-            bg-[#ECE5DD]
+            bg-[#F1F3E9]
             shadow-sm
             transition-all duration-500
             hover:-translate-y-2

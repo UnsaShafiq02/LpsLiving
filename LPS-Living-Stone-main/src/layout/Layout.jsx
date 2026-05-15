@@ -89,11 +89,12 @@ const Layout = ({ children }) => {
         <div className="absolute bottom-[-180px] right-[-120px] w-[320px] h-[320px] bg-[#0D2040]/5 blur-3xl rounded-full" />
       </div>
 
-      <div className="relative max-w-[1650px] mx-auto px-2 sm:px-3 lg:px-3">
+      {/* <div className="relative max-w-[1650px] mx-auto px-2 sm:px-3 lg:px-3"> */}
+      <div className="relative w-full">
 
         {/* MAIN CONTENT (ONLY ONCE) */}
         <main className="w-full py-3">
-          <div className="bg-[#ECE5DD] border border-[#E5E7EB] shadow-sm rounded-2xl overflow-hidden">
+          <div className="bg-white overflow-hidden">
             {children}
           </div>
         </main>
