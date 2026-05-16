@@ -114,7 +114,7 @@ useEffect(() => {
           <motion.h1
            
           //  className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight"
-          className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
+          className="mt-6 sm:mt-10 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
           >
             Trusted Accounting & Tax Advisory
           </motion.h1>
@@ -299,7 +299,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#224C26]
+        bg-[#0D6E4F]
         min-h-[95px] sm:min-h-[115px]
         px-6 py-5
         flex items-center justify-between
@@ -329,7 +329,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#224C26]
+        bg-[#0D6E4F]
         min-h-[95px] sm:min-h-[115px]
         px-6 py-5
         flex items-center justify-between
@@ -359,7 +359,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#224C26]
+        bg-[#0D6E4F]
         min-h-[95px] sm:min-h-[115px]
         px-6 py-5
         flex items-center justify-between
