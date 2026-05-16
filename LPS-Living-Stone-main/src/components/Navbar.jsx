@@ -54,8 +54,8 @@ className={`
         >
 
           {/* glow */}
-         <div className="absolute top-[-100px] left-[10%] w-72 h-72 bg-white/40 blur-3xl rounded-full" />
-<div className="absolute bottom-[-100px] right-[10%] w-72 h-72 bg-white/30 blur-3xl rounded-full" />
+         {/* <div className="absolute top-[-100px] left-[10%] w-72 h-72 bg-white/40 blur-3xl rounded-full" />
+<div className="absolute bottom-[-100px] right-[10%] w-72 h-72 bg-white/30 blur-3xl rounded-full" /> */}
 
 <div className="relative max-w-[1500px] mx-auto pl-3 pr-5 sm:px-6 flex items-center justify-between">
             {/* LOGO */}
