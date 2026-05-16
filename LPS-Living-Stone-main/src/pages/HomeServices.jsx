@@ -299,7 +299,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#F1F3E9]
+        bg-[#224C26]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -311,16 +311,16 @@ className="
       <div className="absolute right-[-40px] top-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
 
       <div className="relative z-10">
-        <h3 className="text-[#224C26] text-xl sm:text-3xl font-semibold">
+        <h3 className="text-white text-xl sm:text-3xl font-semibold">
           Service Charge Accounts
         </h3>
 
-        <p className="text-[#224C26]/70 text-sm sm:text-base mt-1">
+        <p className="text-white/70 text-sm sm:text-base mt-1">
           Specialist reporting & compliance
         </p>
       </div>
 
-      <span className="text-[#224C26]/40 text-3xl">→</span>
+      <span className="text-white/40 text-3xl">→</span>
     </Link>
 
     {/* CARD 2 */}
@@ -329,7 +329,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#F1F3E9]
+        bg-[#224C26]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -341,16 +341,16 @@ className="
       <div className="absolute left-[-40px] bottom-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
 
       <div className="relative z-10">
-        <h3 className="text-[#224C26] text-xl sm:text-3xl font-semibold">
+        <h3 className="text-white text-xl sm:text-3xl font-semibold">
           Business Services
         </h3>
 
-        <p className="text-[#224C26]/70 text-sm sm:text-base mt-1">
+        <p className="text-white/70 text-sm sm:text-base mt-1">
           Strategic accounting & advisory
         </p>
       </div>
 
-      <span className="text-[#224C26]/40 text-3xl">→</span>
+      <span className="text-white/40 text-3xl">→</span>
     </Link>
 
     {/* CARD 3 */}
@@ -359,7 +359,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#F1F3E9]
+        bg-[#224C26]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -371,16 +371,16 @@ className="
       <div className="absolute right-[-40px] bottom-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
 
       <div className="relative z-10">
-        <h3 className="text-[#224C26] text-xl sm:text-3xl font-semibold">
+        <h3 className="text-white text-xl sm:text-3xl font-semibold">
           Personal Tax
         </h3>
 
-        <p className="text-[#224C26]/70 text-sm sm:text-base mt-1">
+        <p className="text-white/70 text-sm sm:text-base mt-1">
           Efficient personal tax planning
         </p>
       </div>
 
-      <span className="text-[#224C26]/40 text-3xl">→</span>
+      <span className="text-white/40 text-3xl">→</span>
     </Link>
 
   </div>
