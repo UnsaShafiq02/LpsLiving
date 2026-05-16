@@ -85,7 +85,7 @@ useEffect(() => {
       {/* ================= HERO ================= */}
 {/* <div className="relative w-full min-h-[30vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
 {/* <div className="relative w-full min-h-[75vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
-<div className="relative w-full h-[45vh] sm:h-[70vh] lg:h-[70vh] flex items-start justify-center overflow-hidden rounded-b-none sm:rounded-b-[55px]">      <video
+<div className="relative w-full h-[45vh] sm:h-[70vh] lg:h-[70vh] flex items-start lg:items-center justify-center overflow-hidden rounded-b-none sm:rounded-b-[55px]">      <video
           src={heroVideo}
           autoPlay
           muted
@@ -300,7 +300,7 @@ className="
         group relative overflow-hidden
         rounded-2xl
         bg-[#0D6E4F]
-        min-h-[95px] sm:min-h-[115px]
+        min-h-[95px] sm:min-h-[115px] lg:min-h-[220px]
         px-6 py-5
         flex items-center justify-between
         shadow-lg hover:shadow-2xl
@@ -330,7 +330,7 @@ className="
         group relative overflow-hidden
         rounded-2xl
         bg-[#0D6E4F]
-        min-h-[95px] sm:min-h-[115px]
+        min-h-[95px] sm:min-h-[115px] lg:min-h-[220px]
         px-6 py-5
         flex items-center justify-between
         shadow-lg hover:shadow-2xl
@@ -360,7 +360,7 @@ className="
         group relative overflow-hidden
         rounded-2xl
         bg-[#0D6E4F]
-        min-h-[95px] sm:min-h-[115px]
+        min-h-[95px] sm:min-h-[115px] lg:min-h-[220px]
         px-6 py-5
         flex items-center justify-between
         shadow-lg hover:shadow-2xl
