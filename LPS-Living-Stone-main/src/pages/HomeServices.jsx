@@ -85,7 +85,7 @@ useEffect(() => {
       {/* ================= HERO ================= */}
 {/* <div className="relative w-full min-h-[30vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
 {/* <div className="relative w-full min-h-[75vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
-<div className="relative w-full h-[45vh] sm:h-[58vh] lg:h-[65vh] flex items-start justify-center overflow-hidden rounded-b-none sm:rounded-b-[55px]">      <video
+<div className="relative w-full h-[45vh] sm:h-[63vh] lg:h-[65vh] flex items-start justify-center overflow-hidden rounded-b-none sm:rounded-b-[55px]">      <video
           src={heroVideo}
           autoPlay
           muted
