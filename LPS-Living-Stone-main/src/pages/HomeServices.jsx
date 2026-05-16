@@ -299,8 +299,8 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0D6E4F]
-        min-h-[95px] sm:min-h-[115px] lg:min-h-[200px]
+        bg-[#11b67a]
+        min-h-[95px] sm:min-h-[115px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
         shadow-lg hover:shadow-2xl
@@ -329,8 +329,8 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0D6E4F]
-        min-h-[95px] sm:min-h-[115px] lg:min-h-[200px]
+        bg-[#11b67a]
+        min-h-[95px] sm:min-h-[115px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
         shadow-lg hover:shadow-2xl
@@ -359,8 +359,8 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0D6E4F]
-        min-h-[95px] sm:min-h-[115px] lg:min-h-[200px]
+        bg-[#11b67a]
+        min-h-[95px] sm:min-h-[115px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
         shadow-lg hover:shadow-2xl
