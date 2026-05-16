@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ShortServices from './ShortServices';
-
+import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 // const Layout = ({ children }) => {
 //   return (
 //     <div className="bg-white min-h-screen w-full">
@@ -79,7 +80,62 @@ import ShortServices from './ShortServices';
 //     </div>
 //   );
 // };
+const slides = [
+  {
+    title: "Service Charge Accounts",
+    text: "Specialist Service Charge Accountants for Managing Agents",
+    link: "/servicecharge",
+    bg: "bg-[#0D2040]",
+  },
+  {
+    title: "Business Services",
+    text: "Audit, Tax & Advisory Services for Businesses and Individuals",
+    link: "/services",
+    bg: "bg-[#224C26]",
+  },
+  {
+    title: "Personal Tax",
+    text: "Residential, Mixed-Use & Commercial Developments",
+    link: "/services/personal-tax",
+    bg: "bg-[#071A2B]",
+  },
+];
+const businessSlides = [
+  {
+    title: "BBC Business",
+    text: "Latest UK economy, inflation, markets and financial updates from BBC Business.",
+    link: "https://www.bbc.com/news/business",
+    bg: "bg-[#0D2040]",
+    button: "BBC Business",
+  },
+  {
+    title: "HMRC Updates",
+    text: "Recent HMRC tax guidance, compliance updates and business regulation changes.",
+    link: "https://www.gov.uk/government/organisations/hm-revenue-customs",
+    bg: "bg-[#224C26]",
+    button: "HMRC",
+  },
+];
 const Layout = ({ children }) => {
+  const [current, setCurrent] = useState(0);
+  const [businessCurrent, setBusinessCurrent] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  }, 5000);
+ 
+ 
+
+  return () => clearInterval(interval);
+}, []);
+useEffect(() => {
+  const interval = setInterval(() => {
+    setBusinessCurrent((prev) => (prev + 1) % businessSlides.length);
+  }, 5000);
+
+  return () => clearInterval(interval);
+}, []);
   return (
     <div className="bg-white min-h-screen w-full">
 
@@ -100,37 +156,428 @@ const Layout = ({ children }) => {
         </main>
 
         {/* SHORT SERVICES (responsive only) */}
-        {/* ================= SECTION TITLE ================= */}
-<div className="w-full flex justify-center mt-20 mb-6 px-6">
-  <div className="text-center max-w-xl">
-
-    <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-[#0D2040] tracking-wide">
-      Our Services
-    </h2>
-
-    {/* minimal premium line */}
-    <div className="w-16 h-[2px] bg-[#224C26] mx-auto mt-3 rounded-full" />
-
-  </div>
-</div>
        {/* ================= DESKTOP SPLIT ================= */}
-<div className="hidden lg:grid grid-cols-[45%_45%] gap-12 mt-12">
+<div className="hidden lg:grid grid-cols-[47%_51%] gap-5 mt-12">
 
   {/* LEFT → SCROLLABLE CARDS */}
-  <div className="h-[80vh] overflow-y-auto pr-4 overscroll-contain">
-    <ShortServices />
+ <div
+  className="
+    group relative cursor-pointer
+   rounded-tr-[40px]
+    overflow-hidden
+    border border-[#E5E7EB]
+    bg-[#F1F3E9]
+    shadow-sm
+    transition-all duration-500
+    hover:-translate-y-2
+    hover:shadow-[0_25px_60px_-25px_rgba(13,110,79,0.25)]
+    h-[80vh]
+  "
+>
+
+  {/* TOP ACCENT BAR */}
+  <div className="h-1 w-full bg-gradient-to-r from-[#224C26] to-[#0D2040]" />
+
+  {/* GLOW */}
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute -top-10 -right-10 w-28 h-28 bg-[#224C26]/10 blur-2xl opacity-0 group-hover:opacity-100 transition" />
+    <div className="absolute bottom-[-40px] left-[-40px] w-36 h-36 bg-[#0D2040]/10 blur-2xl opacity-0 group-hover:opacity-100 transition" />
   </div>
 
+  {/* CONTENT */}
+  <div className="relative p-8 h-full flex flex-col justify-between">
+
+    <div>
+
+      <h3 className="text-3xl xl:text-4xl font-bold text-[#0D2040] leading-tight">
+        Service Charge Accounts
+      </h3>
+
+      <p className="mt-4 text-base text-[#0D2040]/70 leading-8">
+        Specialist accounting for managing agents & property portfolios.
+      </p>
+
+      <div className="mt-10 space-y-4">
+
+        {[
+          "Service Charge Accounting",
+          "Property Management Accounts",
+          "Year-end Reporting",
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="
+              flex items-center justify-between
+              px-3 py-3 rounded-1xl
+              bg-white/70
+              hover:bg-[#224C26]/10
+              transition-all duration-300
+            "
+          >
+            <span className="text-base text-[#0D2040]">
+              {item}
+            </span>
+
+            <span className="text-[#224C26] font-bold text-xl">
+              →
+            </span>
+          </div>
+        ))}
+
+      </div>
+
+    </div>
+
+    <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-6">
+
+      <span className="text-sm font-semibold text-[#0D2040]">
+        Explore Category
+      </span>
+
+      <div
+        className="
+          w-11 h-11
+          rounded-full
+          bg-[#224C26]
+          text-white
+          flex items-center justify-center
+          shadow-md
+          group-hover:rotate-12 group-hover:scale-110
+          transition-all duration-300
+          text-xl
+        "
+      >
+        →
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
   {/* RIGHT → STICKY TEXT */}
-  <div className="sticky top-28 h-[80vh] flex items-center pointer-events-none">
+  {/* <div className="sticky top-28 h-[80vh] flex items-center pointer-events-none">
   <div className="text-3xl xl:text-4xl font-light text-[#0D2040] leading-[1.7] font-serif">
     Strategic accounting and tax solutions built for modern businesses
     and individuals, combining technical expertise with a clear,
     commercially focused approach.Delivering clarity, control, and confident financial decisions for clients.
 
   </div>
-</div>
+</div> */}
+<div className="sticky top-24 h-[80vh] overflow-hidden rounded-tl-[40px]">
   
+   <section className="relative w-full h-full overflow-hidden">
+ 
+   {/* BACKGROUND */}
+   <AnimatePresence mode="wait">
+     <motion.div
+       key={current}
+       initial={{ opacity: 0, scale: 1.1 }}
+       animate={{ opacity: 1, scale: 1 }}
+       exit={{ opacity: 0 }}
+       transition={{ duration: 0.8 }}
+       className={`absolute inset-0 ${slides[current].bg}`}
+     >
+       <div className="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full top-10 left-10 animate-pulse" />
+       <div className="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full bottom-10 right-10 animate-pulse" />
+     </motion.div>
+   </AnimatePresence>
+ 
+   {/* CLICKABLE */}
+   <Link to={slides[current].link} className="absolute inset-0 z-10" />
+ 
+   {/* CONTENT */}
+   {/* CONTENT */}
+ <div className="relative z-20 w-full h-full px-2 sm:px-4 lg:px-4 flex flex-col justify-between">
+ 
+   {/* TOP LEFT TITLE */}
+   <div className="pt-16">
+     <AnimatePresence mode="wait">
+       <motion.h2
+         key={current}
+         initial={{ opacity: 0, y: -40 }}
+         animate={{ opacity: 1, y: 0 }}
+         exit={{ opacity: 0, y: 40 }}
+         transition={{ duration: 0.6 }}
+         className="text-3xl sm:text-5xl md:text-6xl font-semibold text-white max-w-2xl"
+       >
+         {slides[current].title}
+       </motion.h2>
+     </AnimatePresence>
+   </div>
+ 
+   {/* BOTTOM RIGHT TEXT + BUTTONS */}
+   <div className="flex justify-end pb-14">
+     <div className="max-w-lg text-right mt-[20%] sm:mt-0">
+ 
+       {/* BIG TEXT */}
+       <AnimatePresence mode="wait">
+         <motion.p
+           key={current}
+           initial={{ opacity: 0, x: 40 }}
+           animate={{ opacity: 1, x: 0 }}
+           exit={{ opacity: 0, x: -40 }}
+           transition={{ duration: 0.6 }}
+           className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+         >
+           {slides[current].text}
+         </motion.p>
+       </AnimatePresence>
+ 
+      
+ <motion.div
+   key={current}
+   initial={{ opacity: 0, y: 20 }}
+   animate={{ opacity: 1, y: 0 }}
+   exit={{ opacity: 0, y: -20 }}
+   transition={{ duration: 0.4 }}
+   className="mt-6 flex justify-end"
+ >
+   <Link
+     to={slides[current].link}
+     className="
+       w-[220px]
+       h-[46px]
+       flex items-center justify-center
+       text-center
+       text-sm font-semibold
+       whitespace-nowrap
+ 
+       rounded-xl
+       bg-white/10 backdrop-blur-md
+       border border-white/40
+       text-white
+ 
+       hover:bg-white hover:text-[#0D6E4F]
+ 
+       transition shadow-lg
+     "
+   >
+     {slides[current].title}
+   </Link>
+ </motion.div>
+     </div>
+   </div>
+ 
+ </div>
+ 
+   {/* PROGRESS BAR */}
+   <div className="absolute bottom-0 left-0 w-full h-[3px] bg-white/20">
+     <motion.div
+       key={current}
+       initial={{ width: "0%" }}
+       animate={{ width: "100%" }}
+       transition={{ duration: 5, ease: "linear" }}
+       className="h-full bg-[#0D6E4F]"
+     />
+   </div>
+ 
+  
+ 
+ </section> 
+
+</div>
+
+
+</div>
+{/* ================= SECOND ROW ================= */}
+<div className="hidden lg:grid grid-cols-[47%_51%] gap-5 mt-8">
+
+  {/* LEFT CARD */}
+  <div
+    className="
+      group relative cursor-pointer
+      rounded-tr-[40px]
+      overflow-hidden
+      border border-[#E5E7EB]
+      bg-[#F1F3E9]
+      shadow-sm
+      transition-all duration-500
+      hover:-translate-y-2
+      hover:shadow-[0_25px_60px_-25px_rgba(13,110,79,0.25)]
+      h-[79vh]
+    "
+  >
+
+    <div className="h-1 w-full bg-gradient-to-r from-[#224C26] to-[#0D2040]" />
+
+    <div className="relative p-8 h-full flex flex-col justify-between">
+
+      <div>
+
+        <h3 className="text-2xl xl:text-3xl font-bold text-[#0D2040] leading-tight">
+          Business Services
+        </h3>
+
+        <p className="mt-3 text-sm text-[#0D2040]/70 leading-8">
+          Complete support for UK businesses & growth-focused companies.
+        </p>
+
+        <div className="mt-6 space-y-3">
+
+          {[
+            "Accounts & Taxation",
+            "Bookkeeping",
+            "Payroll & VAT",
+            "Business Advisory",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="
+                flex items-center justify-between
+                px-3 py-2 rounded-xl
+                bg-white/70
+              "
+            >
+              <span className="text-sm  text-[#0D2040]">
+                {item}
+              </span>
+
+              <span className="text-[#224C26] font-bold text-xl">
+                →
+              </span>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
+      <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-6">
+
+        <span className="text-sm font-semibold text-[#0D2040]">
+          Explore Category
+        </span>
+
+        <div
+          className="
+            w-11 h-11
+            rounded-full
+            bg-[#224C26]
+            text-white
+            flex items-center justify-center
+          "
+        >
+          →
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* HMRC / BBC SLIDER */}
+<div className="rounded-tl-[40px] overflow-hidden h-[80vh] relative">
+
+  <AnimatePresence mode="wait">
+    <motion.div
+      key={businessCurrent}
+      initial={{ opacity: 0, scale: 1.1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8 }}
+      className={`absolute inset-0 ${businessSlides[businessCurrent].bg}`}
+    >
+      <div className="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full top-10 left-10 animate-pulse" />
+      <div className="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full bottom-10 right-10 animate-pulse" />
+    </motion.div>
+  </AnimatePresence>
+
+  <a
+    href={businessSlides[businessCurrent].link}
+    target="_blank"
+    rel="noreferrer"
+    className="absolute inset-0 z-10"
+  />
+
+  <div className="relative z-20 w-full h-full px-4 lg:px-6 flex flex-col justify-between">
+
+    <div className="pt-16">
+
+      <p className="uppercase tracking-[0.3em] text-white/60 text-sm mb-5">
+        LIVE BUSINESS UPDATES
+      </p>
+
+      <AnimatePresence mode="wait">
+        <motion.h2
+          key={businessCurrent}
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 40 }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl sm:text-5xl md:text-6xl font-semibold text-white max-w-2xl"
+        >
+          {businessSlides[businessCurrent].title}
+        </motion.h2>
+      </AnimatePresence>
+
+    </div>
+
+    <div className="flex justify-end pb-14">
+
+      <div className="max-w-lg text-right">
+
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={businessCurrent}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -40 }}
+            transition={{ duration: 0.6 }}
+            className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+          >
+            {businessSlides[businessCurrent].text}
+          </motion.p>
+        </AnimatePresence>
+
+        <motion.div
+          key={businessCurrent}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.4 }}
+          className="mt-6 flex justify-end"
+        >
+          <a
+            href={businessSlides[businessCurrent].link}
+            target="_blank"
+            rel="noreferrer"
+            className="
+              w-[220px]
+              h-[46px]
+              flex items-center justify-center
+              text-center
+              text-sm font-semibold
+              rounded-xl
+              bg-white/10 backdrop-blur-md
+              border border-white/40
+              text-white
+              hover:bg-white hover:text-[#0D6E4F]
+              transition shadow-lg
+            "
+          >
+            {businessSlides[businessCurrent].button}
+          </a>
+        </motion.div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div className="absolute bottom-0 left-0 w-full h-[3px] bg-white/20">
+    <motion.div
+      key={businessCurrent}
+      initial={{ width: "0%" }}
+      animate={{ width: "100%" }}
+      transition={{ duration: 5, ease: "linear" }}
+      className="h-full bg-[#0D6E4F]"
+    />
+  </div>
+
+</div>
 
 </div>
 

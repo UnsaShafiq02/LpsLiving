@@ -116,7 +116,7 @@ useEffect(() => {
           //  className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight"
           className="mt-6 sm:mt-10 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
           >
-            Trusted Accounting & Tax Advisory
+            Built on trusted relationships, responsive service, and Specialist expertise.
           </motion.h1>
 
           {/* <motion.div
@@ -131,9 +131,7 @@ useEffect(() => {
           <motion.p
            
 className="mt-3 sm:mt-5 text-[#224C26]/85 text-sm sm:text-lg leading-6 sm:leading-8 max-w-2xl mx-auto px-4"          >
-            We provide clear, compliant and commercially focused accounting
-            services for businesses, landlords, contractors and professionals
-            across the UK.
+            Supporting proprty professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
           </motion.p>
 
           {/* BUTTONS */}
@@ -400,135 +398,7 @@ className="
 
   </div>
 </section>
-  <section className="relative w-full h-[520px] md:h-[620px] overflow-hidden">
-
-  {/* BACKGROUND */}
-  <AnimatePresence mode="wait">
-    <motion.div
-      key={current}
-      initial={{ opacity: 0, scale: 1.1 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.8 }}
-      className={`absolute inset-0 ${slides[current].bg}`}
-    >
-      <div className="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full top-10 left-10 animate-pulse" />
-      <div className="absolute w-[400px] h-[400px] bg-white/10 blur-3xl rounded-full bottom-10 right-10 animate-pulse" />
-    </motion.div>
-  </AnimatePresence>
-
-  {/* CLICKABLE */}
-  <Link to={slides[current].link} className="absolute inset-0 z-10" />
-
-  {/* CONTENT */}
-  {/* CONTENT */}
-<div className="relative z-20 w-full h-full px-3 sm:px-6 lg:px-10 flex flex-col justify-between">
-
-  {/* TOP LEFT TITLE */}
-  <div className="pt-16">
-    <AnimatePresence mode="wait">
-      <motion.h2
-        key={current}
-        initial={{ opacity: 0, y: -40 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 40 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl sm:text-6xl md:text-7xl font-semibold text-white max-w-2xl"
-      >
-        {slides[current].title}
-      </motion.h2>
-    </AnimatePresence>
-  </div>
-
-  {/* BOTTOM RIGHT TEXT + BUTTONS */}
-  <div className="flex justify-end pb-14">
-    <div className="max-w-lg text-right mt-[20%] sm:mt-0">
-
-      {/* BIG TEXT */}
-      <AnimatePresence mode="wait">
-        <motion.p
-          key={current}
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -40 }}
-          transition={{ duration: 0.6 }}
-          className="text-white text-xl sm:text-2xl md:text-3xl leading-relaxed font-medium"
-        >
-          {slides[current].text}
-        </motion.p>
-      </AnimatePresence>
-
-      {/* GLASS BUTTONS */}
-      {/* BUTTON (DYNAMIC PER SLIDE) */}
-<motion.div
-  key={current}
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  exit={{ opacity: 0, y: -20 }}
-  transition={{ duration: 0.4 }}
-  className="mt-6 flex justify-end"
->
-  <Link
-    to={slides[current].link}
-    className="
-      w-[220px]
-      h-[46px]
-      flex items-center justify-center
-      text-center
-      text-sm font-semibold
-      whitespace-nowrap
-
-      rounded-xl
-      bg-white/10 backdrop-blur-md
-      border border-white/40
-      text-white
-
-      hover:bg-white hover:text-[#0D6E4F]
-
-      transition shadow-lg
-    "
-  >
-    {slides[current].title}
-  </Link>
-</motion.div>
-    </div>
-  </div>
-
-</div>
-
-  {/* PROGRESS BAR */}
-  <div className="absolute bottom-0 left-0 w-full h-[3px] bg-white/20">
-    <motion.div
-      key={current}
-      initial={{ width: "0%" }}
-      animate={{ width: "100%" }}
-      transition={{ duration: 5, ease: "linear" }}
-      className="h-full bg-[#0D6E4F]"
-    />
-  </div>
-
-  {/* ARROWS */}
-  {/* <div className="absolute top-1/2 left-4 right-4 flex justify-between z-30">
-    <button
-      onClick={() =>
-        setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
-      }
-      className="bg-white/20 hover:bg-white/40 text-white px-3 py-2 rounded-lg backdrop-blur"
-    >
-      ‹
-    </button>
-
-    <button
-      onClick={() =>
-        setCurrent((prev) => (prev + 1) % slides.length)
-      }
-      className="bg-white/20 hover:bg-white/40 text-white px-3 py-2 rounded-lg backdrop-blur"
-    >
-      ›
-    </button>
-  </div> */}
-
-</section>   
+  
 
     </section>
   );
