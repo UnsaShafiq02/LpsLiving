@@ -387,7 +387,7 @@ className="
 
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
-<section className="py-20 bg-white px-3 sm:px-6 lg:px-10">
+<section className="py-8 sm:py-14 bg-white px-3 sm:px-6 lg:px-10">
   <div className="w-full lg:w-[80%] text-left">
 
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-medium text-[#0D2040] leading-[1.5] tracking-tight">

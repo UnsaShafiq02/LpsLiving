@@ -107,14 +107,7 @@ const businessSlides = [
     link: "https://www.bbc.com/news/business",
     bg: "bg-[#0D2040]",
     button: "BBC Business",
-  },
-  {
-    title: "HMRC Updates",
-    text: "Recent HMRC tax guidance, compliance updates and business regulation changes.",
-    link: "https://www.gov.uk/government/organisations/hm-revenue-customs",
-    bg: "bg-[#224C26]",
-    button: "HMRC",
-  },
+  }
 ];
 const Layout = ({ children }) => {
   const [current, setCurrent] = useState(0);
@@ -157,7 +150,7 @@ useEffect(() => {
 
         {/* SHORT SERVICES (responsive only) */}
        {/* ================= DESKTOP SPLIT ================= */}
-<div className="hidden lg:grid grid-cols-[47%_51%] gap-5 mt-12">
+<div className="grid grid-cols-1 lg:grid-cols-[47%_51%] gap-2 lg:gap-5 mt-4">
 
   {/* LEFT → SCROLLABLE CARDS */}
  <div
@@ -381,7 +374,7 @@ useEffect(() => {
 
 </div>
 {/* ================= SECOND ROW ================= */}
-<div className="hidden lg:grid grid-cols-[47%_51%] gap-5 mt-8">
+<div className="grid grid-cols-1 lg:grid-cols-[47%_51%] gap-2 lg:gap-5 mt-4">
 
   {/* LEFT CARD */}
   <div
@@ -581,19 +574,160 @@ useEffect(() => {
 
 </div>
 
-{/* ================= MOBILE / TABLET ================= */}
-<div className="block lg:hidden mt-10 space-y-8">
+{/* ================= THIRD ROW ================= */}
+<div className="grid grid-cols-1 lg:grid-cols-[47%_51%] gap-2 lg:gap-5 mt-4">
 
-  <h2 className="text-2xl sm:text-3xl font-medium text-[#0D2040] leading-[1.5] px-4">
-    Strategic accounting solutions designed to support growth, ensure
-    compliance, and provide clarity at every stage of your financial journey.
-  </h2>
+  {/* LEFT CARD */}
+  <div
+    className="
+      group relative cursor-pointer
+      rounded-tr-[40px]
+      overflow-hidden
+      border border-[#E5E7EB]
+      bg-[#F1F3E9]
+      shadow-sm
+      transition-all duration-500
+      hover:-translate-y-2
+      hover:shadow-[0_25px_60px_-25px_rgba(13,110,79,0.25)]
+      h-[70vh] lg:h-[79vh]
+    "
+  >
 
-  <div className="px-4">
-    <ShortServices />
+    <div className="h-1 w-full bg-gradient-to-r from-[#224C26] to-[#0D2040]" />
+
+    <div className="relative p-8 h-full flex flex-col justify-between">
+
+      <div>
+
+        <h3 className="text-2xl xl:text-3xl font-bold text-[#0D2040] leading-tight">
+          Personal Tax
+        </h3>
+
+        <p className="mt-3 text-sm text-[#0D2040]/70 leading-8">
+          Simple, compliant and stress-free personal tax solutions.
+        </p>
+
+        <div className="mt-6 space-y-3">
+
+          {[
+            "Self Assessment",
+            "Rental Income Tax",
+            "Capital Gains",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="
+                flex items-center justify-between
+                px-3 py-2 rounded-xl
+                bg-white/70
+              "
+            >
+              <span className="text-sm text-[#0D2040]">
+                {item}
+              </span>
+
+              <span className="text-[#224C26] font-bold text-xl">
+                →
+              </span>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
+      <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-6">
+
+        <span className="text-sm font-semibold text-[#0D2040]">
+          Explore Category
+        </span>
+
+        <div
+          className="
+            w-11 h-11
+            rounded-full
+            bg-[#224C26]
+            text-white
+            flex items-center justify-center
+          "
+        >
+          →
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* HMRC SLIDER */}
+  <div className="rounded-tl-[40px] overflow-hidden h-[70vh] lg:h-[80vh] relative bg-[#224C26]">
+
+    <div className="absolute inset-0 bg-gradient-to-br from-[#224C26] to-[#0D2040]" />
+
+    <a
+      href="https://www.gov.uk/government/organisations/hm-revenue-customs"
+      target="_blank"
+      rel="noreferrer"
+      className="absolute inset-0 z-10"
+    />
+
+    <div className="relative z-20 w-full h-full px-4 lg:px-6 flex flex-col justify-between text-white">
+
+      <div className="pt-16">
+
+        <p className="uppercase tracking-[0.3em] text-white/60 text-sm mb-5">
+          HMRC UPDATES
+        </p>
+
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold max-w-2xl">
+          HMRC Tax & Compliance
+        </h2>
+
+      </div>
+
+      <div className="flex justify-end pb-14">
+
+        <div className="max-w-lg text-right">
+
+          <p className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium">
+            Recent HMRC tax guidance, compliance changes and UK business regulation updates.
+          </p>
+
+          <div className="mt-6 flex justify-end">
+            <a
+              href="https://www.gov.uk/government/organisations/hm-revenue-customs"
+              target="_blank"
+              rel="noreferrer"
+              className="
+                w-[220px]
+                h-[46px]
+                flex items-center justify-center
+                text-center
+                text-sm font-semibold
+                rounded-xl
+                bg-white/10 backdrop-blur-md
+                border border-white/40
+                text-white
+                hover:bg-white hover:text-[#0D6E4F]
+                transition shadow-lg
+              "
+            >
+              HMRC
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
 
 </div>
+
+
 
       </div>
     </div>
