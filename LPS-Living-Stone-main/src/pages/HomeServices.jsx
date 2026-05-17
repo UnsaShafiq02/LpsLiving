@@ -116,7 +116,7 @@ useEffect(() => {
           //  className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight"
           className="mt-6 sm:mt-10 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
           >
-            Built on trusted relationships, responsive service, and Specialist expertise.
+            Built on Trusted Relationships, Responsive Service, and Specialist Expertise.
           </motion.h1>
 
           {/* <motion.div
@@ -130,8 +130,8 @@ useEffect(() => {
 
           <motion.p
            
-className="mt-3 sm:mt-5 text-[#224C26]/85 text-sm sm:text-lg leading-6 sm:leading-8 max-w-2xl mx-auto px-4"          >
-            Supporting proprty professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
+className="mt-3 sm:mt-5 text-[#0D6E4F]/85 text-sm sm:text-lg leading-6 sm:leading-8 max-w-2xl mx-auto px-4"          >
+            Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
           </motion.p>
 
           {/* BUTTONS */}
@@ -297,7 +297,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#224C26]
+        bg-[#0D6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -327,7 +327,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#224C26]
+        bg-[#0D6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -357,7 +357,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#224C26]
+        bg-[#0D6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -391,7 +391,7 @@ className="
   <div className="w-full lg:w-[80%] text-left">
 
     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-medium text-[#0D2040] leading-[1.5] tracking-tight">
-      At <span className="text-[#224C26] font-semibold">
+      At <span className="text-[#0D6E4F] font-semibold">
         LPS Livingstone,
       </span>{" "}
  we provide modern accounting and tax solutions designed for businesses and individuals, focused on clarity, compliance, sustainable financial growth, strategic planning, risk management, and long-term business success.    </h1>

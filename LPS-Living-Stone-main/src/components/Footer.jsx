@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-   <footer className="bg-[#224C26] text-white relative overflow-hidden">
+   <footer className="bg-[#0D6E4F] text-white relative overflow-hidden">
 
   {/* subtle glow */}
   <div className="absolute top-[-80px] left-[-80px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full" />

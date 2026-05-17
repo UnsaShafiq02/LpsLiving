@@ -74,7 +74,7 @@ className={`
                 <h1 className="text-[#0D2040] font-black text-xl sm:text-2xl tracking-wide">
                   Livingstone
                 </h1>
-                <p className="text-[#224C26] text-xs font-semibold tracking-[0.25em] uppercase">
+                <p className="text-[#0D6E4F] text-xs font-semibold tracking-[0.25em] uppercase">
                   Chartered Accountants
                 </p>
               </div>
@@ -109,7 +109,7 @@ className={`
                 href="/contact"
                 className="
                   px-6 py-2.5 rounded-xl
-                  bg-[#224C26]
+                  bg-[#0D6E4F]
                   text-white text-[12px] font-semibold
                   shadow-md
                   hover:bg-[#0B5C42]

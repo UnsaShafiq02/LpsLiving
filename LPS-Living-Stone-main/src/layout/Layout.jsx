@@ -164,7 +164,7 @@ useEffect(() => {
     transition-all duration-500
     hover:-translate-y-2
     hover:shadow-[0_25px_60px_-25px_rgba(13,110,79,0.25)]
-    h-[80vh]
+    h-[58vh] lg:h-[62vh]
   "
 >
 
@@ -178,19 +178,19 @@ useEffect(() => {
   </div>
 
   {/* CONTENT */}
-  <div className="relative p-8 h-full flex flex-col justify-between">
+  <div className="relative p-5 lg:p-6 h-full flex flex-col justify-start">
 
     <div>
 
-      <h3 className="text-3xl xl:text-4xl font-bold text-[#0D2040] leading-tight">
+      <h3 className="text-2xl xl:text-3xl font-bold text-[#0D2040] leading-tight">
         Service Charge Accounts
       </h3>
 
-      <p className="mt-4 text-base text-[#0D2040]/70 leading-8">
+      <p className="mt-4 text-sm text-[#0D2040]/70 leading-6">
         Specialist accounting for managing agents & property portfolios.
       </p>
 
-      <div className="mt-10 space-y-4">
+      <div className="mt-4 space-y-2">
 
         {[
           "Service Charge Accounting",
@@ -201,13 +201,13 @@ useEffect(() => {
             key={i}
             className="
               flex items-center justify-between
-              px-3 py-3 rounded-1xl
+              px-3 py-2 rounded-1xl
               bg-white/70
               hover:bg-[#224C26]/10
               transition-all duration-300
             "
           >
-            <span className="text-base text-[#0D2040]">
+            <span className="text-sm text-[#0D2040]">
               {item}
             </span>
 
@@ -221,9 +221,9 @@ useEffect(() => {
 
     </div>
 
-    <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-6">
+    <div className="mt-auto flex items-center justify-between border-t border-[#E5E7EB] pt-4">
 
-      <span className="text-sm font-semibold text-[#0D2040]">
+      <span className="text-sm font-semibold text-[#0D6E4F]">
         Explore Category
       </span>
 
@@ -231,7 +231,7 @@ useEffect(() => {
         className="
           w-11 h-11
           rounded-full
-          bg-[#224C26]
+          bg-[#0D6E4F]
           text-white
           flex items-center justify-center
           shadow-md
@@ -257,7 +257,7 @@ useEffect(() => {
 
   </div>
 </div> */}
-<div className="sticky top-24 h-[80vh] overflow-hidden rounded-tl-[40px]">
+<div className="hidden lg:block sticky top-24 h-[58vh] lg:h-[62vh] overflow-hidden rounded-tl-[40px]">
   
    <section className="relative w-full h-full overflow-hidden">
  
@@ -284,7 +284,7 @@ useEffect(() => {
  <div className="relative z-20 w-full h-full px-2 sm:px-4 lg:px-4 flex flex-col justify-between">
  
    {/* TOP LEFT TITLE */}
-   <div className="pt-16">
+   <div className="pt-10 lg:pt-12">
      <AnimatePresence mode="wait">
        <motion.h2
          key={current}
@@ -292,7 +292,7 @@ useEffect(() => {
          animate={{ opacity: 1, y: 0 }}
          exit={{ opacity: 0, y: 40 }}
          transition={{ duration: 0.6 }}
-         className="text-3xl sm:text-5xl md:text-6xl font-semibold text-white max-w-2xl"
+         className="text-2xl sm:text-4xl md:text-5xl font-semibold text-white max-w-2xl"
        >
          {slides[current].title}
        </motion.h2>
@@ -300,7 +300,7 @@ useEffect(() => {
    </div>
  
    {/* BOTTOM RIGHT TEXT + BUTTONS */}
-   <div className="flex justify-end pb-14">
+   <div className="flex justify-end pb-8 lg:pb-10">
      <div className="max-w-lg text-right mt-[20%] sm:mt-0">
  
        {/* BIG TEXT */}
@@ -311,7 +311,7 @@ useEffect(() => {
            animate={{ opacity: 1, x: 0 }}
            exit={{ opacity: 0, x: -40 }}
            transition={{ duration: 0.6 }}
-           className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+           className="text-white text-base sm:text-lg md:text-xl leading-relaxed font-medium"
          >
            {slides[current].text}
          </motion.p>
@@ -388,29 +388,28 @@ useEffect(() => {
       transition-all duration-500
       hover:-translate-y-2
       hover:shadow-[0_25px_60px_-25px_rgba(13,110,79,0.25)]
-      h-[79vh]
+      h-[58vh] lg:h-[62vh]
     "
   >
 
     <div className="h-1 w-full bg-gradient-to-r from-[#224C26] to-[#0D2040]" />
 
-    <div className="relative p-8 h-full flex flex-col justify-between">
-
+<div className="relative p-5 lg:p-6 h-full flex flex-col justify-start">
       <div>
 
         <h3 className="text-2xl xl:text-3xl font-bold text-[#0D2040] leading-tight">
           Business Services
         </h3>
 
-        <p className="mt-3 text-sm text-[#0D2040]/70 leading-8">
+        <p className="mt-3 text-sm text-[#0D2040]/70 leading-6">
           Complete support for UK businesses & growth-focused companies.
         </p>
 
-        <div className="mt-6 space-y-3">
+        <div className="mt-4 space-y-2">
 
           {[
             "Accounts & Taxation",
-            "Bookkeeping",
+           
             "Payroll & VAT",
             "Business Advisory",
           ].map((item, i) => (
@@ -436,9 +435,8 @@ useEffect(() => {
 
       </div>
 
-      <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-6">
-
-        <span className="text-sm font-semibold text-[#0D2040]">
+<div className="mt-auto flex items-center justify-between border-t border-[#E5E7EB] pt-4">
+        <span className="text-sm font-semibold text-[#0D6E4F]">
           Explore Category
         </span>
 
@@ -446,7 +444,7 @@ useEffect(() => {
           className="
             w-11 h-11
             rounded-full
-            bg-[#224C26]
+            bg-[#0D6E4F]
             text-white
             flex items-center justify-center
           "
@@ -461,7 +459,7 @@ useEffect(() => {
   </div>
 
   {/* HMRC / BBC SLIDER */}
-<div className="rounded-tl-[40px] overflow-hidden h-[80vh] relative">
+<div className="hidden lg:block rounded-tl-[40px] overflow-hidden h-[58vh] lg:h-[62vh] relative">
 
   <AnimatePresence mode="wait">
     <motion.div
@@ -486,7 +484,7 @@ useEffect(() => {
 
   <div className="relative z-20 w-full h-full px-4 lg:px-6 flex flex-col justify-between">
 
-    <div className="pt-16">
+    <div className="pt-10 lg:pt-12">
 
       <p className="uppercase tracking-[0.3em] text-white/60 text-sm mb-5">
         LIVE BUSINESS UPDATES
@@ -499,7 +497,7 @@ useEffect(() => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 40 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-5xl md:text-6xl font-semibold text-white max-w-2xl"
+          className="text-2xl sm:text-4xl md:text-5xl font-semibold text-white max-w-2xl"
         >
           {businessSlides[businessCurrent].title}
         </motion.h2>
@@ -507,7 +505,7 @@ useEffect(() => {
 
     </div>
 
-    <div className="flex justify-end pb-14">
+    <div className="flex justify-end pb-8 lg:pb-10">
 
       <div className="max-w-lg text-right">
 
@@ -518,7 +516,7 @@ useEffect(() => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -40 }}
             transition={{ duration: 0.6 }}
-            className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium"
+            className="text-white text-base sm:text-lg md:text-xl leading-relaxed font-medium"
           >
             {businessSlides[businessCurrent].text}
           </motion.p>
@@ -589,7 +587,7 @@ useEffect(() => {
       transition-all duration-500
       hover:-translate-y-2
       hover:shadow-[0_25px_60px_-25px_rgba(13,110,79,0.25)]
-      h-[70vh] lg:h-[79vh]
+      h-[55vh] lg:h-[60vh]
     "
   >
 
@@ -603,11 +601,11 @@ useEffect(() => {
           Personal Tax
         </h3>
 
-        <p className="mt-3 text-sm text-[#0D2040]/70 leading-8">
+        <p className="mt-3 text-sm text-[#0D2040]/70 leading-6">
           Simple, compliant and stress-free personal tax solutions.
         </p>
 
-        <div className="mt-6 space-y-3">
+        <div className="mt-4 space-y-2">
 
           {[
             "Self Assessment",
@@ -636,9 +634,8 @@ useEffect(() => {
 
       </div>
 
-      <div className="flex items-center justify-between border-t border-[#E5E7EB] pt-6">
-
-        <span className="text-sm font-semibold text-[#0D2040]">
+<div className="mt-auto flex items-center justify-between border-t border-[#E5E7EB] pt-4">
+        <span className="text-sm font-semibold text-[#0D6E4F]">
           Explore Category
         </span>
 
@@ -646,7 +643,7 @@ useEffect(() => {
           className="
             w-11 h-11
             rounded-full
-            bg-[#224C26]
+            bg-[#0D6E4F]
             text-white
             flex items-center justify-center
           "
@@ -661,7 +658,7 @@ useEffect(() => {
   </div>
 
   {/* HMRC SLIDER */}
-  <div className="rounded-tl-[40px] overflow-hidden h-[70vh] lg:h-[80vh] relative bg-[#224C26]">
+  <div className="hidden lg:block rounded-tl-[40px] overflow-hidden h-[55vh] lg:h-[60vh] relative bg-[#224C26]">
 
     <div className="absolute inset-0 bg-gradient-to-br from-[#224C26] to-[#0D2040]" />
 
@@ -674,23 +671,23 @@ useEffect(() => {
 
     <div className="relative z-20 w-full h-full px-4 lg:px-6 flex flex-col justify-between text-white">
 
-      <div className="pt-16">
+      <div className="pt-10 lg:pt-12">
 
         <p className="uppercase tracking-[0.3em] text-white/60 text-sm mb-5">
           HMRC UPDATES
         </p>
 
-        <h2 className="text-3xl sm:text-5xl md:text-6xl font-semibold max-w-2xl">
+        <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold max-w-2xl">
           HMRC Tax & Compliance
         </h2>
 
       </div>
 
-      <div className="flex justify-end pb-14">
+      <div className="flex justify-end pb-8 lg:pb-10">
 
         <div className="max-w-lg text-right">
 
-          <p className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-medium">
+          <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed font-medium">
             Recent HMRC tax guidance, compliance changes and UK business regulation updates.
           </p>
 
