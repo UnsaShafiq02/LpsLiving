@@ -125,7 +125,7 @@ className={`
             {/* MOBILE */}
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden p-2 rounded-lg bg-[#224C26] text-white hover:bg-[#0B5C42] transition"
+              className="lg:hidden p-2 rounded-lg bg-[#0D6E4F] text-white hover:bg-[#0B5C42] transition"
             >
               <Menu size={22} />
             </button>
@@ -199,7 +199,7 @@ className={`
                 className="
                   flex items-center justify-center
                   w-full py-4 rounded-xl
-                  bg-[#224C26]
+                  bg-[#0D6E4F]
                   hover:bg-[#0B5C42]
                   text-white text-sm font-semibold
                   transition-all duration-300
