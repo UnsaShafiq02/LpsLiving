@@ -43,7 +43,7 @@ const Footer = () => {
         </h3>
 
         <div className="text-[11px] leading-4 space-y-1 text-white/70">
-          <p className="text-white font-medium">LPS Living Stone</p>
+          <p className="text-white font-medium">LPS Livingstone</p>
           <p>Wenzel House, WD18 9AB</p>
           <p className="text-white">020 7278 0007</p>
         </div>
