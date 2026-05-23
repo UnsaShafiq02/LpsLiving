@@ -13,7 +13,7 @@ const navLinks = [
   // { name: 'CONTACT US', href: '/contact' },
 ];
 
-const Navbar = () => {
+const Navbar = ({ forceWhite = false }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -44,11 +44,20 @@ const Navbar = () => {
 //   : 'bg-transparent border-transparent py-5'
 //   }
 // `}
+// className={`
+//   transition-all duration-500 border-b
+//   ${isScrolled
+//    ? 'bg-white/92 shadow-md border-gray-200 py-3'
+//   : 'bg-white md:bg-transparent border-transparent py-3 md:py-5'
+//   }
+// `}
 className={`
   transition-all duration-500 border-b
   ${isScrolled
-   ? 'bg-white/92 shadow-md border-gray-200 py-3'
-  : 'bg-white md:bg-transparent border-transparent py-3 md:py-5'
+    ? 'bg-white/92 shadow-md border-gray-200 py-3'
+    : forceWhite
+      ? 'bg-white border-gray-100 py-3 md:py-5'
+      : 'bg-white md:bg-transparent border-transparent py-3 md:py-5'
   }
 `}
         >

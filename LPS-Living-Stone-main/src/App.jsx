@@ -1,5 +1,11 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Layout from "./layout/Layout";
@@ -19,41 +25,85 @@ import HomeServices from "./pages/HomeServices";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./pages/Notfound";
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+
+  // Force white navbar only on Service Charge page
+  const forceWhiteNavbar =
+    location.pathname === "/servicecharge";
+
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      <Navbar forceWhite={forceWhiteNavbar} />
+
       <ScrollToTop />
+
       <Layout>
         <Routes>
           <Route path="/" element={<HomeServices />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/*" element={<NotFound />} />
 
-          <Route path="/servicecharge" element={<ServiceChargeAccounting />} />
-          <Route path="/freeresources" element={<FreeResources />} />
-          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/about-us" element={<AboutUs />} />
+
+          <Route path="/services" element={<Services />} />
+
+          <Route
+            path="/servicecharge"
+            element={<ServiceChargeAccounting />}
+          />
+
+          <Route
+            path="/freeresources"
+            element={<FreeResources />}
+          />
+
+          <Route
+            path="/contact"
+            element={<ContactForm />}
+          />
 
           <Route
             path="/services/accounts-taxation"
             element={<AccountsTaxation />}
           />
-          <Route path="/services/bookkeeping" element={<Bookkeeping />} />
-          <Route path="/services/payroll" element={<Payroll />} />
-          <Route path="/services/vat" element={<VAT />} />
+
+          <Route
+            path="/services/bookkeeping"
+            element={<Bookkeeping />}
+          />
+
+          <Route
+            path="/services/payroll"
+            element={<Payroll />}
+          />
+
+          <Route
+            path="/services/vat"
+            element={<VAT />}
+          />
+
           <Route
             path="/services/rental-property-tax"
             element={<RentalIncomePropertyTax />}
           />
+
           <Route
             path="/services/contractors-freelancers"
             element={<ContractorsFreelancers />}
           />
+
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Layout>
 
       <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
