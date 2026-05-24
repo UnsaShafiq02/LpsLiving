@@ -24,13 +24,21 @@ import ContactForm from "./pages/ContactForm";
 import HomeServices from "./pages/HomeServices";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./pages/Notfound";
+import ManagingAgents from "./pages/ManagingAgents";
+import SelfManaged from "./pages/SelfManaged";
+
+import FAQs from "./pages/FAQs";
 
 function AppContent() {
   const location = useLocation();
 
   // Force white navbar only on Service Charge page
-  const forceWhiteNavbar =
-    location.pathname === "/servicecharge";
+ const forceWhiteNavbar = [
+  "/servicecharge",
+  "/managing-agents",
+  "/self-managed",
+  "/faqs",
+].includes(location.pathname);
 
   return (
     <>
@@ -50,6 +58,21 @@ function AppContent() {
             path="/servicecharge"
             element={<ServiceChargeAccounting />}
           />
+          <Route
+  path="/managing-agents"
+  element={<ManagingAgents />}
+/>
+
+<Route
+  path="/self-managed"
+  element={<SelfManaged />}
+/>
+
+
+<Route
+  path="/faqs"
+  element={<FAQs />}
+/>
 
           <Route
             path="/freeresources"

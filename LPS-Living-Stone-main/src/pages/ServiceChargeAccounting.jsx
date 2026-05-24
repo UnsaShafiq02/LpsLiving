@@ -210,8 +210,8 @@
 // export default ServiceChargeAccounting;
 
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, ChevronRight, Building2, Home } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { CheckCircle2, ChevronRight } from 'lucide-react';
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
@@ -426,10 +426,7 @@ const ExpandSubTitle = ({ children }) => (
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
 
 const ServiceChargeAccounting = () => {
-  const [activeCard, setActiveCard] = useState(null); // 'ma' | 'sm' | null
-
-  const toggle = (id) => setActiveCard(prev => (prev === id ? null : id));
-
+  const navigate = useNavigate();
   return (
     <div className="bg-white overflow-hidden text-[#0D2040] font-['Neogrotesk']">
 
@@ -792,143 +789,267 @@ const ServiceChargeAccounting = () => {
       </section>
 
       {/* ── WHO DO WE SUPPORT — CTA CARDS ────────────────────────────────── */}
-      <section className="py-14 px-6 bg-gradient-to-b from-white to-[#f8fffe]">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-black text-[#0D2040]" style={{ fontFamily: 'Georgia, serif' }}>
-              Who Do We Support?
-            </h2>
-            <p className="text-[#6B7280] text-sm mt-2">Select your category to explore tailored services and support</p>
-          </div>
+    {/* ── WHO DO WE SUPPORT ───────────────────────────────────────────── */}
+<section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-[#f8fffe]">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+  <div className="max-w-6xl mx-auto">
 
-            {/* Managing Agents Card */}
+    {/* heading */}
+    <div className="text-center mb-12">
+
+      <div className="inline-flex items-center gap-2 mb-5">
+        <div className="w-10 h-[2px] bg-[#0D6E4F]" />
+        <span className="text-[11px] tracking-[0.25em] uppercase font-semibold text-[#0D6E4F]">
+          Tailored Support
+        </span>
+        <div className="w-10 h-[2px] bg-[#0D6E4F]" />
+      </div>
+
+      <h2
+        className="
+          text-3xl md:text-5xl
+
+          font-medium
+
+          text-[#0D2040]
+
+          leading-tight
+
+          tracking-tight
+        "
+        style={{ fontFamily: 'Georgia, serif' }}
+      >
+        Explore Tailored Support
+      </h2>
+
+      <p
+        className="
+          mt-5
+
+          max-w-3xl mx-auto
+
+          text-[15px] md:text-lg
+
+          leading-8
+
+          text-[#0D2040]
+        "
+      >
+        Specialist support tailored to managing agents,
+        resident management companies, and self-managed
+        developments across residential and mixed-use portfolios.
+      </p>
+
+    </div>
+
+    {/* premium cards */}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      {[
+        {
+          title: "Managing Agents",
+
+          desc:
+            "Responsive and practical support for managing agents, portfolio operators, and property professionals.",
+
+          path: "/managing-agents",
+
+          gradient:
+            "linear-gradient(135deg, #0D2040 0%, #17385d 100%)"
+
+         
+        },
+
+        {
+          title: "Self Managed",
+
+          desc:
+            "Clear and practical accounting support for RTMs, RMCs, and resident-led developments.",
+
+          path: "/self-managed",
+
+          gradient:
+            "linear-gradient(135deg, #0D6E4F 0%, #0a5a3f 100%)"
+
+         
+        },
+
+        {
+          title: "FAQs",
+
+          desc:
+            "Answers to common questions around reporting requirements, accounting obligations, and service charge compliance.",
+
+          path: "/faqs",
+
+          gradient:
+            "linear-gradient(135deg, #102d4d 0%, #0D2040 100%)"
+
+        
+        }
+
+      ].map((card, i) => (
+
+        <div
+          key={i}
+
+          onClick={() => navigate(card.path)}
+
+          className="
+            group
+
+            relative
+
+            overflow-hidden
+
+            rounded-[30px]
+
+            cursor-pointer
+
+            transition-all duration-500
+
+            hover:-translate-y-2
+            hover:shadow-[0_30px_60px_-25px_rgba(13,32,64,0.25)]
+          "
+        >
+
+          {/* background */}
+          <div
+            className="
+              absolute inset-0
+            "
+            style={{
+              background: card.gradient
+            }}
+          />
+
+          {/* glow */}
+          <div
+            className="
+              absolute
+              -top-16
+              -right-16
+
+              w-48 h-48
+
+              rounded-full
+
+              bg-white/10
+
+              blur-3xl
+
+              opacity-0
+              group-hover:opacity-100
+
+              transition duration-700
+            "
+          />
+
+          {/* content */}
+          <div
+            className="
+              relative
+
+              h-full
+
+              p-8 md:p-10
+
+              flex flex-col
+            "
+          >
+
+           <div className="mb-2" />
+           
+
+            {/* title */}
+            <h3
+              className="
+                text-3xl
+
+                font-medium
+
+                text-white
+
+                leading-tight
+
+                tracking-tight
+              "
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              {card.title}
+            </h3>
+
+            {/* description */}
+            <p
+              className="
+                mt-5
+
+                text-white/80
+
+                text-[15px] md:text-base
+
+                leading-8
+              "
+            >
+              {card.desc}
+            </p>
+
+            {/* footer */}
             <div
-              onClick={() => toggle('ma')}
-              className={`border-2 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300
-                ${activeCard === 'ma'
-                  ? 'border-[#0D2040] shadow-xl shadow-[#0D2040]/10'
-                  : 'border-[#E5E7EB] hover:border-[#0D2040] hover:shadow-lg hover:-translate-y-1'}`}>
-              <div className="p-6 text-white" style={{ background: 'linear-gradient(135deg, #0D2040 0%, #1a3a5c 100%)' }}>
-                <div className="inline-block bg-white/15 text-white text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4">
-                  For Agents
-                </div>
-                <Building2 size={32} className="mb-3 opacity-90" />
-                <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Georgia, serif' }}>Managing Agents</h3>
-                <p className="text-white/75 text-[15px] md:text-base leading-8">
-                  Responsive, flexible support integrated with your existing management processes and systems.
-                </p>
+              className="
+                mt-10
+
+                flex items-center justify-between
+              "
+            >
+
+              <span
+                className="
+                  text-sm
+                  font-semibold
+
+                  tracking-wide
+
+                  text-white
+                "
+              >
+                Explore Section
+              </span>
+
+              <div
+                className="
+                  w-11 h-11
+
+                  rounded-full
+
+                  bg-white/10
+
+                  border border-white/20
+
+                  flex items-center justify-center
+
+                  group-hover:bg-white
+                  group-hover:text-[#0D2040]
+
+                  transition-all duration-300
+                "
+              >
+                <ChevronRight size={18} />
               </div>
-              <div className="flex items-center justify-between px-5 py-4 bg-white text-sm font-semibold text-[#0D2040]">
-                <span>Explore managing agent services</span>
-                <ChevronRight size={18} className={`text-[#0D6E4F] transition-transform duration-300 ${activeCard === 'ma' ? 'rotate-90' : ''}`} />
-              </div>
+
             </div>
 
-            {/* Self Managed Card */}
-            <div
-              onClick={() => toggle('sm')}
-              className={`border-2 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300
-                ${activeCard === 'sm'
-                  ? 'border-[#0D6E4F] shadow-xl shadow-[#0D6E4F]/15'
-                  : 'border-[#E5E7EB] hover:border-[#0D6E4F] hover:shadow-lg hover:-translate-y-1'}`}>
-              <div className="p-6 text-white" style={{ background: 'linear-gradient(135deg, #0D6E4F 0%, #0a5a3f 100%)' }}>
-                <div className="inline-block bg-white/15 text-white text-xs tracking-widest uppercase px-3 py-1 rounded-full mb-4">
-                  For Residents
-                </div>
-                <Home size={32} className="mb-3 opacity-90" />
-                <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Georgia, serif' }}>Self Managed</h3>
-                <p className="text-white/75 text-[15px] md:text-base leading-8">
-                  Practical accounting support tailored for resident directors, RTMs, and RMCs.
-                </p>
-              </div>
-              <div className="flex items-center justify-between px-5 py-4 bg-white text-sm font-semibold text-[#0D2040]">
-                <span>Explore self-managed services</span>
-                <ChevronRight size={18} className={`text-[#0D6E4F] transition-transform duration-300 ${activeCard === 'sm' ? 'rotate-90' : ''}`} />
-              </div>
-            </div>
           </div>
 
-          {/* Expanded Content */}
-          <AnimatePresence>
-            {activeCard === 'ma' && (
-              <motion.div
-                key="ma-expand"
-                initial={{ opacity: 0, y: -12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.3 }}
-                className="mt-5 rounded-2xl border border-[#0D2040]/20 bg-[#f8fbff] overflow-hidden">
-                <div className="px-6 pt-6 pb-2 border-b-2 border-[#0D2040]">
-                  <h3 className="text-xl font-black text-[#0D2040]" style={{ fontFamily: 'Georgia, serif' }}>
-                    Service Charge Support for Managing Agents
-                  </h3>
-                </div>
-                <div className="p-6">
-                  <p className="text-[15px] md:text-base leading-8 mb-4">
-                    We work closely with managing agents across residential, mixed-use, and commercial portfolios
-                    throughout London and the UK, providing practical and responsive support around the year-end
-                    reporting process. Our team understands the operational pressures involved in block management,
-                    including AGM deadlines, flat sale requirements, leaseholder reporting, and handovers between agents.
-                    With experience across more than 1,000 developments, we support both independent and larger portfolio operators.
-                  </p>
-                  <ExpandSubTitle>Handover &amp; Transition Support</ExpandSubTitle>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {managingAgentHandover.map((item, i) => <ExpandItem key={i} label={item} />)}
-                  </div>
-                  <ExpandSubTitle>Familiarity with Industry Systems</ExpandSubTitle>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    {managingAgentSystems.map((s, i) => <Tag key={i} label={s} />)}
-                  </div>
-                  <ExpandSubTitle>Additional Support We Provide</ExpandSubTitle>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {managingAgentAdditional.map((item, i) => <ExpandItem key={i} label={item} />)}
-                  </div>
-                </div>
-              </motion.div>
-            )}
-
-            {activeCard === 'sm' && (
-              <motion.div
-                key="sm-expand"
-                initial={{ opacity: 0, y: -12 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.3 }}
-                className="mt-5 rounded-2xl border border-[#0D6E4F]/25 bg-[#f8fffe] overflow-hidden">
-                <div className="px-6 pt-6 pb-2 border-b-2 border-[#0D6E4F]">
-                  <h3 className="text-xl font-black text-[#0D2040]" style={{ fontFamily: 'Georgia, serif' }}>
-                    Practical Accounting Support for Resident-Led Developments
-                  </h3>
-                </div>
-                <div className="p-6">
-                  <p className="text-[15px] md:text-base leading-8 mb-4">
-                    Managing a block without a managing agent gives residents greater control, but also brings
-                    accounting, statutory, tax, and leaseholder reporting responsibilities. LPS Livingstone
-                    supports self-managed blocks, RTMs, and RMCs with clear and practical service charge
-                    accounting support tailored to resident directors — many of whom are volunteers managing
-                    developments alongside their own professional commitments.
-                  </p>
-                  <ExpandSubTitle>Transitioning to Self-Management</ExpandSubTitle>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {selfManagedTransition.map((item, i) => <ExpandItem key={i} label={item} />)}
-                  </div>
-                  <ExpandSubTitle>Urgent Assistance Ahead of</ExpandSubTitle>
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    {selfManagedUrgent.map((s, i) => <Tag key={i} label={s} />)}
-                  </div>
-                  <ExpandSubTitle>Company &amp; Compliance Support</ExpandSubTitle>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {selfManagedCompany.map((item, i) => <ExpandItem key={i} label={item} />)}
-                  </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </div>
-      </section>
 
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
       <section className="py-14 px-6 border-t border-[#E5E7EB]">
         <div className="max-w-5xl mx-auto">

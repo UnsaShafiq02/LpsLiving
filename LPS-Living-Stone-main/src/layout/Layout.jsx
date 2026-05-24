@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import intuitLogo from "../assets/logo/Intuit.png";
 import Icaew from "../assets/logo/Icaew.png";
@@ -290,6 +290,8 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
 // ─── Layout ────────────────────────────────────────────────────────────────────
 
 const Layout = ({ children }) => {
+   const location = useLocation();
+
   return (
     <div className="bg-white min-h-screen w-full font-['Inter',sans-serif]">
 
@@ -301,7 +303,17 @@ const Layout = ({ children }) => {
       </main>
 
       {/* Services Section */}
-      <div className="px-3 sm:px-4 lg:hidden pb-5 space-y-3">
+      <div
+  className={`
+    pb-5 space-y-3 px-3 sm:px-4
+
+    ${
+      location.pathname === "/"
+        ? "block lg:hidden"
+        : "hidden"
+    }
+  `}
+>
 
         {/* Row 1 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 h-auto lg:h-[48vh]">
