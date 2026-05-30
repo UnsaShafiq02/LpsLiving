@@ -7,6 +7,14 @@ import Icaew from "../assets/logo/Icaew.png";
 import xero_logo from "../assets/logo/xero_logo.png";
 import ATT from "../assets/logo/ATT.png";
 import FREEAGENT from "../assets/logo/FREEAGENT.png";
+import sageLogo     from '../assets/logo/sage_logo.png';
+// import tasbookLogo  from '../assets/logo/tasbook.png';
+import propmanLogo  from '../assets/logo/propman.png';
+import blockmanLogo from '../assets/logo/blockman-logo.png';
+// import trampsLogo   from '../assets/logo/tramps.png';
+import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
+// import dwellantLogo from '../assets/logo/dwellant.png';
+import docuwareLogo from '../assets/logo/docuware.png';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -266,6 +274,7 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
             "
           >
             <span>{tag}</span>
+
             <span className="text-[#224C26] text-sm">→</span>
           </div>
         ))}
@@ -376,170 +385,317 @@ const Layout = ({ children }) => {
         </div>
       </div>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
+{/* ───────────────── SOFTWARE / ACCREDITATIONS ───────────────── */}
 <section className="w-full px-6 lg:px-10 py-14 bg-white border-t border-[#E5E7EB]">
   <div className="max-w-5xl mx-auto">
 
-    {/* Top: heading + description */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
-      <div>
-        <div className="w-10 h-[3px] bg-[#0D6E4F] rounded-full mb-4" />
-        <p className="uppercase tracking-[3px] text-[#0D6E4F] text-[11px] font-semibold mb-3">
-          Accredited. Awarded. Trusted.
-        </p>
-        <h2 className="text-2xl lg:text-3xl font-bold text-[#0D2040] leading-snug"
-          style={{ fontFamily: 'Georgia, serif' }}>
-          Recognised by the UK's leading financial institutions.
-        </h2>
-      </div>
-      <p className="text-sm text-[#0D2040] leading-7">
-        Accredited by industry leaders and recognised for excellence, we're trusted
-        by businesses across the UK for quality, compliance, and professional standards.
-      </p>
-    </div>
+    {/* Top two-column */}
+    {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start mb-12"> */}
+    {/* XERO FEATURE SECTION */}
 
-    {/* Logo grid */}
-  {/* MOBILE — running belt */}
-<div className="md:hidden overflow-hidden">
+<div
+  className="
+    mb-14
 
-  <div className="flex marquee-track items-center gap-4 py-2 w-max">
+    p-[2px]
 
-    {[
-      { src: intuitLogo, name: 'QuickBooks' },
-      { src: ATT, name: 'ATT' },
-      { src: Icaew, name: 'ICAEW' },
-      { src: xero_logo, name: 'Xero' },
-      { src: FREEAGENT, name: 'FreeAgent' },
+    rounded-[36px]
 
-      // duplicate for infinite loop
-      { src: intuitLogo, name: 'QuickBooks' },
-      { src: ATT, name: 'ATT' },
-      { src: Icaew, name: 'ICAEW' },
-      { src: xero_logo, name: 'Xero' },
-      { src: FREEAGENT, name: 'FreeAgent' },
-    ].map(({ src, name }, i) => (
+    bg-[#0D6E4F]
+  "
+>
 
-      <div
-        key={i}
+  <div
+    className="
+      rounded-[32px]
 
+      border-2 border-[#0D6E4F]
+
+      overflow-hidden
+
+      bg-white
+
+      flex flex-col lg:flex-row
+      items-center
+
+      min-h-[260px]
+    "
+  >
+
+    {/* LEFT */}
+
+    <div className="flex-1 px-8 lg:px-14 py-10">
+
+      <div className="w-10 h-[3px] bg-[#0D6E4F] rounded-full mb-4" />
+
+      <p
         className="
-          flex items-center justify-center
+          uppercase
 
-          min-w-[150px]
-          h-[90px]
+          tracking-[3px]
 
-          bg-white
+          text-[#0D6E4F]
 
-          border border-[#E5E7EB]
+          text-[11px]
 
-          rounded-2xl
+          font-semibold
 
-          px-6
-
-          shadow-sm
+          mb-3
         "
       >
+        Cloud Accounting · Technology
+      </p>
 
-        <img
-          src={src}
-          alt={name}
+      <h2
+        className="
+          text-3xl lg:text-4xl
 
+          font-bold
+
+          text-[#0D2040]
+
+          mb-4
+
+          leading-tight
+        "
+        style={{ fontFamily: "neogrotesk" }}
+      >
+        Certified Xero Advisors
+      </h2>
+
+      <p
+        className="
+          text-[#0D2040]/70
+
+          text-[15px]
+
+          leading-7
+
+          max-w-2xl
+        "
+      >
+        LPS Livingstone includes Certified Xero Advisors,
+        supporting businesses with efficient cloud accounting,
+        financial reporting and modern bookkeeping solutions.
+      </p>
+
+      <div
+        className="
+          inline-flex items-center gap-2
+
+          mt-6
+
+          px-4 py-2.5
+
+          rounded-xl
+
+          bg-[#0D6E4F]/5
+
+          border border-[#0D6E4F]/20
+        "
+      >
+        <div className="w-2 h-2 rounded-full bg-[#0D6E4F]" />
+
+        <span
           className="
-            max-h-[34px]
-            w-auto
-            object-contain
+            text-xs
+
+            font-semibold
+
+            text-[#0D6E4F]
           "
-        />
+        >
+          Xero Certified Advisor
+        </span>
 
       </div>
 
-    ))}
+    </div>
+
+ 
+
+{/* RIGHT */}
+
+<div
+  className="
+    w-full lg:w-[420px]
+
+    h-[260px]
+
+    bg-gradient-to-br
+    from-[#f8fffe]
+    to-white
+
+   
+
+    flex items-center justify-center
+
+    relative
+  "
+>
+
+  <div className="text-center">
+
+    <h2
+      className="
+        text-[72px]
+
+        leading-none
+
+        font-light
+
+        tracking-tight
+
+        text-[#13B5EA]
+
+        lowercase
+      "
+      style={{
+        fontFamily: "'Segoe UI', sans-serif"
+      }}
+    >
+      xero
+    </h2>
+
+    <div
+      className="
+        w-16 h-[2px]
+
+        bg-[#13B5EA]/30
+
+        mx-auto
+
+        my-4
+      "
+    />
+
+    <p
+      className="
+        text-[#0D2040]
+
+        font-bold
+
+        uppercase
+
+        tracking-[0.25em]
+
+        text-xs
+      "
+    >
+      Platinum Partner
+    </p>
+
+    <p
+      className="
+        mt-3
+
+        text-[#0D2040]/60
+
+        text-[11px]
+
+        uppercase
+
+        tracking-[0.2em]
+      "
+    >
+      Cloud Accounting Experts
+    </p>
 
   </div>
 
 </div>
-
-{/* DESKTOP — grid */}
-<div className="hidden md:grid grid-cols-5 border border-[#E5E7EB] rounded-2xl overflow-hidden divide-x divide-[#E5E7EB]">
-
-  {[
-    { src: intuitLogo, name: 'QuickBooks', badge: 'Platinum', href: 'https://quickbooks.intuit.com/uk/' },
-    { src: ATT,        name: 'ATT',        badge: 'Member',   href: 'https://www.att.org.uk/' },
-    { src: Icaew,      name: 'ICAEW',      badge: 'Chartered',href: 'https://www.icaew.com/' },
-    { src: xero_logo,  name: 'Xero',       badge: 'Platinum', href: 'https://www.xero.com/uk/' },
-    { src: FREEAGENT,  name: 'FreeAgent',  badge: 'Partner',  href: 'https://www.freeagent.com/' },
-  ].map(({ src, name, badge, href }) => (
-
-    <a
-      key={name}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-
-      className="
-        group
-
-        flex flex-col items-center justify-center
-
-        gap-3
-
-        py-8 px-4
-
-        bg-white
-
-        hover:bg-[#f8fffe]
-
-        transition-colors duration-200
-      "
-    >
-
-      <img
-        src={src}
-        alt={name}
-
-        className="
-          h-8
-          w-auto
-          object-contain
-        "
-      />
-
-      <span
-        className="
-          text-[11px]
-          font-medium
-
-          text-[#0D2040]/70
-
-          tracking-wide
-        "
-      >
-        {name}
-      </span>
-
-      <span
-        className="
-          text-[10px]
-          font-semibold
-
-          text-[#0D6E4F]
-
-          bg-[#0D6E4F]/6
-
-          border border-[#0D6E4F]/20
-
-          px-2 py-0.5
-
-          rounded-full
-        "
-      >
-        {badge}
-      </span>
-
-    </a>
-
-  ))}
+  </div>
 
 </div>
+      <div className="md:pt-8">
+        <h3 className="text-base font-bold text-[#0D2040] mb-3">
+          Working With the Systems Our Clients Use
+        </h3>
+        <p className="text-sm text-[#0D2040]/55 leading-7">
+          Our team has experience across a broad range of accounting, reporting and
+          property management platforms used by businesses and property professionals
+          throughout the UK.
+        </p>
+      </div>
+    
+
+
+    <div className="h-px bg-[#E5E7EB] mb-6" />
+    <p className="text-[10px] font-semibold tracking-[2px] uppercase text-[#0D2040]/30 mb-5">
+      Platforms &amp; Software
+    </p>
+
+    {/* DESKTOP logo grid — hidden on mobile */}
+    <div className="hidden md:flex flex-col gap-3">
+      {[
+        [
+          { name: 'Sage',       href: 'https://www.sage.com/en-gb/',       src: sageLogo      },
+          { name: 'QuickBooks', href: 'https://quickbooks.intuit.com/uk/', src: intuitLogo    },
+          // { name: 'Tasbook',    href: 'https://www.tasbooks.com',          src: tasbookLogo   },
+          { name: 'PropMan',    href: 'https://www.propman.co.uk',         src: propmanLogo   },
+          { name: 'Blockman',   href: 'https://www.blockman.co.uk',        src: blockmanLogo  },
+        ],
+        [
+          // { name: 'Tramps',     href: 'https://www.tramps.co.uk',          src: trampsLogo    },
+          { name: 'Qube',       href: 'https://www.qube.com',              src: qubeLogo      },
+          // { name: 'Dwellant',   href: 'https://www.dwellant.com',          src: dwellantLogo  },
+          { name: 'Docuware',   href: 'https://www.docuware.com',          src: docuwareLogo  },
+
+          { name: 'FreeAgent',  href: 'https://www.freeagent.com/',        src: FREEAGENT     },
+        ],
+      ].map((row, ri) => (
+        <div key={ri} className="grid grid-cols-5 gap-3">
+          {row.map(({ name, href, src }) => (
+            <a key={name} href={href} target="_blank" rel="noopener noreferrer"
+              className="group flex flex-col items-center justify-center gap-2.5 py-6 px-3 bg-[#FAFAFA] border border-[#E5E7EB] rounded-xl hover:bg-[#f0f9f5] hover:border-[#0D6E4F] hover:-translate-y-1 hover:shadow-md transition-all duration-200">
+              <div className="h-8 flex items-center justify-center">
+                <img src={src} alt={name} className="max-h-8 max-w-[90px] w-auto object-contain" />
+              </div>
+              <span className="text-[11px] font-semibold text-[#0D2040]/45 group-hover:text-[#0D6E4F] transition-colors">
+                {name}
+              </span>
+            </a>
+          ))}
+        </div>
+      ))}
+    </div>
+
+    {/* MOBILE logo grid — hidden on desktop */}
+
+    <div className="grid grid-cols-3 gap-3 md:hidden">
+      {[
+        { name: 'Sage',       href: 'https://www.sage.com/en-gb/',       src: sageLogo      },
+        { name: 'QuickBooks', href: 'https://quickbooks.intuit.com/uk/', src: intuitLogo    },
+        // { name: 'Tasbook',    href: 'https://www.tasbooks.com',          src: tasbookLogo   },
+        { name: 'PropMan',    href: 'https://www.propman.co.uk',         src: propmanLogo   },
+        { name: 'Blockman',   href: 'https://www.blockman.co.uk',        src: blockmanLogo  },
+        // { name: 'Tramps',     href: 'https://www.tramps.co.uk',          src: trampsLogo    },
+        { name: 'Qube',       href: 'https://www.qube.com',              src: qubeLogo      },
+        // { name: 'Dwellant',   href: 'https://www.dwellant.com',          src: dwellantLogo  },
+        { name: 'Docuware',   href: 'https://www.docuware.com',          src: docuwareLogo  },
+        { name: 'FreeAgent',  href: 'https://www.freeagent.com/',        src: FREEAGENT     },
+      ].map(({ name, href, src }) => (
+        <a key={name} href={href} target="_blank" rel="noopener noreferrer"
+          className="group flex flex-col items-center justify-center gap-2 py-5 px-2 bg-[#FAFAFA] border border-[#E5E7EB] rounded-xl hover:bg-[#f0f9f5] hover:border-[#0D6E4F] transition-all duration-200">
+          <div className="h-7 flex items-center justify-center">
+            <img src={src} alt={name} className="max-h-7 max-w-[70px] w-auto object-contain" />
+          </div>
+          <span className="text-[10px] font-semibold text-[#0D2040]/45 group-hover:text-[#0D6E4F] transition-colors text-center leading-tight">
+            {name}
+
+          </span>
+        </a>
+      ))}
+    </div>
+
+    {/* Disclaimer */}
+    <p className="text-[11px] text-[#0D2040]/30 leading-6 mt-5 pt-4 border-t border-[#E5E7EB]">
+      <strong className="font-semibold text-[#0D2040]/40">
+        Software logos shown for illustrative purposes only.
+      </strong>{' '}
+      LPS Livingstone is not affiliated with or endorsed by these software providers unless specifically stated.
+    </p>
+
   </div>
 </section>
     </div>

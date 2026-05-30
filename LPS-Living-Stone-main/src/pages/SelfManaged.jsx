@@ -237,7 +237,7 @@ const SelfManaged = () => {
       </section>
 
       {/* PAGE NAVIGATION */}
-      <section className="py-10 px-6 border-b border-[#E5E7EB] bg-[#FAFAFA]">
+      <section className="py-10 px-6 border-b border-[#E5E7EB] bg-white">
 
         <div className="max-w-5xl mx-auto">
 

@@ -95,7 +95,7 @@ const Services = () => {
             <div className="mt-12 flex flex-wrap gap-5">
 
               <a
-                href="#services-grid"
+                href="/Servicecharge"
                 className="rounded-2xl bg-[#0D6E4F] hover:bg-[#0b5c42] px-8 py-4 text-white font-bold uppercase tracking-[0.15em] transition"
               >
                 Explore Services <ArrowRight className="inline ml-2" size={18} />

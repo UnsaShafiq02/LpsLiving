@@ -73,7 +73,7 @@ const InfoCard = ({ text }) => (
 
       p-4
 
-      bg-[#FAFAFA]
+      bg-white
 
       border border-[#E5E7EB]
 
@@ -266,7 +266,7 @@ const ManagingAgents = () => {
 
       </section>
       {/* PAGE NAVIGATION */}
-<section className="py-10 px-6 border-b border-[#E5E7EB] bg-[#FAFAFA]">
+<section className="py-10 px-6 border-b border-[#E5E7EB] bg-white">
 
   <div className="max-w-5xl mx-auto">
 
@@ -572,7 +572,9 @@ const ManagingAgents = () => {
               </p>
 
               <button
+              onClick={() => navigate('/contact')}
                 className="
+                
                   mt-8
 
                   inline-flex items-center gap-2

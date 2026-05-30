@@ -427,6 +427,7 @@ const ExpandSubTitle = ({ children }) => (
 
 const ServiceChargeAccounting = () => {
   const navigate = useNavigate();
+  
   return (
     <div className="bg-white overflow-hidden text-[#0D2040] font-['Neogrotesk']">
 
@@ -557,7 +558,7 @@ const ServiceChargeAccounting = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {whyItems.map((item, i) => (
               <div key={i}
-                className="flex items-start gap-3 p-4 bg-[#FAFAFA] border border-[#E5E7EB] rounded-xl hover:bg-[#0D6E4F]/5 hover:border-[#0D6E4F] transition-all">
+                className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:bg-[#0D6E4F]/5 hover:border-[#0D6E4F] transition-all">
                 <CheckCircle2 size={17} className="text-[#0D6E4F] mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-[#374151] leading-6">{item}</span>
               </div>
@@ -790,7 +791,7 @@ const ServiceChargeAccounting = () => {
 
       {/* ── WHO DO WE SUPPORT — CTA CARDS ────────────────────────────────── */}
     {/* ── WHO DO WE SUPPORT ───────────────────────────────────────────── */}
-<section className="py-16 md:py-20 px-6 bg-gradient-to-b from-white to-[#f8fffe]">
+<section className="py-16 md:py-20 px-6 bg-white">
 
   <div className="max-w-6xl mx-auto">
 
@@ -1057,7 +1058,7 @@ const ServiceChargeAccounting = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {services.map(({ icon, title, items }, i) => (
               <div key={i}
-                className="bg-[#FAFAFA] border border-[#E5E7EB] rounded-2xl p-5 hover:border-[#0D6E4F] hover:bg-[#0D6E4F]/5 transition-all">
+                className="bg-white border border-[#E5E7EB] rounded-2xl p-5 hover:border-[#0D6E4F] hover:bg-[#0D6E4F]/5 transition-all">
                 <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#E5E7EB]">
                   <span className="text-lg">{icon}</span>
                  <h4
@@ -1093,14 +1094,54 @@ const ServiceChargeAccounting = () => {
           <p className="text-white/80 text-base leading-7 mb-8">
             Speak to our specialists for accurate, compliant and efficient reporting across your entire portfolio.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-8 py-3 rounded-xl bg-white text-[#0D2040] font-bold text-sm hover:bg-gray-100 transition">
-              Book Consultation
-            </button>
-            <button className="px-8 py-3 rounded-xl border-2 border-white/50 text-white font-bold text-sm hover:bg-white/10 transition">
-              Enquire Now
-            </button>
-          </div>
+         <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+  <button
+   onClick={() => navigate('/contact')}
+    className="
+      px-8 py-3
+
+      rounded-xl
+
+      bg-white
+
+      text-[#0D2040]
+
+      font-bold
+      text-sm
+
+      hover:bg-gray-100
+
+      transition
+    "
+  >
+    Book Consultation
+  </button>
+
+  <button
+    onClick={() => navigate('/contact')}
+
+    className="
+      px-8 py-3
+
+      rounded-xl
+
+      border-2 border-white/50
+
+      text-white
+
+      font-bold
+      text-sm
+
+      hover:bg-white/10
+
+      transition
+    "
+  >
+    Enquire Now
+  </button>
+
+</div>
         </div>
       </section>
 

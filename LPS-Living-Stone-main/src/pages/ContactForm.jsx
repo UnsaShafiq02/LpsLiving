@@ -24,10 +24,10 @@ const ContactForm = () => {
       <div className="absolute top-[-180px] left-[-160px] w-[520px] h-[520px] bg-white/10 blur-3xl rounded-full" />
       <div className="absolute bottom-[-180px] right-[-160px] w-[520px] h-[520px] bg-white/5 blur-3xl rounded-full" />
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-6xl mx-auto px-10">
 
         {/* HEADER */}
-        <div className="text-center mb-16 text-white">
+        <div className="text-center mb-16 py-10 text-white">
 
           <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-xs uppercase tracking-[0.25em] backdrop-blur-xl">
             <Sparkles size={14} />
