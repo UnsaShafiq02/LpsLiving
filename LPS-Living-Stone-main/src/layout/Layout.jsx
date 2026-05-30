@@ -711,7 +711,7 @@ const Layout = ({ children }) => {
 </div>
 </div>
 </section>
-<section className="mb-24">
+<section className="mb-6 lg:mb-24">
 
   <div
     className="
@@ -1068,7 +1068,7 @@ const Layout = ({ children }) => {
           shadow-sm
         "
       >
-        {/* <img
+        <img
           src={item.src}
           alt={item.name}
           className="
@@ -1078,7 +1078,7 @@ const Layout = ({ children }) => {
 
             object-contain
           "
-        /> */}
+        />
       </div>
 
     ))}
