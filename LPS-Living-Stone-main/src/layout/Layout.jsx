@@ -15,7 +15,7 @@ import blockmanLogo from '../assets/logo/blockman-logo.png';
 import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
 // import dwellantLogo from '../assets/logo/dwellant.png';
 import docuwareLogo from '../assets/logo/docuware.png';
-import client from '../assets/client.avif';
+import clientt from '../assets/clientt.jpg';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -759,7 +759,7 @@ const Layout = ({ children }) => {
 >
 
   <img
-    src={client}
+    src={clientt}
     alt="LPS Livingstone"
 
     className="
