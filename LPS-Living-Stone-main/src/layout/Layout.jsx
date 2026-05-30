@@ -728,11 +728,11 @@ const Layout = ({ children }) => {
       via-white
       to-[#EEF8F2]
 
-      px-8 lg:px-16
+      px-5 lg:px-5
 
-      py-12 lg:py-16
+      py-5 lg:py-5
 
-       lg:min-h-[600px]
+       lg:min-h-[400px]
     "
   >
 
@@ -1088,7 +1088,7 @@ const Layout = ({ children }) => {
 </div>
       <p
         className="
-          mt-8
+          mt-2
 
           text-[11px]
 
