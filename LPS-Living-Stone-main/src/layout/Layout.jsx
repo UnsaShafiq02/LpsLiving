@@ -732,7 +732,7 @@ const Layout = ({ children }) => {
 
       py-12 lg:py-16
 
-      min-h-[680px]
+       lg:min-h-[600px]
     "
   >
 
@@ -1097,8 +1097,7 @@ const Layout = ({ children }) => {
       >
         Software logos shown for illustrative purposes only.
       </p>
-
-    </div>
+       </div>
 
     {/* IMAGE */}
 
