@@ -15,6 +15,7 @@ import blockmanLogo from '../assets/logo/blockman-logo.png';
 import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
 // import dwellantLogo from '../assets/logo/dwellant.png';
 import docuwareLogo from '../assets/logo/docuware.png';
+import client from '../assets/client.avif';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -409,7 +410,7 @@ const Layout = ({ children }) => {
     className="
       rounded-[32px]
 
-      border-2 border-[#0D6E4F]
+      border border-[#0D6E4F]
 
       overflow-hidden
 
@@ -424,8 +425,7 @@ const Layout = ({ children }) => {
 
     {/* LEFT */}
 
-    <div className="flex-1 px-8 lg:px-14 py-10">
-
+    <div className="flex-1 px-6 lg:px-14 py-7 lg:py-10">
       <div className="w-10 h-[3px] bg-[#0D6E4F] rounded-full mb-4" />
 
       <p
@@ -436,7 +436,7 @@ const Layout = ({ children }) => {
 
           text-[#0D6E4F]
 
-          text-[11px]
+          text-[10px] lg:text-[11px]
 
           font-semibold
 
@@ -448,7 +448,7 @@ const Layout = ({ children }) => {
 
       <h2
         className="
-          text-3xl lg:text-4xl
+         text-[28px] sm:text-[32px] lg:text-4xl
 
           font-bold
 
@@ -456,7 +456,7 @@ const Layout = ({ children }) => {
 
           mb-4
 
-          leading-tight
+          leading-[1.15]
         "
         style={{ fontFamily: "neogrotesk" }}
       >
@@ -467,7 +467,7 @@ const Layout = ({ children }) => {
         className="
           text-[#0D2040]/70
 
-          text-[15px]
+          text-[14px] lg:text-[15px]
 
           leading-7
 
@@ -507,200 +507,638 @@ const Layout = ({ children }) => {
         >
           Xero Certified Advisor
         </span>
-
       </div>
 
-    </div>
+      {/* MOBILE XERO */}
 
- 
-
-{/* RIGHT */}
+      {/* MOBILE CERTIFICATION */}
 
 <div
   className="
-    w-full lg:w-[420px]
+    lg:hidden
 
-    h-[260px]
+    mt-7
 
-    bg-gradient-to-br
-    from-[#f8fffe]
-    to-white
+    bg-[#F8FBFC]
 
-   
+    border border-[#E5E7EB]
 
-    flex items-center justify-center
+    rounded-2xl
 
-    relative
+    p-5
+
+    text-center
   "
 >
 
-  <div className="text-center">
+  <h3
+    className="
+      text-[44px]
 
-    <h2
+      leading-none
+
+      font-light
+
+      tracking-tight
+
+      text-[#13B5EA]
+
+      lowercase
+    "
+    style={{
+      fontFamily: "'Segoe UI', sans-serif"
+    }}
+  >
+    xero
+  </h3>
+
+  <p
+    className="
+      mt-2
+
+      text-[10px]
+
+      font-bold
+
+      uppercase
+
+      tracking-[0.22em]
+
+      text-[#0D2040]
+    "
+  >
+    Platinum Partner
+  </p>
+
+  <div
+    className="
+      w-10 h-px
+
+      bg-[#13B5EA]/30
+
+      mx-auto
+
+      my-3
+    "
+  />
+
+  <div
+    className="
+      inline-flex items-center gap-2
+
+      px-3 py-1.5
+
+      rounded-full
+
+      bg-[#EBF9FF]
+
+      border border-[#CFEFFC]
+    "
+  >
+
+    <div className="w-1.5 h-1.5 rounded-full bg-[#13B5EA]" />
+
+    <span
       className="
-        text-[72px]
+        text-[10px]
 
-        leading-none
+        font-semibold
 
-        font-light
-
-        tracking-tight
-
-        text-[#13B5EA]
-
-        lowercase
+        text-[#0D2040]
       "
-      style={{
-        fontFamily: "'Segoe UI', sans-serif"
-      }}
     >
-      xero
-    </h2>
+      Certified Advisor
+    </span>
+
+  </div>
+
+</div>
+
+    </div>
+
+    {/* DESKTOP RIGHT */}
 
     <div
       className="
-        w-16 h-[2px]
+        hidden lg:flex
 
-        bg-[#13B5EA]/30
+        w-[420px]
 
-        mx-auto
+        h-[260px]
 
-        my-4
-      "
-    />
+        bg-gradient-to-br
+        from-[#f8fffe]
+        to-white
 
-    <p
-      className="
-        text-[#0D2040]
+        items-center justify-center
 
-        font-bold
-
-        uppercase
-
-        tracking-[0.25em]
-
-        text-xs
+        relative
       "
     >
-      Platinum Partner
-    </p>
 
-    <p
-      className="
-        mt-3
+      <div className="text-center">
 
-        text-[#0D2040]/60
+        <h2
+          className="
+            text-[72px]
 
-        text-[11px]
+            leading-none
 
-        uppercase
+            font-light
 
-        tracking-[0.2em]
-      "
-    >
-      Cloud Accounting Experts
-    </p>
+            tracking-tight
 
-  </div>
+            text-[#13B5EA]
 
-</div>
-  </div>
+            lowercase
+          "
+          style={{
+            fontFamily: "'Segoe UI', sans-serif"
+          }}
+        >
+          xero
+        </h2>
 
-</div>
-      <div className="md:pt-8">
-        <h3 className="text-base font-bold text-[#0D2040] mb-3">
-          Working With the Systems Our Clients Use
-        </h3>
-        <p className="text-sm text-[#0D2040]/55 leading-7">
-          Our team has experience across a broad range of accounting, reporting and
-          property management platforms used by businesses and property professionals
-          throughout the UK.
+        <div
+          className="
+            w-16 h-[2px]
+
+            bg-[#13B5EA]/30
+
+            mx-auto
+
+            my-4
+          "
+        />
+
+        <p
+          className="
+            text-[#0D2040]
+
+            font-bold
+
+            uppercase
+
+            tracking-[0.25em]
+
+            text-xs
+          "
+        >
+          Platinum Partner
         </p>
-      </div>
-    
 
+        <p
+          className="
+            mt-3
 
-    <div className="h-px bg-[#E5E7EB] mb-6" />
-    <p className="text-[10px] font-semibold tracking-[2px] uppercase text-[#0D2040]/30 mb-5">
-      Platforms &amp; Software
-    </p>
+            text-[#0D2040]/60
 
-    {/* DESKTOP logo grid — hidden on mobile */}
-    <div className="hidden md:flex flex-col gap-3">
-      {[
-        [
-          { name: 'Sage',       href: 'https://www.sage.com/en-gb/',       src: sageLogo      },
-          { name: 'QuickBooks', href: 'https://quickbooks.intuit.com/uk/', src: intuitLogo    },
-          // { name: 'Tasbook',    href: 'https://www.tasbooks.com',          src: tasbookLogo   },
-          { name: 'PropMan',    href: 'https://www.propman.co.uk',         src: propmanLogo   },
-          { name: 'Blockman',   href: 'https://www.blockman.co.uk',        src: blockmanLogo  },
-        ],
-        [
-          // { name: 'Tramps',     href: 'https://www.tramps.co.uk',          src: trampsLogo    },
-          { name: 'Qube',       href: 'https://www.qube.com',              src: qubeLogo      },
-          // { name: 'Dwellant',   href: 'https://www.dwellant.com',          src: dwellantLogo  },
-          { name: 'Docuware',   href: 'https://www.docuware.com',          src: docuwareLogo  },
+            text-[11px]
 
-          { name: 'FreeAgent',  href: 'https://www.freeagent.com/',        src: FREEAGENT     },
-        ],
-      ].map((row, ri) => (
-        <div key={ri} className="grid grid-cols-5 gap-3">
-          {row.map(({ name, href, src }) => (
-            <a key={name} href={href} target="_blank" rel="noopener noreferrer"
-              className="group flex flex-col items-center justify-center gap-2.5 py-6 px-3 bg-[#FAFAFA] border border-[#E5E7EB] rounded-xl hover:bg-[#f0f9f5] hover:border-[#0D6E4F] hover:-translate-y-1 hover:shadow-md transition-all duration-200">
-              <div className="h-8 flex items-center justify-center">
-                <img src={src} alt={name} className="max-h-8 max-w-[90px] w-auto object-contain" />
-              </div>
-              <span className="text-[11px] font-semibold text-[#0D2040]/45 group-hover:text-[#0D6E4F] transition-colors">
-                {name}
-              </span>
-            </a>
-          ))}
-        </div>
-      ))}
+            uppercase
+
+            tracking-[0.2em]
+          "
+        >
+          Cloud Accounting Experts
+        </p>
+ 
+            </div>
+
     </div>
-
-    {/* MOBILE logo grid — hidden on desktop */}
-
-    <div className="grid grid-cols-3 gap-3 md:hidden">
-      {[
-        { name: 'Sage',       href: 'https://www.sage.com/en-gb/',       src: sageLogo      },
-        { name: 'QuickBooks', href: 'https://quickbooks.intuit.com/uk/', src: intuitLogo    },
-        // { name: 'Tasbook',    href: 'https://www.tasbooks.com',          src: tasbookLogo   },
-        { name: 'PropMan',    href: 'https://www.propman.co.uk',         src: propmanLogo   },
-        { name: 'Blockman',   href: 'https://www.blockman.co.uk',        src: blockmanLogo  },
-        // { name: 'Tramps',     href: 'https://www.tramps.co.uk',          src: trampsLogo    },
-        { name: 'Qube',       href: 'https://www.qube.com',              src: qubeLogo      },
-        // { name: 'Dwellant',   href: 'https://www.dwellant.com',          src: dwellantLogo  },
-        { name: 'Docuware',   href: 'https://www.docuware.com',          src: docuwareLogo  },
-        { name: 'FreeAgent',  href: 'https://www.freeagent.com/',        src: FREEAGENT     },
-      ].map(({ name, href, src }) => (
-        <a key={name} href={href} target="_blank" rel="noopener noreferrer"
-          className="group flex flex-col items-center justify-center gap-2 py-5 px-2 bg-[#FAFAFA] border border-[#E5E7EB] rounded-xl hover:bg-[#f0f9f5] hover:border-[#0D6E4F] transition-all duration-200">
-          <div className="h-7 flex items-center justify-center">
-            <img src={src} alt={name} className="max-h-7 max-w-[70px] w-auto object-contain" />
-          </div>
-          <span className="text-[10px] font-semibold text-[#0D2040]/45 group-hover:text-[#0D6E4F] transition-colors text-center leading-tight">
-            {name}
-
-          </span>
-        </a>
-      ))}
-    </div>
-
-    {/* Disclaimer */}
-    <p className="text-[11px] text-[#0D2040]/30 leading-6 mt-5 pt-4 border-t border-[#E5E7EB]">
-      <strong className="font-semibold text-[#0D2040]/40">
-        Software logos shown for illustrative purposes only.
-      </strong>{' '}
-      LPS Livingstone is not affiliated with or endorsed by these software providers unless specifically stated.
-    </p>
 
   </div>
+</div>
+</div>
 </section>
+<section className="mb-24">
+
+  <div
+    className="
+      relative
+
+      overflow-hidden
+
+      rounded-[42px]
+
+      border border-[#DDE7E2]
+
+      bg-gradient-to-br
+      from-[#F8FBFC]
+      via-white
+      to-[#EEF8F2]
+
+      px-8 lg:px-16
+
+      py-12 lg:py-16
+
+      min-h-[680px]
+    "
+  >
+
+    {/* Decorative Shape */}
+
+   <div
+  className="
+    absolute
+
+    right-[-120px]
+    top-[-80px]
+
+    w-[680px]
+    h-[680px]
+
+    rounded-full
+
+    overflow-hidden
+
+    bg-[#EEF8F2]
+
+    hidden lg:block
+  "
+>
+
+  <img
+    src={client}
+    alt="LPS Livingstone"
+
+    className="
+      w-full
+      h-full
+
+      object-cover
+
+      object-center
+    "
+  />
+
+</div>
+
+    {/* <div
+      className="
+        absolute
+
+        right-[120px]
+        bottom-[-120px]
+
+        w-[420px]
+        h-[420px]
+
+        rounded-full
+
+        bg-[#0D2040]/4
+      "
+    /> */}
+
+    {/* CONTENT */}
+
+    <div
+      className="
+        relative z-20
+
+        lg:w-[58%]
+      "
+    >
+
+      <div className="w-12 h-[4px] rounded-full bg-[#0D6E4F] mb-5" />
+
+      <p
+        className="
+          uppercase
+
+          tracking-[0.22em]
+
+          text-[11px]
+
+          font-semibold
+
+          text-[#0D6E4F]
+
+          mb-4
+        "
+      >
+        Platforms We Work With
+      </p>
+
+      <h2
+        className="
+          text-3xl lg:text-5xl
+
+          font-bold
+
+          text-[#0D2040]
+
+          leading-tight
+
+          mb-5
+        "
+        style={{ fontFamily: "neogrotesk" }}
+      >
+        Working With The Systems
+        <br />
+        Our Clients Use
+      </h2>
+
+      <p
+        className="
+          text-[#0D2040]/65
+
+          text-[15px] lg:text-base
+
+          leading-8
+
+          max-w-[620px]
+
+          mb-10
+        "
+      >
+        Our team has experience across a broad range of accounting,
+        reporting and property management platforms used by businesses
+        and property professionals throughout the UK.
+      </p>
+
+      {/* LOGO WALL */}
+
+      {/* <div
+        className="
+          grid
+
+          grid-cols-2
+          md:grid-cols-3
+
+          gap-4
+
+          max-w-[700px]
+        "
+      >
+
+        {[
+          { name: "Sage", src: sageLogo },
+          { name: "QuickBooks", src: intuitLogo },
+          { name: "PropMan", src: propmanLogo },
+          { name: "Blockman", src: blockmanLogo },
+          { name: "Qube", src: qubeLogo },
+          { name: "Docuware", src: docuwareLogo },
+          { name: "FreeAgent", src: FREEAGENT },
+        ].map((item) => (
+
+          <div
+            key={item.name}
+
+            className="
+              bg-white/95
+
+              backdrop-blur-md
+
+              border border-[#E5E7EB]
+
+              rounded-2xl
+
+              h-[82px]
+
+              flex flex-col
+              items-center
+              justify-center
+
+              shadow-sm
+
+              hover:-translate-y-1
+              hover:border-[#0D6E4F]
+              hover:shadow-xl
+
+              transition-all duration-300
+            "
+          >
+
+            <img
+              src={item.src}
+              alt={item.name}
+
+              className="
+                max-h-8
+
+                max-w-[95px]
+
+                object-contain
+              "
+            />
+
+            <span
+              className="
+                mt-2
+
+                text-[11px]
+
+                font-semibold
+
+                text-[#0D2040]/55
+              "
+            >
+              {item.name}
+            </span>
+
+          </div>
+
+        ))}
+
+      </div> */}
+{/* DESKTOP LOGO WALL */}
+
+<div
+  className="
+    hidden md:grid
+
+    grid-cols-3
+
+    gap-4
+
+    max-w-[700px]
+  "
+>
+  {[
+    { name: "Sage", src: sageLogo },
+    { name: "QuickBooks", src: intuitLogo },
+    { name: "PropMan", src: propmanLogo },
+    { name: "Blockman", src: blockmanLogo },
+    { name: "Qube", src: qubeLogo },
+    { name: "Docuware", src: docuwareLogo },
+    { name: "FreeAgent", src: FREEAGENT },
+  ].map((item) => (
+
+    <div
+      key={item.name}
+      className="
+        bg-white/95
+
+        backdrop-blur-md
+
+        border border-[#E5E7EB]
+
+        rounded-2xl
+
+        h-[82px]
+
+        flex flex-col
+        items-center
+        justify-center
+
+        shadow-sm
+
+        hover:-translate-y-1
+        hover:border-[#0D6E4F]
+        hover:shadow-xl
+
+        transition-all duration-300
+      "
+    >
+      <img
+        src={item.src}
+        alt={item.name}
+        className="
+          max-h-8
+
+          max-w-[95px]
+
+          object-contain
+        "
+      />
+
+      <span
+        className="
+          mt-2
+
+          text-[11px]
+
+          font-semibold
+
+          text-[#0D2040]/55
+        "
+      >
+        {item.name}
+      </span>
+
     </div>
+
+  ))}
+</div>
+
+{/* MOBILE LOGO BELT */}
+
+<div className="md:hidden mt-6 relative overflow-hidden">
+
+  <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10" />
+
+  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent z-10" />
+
+  <div className="flex gap-3 w-max logo-marquee">
+
+    {[
+      { name: "Sage", src: sageLogo },
+      { name: "QuickBooks", src: intuitLogo },
+      { name: "PropMan", src: propmanLogo },
+      { name: "Blockman", src: blockmanLogo },
+      { name: "Qube", src: qubeLogo },
+      { name: "Docuware", src: docuwareLogo },
+      { name: "FreeAgent", src: FREEAGENT },
+
+      { name: "Sage", src: sageLogo },
+      { name: "QuickBooks", src: intuitLogo },
+      { name: "PropMan", src: propmanLogo },
+      { name: "Blockman", src: blockmanLogo },
+      { name: "Qube", src: qubeLogo },
+      { name: "Docuware", src: docuwareLogo },
+      { name: "FreeAgent", src: FREEAGENT },
+    ].map((item, i) => (
+
+      <div
+        key={i}
+        className="
+          min-w-[120px]
+
+          h-[70px]
+
+          bg-white
+
+          border border-[#E5E7EB]
+
+          rounded-2xl
+
+          flex items-center justify-center
+
+          shadow-sm
+        "
+      >
+        <img
+          src={item.src}
+          alt={item.name}
+          className="
+            max-h-8
+
+            max-w-[80px]
+
+            object-contain
+          "
+        />
+      </div>
+
+    ))}
+
+  </div>
+
+</div>
+      <p
+        className="
+          mt-8
+
+          text-[11px]
+
+          text-[#0D2040]
+        "
+      >
+        Software logos shown for illustrative purposes only.
+      </p>
+
+    </div>
+
+    {/* IMAGE */}
+
+    {/* <div
+      className="
+        absolute
+
+        right-[-80px]
+
+        bottom-[-20px]
+
+        hidden lg:block
+
+        z-10
+
+        pointer-events-none
+      "
+    >
+
+      <img
+        src={client}
+        alt="LPS Livingstone"
+
+        className="
+          h-[650px]
+
+          object-contain
+
+          opacity-95
+        "
+      />
+
+    </div> */}
+
+  </div>
+
+</section>
+
+</div>
   );
 };
 
 export default Layout;
-
