@@ -15,7 +15,7 @@ import blockmanLogo from '../assets/logo/blockman-logo.png';
 import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
 // import dwellantLogo from '../assets/logo/dwellant.png';
 import docuwareLogo from '../assets/logo/docuware.png';
-import clientt from '../assets/clientt.jpg';
+import clientt from '../assets/Clientt.jpg';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
