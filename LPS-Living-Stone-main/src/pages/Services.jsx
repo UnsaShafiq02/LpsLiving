@@ -63,7 +63,7 @@ const Services = () => {
 
         <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-[#F9FAFB]" />
 
-        <div className="absolute -top-40 left-[-120px] w-[520px] h-[520px] bg-[#0D6E4F]/5 blur-3xl rounded-full" />
+        <div className="absolute -top-40 left-[-120px] w-[520px] h-[520px] bg-[#0E6E4F]/5 blur-3xl rounded-full" />
         <div className="absolute bottom-[-160px] right-[-120px] w-[520px] h-[520px] bg-[#0D2040]/5 blur-3xl rounded-full" />
 
         <div className="relative max-w-[1450px] mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
@@ -75,14 +75,14 @@ const Services = () => {
             transition={{ duration: 0.9 }}
           >
 
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#E5E7EB] bg-white px-5 py-2 text-[#0D6E4F] text-xs uppercase tracking-[0.25em] shadow-sm">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#D9DDDE] bg-white px-5 py-2 text-[#0E6E4F] text-xs uppercase tracking-[0.25em] shadow-sm">
               <Sparkles size={14} />
               Premium Financial Services
             </div>
 
             <h1 className="mt-8 text-4xl sm:text-6xl md:text-7xl font-black leading-[1.05] text-[#0D2040]">
               Smart Business
-              <span className="block text-[#0D6E4F]">
+              <span className="block text-[#0E6E4F]">
                 Financial Solutions
               </span>
             </h1>
@@ -96,14 +96,14 @@ const Services = () => {
 
               <a
                 href="/Servicecharge"
-                className="rounded-2xl bg-[#0D6E4F] hover:bg-[#0b5c42] px-8 py-4 text-white font-bold uppercase tracking-[0.15em] transition"
+                className="rounded-2xl bg-[#0E6E4F] hover:bg-[#0b5c42] px-8 py-4 text-white font-bold uppercase tracking-[0.15em] transition"
               >
                 Explore Services <ArrowRight className="inline ml-2" size={18} />
               </a>
 
               <Link
                 to="/contact"
-                className="rounded-2xl border border-[#E5E7EB] bg-white px-8 py-4 text-[#0D2040] hover:bg-[#F9FAFB] transition"
+                className="rounded-2xl border border-[#D9DDDE] bg-white px-8 py-4 text-[#0D2040] hover:bg-[#F9FAFB] transition"
               >
                 Contact Our Team
               </Link>
@@ -117,7 +117,7 @@ const Services = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
-            <div className="rounded-[40px] overflow-hidden border border-[#E5E7EB] bg-white p-4 shadow-sm">
+            <div className="rounded-[40px] overflow-hidden border border-[#D9DDDE] bg-white p-4 shadow-sm">
               <img
                 src={serviceImage}
                 alt="Services overview"
@@ -150,9 +150,9 @@ const Services = () => {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-[#E5E7EB]"
+                  className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-[#D9DDDE]"
                 >
-                  <CheckCircle2 className="text-[#0D6E4F]" />
+                  <CheckCircle2 className="text-[#0E6E4F]" />
                   <span className="text-[#0D2040] font-medium">{item}</span>
                 </div>
               ))}
@@ -161,7 +161,7 @@ const Services = () => {
 
           </div>
 
-          <div className="relative bg-gradient-to-br from-[#0D2040] to-[#0D6E4F] p-10 rounded-[40px] text-white overflow-hidden">
+          <div className="relative bg-gradient-to-br from-[#0D2040] to-[#0E6E4F] p-10 rounded-[40px] text-white overflow-hidden">
 
             <ShieldCheck size={90} className="opacity-20 absolute top-6 right-6" />
 
@@ -202,10 +202,10 @@ const Services = () => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-[30px] border border-[#E5E7EB] shadow-sm hover:shadow-md transition"
+                className="bg-white rounded-[30px] border border-[#D9DDDE] shadow-sm hover:shadow-md transition"
               >
 
-                <div className="h-32 bg-gradient-to-r from-[#0D2040] to-[#0D6E4F] flex items-end p-6">
+                <div className="h-32 bg-gradient-to-r from-[#0D2040] to-[#0E6E4F] flex items-end p-6">
                   <Icon className="text-white" size={38} />
                 </div>
 
@@ -226,7 +226,7 @@ const Services = () => {
                         <span className="text-[#0D2040]">
                           {item.name}
                         </span>
-                        <ChevronRight size={16} className="text-[#0D6E4F]" />
+                        <ChevronRight size={16} className="text-[#0E6E4F]" />
                       </Link>
                     ))}
 
@@ -234,7 +234,7 @@ const Services = () => {
 
                   <Link
                     to={column.route}
-                    className="mt-6 inline-flex items-center gap-2 font-bold text-[#0D6E4F]"
+                    className="mt-6 inline-flex items-center gap-2 font-bold text-[#0E6E4F]"
                   >
                     View Details <ArrowRight size={16} />
                   </Link>
@@ -260,7 +260,7 @@ const Services = () => {
 
         <Link
           to="/contact"
-          className="mt-10 inline-flex items-center gap-2 bg-[#0D6E4F] px-8 py-4 rounded-xl font-bold text-white hover:bg-[#0b5c42]"
+          className="mt-10 inline-flex items-center gap-2 bg-[#0E6E4F] px-8 py-4 rounded-xl font-bold text-white hover:bg-[#0b5c42]"
         >
           Book Free Consultation <ArrowRight />
         </Link>

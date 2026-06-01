@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -25,21 +24,23 @@ const row1Slides = [
     title: "Managing Agent Accounting",
     text: "Full transparency and compliance for residential & mixed-use developments.",
     link: "/servicecharge",
-    bg: "from-[#0D2040] to-[#0a1830]",
+    bg: "from-[#0E6E4F] to-[#0A5A3E]",
   },
   {
     eyebrow: "Service Charge · Compliance",
     title: "Year-End Reporting",
     text: "Accurate, ICAEW-compliant year-end accounts prepared on time, every time.",
     link: "/servicecharge",
-    bg: "from-[#162d52] to-[#0D2040]",
+    // FIX 1: #084C35 → replaced with approved palette colour
+    bg: "from-[#0A5A3E] to-[#0E6E4F]",
   },
   {
     eyebrow: "Service Charge · Property",
     title: "Property Portfolio Support",
     text: "Scalable accounting for growing property management portfolios across the UK.",
     link: "/servicecharge",
-    bg: "from-[#071A2B] to-[#0a1428]",
+    // FIX 1: #084C35 → replaced with approved palette colour
+    bg: "from-[#0E6E4F] to-[#0A5A3E]",
   },
 ];
 
@@ -49,7 +50,7 @@ const row2Slides = [
     title: "BBC Business",
     text: "Latest UK economy, inflation, markets and financial updates.",
     link: "https://www.bbc.com/news/business",
-    bg: "from-[#224C26] to-[#1a3d1e]",
+    bg: "from-[#0E6E4F] to-[#0A5A3E]",
     isExternal: true,
     liveBadge: true,
   },
@@ -61,7 +62,8 @@ const row3Slides = [
     title: "HMRC Tax & Compliance",
     text: "Recent guidance, compliance changes and UK regulation updates for individuals.",
     link: "https://www.gov.uk/government/organisations/hm-revenue-customs",
-    bg: "from-[#224C26] to-[#0D2040]",
+    // FIX 2: #224C26 / #0D2040 → approved palette
+    bg: "from-[#0E6E4F] to-[#0A5A3E]",
     isExternal: true,
   },
   {
@@ -69,7 +71,8 @@ const row3Slides = [
     title: "Capital Gains & Rental",
     text: "Expert guidance on capital gains tax, rental income, and property disposals.",
     link: "/services/personal-tax",
-    bg: "from-[#0D2040] to-[#071A2B]",
+    // FIX 2: #0D2040 / #071A2B → approved palette
+    bg: "from-[#0A5A3E] to-[#0E6E4F]",
   },
 ];
 
@@ -206,7 +209,7 @@ const Slider = ({ slides, pillLabel }) => {
                   }}
                   className={`h-[5px] rounded-full transition-all duration-300 ${
                     i === current
-                      ? "w-4 bg-[#0D6E4F]"
+                      ? "w-4 bg-[#C49A4A]"
                       : "w-[5px] bg-white/25"
                   }`}
                 />
@@ -224,7 +227,7 @@ const Slider = ({ slides, pillLabel }) => {
           initial={{ width: "0%" }}
           animate={{ width: "100%" }}
           transition={{ duration: 5, ease: "linear" }}
-          className="h-full bg-[#0D6E4F]"
+          className="h-full bg-[#C49A4A]"
         />
       </div>
     </div>
@@ -238,23 +241,24 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
     to={link}
     className="
       group relative overflow-hidden
-      rounded-2xl bg-[#ECEEE4]
+      rounded-2xl bg-[#F8F8F5]
       flex flex-col h-full
       transition-all duration-300
       hover:-translate-y-1
-      hover:shadow-[0_20px_50px_-15px_rgba(13,110,79,0.15)]
+      hover:shadow-[0_20px_50px_-15px_rgba(14,110,79,0.15)]
     "
   >
+    {/* FIX 6: rgba(13,110,79) → rgba(14,110,79) to match #0E6E4F */}
 
     {/* Body */}
     <div className="px-5 py-5 flex flex-col h-full">
 
-      <h3 className="text-lg xl:text-xl font-semibold text-[#0D2040] leading-tight font-serif">
+      <h3 className="text-lg xl:text-xl font-semibold text-[#2D3436] leading-tight font-serif">
         {title}
       </h3>
 
       {subtitle && (
-        <p className="mt-2 text-[13px] text-[#0D2040]/50 leading-relaxed">
+        <p className="mt-2 text-[13px] text-[#5F6B6D] leading-relaxed">
           {subtitle}
         </p>
       )}
@@ -269,26 +273,26 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
               px-3 py-[7px]
               rounded-lg
               bg-white/60
-              text-[12px] text-[#0D2040]
+              text-[12px] text-[#2D3436]
               transition-all duration-200
               group-hover:bg-white/85 group-hover:pl-4
             "
           >
             <span>{tag}</span>
 
-            <span className="text-[#224C26] text-sm">→</span>
+            <span className="text-[#C49A4A] text-sm">→</span>
           </div>
         ))}
       </div>
 
       {/* Footer */}
-      <div className="mt-auto pt-4 border-t border-[#0D2040]/10 flex items-center justify-between">
+      <div className="mt-auto pt-4 border-t border-[#D9DDDE] flex items-center justify-between">
 
-        <span className="text-[10px] font-medium text-[#0D6E4F] tracking-wide uppercase">
+        <span className="text-[10px] font-medium text-[#0E6E4F] tracking-wide uppercase">
           Explore Category
         </span>
 
-        <div className="w-8 h-8 rounded-full bg-[#0D6E4F] text-white flex items-center justify-center text-sm transition-transform duration-300 group-hover:rotate-45">
+        <div className="w-8 h-8 rounded-full bg-[#C49A4A] text-white flex items-center justify-center text-sm transition-transform duration-300 group-hover:rotate-45">
           →
         </div>
 
@@ -387,7 +391,7 @@ const Layout = ({ children }) => {
       </div>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
 {/* ───────────────── SOFTWARE / ACCREDITATIONS ───────────────── */}
-<section className="w-full px-6 lg:px-10 py-14 bg-white border-t border-[#E5E7EB]">
+<section className="w-full px-6 lg:px-10 py-14 bg-white border-t border-[#D9DDDE]">
   <div className="max-w-5xl mx-auto">
 
     {/* Top two-column */}
@@ -401,8 +405,8 @@ const Layout = ({ children }) => {
     p-[2px]
 
     rounded-[36px]
-
-    bg-[#0D6E4F]
+   bg-[#C49A4A]
+    
   "
 >
 
@@ -410,7 +414,7 @@ const Layout = ({ children }) => {
     className="
       rounded-[32px]
 
-      border border-[#0D6E4F]
+      border border-[#0E6E4F]
 
       overflow-hidden
 
@@ -426,7 +430,7 @@ const Layout = ({ children }) => {
     {/* LEFT */}
 
     <div className="flex-1 px-6 lg:px-14 py-7 lg:py-10">
-      <div className="w-10 h-[3px] bg-[#0D6E4F] rounded-full mb-4" />
+      <div className="w-10 h-[3px] bg-[#C49A4A] rounded-full mb-4" />
 
       <p
         className="
@@ -434,7 +438,7 @@ const Layout = ({ children }) => {
 
           tracking-[3px]
 
-          text-[#0D6E4F]
+          text-[#0E6E4F]
 
           text-[10px] lg:text-[11px]
 
@@ -452,7 +456,7 @@ const Layout = ({ children }) => {
 
           font-bold
 
-          text-[#0D2040]
+          text-[#2D3436]
 
           mb-4
 
@@ -465,7 +469,7 @@ const Layout = ({ children }) => {
 
       <p
         className="
-          text-[#0D2040]/70
+          text-[#5F6B6D]
 
           text-[14px] lg:text-[15px]
 
@@ -489,12 +493,13 @@ const Layout = ({ children }) => {
 
           rounded-xl
 
-          bg-[#0D6E4F]/5
+          bg-[#F8F8F5]
 
-          border border-[#0D6E4F]/20
+          border border-[#D9DDDE]
         "
       >
-        <div className="w-2 h-2 rounded-full bg-[#0D6E4F]" />
+        {/* FIX 3: border-[#0E6E4F]/20 → border-[#D9DDDE] */}
+        <div className="w-2 h-2 rounded-full bg-[#C49A4A]" />
 
         <span
           className="
@@ -502,7 +507,7 @@ const Layout = ({ children }) => {
 
             font-semibold
 
-            text-[#0D6E4F]
+            text-[#0E6E4F]
           "
         >
           Xero Certified Advisor
@@ -521,7 +526,7 @@ const Layout = ({ children }) => {
 
     bg-[#F8FBFC]
 
-    border border-[#E5E7EB]
+    border border-[#D9DDDE]
 
     rounded-2xl
 
@@ -564,7 +569,7 @@ const Layout = ({ children }) => {
 
       tracking-[0.22em]
 
-      text-[#0D2040]
+      text-[#2D3436]
     "
   >
     Platinum Partner
@@ -604,7 +609,7 @@ const Layout = ({ children }) => {
 
         font-semibold
 
-        text-[#0D2040]
+        text-[#2D3436]
       "
     >
       Certified Advisor
@@ -627,7 +632,7 @@ const Layout = ({ children }) => {
         h-[260px]
 
         bg-gradient-to-br
-        from-[#f8fffe]
+        from-[#F8F8F5]
         to-white
 
         items-center justify-center
@@ -635,6 +640,7 @@ const Layout = ({ children }) => {
         relative
       "
     >
+      {/* FIX 4: from-[#f8fffe] → from-[#F8F8F5] */}
 
       <div className="text-center">
 
@@ -673,7 +679,7 @@ const Layout = ({ children }) => {
 
         <p
           className="
-            text-[#0D2040]
+            text-[#2D3436]
 
             font-bold
 
@@ -711,7 +717,7 @@ const Layout = ({ children }) => {
 </div>
 </div>
 </section>
-<section className="mb-6 lg:mb-24">
+<section className="mb-8 lg:mb-24">
 
   <div
     className="
@@ -721,20 +727,23 @@ const Layout = ({ children }) => {
 
       rounded-[42px]
 
-      border border-[#DDE7E2]
+      border border-[#D9DDDE]
 
       bg-gradient-to-br
-      from-[#F8FBFC]
-      via-white
-      to-[#EEF8F2]
+      from-[#F8F8F5]
+via-white
+to-[#F8F8F5]
 
-      px-5 lg:px-5
 
-      py-5 lg:py-5
+
+      px-6 lg:px-5
+
+      py-6 lg:py-5
 
        lg:min-h-[400px]
     "
   >
+    {/* FIX 5: border-[#DDE7E2] → border-[#D9DDDE] */}
 
     {/* Decorative Shape */}
 
@@ -752,7 +761,7 @@ const Layout = ({ children }) => {
 
     overflow-hidden
 
-    bg-[#EEF8F2]
+    bg-[#F8F8F5]
 
     hidden lg:block
   "
@@ -774,22 +783,6 @@ const Layout = ({ children }) => {
 
 </div>
 
-    {/* <div
-      className="
-        absolute
-
-        right-[120px]
-        bottom-[-120px]
-
-        w-[420px]
-        h-[420px]
-
-        rounded-full
-
-        bg-[#0D2040]/4
-      "
-    /> */}
-
     {/* CONTENT */}
 
     <div
@@ -800,7 +793,7 @@ const Layout = ({ children }) => {
       "
     >
 
-      <div className="w-12 h-[4px] rounded-full bg-[#0D6E4F] mb-5" />
+      <div className="w-12 h-[4px] rounded-full bg-[#C49A4A] mb-5" />
 
       <p
         className="
@@ -812,7 +805,7 @@ const Layout = ({ children }) => {
 
           font-semibold
 
-          text-[#0D6E4F]
+          text-[#0E6E4F]
 
           mb-4
         "
@@ -826,7 +819,7 @@ const Layout = ({ children }) => {
 
           font-bold
 
-          text-[#0D2040]
+          text-[#2D3436]
 
           leading-tight
 
@@ -841,7 +834,7 @@ const Layout = ({ children }) => {
 
       <p
         className="
-          text-[#0D2040]/65
+          text-[#5F6B6D]
 
           text-[15px] lg:text-base
 
@@ -857,91 +850,6 @@ const Layout = ({ children }) => {
         and property professionals throughout the UK.
       </p>
 
-      {/* LOGO WALL */}
-
-      {/* <div
-        className="
-          grid
-
-          grid-cols-2
-          md:grid-cols-3
-
-          gap-4
-
-          max-w-[700px]
-        "
-      >
-
-        {[
-          { name: "Sage", src: sageLogo },
-          { name: "QuickBooks", src: intuitLogo },
-          { name: "PropMan", src: propmanLogo },
-          { name: "Blockman", src: blockmanLogo },
-          { name: "Qube", src: qubeLogo },
-          { name: "Docuware", src: docuwareLogo },
-          { name: "FreeAgent", src: FREEAGENT },
-        ].map((item) => (
-
-          <div
-            key={item.name}
-
-            className="
-              bg-white/95
-
-              backdrop-blur-md
-
-              border border-[#E5E7EB]
-
-              rounded-2xl
-
-              h-[82px]
-
-              flex flex-col
-              items-center
-              justify-center
-
-              shadow-sm
-
-              hover:-translate-y-1
-              hover:border-[#0D6E4F]
-              hover:shadow-xl
-
-              transition-all duration-300
-            "
-          >
-
-            <img
-              src={item.src}
-              alt={item.name}
-
-              className="
-                max-h-8
-
-                max-w-[95px]
-
-                object-contain
-              "
-            />
-
-            <span
-              className="
-                mt-2
-
-                text-[11px]
-
-                font-semibold
-
-                text-[#0D2040]/55
-              "
-            >
-              {item.name}
-            </span>
-
-          </div>
-
-        ))}
-
-      </div> */}
 {/* DESKTOP LOGO WALL */}
 
 <div
@@ -972,7 +880,7 @@ const Layout = ({ children }) => {
 
         backdrop-blur-md
 
-        border border-[#E5E7EB]
+        border border-[#D9DDDE]
 
         rounded-2xl
 
@@ -985,7 +893,7 @@ const Layout = ({ children }) => {
         shadow-sm
 
         hover:-translate-y-1
-        hover:border-[#0D6E4F]
+        hover:border-[#C49A4A]
         hover:shadow-xl
 
         transition-all duration-300
@@ -1011,7 +919,7 @@ const Layout = ({ children }) => {
 
           font-semibold
 
-          text-[#0D2040]/55
+          text-[#5F6B6D]
         "
       >
         {item.name}
@@ -1055,11 +963,11 @@ const Layout = ({ children }) => {
         className="
           min-w-[120px]
 
-          h-[70px]
+          h-[80px]
 
           bg-white
 
-          border border-[#E5E7EB]
+          border border-[#D9DDDE]
 
           rounded-2xl
 
@@ -1092,45 +1000,12 @@ const Layout = ({ children }) => {
 
           text-[11px]
 
-          text-[#0D2040]
+          text-[#5F6B6D]
         "
       >
         Software logos shown for illustrative purposes only.
       </p>
        </div>
-
-    {/* IMAGE */}
-
-    {/* <div
-      className="
-        absolute
-
-        right-[-80px]
-
-        bottom-[-20px]
-
-        hidden lg:block
-
-        z-10
-
-        pointer-events-none
-      "
-    >
-
-      <img
-        src={client}
-        alt="LPS Livingstone"
-
-        className="
-          h-[650px]
-
-          object-contain
-
-          opacity-95
-        "
-      />
-
-    </div> */}
 
   </div>
 

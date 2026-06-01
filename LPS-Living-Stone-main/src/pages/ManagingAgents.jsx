@@ -52,13 +52,13 @@ const navButtons = [
 
 const SectionTitle = ({ children }) => (
   <div className="flex items-center gap-3 mb-6">
-    <div className="w-1 h-8 bg-[#0D6E4F] rounded-full flex-shrink-0" />
+    <div className="w-1 h-8 bg-[#C49A4A] rounded-full flex-shrink-0" />
 
     <h2
       className="
         text-2xl md:text-3xl
         font-black
-        text-[#0D6E4F]
+        text-[#0E6E4F]
       "
     >
       {children}
@@ -75,26 +75,26 @@ const InfoCard = ({ text }) => (
 
       bg-white
 
-      border border-[#E5E7EB]
+      border border-[#D9DDDE]
 
       rounded-2xl
 
-      hover:border-[#0D6E4F]
-      hover:bg-[#0D6E4F]/5
+      hover:border-[#C49A4A]
+      hover:bg-[#F8F8F5]
 
       transition-all duration-300
     "
   >
     <CheckCircle2
       size={18}
-      className="text-[#0D6E4F] mt-0.5 flex-shrink-0"
+      className="text-[#C49A4A] mt-0.5 flex-shrink-0"
     />
 
     <span
       className="
         text-[15px] md:text-base
         leading-7
-        text-[#0D2040]
+        text-[#2D3436]
       "
     >
       {text}
@@ -109,11 +109,9 @@ const Tag = ({ label }) => (
 
       rounded-full
 
-      bg-[#0D6E4F]/10
-
-      border border-[#0D6E4F]/20
-
-      text-[#0D6E4F]
+     bg-[#F8F8F5]
+border-[#D9DDDE]
+text-[#0E6E4F]
 
       text-xs
       font-semibold
@@ -127,7 +125,7 @@ const ManagingAgents = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white overflow-hidden text-[#0D2040]  font-['Neogrotesk']">
+    <div className="bg-white overflow-hidden text-[#2D3436]  font-['Neogrotesk']">
 
       {/* HERO */}
       <section
@@ -141,7 +139,7 @@ const ManagingAgents = () => {
         "
         style={{
           background:
-            "linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)",
+            "linear-gradient(135deg, #0D2040 0%, #0E6E4F 100%)",
         }}
       >
 
@@ -215,7 +213,7 @@ const ManagingAgents = () => {
       </section>
 
       {/* INTRO */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -229,7 +227,7 @@ const ManagingAgents = () => {
 
               tracking-tight
 
-              text-[#0D2040]
+              text-[#2D3436]
             "
           >
 
@@ -252,7 +250,7 @@ const ManagingAgents = () => {
 
             With experience across more than{" "}
 
-            <span className="text-[#0D6E4F] font-semibold">
+            <span className="text-[#0E6E4F] font-semibold">
               1,000 developments
             </span>
 
@@ -266,7 +264,7 @@ const ManagingAgents = () => {
 
       </section>
       {/* PAGE NAVIGATION */}
-<section className="py-10 px-6 border-b border-[#E5E7EB] bg-white">
+<section className="py-10 px-6 border-b border-[#D9DDDE] bg-white">
 
   <div className="max-w-5xl mx-auto">
 
@@ -288,18 +286,19 @@ const ManagingAgents = () => {
           className={`
             group
 
-            px-6 py-3
+            px-6 py-6
 
             rounded-full
 
-            text-sm
+            text-2xl
             font-semibold
-            bg-[#0D2040]
-  text-white
-  border-[#0D2040]
+           bg-[#C49A4A]
 
-  hover:bg-[#0D6E4F]
-  hover:border-[#0D6E4F]
+  text-white
+ 
+
+  hover:bg-[#0A5A3E]
+hover:border-[#C49A4A]
 
             border
 
@@ -334,7 +333,7 @@ const ManagingAgents = () => {
 </section>
 
       {/* HANDOVER */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -348,7 +347,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
+             text-[#2D3436]
 
               mb-6
             "
@@ -372,7 +371,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
+              text-[#2D3436]
             "
           >
             If opening balance information is delayed or incomplete,
@@ -386,7 +385,7 @@ const ManagingAgents = () => {
       </section>
 
       {/* SYSTEMS */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -400,8 +399,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
-
+text-[#2D3436]
               mb-6
             "
           >
@@ -426,7 +424,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
+              text-[#2D3436]
             "
           >
             This helps reduce disruption during year-end
@@ -439,7 +437,7 @@ const ManagingAgents = () => {
       </section>
 
       {/* REGULATORY */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -453,8 +451,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
-            "
+text-[#2D3436]            "
           >
             We support managing agents in maintaining compliance
             with the requirements of professional and regulatory
@@ -468,7 +465,7 @@ const ManagingAgents = () => {
       </section>
 
       {/* ADDITIONAL SUPPORT */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -482,8 +479,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
-
+text-[#2D3436]
               mb-6
             "
           >
@@ -507,8 +503,7 @@ const ManagingAgents = () => {
 
               leading-8
 
-              text-[#0D2040]
-            "
+text-[#2D3436]            "
           >
             helping to reduce the administrative burden
             on managing agents.
@@ -541,7 +536,7 @@ const ManagingAgents = () => {
             "
             style={{
               background:
-                "linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)",
+                "linear-gradient(135deg, #0D2040 0%, #0E6E4F 100%)",
             }}
           >
 
@@ -581,7 +576,7 @@ const ManagingAgents = () => {
 
                   bg-white
 
-                  text-[#0D2040]
+                  text-[#2D3436]
 
                   px-6 py-3
 
@@ -589,7 +584,7 @@ const ManagingAgents = () => {
 
                   font-semibold
 
-                  hover:bg-[#F3F4F6]
+                  hover:bg-[#F8F8F5]
 
                   transition-all duration-300
                 "

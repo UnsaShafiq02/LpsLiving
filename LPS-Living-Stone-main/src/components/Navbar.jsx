@@ -54,9 +54,9 @@ const Navbar = ({ forceWhite = false }) => {
 className={`
   transition-all duration-500 border-b
   ${isScrolled
-    ? 'bg-white/92 shadow-md border-gray-200 py-3'
+    ? 'bg-white/92 shadow-md border-[#D9DDDE] py-3'
     : forceWhite
-      ? 'bg-white border-gray-100 py-3 md:py-5'
+      ? 'bg-white border-[#D9DDDE] py-3 md:py-5'
       : 'bg-white md:bg-transparent border-transparent py-3 md:py-5'
   }
 `}
@@ -80,10 +80,10 @@ className={`
               />
 
               <div className="leading-tight">
-                <h1 className="text-[#0D2040] font-black text-xl sm:text-2xl tracking-wide">
+                <h1 className="text-[#2D3436] font-black text-xl sm:text-2xl tracking-wide">
                   Livingstone
                 </h1>
-                <p className="text-[#0D6E4F] text-xs font-semibold tracking-[0.25em] uppercase">
+                <p className="text-[#0E6E4F] text-xs font-semibold tracking-[0.25em] uppercase">
                   Chartered Accountants
                 </p>
               </div>
@@ -91,21 +91,21 @@ className={`
             </a>
 
             {/* DESKTOP NAV */}
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-4 mr-16">
 
               {navLinks.map((link, i) => (
                 <a
                   key={i}
                   href={link.href}
                   className="
-                    relative px-4 py-2 text-[12px] font-semibold tracking-wide
-                    text-[#0D2040]
-                    hover:text-[#224C26]
+                    relative px-5 py-2 text-[19px] font-semibold tracking-wide
+                    text-[#2D3436]
+                    hover:text-[#C49A4A]
                     transition-all duration-300
                     group
                   "
                 >
-                  <span className="absolute left-4 bottom-1 w-0 h-[2px] bg-[#224C26] group-hover:w-[calc(100%-32px)] transition-all duration-300 rounded-full" />
+                  <span className="absolute left-4 bottom-1 w-0 h-[2px] bg-[#C49A4A] group-hover:w-[calc(100%-32px)] transition-all duration-300 rounded-full" />
                   {link.name}
                 </a>
               ))}
@@ -118,10 +118,10 @@ className={`
                 href="/contact"
                 className="
                   px-6 py-2.5 rounded-xl
-                  bg-[#0D6E4F]
+                  bg-[#0E6E4F]
                   text-white text-[12px] font-semibold
                   shadow-md
-                  hover:bg-[#0B5C42]
+                  hover:bg-[#0A5A3E]
                   hover:shadow-xl
                   hover:scale-[1.03]
                   transition-all duration-300
@@ -134,7 +134,7 @@ className={`
             {/* MOBILE */}
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden p-2 rounded-lg bg-[#0D6E4F] text-white hover:bg-[#0B5C42] transition"
+              className="lg:hidden p-2 rounded-lg bg-[#0E6E4F] text-white hover:bg-[#0A5A3E] transition"
             >
               <Menu size={22} />
             </button>
@@ -159,10 +159,10 @@ className={`
               <div className="flex items-center gap-3">
                 <img src={logo} className="h-14" />
                 <div>
-                  <h1 className="text-[#0D2040] font-bold text-sm">
+                  <h1 className="text-[#2D3436] font-bold text-sm">
                     Living Stone
                   </h1>
-                  <p className="text-[#224C26] text-[10px] uppercase tracking-[0.2em]">
+                  <p className="text-[#C49A4A] text-[10px] uppercase tracking-[0.2em]">
                     Chartered Accountants
                   </p>
                 </div>
@@ -170,7 +170,7 @@ className={`
 
               <button
                 onClick={() => setMobileOpen(false)}
-                className="p-2 rounded-lg bg-[#0D2040] text-white"
+                className="p-2 rounded-lg bg-[#2D3436] text-white"
               >
                 <X size={22} />
               </button>
@@ -190,12 +190,12 @@ className={`
                     bg-white/80 backdrop-blur
                     hover:bg-[#EAF5F0]
                     border border-[#D9D9D9]
-                    text-[#0D2040] text-sm font-semibold
+                    text-[#2D3436] text-sm font-semibold
                     transition-all duration-300
                   "
                 >
                   <span>{link.name}</span>
-                  <ChevronRight size={18} className="text-[#224C26]" />
+                  <ChevronRight size={18} className="text-[#C49A4A]" />
                 </a>
               ))}
 
@@ -208,8 +208,8 @@ className={`
                 className="
                   flex items-center justify-center
                   w-full py-4 rounded-xl
-                  bg-[#0D6E4F]
-                  hover:bg-[#0B5C42]
+                  bg-[#0E6E4F]
+                  hover:bg-[#0A5A3E]
                   text-white text-sm font-semibold
                   transition-all duration-300
                 "

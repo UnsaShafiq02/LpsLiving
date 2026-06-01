@@ -27,7 +27,7 @@
 //         <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-[#F9FAFB]" />
 
 //         {/* soft glow */}
-//         <div className="absolute -top-40 left-[-120px] w-[520px] h-[520px] bg-[#0D6E4F]/5 blur-3xl rounded-full" />
+//         <div className="absolute -top-40 left-[-120px] w-[520px] h-[520px] bg-[#0E6E4F]/5 blur-3xl rounded-full" />
 //         <div className="absolute bottom-[-180px] right-[-120px] w-[520px] h-[520px] bg-[#0D2040]/5 blur-3xl rounded-full" />
 
 //         <div className="relative max-w-5xl mx-auto px-6 text-center">
@@ -36,7 +36,7 @@
 //             Service Charge Accounting
 //           </h1>
 
-//           <p className="mt-6 text-[#0D6E4F] text-lg md:text-xl leading-8 max-w-3xl mx-auto">
+//           <p className="mt-6 text-[#0E6E4F] text-lg md:text-xl leading-8 max-w-3xl mx-auto">
 //             Leading specialists in service charge accounting for residential and
 //             commercial properties across London and the UK.
 //           </p>
@@ -55,7 +55,7 @@
 //             blocks to large managing agents.
 //           </p>
 
-//           <p className="mt-5 text-[#0D6E4F] font-medium">
+//           <p className="mt-5 text-[#0E6E4F] font-medium">
 //             We currently support over <b className="text-[#0D2040]">600+ service charge clients</b>
 //             nationwide with accuracy, compliance, and transparent reporting.
 //           </p>
@@ -92,7 +92,7 @@
 //               Complete Service Charge Solutions
 //             </h2>
 
-//             <p className="mt-4 text-[#0D6E4F] leading-7">
+//             <p className="mt-4 text-[#0E6E4F] leading-7">
 //               End-to-end accounting solutions designed for landlords, managing agents,
 //               and property professionals.
 //             </p>
@@ -105,18 +105,18 @@
 //                   className="
 //                     flex items-start gap-3
 //                     bg-white
-//                     border border-[#E5E7EB]
+//                     border border-[#D9DDDE]
 //                     p-5 rounded-2xl
-//                     hover:bg-[#0D6E4F]/5
-//                     hover:border-[#0D6E4F]
+//                     hover:bg-[#0E6E4F]/5
+//                     hover:border-[#0E6E4F]
 //                     hover:shadow-md
 //                     transition-all duration-300
 //                     cursor-pointer
 //                   "
 //                 >
-//                   <CheckCircle2 className="text-[#0D6E4F] mt-1" size={18} />
+//                   <CheckCircle2 className="text-[#0E6E4F] mt-1" size={18} />
 
-//                   <span className="text-[#0D2040] text-base leading-7 font-medium group-hover:text-[#0D6E4F]">
+//                   <span className="text-[#0D2040] text-base leading-7 font-medium group-hover:text-[#0E6E4F]">
 //                     {item}
 //                   </span>
 
@@ -131,7 +131,7 @@
 //       </section>
 
 //       {/* ================= GUIDANCE ================= */}
-//       <section className="py-20 bg-white border-t border-[#E5E7EB]">
+//       <section className="py-20 bg-white border-t border-[#D9DDDE]">
 
 //         <div className="max-w-5xl mx-auto px-6 space-y-12 text-[#0D2040] text-base leading-8">
 
@@ -139,7 +139,7 @@
 //             <h3 className="text-2xl font-black text-[#0D2040] mb-3">
 //               Guidance & Standards
 //             </h3>
-//             <p className="text-[#0D6E4F]">
+//             <p className="text-[#0E6E4F]">
 //               Accounting and reporting is prepared in line with industry standards issued by
 //               ACCA, ICAEW, ICAS, ARMA, and RICS.
 //             </p>
@@ -150,10 +150,10 @@
 //               Legal Framework
 //             </h3>
 //             <ul className="list-disc pl-6 space-y-2 text-[#0D2040]">
-//               <li className="hover:text-[#0D6E4F] transition">Landlord and Tenant Act 1985</li>
-//               <li className="hover:text-[#0D6E4F] transition">Landlord and Tenant Act 1987</li>
-//               <li className="hover:text-[#0D6E4F] transition">Commonhold and Leasehold Reform Act 2002</li>
-//               <li className="hover:text-[#0D6E4F] transition">Service Charge Management Code (2009)</li>
+//               <li className="hover:text-[#0E6E4F] transition">Landlord and Tenant Act 1985</li>
+//               <li className="hover:text-[#0E6E4F] transition">Landlord and Tenant Act 1987</li>
+//               <li className="hover:text-[#0E6E4F] transition">Commonhold and Leasehold Reform Act 2002</li>
+//               <li className="hover:text-[#0E6E4F] transition">Service Charge Management Code (2009)</li>
 //             </ul>
 //           </div>
 
@@ -161,7 +161,7 @@
 //             <h3 className="text-2xl font-black text-[#0D2040] mb-3">
 //               Tribunal Support
 //             </h3>
-//             <p className="text-[#0D6E4F]">
+//             <p className="text-[#0E6E4F]">
 //               We assist landlords and managing agents in interpreting tribunal decisions
 //               and ensuring compliance with lease obligations.
 //             </p>
@@ -173,7 +173,7 @@
 //       {/* ================= CTA ================= */}
 //       <section className="relative py-24 overflow-hidden bg-white">
 
-//         <div className="absolute inset-0 bg-gradient-to-r from-[#0D2040] to-[#0D6E4F]" />
+//         <div className="absolute inset-0 bg-gradient-to-r from-[#0D2040] to-[#0E6E4F]" />
 
 //         <div className="relative max-w-3xl mx-auto px-6 text-center text-white">
 
@@ -190,7 +190,7 @@
 //               mt-10
 //               px-10 py-4
 //               rounded-2xl
-//               bg-[#0D6E4F]
+//               bg-[#0E6E4F]
 //               hover:bg-[#0b5c42]
 //               font-bold
 //               shadow-md
@@ -394,25 +394,25 @@ const services = [
 
 const SectionTitle = ({ children }) => (
   <div className="flex items-center gap-3 mb-6">
-    <div className="w-1 h-8 bg-[#0D6E4F] rounded-full flex-shrink-0" />
-    <h2 className="text-2xl md:text-3xl font-black text-[#0D6E4F]">{children}</h2>
+   <div className="w-1 h-8 bg-[#C49A4A] rounded-full flex-shrink-0" />
+    <h2 className="text-3xl xl:text-4xl md:text-4xl xl:text-5xl font-black text-[#0E6E4F]">{children}</h2>
   </div>
 );
 
 const Tag = ({ label }) => (
-  <span className="bg-[#0D6E4F]/10 border border-[#0D6E4F]/20 text-[#0D6E4F] text-xs font-semibold px-4 py-2 rounded-full">
+  <span className="bg-[#0E6E4F]/10 border border-[#0E6E4F]/20 text-[#0E6E4F] text-xs font-semibold px-4 py-2 rounded-full">
     {label}
   </span>
 );
 
 const ExpandItem = ({ label }) => (
-  <div className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:border-[#0D6E4F] hover:bg-[#0D6E4F]/5 transition-all">
+  <div className="flex items-start gap-3 p-4 bg-white border border-[#D9DDDE] rounded-xl hover:border-[#0E6E4F] hover:bg-[#0E6E4F]/5 transition-all">
 
-    <span className="text-[#0D6E4F] font-bold flex-shrink-0 mt-1">
+    <span className="text-[#0E6E4F] font-bold flex-shrink-0 mt-1">
       •
     </span>
 
-    <span className="text-[15px] md:text-base leading-8">
+    <span className="text-base md:text-lg xl:text-xl leading-8">
       {label}
     </span>
 
@@ -420,7 +420,7 @@ const ExpandItem = ({ label }) => (
 );
 
 const ExpandSubTitle = ({ children }) => (
-  <h4 className="text-sm font-bold text-[#0D2040] mt-5 mb-3">{children}</h4>
+  <h4 className="text-sm font-bold text-[#2D3436] mt-5 mb-3">{children}</h4>
 );
 
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
@@ -429,11 +429,11 @@ const ServiceChargeAccounting = () => {
   const navigate = useNavigate();
   
   return (
-    <div className="bg-white overflow-hidden text-[#0D2040] font-['Neogrotesk']">
+    <div className="bg-white overflow-hidden text-[#2D3436] font-['Neogrotesk']">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)' }}>
+        style={{ background: 'linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)' }}>
         <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-white/5" />
         <div className="absolute -bottom-16 -right-16 w-64 h-64 rounded-full bg-white/5" />
 
@@ -472,9 +472,9 @@ const ServiceChargeAccounting = () => {
 
         <div
           className="
-            text-xl sm:text-3xl
+            text-2xl sm:text-5xl
             font-black
-            text-white
+            text-[#C49A4A]
             leading-tight
             break-words
           "
@@ -490,7 +490,7 @@ const ServiceChargeAccounting = () => {
           className="
             mt-1
             text-[9px] sm:text-xs
-            text-white/60
+            text-[#C49A4A]
             uppercase
             tracking-wide sm:tracking-wider
             leading-4
@@ -511,17 +511,17 @@ const ServiceChargeAccounting = () => {
       </section>
 
       {/* ── INTRO ────────────────────────────────────────────────────────── */}
-   <section className="py-10 px-6 border-b border-[#E5E7EB]">
+   <section className="py-10 px-6 border-b border-[#D9DDDE]">
 
   <div className="max-w-5xl mx-auto">
 
     <h4
       className="
-        text-lg sm:text-xl md:text-2xl lg:text-[30px]
+        text-lg sm:text-xl md:text-2xl lg:text-[34px] xl:text-[38px]
         font-medium
         leading-[1.7]
         tracking-tight
-        text-[#0D2040]
+        text-[#2D3436]
       "
     >
 
@@ -535,14 +535,14 @@ const ServiceChargeAccounting = () => {
 
       With sector experience dating back to 1995 and{" "}
 
-      <span className="text-[#0D6E4F] font-semibold">
+      <span className="text-[#0E6E4F] font-semibold">
         over 100 years of combined team experience
       </span>
 
       , we support managing agents, RTMs, RMCs, freeholders,
       and self-managed developments across more than{" "}
 
-      <span className="text-[#0D6E4F] font-semibold">
+      <span className="text-[#0E6E4F] font-semibold">
         1,000 properties
       </span>.
 
@@ -551,246 +551,6 @@ const ServiceChargeAccounting = () => {
   </div>
 
 </section>
-      {/* ── WHY US ───────────────────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Why Clients Work With Us</SectionTitle>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {whyItems.map((item, i) => (
-              <div key={i}
-                className="flex items-start gap-3 p-4 bg-white border border-[#E5E7EB] rounded-xl hover:bg-[#0D6E4F]/5 hover:border-[#0D6E4F] transition-all">
-                <CheckCircle2 size={17} className="text-[#0D6E4F] mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-[#374151] leading-6">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PRACTICAL EXPERIENCE ─────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Practical Industry Experience</SectionTitle>
-          <p className="text-sm text-[#4B5563] leading-7 mb-5">
-            Service charge accounting often involves more than preparing year-end accounts. We regularly assist with:
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {practicalItems.map((item, i) => <Tag key={i} label={item} />)}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CLIENTS ──────────────────────────────────────────────────────── */}
- <section className="py-14 px-6 border-b border-[#E5E7EB]">
-
-  <div className="max-w-6xl mx-auto">
-
-    {/* DESKTOP — circle layout */}
-    <div className="hidden md:flex justify-center">
-
-      <div className="relative w-[700px] h-[700px]">
-
-        {/* dashed ring */}
-        <div
-          className="
-            absolute top-1/2 left-1/2
-            -translate-x-1/2 -translate-y-1/2
-
-            w-[540px] h-[540px]
-            rounded-full
-
-            border border-dashed
-            border-[#0D6E4F]/25
-          "
-        />
-
-        {/* center circle */}
-        <div
-          className="
-            absolute top-1/2 left-1/2
-            -translate-x-1/2 -translate-y-1/2
-
-            w-[190px] h-[190px]
-            rounded-full
-
-            bg-[#0D6E4F]
-
-            flex items-center justify-center
-            text-center
-
-            p-6
-            z-10
-          "
-        >
-
-          <p className="text-base font-semibold text-white leading-7 tracking-wide">
-            Developments &amp; Clients We Support
-          </p>
-
-        </div>
-
-        {/* outer cards */}
-        {clientTypes.map((label, i) => {
-
-          const angle =
-            (i / clientTypes.length) * 2 * Math.PI - Math.PI / 2;
-
-          const r = 270;
-
-          const cx = 350;
-          const cy = 350;
-
-          const x = cx + r * Math.cos(angle);
-
-          const y = cy + r * Math.sin(angle);
-
-          return (
-
-            <div
-              key={i}
-
-              className="
-                absolute
-                group
-
-                flex items-center justify-center
-
-                w-[170px]
-                h-[54px]
-
-                bg-[#0D2040]
-
-                border border-[#1f3652]
-
-                rounded-xl
-
-                px-4
-
-                text-center
-
-                cursor-pointer
-
-                hover:bg-[#0D6E4F]
-                hover:border-[#0D6E4F]
-
-                shadow-md
-                hover:shadow-xl
-
-                transition-all duration-300
-
-                z-20
-              "
-
-              style={{
-                left: x,
-                top: y,
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-
-              <span
-                className="
-                  text-[12px]
-                  font-semibold
-                  leading-tight
-
-                  text-white
-
-                  transition-colors
-                "
-              >
-                {label}
-              </span>
-
-            </div>
-
-          );
-
-        })}
-
-      </div>
-
-    </div>
-
-    {/* MOBILE VERSION */}
-    <div className="md:hidden">
-
-      <SectionTitle>
-        Developments &amp; Clients We Support
-      </SectionTitle>
-
-      <div className="grid grid-cols-2 gap-3">
-
-        {clientTypes.map((label, i) => (
-
-          <div
-            key={i}
-
-            className="
-              group
-
-              flex items-center justify-center
-
-              p-4
-
-              bg-[#0D2040]
-
-              border border-[#1f3652]
-
-              rounded-xl
-
-              hover:bg-[#0D6E4F]
-              hover:border-[#0D6E4F]
-
-              transition-all duration-300
-
-              cursor-pointer
-
-              text-center
-            "
-          >
-
-            <span
-              className="
-                text-xs
-                font-semibold
-
-                text-white
-
-                leading-tight
-              "
-            >
-              {label}
-            </span>
-
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-      {/* ── REGULATORY ───────────────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Regulatory &amp; Professional Framework</SectionTitle>
-          <ul className="divide-y divide-[#E5E7EB]">
-            {regulatoryItems.map((item, i) => (
-              <li key={i} className="flex items-center gap-3 py-3 text-sm text-[#374151]">
-                <span className="text-[#0D6E4F] font-bold text-base w-4 flex-shrink-0">§</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* ── WHO DO WE SUPPORT — CTA CARDS ────────────────────────────────── */}
-    {/* ── WHO DO WE SUPPORT ───────────────────────────────────────────── */}
 <section className="py-16 md:py-20 px-6 bg-white">
 
   <div className="max-w-6xl mx-auto">
@@ -799,26 +559,26 @@ const ServiceChargeAccounting = () => {
     <div className="text-center mb-12">
 
       <div className="inline-flex items-center gap-2 mb-5">
-        <div className="w-10 h-[2px] bg-[#0D6E4F]" />
-        <span className="text-[11px] tracking-[0.25em] uppercase font-semibold text-[#0D6E4F]">
+        <div className="w-10 h-[2px] bg-[#C49A4A]" />
+        <span className="text-[11px] tracking-[0.25em] uppercase font-semibold text-[#0E6E4F]">
           Tailored Support
         </span>
-        <div className="w-10 h-[2px] bg-[#0D6E4F]" />
+        <div className="w-10 h-[2px] bg-[#C49A4A]" />
       </div>
 
       <h2
         className="
-          text-3xl md:text-5xl
+          text-3xl md:text-5xl xl:text-6xl
 
           font-medium
 
-          text-[#0D2040]
+          text-[#2D3436]
 
           leading-tight
 
           tracking-tight
         "
-        style={{ fontFamily: 'Georgia, serif' }}
+        
       >
         Explore Tailored Support
       </h2>
@@ -829,11 +589,11 @@ const ServiceChargeAccounting = () => {
 
           max-w-3xl mx-auto
 
-          text-[15px] md:text-lg
+         text-base md:text-xl xl:text-[22px]
 
           leading-8
 
-          text-[#0D2040]
+          text-[#2D3436]
         "
       >
         Specialist support tailored to managing agents,
@@ -856,7 +616,7 @@ const ServiceChargeAccounting = () => {
           path: "/managing-agents",
 
           gradient:
-            "linear-gradient(135deg, #0D2040 0%, #17385d 100%)"
+            "linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)"
 
          
         },
@@ -865,12 +625,11 @@ const ServiceChargeAccounting = () => {
           title: "Self Managed",
 
           desc:
-            "Clear and practical accounting support for RTMs, RMCs, and resident-led developments.",
-
+                'Clear and practical accounting support for RTMs, RMCs, and resident-led developments, including compliance, reporting, governance, and company administration support.',
           path: "/self-managed",
 
           gradient:
-            "linear-gradient(135deg, #0D6E4F 0%, #0a5a3f 100%)"
+            "linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)"
 
          
         },
@@ -884,7 +643,7 @@ const ServiceChargeAccounting = () => {
           path: "/faqs",
 
           gradient:
-            "linear-gradient(135deg, #102d4d 0%, #0D2040 100%)"
+            "linear-gradient(135deg, #0A5A3E 0%, #0E6E4F 100%)"
 
         
         }
@@ -965,7 +724,7 @@ const ServiceChargeAccounting = () => {
             {/* title */}
             <h3
               className="
-                text-3xl
+               text-3xl xl:text-4xl
 
                 font-medium
 
@@ -987,7 +746,7 @@ const ServiceChargeAccounting = () => {
 
                 text-white/80
 
-                text-[15px] md:text-base
+                text-base md:text-lg xl:text-xl
 
                 leading-8
               "
@@ -1006,12 +765,12 @@ const ServiceChargeAccounting = () => {
 
               <span
                 className="
-                  text-sm
+                  text-2xl
                   font-semibold
 
                   tracking-wide
 
-                  text-white
+                  text-[#D9C08A]
                 "
               >
                 Explore Section
@@ -1023,14 +782,15 @@ const ServiceChargeAccounting = () => {
 
                   rounded-full
 
-                  bg-white/10
+                  bg-[#C49A4A]
 
-                  border border-white/20
+                  border border-[#D9C08A]/30
 
+                  text-white
                   flex items-center justify-center
 
                   group-hover:bg-white
-                  group-hover:text-[#0D2040]
+                  group-hover:text-[#2D3436]
 
                   transition-all duration-300
                 "
@@ -1051,31 +811,291 @@ const ServiceChargeAccounting = () => {
   </div>
 
 </section>
+      {/* ── WHY US ───────────────────────────────────────────────────────── */}
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
+        <div className="max-w-5xl mx-auto">
+          <SectionTitle>Why Clients Work With Us</SectionTitle>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {whyItems.map((item, i) => (
+              <div key={i}
+                className="flex items-start gap-3 p-4 bg-white border border-[#D9DDDE] rounded-xl hover:bg-[#0E6E4F]/5 hover:border-[#0E6E4F] transition-all">
+                <CheckCircle2 size={17} className="text-[#C49A4A] mt-0.5 flex-shrink-0" />
+                <span className="text-sm text-[#5F6B6D] leading-6">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── PRACTICAL EXPERIENCE ─────────────────────────────────────────── */}
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
+        <div className="max-w-5xl mx-auto">
+          <SectionTitle>Practical Industry Experience</SectionTitle>
+          <p className="text-sm text-[#5F6B6D] leading-7 mb-5">
+            Service charge accounting often involves more than preparing year-end accounts. We regularly assist with:
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {practicalItems.map((item, i) => <Tag key={i} label={item} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CLIENTS ──────────────────────────────────────────────────────── */}
+ <section className="py-14 px-6 border-b border-[#D9DDDE]">
+
+  <div className="max-w-6xl mx-auto">
+
+    {/* DESKTOP — circle layout */}
+    <div className="hidden md:flex justify-center">
+
+      <div className="relative w-[700px] h-[700px]">
+
+        {/* dashed ring */}
+        <div
+          className="
+            absolute top-1/2 left-1/2
+            -translate-x-1/2 -translate-y-1/2
+
+            w-[540px] h-[540px]
+            rounded-full
+
+            border border-dashed
+            border-[#C49A4A]/40
+          "
+        />
+
+        {/* center circle */}
+        <div
+          className="
+            absolute top-1/2 left-1/2
+            -translate-x-1/2 -translate-y-1/2
+
+            w-[200px] h-[200px]
+            rounded-full
+
+            bg-[#0E6E4F]
+
+            flex items-center justify-center
+            text-center
+
+            p-6
+            z-10
+          "
+        >
+
+          <p className="text-2xl font-semibold text-white leading-7 tracking-wide">
+            Developments &amp; Clients We Support
+          </p>
+
+        </div>
+
+        {/* outer cards */}
+        {clientTypes.map((label, i) => {
+
+          const angle =
+            (i / clientTypes.length) * 2 * Math.PI - Math.PI / 2;
+
+          const r = 270;
+
+          const cx = 350;
+          const cy = 350;
+
+          const x = cx + r * Math.cos(angle);
+
+          const y = cy + r * Math.sin(angle);
+
+          return (
+
+            <div
+              key={i}
+
+              className="
+                absolute
+                group
+
+                flex items-center justify-center
+
+                w-[175px]
+                h-[56px]
+
+               bg-[#C49A4A]
+               
+                border border-[#d9ddde]
+
+                rounded-xl
+
+                px-4
+
+                text-center
+
+                cursor-pointer
+
+                hover:bg-[#0A5A3E]
+                hover:border-[#0E6E4F]
+
+                shadow-md
+                hover:shadow-xl
+
+                transition-all duration-300
+
+                z-20
+              "
+
+              style={{
+                left: x,
+                top: y,
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+
+              <span
+                className="
+                  text-[18px]
+                  font-semibold
+                  leading-tight
+
+                  text-white
+
+                  transition-colors
+                "
+              >
+                {label}
+              </span>
+
+            </div>
+
+          );
+
+        })}
+
+      </div>
+
+    </div>
+
+    {/* MOBILE VERSION */}
+    <div className="md:hidden">
+
+      <SectionTitle>
+        Developments &amp; Clients We Support
+      </SectionTitle>
+
+      <div className="grid grid-cols-2 gap-3">
+
+        {clientTypes.map((label, i) => (
+
+          <div
+            key={i}
+
+            className="
+              group
+
+              flex items-center justify-center
+
+              p-4
+
+              bg-[#0E6E4F]
+
+              border border-[#d9ddde]
+
+              rounded-xl
+
+             hover:bg-[#0A5A3E]
+              hover:border-[#0E6E4F]
+
+              transition-all duration-300
+
+              cursor-pointer
+
+              text-center
+            "
+          >
+
+            <span
+              className="
+                text-xs
+                font-semibold
+
+                text-white
+
+                leading-tight
+              "
+            >
+              {label}
+            </span>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+      {/* ── REGULATORY ───────────────────────────────────────────────────── */}
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
+        <div className="max-w-5xl mx-auto">
+          <SectionTitle>Regulatory &amp; Professional Framework</SectionTitle>
+          <ul className="divide-y divide-[#D9DDDE]">
+            {regulatoryItems.map((item, i) => (
+              <li key={i} className="flex items-center gap-3 py-3 text-sm text-[#5F6B6D]">
+                <span className="text-[#C49A4A] font-bold text-base w-4 flex-shrink-0">§</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+     
+
       {/* ── SERVICES ─────────────────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-t border-[#E5E7EB]">
+      <section className="py-14 px-6 border-t border-[#D9DDDE]">
         <div className="max-w-5xl mx-auto">
           <SectionTitle>Our Services</SectionTitle>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {services.map(({ icon, title, items }, i) => (
               <div key={i}
-                className="bg-white border border-[#E5E7EB] rounded-2xl p-5 hover:border-[#0D6E4F] hover:bg-[#0D6E4F]/5 transition-all">
-                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#E5E7EB]">
+                className="bg-white border border-[#D9DDDE] rounded-2xl p-5 hover:border-[#C49A4A] hover:bg-[#F8F8F5] transition-all">
+                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#D9DDDE]">
                   <span className="text-lg">{icon}</span>
                  <h4
   className="
     text-lg md:text-xl
     font-bold
     leading-7
-    text-[#0D2040]
+    text-[#2D3436]
   "
 >{title}</h4>
                 </div>
                 <ul className="space-y-1">
                   {items.map((item, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm leading-7 leading-5">
-                      <span className="text-[#0D6E4F] font-bold mt-px flex-shrink-0">→</span>
-                      {item}
-                    </li>
+                    <li key={j} className="flex items-start gap-3 text-sm leading-7">
+  <span
+    className="
+      w-6 h-6
+      rounded-full
+
+     bg-[#C49A4A]/35
+text-[#C49A4A]
+
+      flex items-center justify-center
+
+      flex-shrink-0
+
+      mt-0.5
+
+      text-xs
+      font-bold
+    "
+  >
+    →
+  </span>
+
+  <span>{item}</span>
+</li>
                   ))}
                 </ul>
               </div>
@@ -1086,9 +1106,9 @@ const ServiceChargeAccounting = () => {
 
       {/* ── FINAL CTA ────────────────────────────────────────────────────── */}
       <section className="relative py-20 px-6 overflow-hidden">
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)' }} />
         <div className="relative max-w-2xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+          <h2 className="text-3xl xl:text-4xl md:text-4xl font-black mb-4" style={{ fontFamily: 'Georgia, serif' }}>
             Need Expert Service Charge Support?
           </h2>
           <p className="text-white/80 text-base leading-7 mb-8">
@@ -1105,7 +1125,7 @@ const ServiceChargeAccounting = () => {
 
       bg-white
 
-      text-[#0D2040]
+      text-[#2D3436]
 
       font-bold
       text-sm

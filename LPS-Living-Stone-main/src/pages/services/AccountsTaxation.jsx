@@ -22,7 +22,7 @@ const AccountsTaxation = () => {
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden py-20 md:py-32 text-white">
 
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D6E4F] via-[#0b5c42] to-[#0D6E4F]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0E6E4F] via-[#0b5c42] to-[#0E6E4F]" />
 
         <div className="absolute top-[-150px] left-[-150px] w-[450px] h-[450px] bg-white/10 blur-[140px] rounded-full" />
         <div className="absolute bottom-[-150px] right-[-150px] w-[450px] h-[450px] bg-white/10 blur-[140px] rounded-full" />
@@ -58,21 +58,21 @@ const AccountsTaxation = () => {
             viewport={{ once: true }}
           >
 
-            <div className="flex items-center gap-3 text-[#0D6E4F] font-semibold text-lg">
+            <div className="flex items-center gap-3 text-[#0E6E4F] font-semibold text-lg">
               <TrendingUp size={20} />
               Year-End Strategic Accounting
             </div>
 
-            <h2 className="mt-4 text-4xl md:text-6xl font-black text-[#0D6E4F] leading-tight">
+            <h2 className="mt-4 text-4xl md:text-6xl font-black text-[#0E6E4F] leading-tight">
               We Don’t Just Prepare Accounts
-              <span className="block text-[#0D6E4F]">We Engineer Growth</span>
+              <span className="block text-[#0E6E4F]">We Engineer Growth</span>
             </h2>
 
-            <p className="mt-6 text-[#0D6E4F] text-lg leading-8">
+            <p className="mt-6 text-[#0E6E4F] text-lg leading-8">
               Accounting is not reporting — it’s decision power for your business.
             </p>
 
-            <p className="mt-4 text-[#0D6E4F] text-lg leading-8">
+            <p className="mt-4 text-[#0E6E4F] text-lg leading-8">
               We actively guide your financial strategy throughout the year.
             </p>
 
@@ -84,9 +84,9 @@ const AccountsTaxation = () => {
                   key={i}
                   className="
                     flex items-start gap-3 p-5 rounded-2xl
-                    bg-[#0D6E4F]
+                    bg-[#0E6E4F]
                     text-white
-                    border border-[#0D6E4F]
+                    border border-[#0E6E4F]
                     shadow-sm
                     hover:bg-[#0b5c42]
                     hover:scale-[1.02]
@@ -120,7 +120,7 @@ const AccountsTaxation = () => {
               <img src={img2} className="w-full h-[360px] object-cover" />
             </div>
 
-            <div className="absolute bottom-6 left-6 bg-[#0D6E4F] text-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-2 font-bold">
+            <div className="absolute bottom-6 left-6 bg-[#0E6E4F] text-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-2 font-bold">
               <ShieldCheck className="text-white" size={18} />
               Trusted Experts
             </div>
@@ -133,7 +133,7 @@ const AccountsTaxation = () => {
       {/* ================= CTA ================= */}
       <section className="relative py-24 overflow-hidden">
 
-        <div className="absolute inset-0 bg-[#0D6E4F]" />
+        <div className="absolute inset-0 bg-[#0E6E4F]" />
 
         <div className="relative max-w-3xl mx-auto text-center text-white px-5">
 
@@ -147,7 +147,7 @@ const AccountsTaxation = () => {
 
           <button className="
             mt-10 px-10 py-5
-            bg-white text-[#0D6E4F]
+            bg-white text-[#0E6E4F]
             font-bold rounded-2xl
             hover:bg-[#f3f3f3]
             hover:scale-105

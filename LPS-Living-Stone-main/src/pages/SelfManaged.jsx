@@ -45,13 +45,13 @@ const navButtons = [
 const SectionTitle = ({ children }) => (
   <div className="flex items-center gap-3 mb-6">
 
-    <div className="w-1 h-8 bg-[#0D6E4F] rounded-full flex-shrink-0" />
+    <div className="w-1 h-8 bg-[#0E6E4F] rounded-full flex-shrink-0" />
 
     <h2
       className="
         text-2xl md:text-3xl
         font-black
-        text-[#0D6E4F]
+        text-[#0E6E4F]
       "
     >
       {children}
@@ -69,12 +69,12 @@ const InfoCard = ({ text }) => (
 
       bg-[#FAFAFA]
 
-      border border-[#E5E7EB]
+      border border-[#D9DDDE]
 
       rounded-2xl
 
-      hover:border-[#0D6E4F]
-      hover:bg-[#0D6E4F]/5
+      hover:border-[#0E6E4F]
+      hover:bg-[#0E6E4F]/5
 
       transition-all duration-300
     "
@@ -82,7 +82,7 @@ const InfoCard = ({ text }) => (
 
     <CheckCircle2
       size={18}
-      className="text-[#0D6E4F] mt-0.5 flex-shrink-0"
+      className="text-[#0E6E4F] mt-0.5 flex-shrink-0"
     />
 
     <span
@@ -126,7 +126,7 @@ const SelfManaged = () => {
         "
         style={{
           background:
-            "linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)",
+            "linear-gradient(135deg, #0D2040 0%, #0E6E4F 100%)",
         }}
       >
 
@@ -201,7 +201,7 @@ const SelfManaged = () => {
       </section>
 
       {/* INTRO */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -237,7 +237,7 @@ const SelfManaged = () => {
       </section>
 
       {/* PAGE NAVIGATION */}
-      <section className="py-10 px-6 border-b border-[#E5E7EB] bg-white">
+      <section className="py-10 px-6 border-b border-[#D9DDDE] bg-white">
 
         <div className="max-w-5xl mx-auto">
 
@@ -266,8 +266,8 @@ const SelfManaged = () => {
                   text-white
                   border-[#0D2040]
 
-                  hover:bg-[#0D6E4F]
-                  hover:border-[#0D6E4F]
+                  hover:bg-[#0E6E4F]
+                  hover:border-[#0E6E4F]
 
                   transition-all duration-300
                 "
@@ -298,7 +298,7 @@ const SelfManaged = () => {
       </section>
 
       {/* SUPPORT FOR DIRECTORS */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -332,7 +332,7 @@ const SelfManaged = () => {
       </section>
 
       {/* TRANSITION */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -389,7 +389,7 @@ const SelfManaged = () => {
       </section>
 
       {/* RESPONSIVE SUPPORT */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -440,7 +440,7 @@ const SelfManaged = () => {
       </section>
 
       {/* COMPLIANCE */}
-      <section className="py-14 px-6 border-b border-[#E5E7EB]">
+      <section className="py-14 px-6 border-b border-[#D9DDDE]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -494,7 +494,7 @@ const SelfManaged = () => {
             "
             style={{
               background:
-                "linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)",
+                "linear-gradient(135deg, #0D2040 0%, #0E6E4F 100%)",
             }}
           >
 

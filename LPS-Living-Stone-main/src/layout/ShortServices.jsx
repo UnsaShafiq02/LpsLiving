@@ -49,7 +49,7 @@ const ShortServices = () => {
             group relative cursor-pointer
             rounded-3xl
             overflow-hidden
-            border border-[#E5E7EB]
+            border border-[#D9DDDE]
             bg-[#F1F3E9]
             shadow-sm
             transition-all duration-500
@@ -114,7 +114,7 @@ const ShortServices = () => {
             </div>
 
             {/* FOOTER ACTION */}
-            <div className="mt-6 flex items-center justify-between border-t border-[#E5E7EB] pt-4">
+            <div className="mt-6 flex items-center justify-between border-t border-[#D9DDDE] pt-4">
 
               <span className="text-xs font-semibold text-[#0D2040]">
                 Explore Category

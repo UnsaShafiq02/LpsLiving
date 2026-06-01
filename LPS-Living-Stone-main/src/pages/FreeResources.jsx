@@ -27,7 +27,7 @@ const FreeResources = () => {
 
         <div className="relative max-w-5xl mx-auto px-6 text-center">
 
-          <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#224C26]/10 border border-[#0D6E4F]/20 text-[#0D6E4F] text-xs uppercase tracking-[0.25em] backdrop-blur-xl">
+          <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#224C26]/10 border border-[#0E6E4F]/20 text-[#0E6E4F] text-xs uppercase tracking-[0.25em] backdrop-blur-xl">
             <Sparkles size={14} />
             Free Resources
           </div>
@@ -36,7 +36,7 @@ const FreeResources = () => {
             Tax & Business Knowledge Hub
           </h1>
 
-          <p className="mt-5 text-[#0D6E4F] text-lg md:text-xl max-w-2xl mx-auto leading-8">
+          <p className="mt-5 text-[#0E6E4F] text-lg md:text-xl max-w-2xl mx-auto leading-8">
             Explore expert answers, tax updates, and essential accounting guidance
             for UK businesses and professionals.
           </p>
@@ -58,8 +58,8 @@ const FreeResources = () => {
                 className={`
                   rounded-3xl border transition-all duration-300 overflow-hidden
                   ${isOpen
-                    ? "bg-[#0D6E4F] border-[#0D6E4F] shadow-xl"
-                    : "bg-white border-[#E5E7EB] hover:border-[#0D6E4F]/40 hover:shadow-md"
+                    ? "bg-[#0E6E4F] border-[#0E6E4F] shadow-xl"
+                    : "bg-white border-[#D9DDDE] hover:border-[#0E6E4F]/40 hover:shadow-md"
                   }
                 `}
               >
@@ -83,7 +83,7 @@ const FreeResources = () => {
                     size={22}
                     className={`
                       transition-transform duration-300
-                      ${isOpen ? "rotate-180 text-white" : "text-[#0D6E4F]"}
+                      ${isOpen ? "rotate-180 text-white" : "text-[#0E6E4F]"}
                     `}
                   />
 

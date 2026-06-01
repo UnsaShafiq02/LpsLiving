@@ -35,11 +35,12 @@ function AppContent() {
   // Force white navbar only on Service Charge page
  const forceWhiteNavbar = [
   
+   "/servicecharge",
   "/managing-agents",
   "/self-managed",
   "/faqs",
-  "/contact",
-  "/Servicecharge"
+  "/contact"
+
 ].includes(location.pathname);
 
   return (

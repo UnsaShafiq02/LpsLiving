@@ -7,7 +7,7 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0D6E4F] via-[#0b5c42] to-[#064635]">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0E6E4F] via-[#0b5c42] to-[#064635]">
 
       {/* glow */}
       <div className="absolute top-[-220px] left-[-200px] w-[550px] h-[550px] bg-white/10 blur-3xl rounded-full" />
@@ -55,7 +55,7 @@ const NotFound = () => {
             className="
               flex items-center justify-center gap-2
               px-8 py-4 rounded-2xl
-              bg-white text-[#0D6E4F]
+              bg-white text-[#0E6E4F]
               font-bold
               hover:bg-[#f0f0f0]
               hover:scale-105 active:scale-95

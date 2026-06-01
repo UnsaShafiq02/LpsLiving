@@ -27,7 +27,7 @@ const faqSections = [
   {
     title: "Service Charge Accounts & Reporting",
     icon: <FileText size={18} />,
-    gradient: "linear-gradient(135deg, #0D2040 0%, #17385d 100%)",
+    gradient: "linear-gradient(135deg, #0D2040 0%, #0a5a3e 100%)",
 
     faqs: [
       {
@@ -147,7 +147,7 @@ const faqSections = [
   {
     title: "Industry Guidance & Compliance",
     icon: <ShieldCheck size={18} />,
-    gradient: "linear-gradient(135deg, #0D6E4F 0%, #0a5a3f 100%)",
+    gradient: "linear-gradient(135deg, #0E6E4F 0%, #0a5a3f 100%)",
 
     faqs: [
       {
@@ -229,7 +229,7 @@ const faqSections = [
   {
     title: "Legal & Leaseholder Matters",
     icon: <Landmark size={18} />,
-    gradient: "linear-gradient(135deg, #102d4d 0%, #0D2040 100%)",
+    gradient: "linear-gradient(135deg, #0a5a3e 0%, #0D2040 100%)",
 
     faqs: [
       {
@@ -313,7 +313,7 @@ const faqSections = [
   {
     title: "Managing Agents, RTMs & Self-Managed Blocks",
     icon: <Building2 size={18} />,
-    gradient: "linear-gradient(135deg, #0D6E4F 0%, #103b2d 100%)",
+    gradient: "linear-gradient(135deg, #0E6E4F 0%, #103b2d 100%)",
 
     faqs: [
       {
@@ -513,7 +513,7 @@ const FAQs = () => {
         "
         style={{
           background:
-            "linear-gradient(135deg, #0D2040 0%, #0D6E4F 100%)",
+            "linear-gradient(135deg, #0D2040 0%, #0E6E4F 100%)",
         }}
       >
 
@@ -584,7 +584,7 @@ const FAQs = () => {
       </section>
 
       {/* NAVIGATION */}
-      <section className="py-10 px-6 border-b border-[#E5E7EB] bg-[#FAFAFA]">
+      <section className="py-10 px-6 border-b border-[#D9DDDE] bg-[#FAFAFA]">
 
         <div className="max-w-5xl mx-auto">
 
@@ -613,8 +613,8 @@ const FAQs = () => {
                   text-white
                   border-[#0D2040]
 
-                  hover:bg-[#0D6E4F]
-                  hover:border-[#0D6E4F]
+                  hover:bg-[#0E6E4F]
+                  hover:border-[#0E6E4F]
 
                   transition-all duration-300
                 "
@@ -659,7 +659,7 @@ const FAQs = () => {
 
                 rounded-[34px]
 
-                border border-[#E5E7EB]
+                border border-[#D9DDDE]
 
                 bg-white
 
@@ -712,7 +712,7 @@ const FAQs = () => {
               </div>
 
               {/* FAQ ITEMS */}
-              <div className="divide-y divide-[#E5E7EB]">
+              <div className="divide-y divide-[#D9DDDE]">
 
                 {section.faqs.map((faq, idx) => (
 
@@ -738,7 +738,7 @@ const FAQs = () => {
 
                         bg-transparent
 
-                        hover:bg-[#0D6E4F]
+                        hover:bg-[#0E6E4F]
 
                         transition-all duration-300
                       "
@@ -809,7 +809,7 @@ const FAQs = () => {
 
                                 rounded-2xl
 
-                                border border-[#E5E7EB]
+                                border border-[#D9DDDE]
 
                                 bg-[#FAFAFA]
                               "
@@ -821,7 +821,7 @@ const FAQs = () => {
 
                                   rounded-full
 
-                                  bg-[#0D6E4F]
+                                  bg-[#0E6E4F]
 
                                   mt-2
                                 "
@@ -899,7 +899,7 @@ const FAQs = () => {
 
                                 rounded-2xl
 
-                                border border-[#E5E7EB]
+                                border border-[#D9DDDE]
 
                                 bg-[#FAFAFA]
                               "
@@ -911,7 +911,7 @@ const FAQs = () => {
 
                                   rounded-full
 
-                                  bg-[#0D6E4F]
+                                  bg-[#0E6E4F]
 
                                   mt-2
                                 "
@@ -948,9 +948,9 @@ const FAQs = () => {
 
                             rounded-2xl
 
-                            border border-[#0D6E4F]/15
+                            border border-[#0E6E4F]/15
 
-                            bg-[#0D6E4F]/5
+                            bg-[#0E6E4F]/5
                           "
                         >
 

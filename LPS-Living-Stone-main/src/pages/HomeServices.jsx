@@ -100,10 +100,10 @@ useEffect(() => {
         {/* <div className="absolute inset-0 bg-[#071A2B]/20" /> */}
 
         {/* Glow */}
-        {/* <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#0D6E4F]/25 blur-3xl rounded-full" /> */}
-        {/* <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#0D6E4F]/30 blur-3xl rounded-full" /> */}
-        <div className="hidden sm:block absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#0D6E4F]/25 blur-3xl rounded-full" />
-        <div className="hidden sm:block absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#0D6E4F]/30 blur-3xl rounded-full" />
+        {/* <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#0E6E4F]/25 blur-3xl rounded-full" /> */}
+        {/* <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#0E6E4F]/30 blur-3xl rounded-full" /> */}
+        <div className="hidden sm:block absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#0E6E4F]/25 blur-3xl rounded-full" />
+        <div className="hidden sm:block absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#0E6E4F]/30 blur-3xl rounded-full" />
         {/* CONTENT */}
         <motion.div
           initial="hidden"
@@ -114,14 +114,14 @@ useEffect(() => {
           <motion.h1
            
           //  className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight"
-          className="mt-6 sm:mt-10 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
+          className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
           >
             Built on Trusted Relationships, Responsive Service, and Specialist Expertise.
           </motion.h1>
 
           {/* <motion.div
            
-            className="mt-4 inline-block px-5 py-2.5 bg-[#0D6E4F]/50 rounded-lg border border-[#0D6E4F]/70"
+            className="mt-4 inline-block px-5 py-2.5 bg-[#0E6E4F]/50 rounded-lg border border-[#0E6E4F]/70"
           >
             <h2 className="text-white text-xl sm:text-3xl font-semibold">
               for UK Businesses & Individuals
@@ -130,7 +130,7 @@ useEffect(() => {
 
           <motion.p
            
-className="mt-3 sm:mt-5 text-[#0D6E4F]/85 text-sm sm:text-lg leading-6 sm:leading-8 max-w-2xl mx-auto px-4"          >
+className="mt-3 sm:mt-5 text-[#2D3436] text-sm sm:text-lg leading-6 sm:leading-8 max-w-2xl mx-auto px-4"          >
             Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
           </motion.p>
 
@@ -166,7 +166,7 @@ className="mt-3 sm:mt-5 text-[#0D6E4F]/85 text-sm sm:text-lg leading-6 sm:leadin
 //   bg-[#224C26] text-white
 
 //   hover:bg-white hover:text-[#224C26]
-//   border border-transparent hover:border-[#0D6E4F]
+//   border border-transparent hover:border-[#0E6E4F]
 
 //   transition shadow-lg
 // "
@@ -184,7 +184,7 @@ className="
   bg-[#224C26] text-white
 
   hover:bg-white hover:text-[#224C26]
-  border border-transparent hover:border-[#0D6E4F]
+  border border-transparent hover:border-[#0E6E4F]
 
   transition shadow-xl
 "
@@ -210,7 +210,7 @@ className="
 //   bg-[#224C26] text-white
 
 //   hover:bg-white hover:text-[#224C26]
-//   border border-transparent hover:border-[#0D6E4F]
+//   border border-transparent hover:border-[#0E6E4F]
 
 //   transition shadow-lg
 // "
@@ -228,7 +228,7 @@ className="
   bg-[#224C26] text-white
 
   hover:bg-white hover:text-[#224C26]
-  border border-transparent hover:border-[#0D6E4F]
+  border border-transparent hover:border-[#0E6E4F]
 
   transition shadow-xl
 "
@@ -254,7 +254,7 @@ className="
 //   bg-[#224C26] text-white
 
 //   hover:bg-white hover:text-[#224C26]
-//   border border-transparent hover:border-[#0D6E4F]
+//   border border-transparent hover:border-[#0E6E4F]
 
 //   transition shadow-lg
 // "
@@ -272,7 +272,7 @@ className="
   bg-[#224C26] text-white
 
   hover:bg-white hover:text-[#224C26]
-  border border-transparent hover:border-[#0D6E4F]
+  border border-transparent hover:border-[#0E6E4F]
 
   transition shadow-xl
 "
@@ -297,7 +297,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0D6E4F]
+        bg-[#0E6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -313,12 +313,12 @@ className="
           Service Charge Accounts
         </h3>
 
-        <p className="text-white/70 text-sm sm:text-base mt-1">
+        <p className="text-[#D9C08A] text-sm sm:text-base mt-1">
           Specialist reporting & compliance
         </p>
       </div>
 
-      <span className="text-white/40 text-3xl">→</span>
+      <span className="text-[#C49A4A] text-3xl">→</span>
     </Link>
 
     {/* CARD 2 */}
@@ -327,7 +327,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0D6E4F]
+        bg-[#0E6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -343,12 +343,12 @@ className="
           Business Services
         </h3>
 
-        <p className="text-white/70 text-sm sm:text-base mt-1">
+        <p className="text-[#D9C08A] text-sm sm:text-base mt-1">
           Strategic accounting & advisory
         </p>
       </div>
 
-      <span className="text-white/40 text-3xl">→</span>
+      <span className="text-[#C49A4A] text-3xl">→</span>
     </Link>
 
     {/* CARD 3 */}
@@ -357,7 +357,7 @@ className="
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0D6E4F]
+        bg-[#0E6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -373,12 +373,12 @@ className="
           Personal Tax
         </h3>
 
-        <p className="text-white/70 text-sm sm:text-base mt-1">
+        <p className="text-[#D9C08A] text-sm sm:text-base mt-1">
           Efficient personal tax planning
         </p>
       </div>
 
-      <span className="text-white/40 text-3xl">→</span>
+      <span className="text-[#C49A4A] text-3xl">→</span>
     </Link>
 
   </div>
@@ -390,8 +390,8 @@ className="
 <section className="py-8 sm:py-14 bg-white px-3 sm:px-6 lg:px-10">
   <div className="w-full lg:w-[80%] text-left">
 
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-medium text-[#0D2040] leading-[1.5] tracking-tight">
-      At <span className="text-[#0D6E4F] font-semibold">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-medium text-[#2D3436] leading-[1.5] tracking-tight">
+      At <span className="text-[#0E6E4F] font-semibold">
         LPS Livingstone,
       </span>{" "}
  we provide modern accounting and tax solutions designed for businesses and individuals, focused on clarity, compliance, sustainable financial growth, strategic planning, risk management, and long-term business success.    </h1>
