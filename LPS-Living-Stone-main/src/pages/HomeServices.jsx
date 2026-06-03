@@ -80,12 +80,12 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
   return (
-    <section className="w-full bg-white overflow-hidden font-['Neogrotesk']">
+    <section className="w-full bg-white overflow-hidden">
 
       {/* ================= HERO ================= */}
 {/* <div className="relative w-full min-h-[30vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
 {/* <div className="relative w-full min-h-[75vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
-<div className="relative w-full h-[45vh] sm:h-[70vh] lg:h-[70vh] flex items-start lg:items-center justify-center overflow-hidden rounded-b-none sm:rounded-b-[55px]">      <video
+<div className="relative w-full h-[45vh] sm:h-[70vh] lg:h-[70vh] flex items-start lg:items-center justify-center overflow-hidden rounded-b-none sm:rounded-b-[30px]">      <video
           src={heroVideo}
           autoPlay
           muted
@@ -114,9 +114,10 @@ useEffect(() => {
           <motion.h1
            
           //  className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight"
-          className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
+          // className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
+           className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-black leading-tight"
           >
-            Built on Trusted Relationships, Responsive Service, and Specialist Expertise.
+            Charted accountants built on trusted relationships, responsive service, and specialist expertise.
           </motion.h1>
 
           {/* <motion.div
@@ -130,8 +131,8 @@ useEffect(() => {
 
           <motion.p
            
-className="mt-3 sm:mt-5 text-[#2D3436] text-sm sm:text-lg leading-6 sm:leading-8 max-w-2xl mx-auto px-4"          >
-            Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
+ className="mt-3 sm:mt-5 text-[#2D3436] text-sm sm:text-lg font-normal leading-6 sm:leading-8 max-w-2xl mx-auto px-4"
+>            Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
           </motion.p>
 
           {/* BUTTONS */}
@@ -310,10 +311,10 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          Service Charge Accounts
+          For Service Charge 
         </h3>
 
-        <p className="text-[#D9C08A] text-sm sm:text-base mt-1">
+        <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
           Specialist reporting & compliance
         </p>
       </div>
@@ -340,10 +341,10 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          Business Services
+          For Business Services
         </h3>
 
-        <p className="text-[#D9C08A] text-sm sm:text-base mt-1">
+        <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
           Strategic accounting & advisory
         </p>
       </div>
@@ -370,10 +371,10 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          Personal Tax
+         For Individual Tax
         </h3>
 
-        <p className="text-[#D9C08A] text-sm sm:text-base mt-1">
+        <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
           Efficient personal tax planning
         </p>
       </div>
@@ -388,13 +389,12 @@ className="
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
 <section className="py-8 sm:py-14 bg-white px-3 sm:px-6 lg:px-10">
-  <div className="w-full lg:w-[80%] text-left">
+  <div className="w-full max-w-none text-left">
 
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-medium text-[#2D3436] leading-[1.5] tracking-tight">
-      At <span className="text-[#0E6E4F] font-semibold">
+<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#2D3436] leading-[1.5] tracking-tight">      At <span className="text-[#0E6E4F] font-bold">
         LPS Livingstone,
       </span>{" "}
- we provide modern accounting and tax solutions designed for businesses and individuals, focused on clarity, compliance, sustainable financial growth, strategic planning, risk management, and long-term business success.    </h1>
+  we deliver modern accounting and tax solutions that help businesses and individuals achieve clarity, maintain compliance, plan strategically, and build long-term success.    </h1>
 
   </div>
 </section>

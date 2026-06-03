@@ -15,6 +15,7 @@ import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
 // import dwellantLogo from '../assets/logo/dwellant.png';
 import docuwareLogo from '../assets/logo/docuware.png';
 import clientt from '../assets/Clientt.jpg';
+import Approach from '../assets/Approach.jpeg';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -253,8 +254,7 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
     {/* Body */}
     <div className="px-5 py-5 flex flex-col h-full">
 
-      <h3 className="text-lg xl:text-xl font-semibold text-[#2D3436] leading-tight font-serif">
-        {title}
+<h3 className="text-lg xl:text-xl font-semibold text-[#2D3436] leading-tight">        {title}
       </h3>
 
       {subtitle && (
@@ -307,8 +307,7 @@ const Layout = ({ children }) => {
    const location = useLocation();
 
   return (
-    <div className="bg-white min-h-screen w-full font-['Inter',sans-serif]">
-
+<div className="bg-white min-h-screen w-full">
       {/* Main Content */}
       <main className="w-full py-3">
         <div className="bg-white overflow-hidden">
@@ -389,6 +388,196 @@ const Layout = ({ children }) => {
 
         </div>
       </div>
+
+      {/* ───────────────── OUR APPROACH ───────────────── */}
+
+<section className="px-0 lg:px-0 py-16 bg-white">
+  <div className="w-full mx-auto">
+    <div
+      className="
+        relative overflow-hidden
+
+        rounded-[22px]
+
+        border border-[#D9DDDE]
+
+        bg-gradient-to-br
+        from-[#F8F8F5]
+        via-white
+        to-[#F8F8F5]
+
+        p-6 lg:p-10
+      "
+    >
+
+      {/* Decorative Glow */}
+
+      <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C49A4A]/10 blur-3xl" />
+
+     <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-16 items-center">
+
+        {/* IMAGE SIDE */}
+
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative"
+        >
+
+          {/* Gold Border Layer */}
+
+           <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[36px] border border-[#C49A4A]" /> 
+
+          <div className="overflow-hidden rounded-[26px] relative z-10 shadow-[0_30px_80px_-20px_rgba(14,110,79,0.15)]">
+
+            <img
+              src={Approach}
+              alt="Trusted Relationships"
+             className="
+  w-full
+  h-[420px] lg:h-[540px]
+  object-cover
+"
+            />
+
+          </div>
+
+        </motion.div>
+
+        {/* CONTENT SIDE */}
+
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+
+          <div className="w-12 h-[4px] rounded-full bg-[#C49A4A] mb-5" />
+
+          <p
+            className="
+              uppercase
+              tracking-[0.22em]
+              text-[11px]
+              font-semibold
+              text-[#0E6E4F]
+              mb-4
+            "
+          >
+            Our Approach
+          </p>
+
+          <h2
+            className="
+              text-3xl lg:text-5xl
+
+              font-black
+
+              text-[#2D3436]
+
+              leading-tight
+
+              mb-6
+            "
+          
+          >
+            Trusted Relationships.
+            <br />
+            Practical Advice.
+            <br />
+            Real Value.
+          </h2>
+
+          <p
+            className="
+              text-[#5F6B6D]
+
+              text-[15px] lg:text-base
+
+              leading-8
+
+              max-w-[620px]
+
+              mb-8
+            "
+          >
+            Building lasting relationships is at the heart of what we do.
+            We take the time to understand our clients' businesses,
+            providing reliable support, practical solutions and proactive
+            advice that helps them grow with confidence.
+          </p>
+
+          {/* TRUST LIST */}
+
+          <div className="grid sm:grid-cols-2 gap-4 mb-8">
+
+            {[
+              "Long-term Relationships",
+              "Reliable Support",
+              "Practical Solutions",
+              "Proactive Advice",
+            ].map((item) => (
+              <div
+                key={item}
+                className="
+                  flex items-center gap-3
+
+                  bg-white
+                  font-bold
+                  border border-[#D9DDDE]
+
+                  rounded-2xl
+
+                  px-4 py-3
+
+                  shadow-sm
+                "
+              >
+                <div className="w-2 h-2 rounded-full bg-[#C49A4A]" />
+
+                <span className="text-[#2D3436] text-sm font-medium">
+                  {item}
+                </span>
+              </div>
+            ))}
+
+          </div>
+
+          <button
+            className="
+              inline-flex items-center gap-2
+
+              px-6 py-3
+
+              rounded-xl
+
+              bg-[#0E6E4F]
+
+              text-white
+
+              font-medium
+
+              transition-all duration-300
+
+              hover:bg-[#0A5A3E]
+
+              hover:-translate-y-1
+            "
+          >
+            Discover Our Approach →
+          </button>
+
+        </motion.div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
 {/* ───────────────── SOFTWARE / ACCREDITATIONS ───────────────── */}
 <section className="w-full px-6 lg:px-10 py-14 bg-white border-t border-[#D9DDDE]">
@@ -454,7 +643,7 @@ const Layout = ({ children }) => {
         className="
          text-[28px] sm:text-[32px] lg:text-4xl
 
-          font-bold
+          font-black
 
           text-[#2D3436]
 
@@ -462,7 +651,7 @@ const Layout = ({ children }) => {
 
           leading-[1.15]
         "
-        style={{ fontFamily: "neogrotesk" }}
+       
       >
         Certified Xero Advisors
       </h2>
@@ -505,7 +694,7 @@ const Layout = ({ children }) => {
           className="
             text-xs
 
-            font-semibold
+            font-bold
 
             text-[#0E6E4F]
           "
@@ -825,7 +1014,7 @@ to-[#F8F8F5]
 
           mb-5
         "
-        style={{ fontFamily: "neogrotesk" }}
+        
       >
         Working With The Systems
         <br />
@@ -964,7 +1153,7 @@ to-[#F8F8F5]
           min-w-[120px]
 
           h-[80px]
-
+S
           bg-white
 
           border border-[#D9DDDE]
