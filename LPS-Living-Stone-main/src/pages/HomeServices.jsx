@@ -288,7 +288,7 @@ className="
         </motion.div>
       </div>
       {/* ================= SERVICES CARDS ================= */}
-<section className="w-full bg-white px-4 sm:px-6 lg:px-10 py-5 sm:py-8">
+<section className="w-full bg-white px-2 sm:px-4 lg:px-6 py-5 sm:py-8">
 
    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
 
@@ -311,7 +311,7 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          For Service Charge 
+          For Service Charge Accounting
         </h3>
 
         <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
