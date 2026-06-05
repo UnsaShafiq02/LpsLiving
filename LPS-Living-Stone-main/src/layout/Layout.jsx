@@ -302,9 +302,89 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
 );
 
 // ─── Layout ────────────────────────────────────────────────────────────────────
+const testimonialGroups = [
+  {
+    category: "Self Employed",
+    icon: "👤",
+    description: "Supporting self-employed professionals across the UK.",
+    testimonials: [
+      {
+        name: "A Hussain",
+        role: "Self Employed - Luton",
+        text: "I have been delighted with the service. Mr Shahbaz was easy to understand and very knowledgeable. Very highly recommend.",
+      },
+      {
+        name: "Waheed Hassan",
+        role: "Sole Trader - Derby",
+        text: "I have been with LPS for quite some time now, very professional and friendly people - always prepared to help. Highly recommend for accounting related services.",
+      },
+      {
+        name: "Dr Asad",
+        role: "Locum Doctor - London",
+        text: "For the past 5 years, LPS has handled my tax affairs quickly, efficiently and professionally.",
+      },
+      {
+        name: "Sophie B Walker",
+        role: "Childcare Business Co Owner",
+        text: "The service I receive is second to none and I know everything is done properly.",
+      },
+    ],
+  },
 
+  {
+    category: "Directors",
+    icon: "💼",
+    description: "Helping company directors stay compliant and grow confidently.",
+    testimonials: [
+      {
+        name: "Mr. Chaudhary",
+        role: "Director - Metro Local",
+        text: "Excellent service. Very swift, friendly and extremely professional.",
+      },
+      {
+        name: "MN Mahmood",
+        role: "Director - Metro Mart Retail",
+        text: "Shahbaz's knowledge of small business accountancy and tax affairs has really helped me.",
+      },
+      {
+        name: "S Khan",
+        role: "Project Manager - Lloyds Bank",
+        text: "They never fail to impress me with their diligent, detail-oriented and customer-focused approach.",
+      },
+    ],
+  },
+];
 const Layout = ({ children }) => {
    const location = useLocation();
+   const [groupIndex, setGroupIndex] = useState(0);
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
+  useEffect(() => {
+  const timer = setInterval(() => {
+    const currentGroup = testimonialGroups[groupIndex];
+
+    if (
+      testimonialIndex <
+      currentGroup.testimonials.length - 1
+    ) {
+      setTestimonialIndex((prev) => prev + 1);
+    } else {
+      setTestimonialIndex(0);
+
+      setGroupIndex((prev) =>
+        prev === testimonialGroups.length - 1
+          ? 0
+          : prev + 1
+      );
+    }
+  }, 5000);
+
+  return () => clearInterval(timer);
+}, [groupIndex, testimonialIndex]);
+const currentGroup =
+  testimonialGroups[groupIndex];
+
+const currentTestimonial =
+  currentGroup.testimonials[testimonialIndex];
 
   return (
 <div className="bg-white min-h-screen w-full">
@@ -534,6 +614,142 @@ const Layout = ({ children }) => {
 
       </div>
     </div>
+  </div>
+</section>
+<section className="py-16 bg-white">
+  <div className="w-full mx-auto">
+
+    {/* Heading */}
+
+    <div className="text-center mb-12">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
+        What Our Clients Say
+      </h2>
+
+      <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
+
+      <p className="mt-6 text-[#5F6B6D] max-w-3xl mx-auto text-lg">
+        Trusted by self-employed professionals, directors and business owners
+        across the UK.
+      </p>
+    </div>
+
+    <div
+      className="
+        relative overflow-hidden
+        rounded-[22px]
+        border border-[#D9DDDE]
+        bg-gradient-to-br
+        from-[#F8F8F5]
+        via-white
+        to-[#F8F8F5]
+        p-6 lg:p-10
+      "
+    >
+      <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
+
+      <div className="grid lg:grid-cols-[1.4fr_0.6fr] gap-8 items-stretch">
+
+        {/* TESTIMONIAL CARD */}
+
+        <AnimatePresence mode="wait">
+
+          <motion.div
+            key={`${groupIndex}-${testimonialIndex}`}
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 40 }}
+            transition={{ duration: 0.5 }}
+            className="
+              bg-white
+              border border-[#D9DDDE]
+              rounded-[24px]
+              p-8
+              shadow-sm
+              flex
+              flex-col
+              justify-center
+            "
+          >
+            <div className="flex gap-1 text-[#C8A15A] text-xl mb-6">
+              ★★★★★
+            </div>
+
+            <p
+              className="
+                text-[#2F3437]
+                text-lg
+                leading-9
+                italic
+                mb-8
+              "
+            >
+              "{currentTestimonial.text}"
+            </p>
+
+            <div>
+              <h4 className="font-bold text-[#0F6B4B] text-xl">
+                {currentTestimonial.name}
+              </h4>
+
+              <p className="text-[#5F6B6D] mt-1">
+                {currentTestimonial.role}
+              </p>
+            </div>
+          </motion.div>
+
+        </AnimatePresence>
+
+        {/* CATEGORY CARD */}
+
+        <AnimatePresence mode="wait">
+
+          <motion.div
+            key={currentGroup.category}
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -60 }}
+            transition={{ duration: 0.5 }}
+            className="
+              rounded-[24px]
+              bg-[#0F6B4B]
+              text-white
+              p-8
+              flex
+              flex-col
+              justify-center
+              items-center
+              text-center
+              relative
+              overflow-hidden
+            "
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0F6B4B] to-[#084C35]" />
+
+            <div className="relative z-10">
+
+              <div className="text-6xl mb-5">
+                {currentGroup.icon}
+              </div>
+
+              <h3 className="text-3xl font-bold mb-4">
+                {currentGroup.category}
+              </h3>
+
+              <div className="w-12 h-[3px] bg-[#C8A15A] mx-auto mb-5 rounded-full" />
+
+              <p className="text-white/80 leading-7">
+                {currentGroup.description}
+              </p>
+
+            </div>
+          </motion.div>
+
+        </AnimatePresence>
+
+      </div>
+    </div>
+
   </div>
 </section>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}

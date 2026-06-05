@@ -669,7 +669,7 @@ className="
           Service Charge Accounts
         </h3>
 
-        <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
+        <p className="text-white text-sm sm:text-base mt-1 font-bold">
           Service charge accounts, audits & compliance
         </p>
       </div>
@@ -699,7 +699,7 @@ className="
           Businesses
         </h3>
 
-        <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
+        <p className="text-white text-sm sm:text-base mt-1 font-bold">
           Accounting, taxation & business advisory
         </p>
       </div>
@@ -729,7 +729,7 @@ className="
          Individuals 
         </h3>
 
-        <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
+        <p className="text-white text-sm sm:text-base mt-1 font-bold">
           Personal tax, property tax & compliance
         </p>
       </div>
