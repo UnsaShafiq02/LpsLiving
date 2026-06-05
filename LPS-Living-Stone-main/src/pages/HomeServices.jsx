@@ -810,16 +810,25 @@ className="
           className="relative"
         >
           {/* Gold Border Layer */}
-          <div className="absolute inset-0 -translate-x-4 translate-y-4 rounded-[36px] border border-[#C8A15A]" />
 
-          <div className="overflow-hidden rounded-[26px] relative z-10 shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]">
-            <img
+<div
+  className="
+    overflow-hidden
+    rounded-[26px]
+    border-[2px]
+    border-[#C8A15A]
+    relative
+    z-10
+    shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]
+  "
+>
+              <img
               src={introImage}
               alt="Accounting and Advisory Services"
               className="
                 w-full
-                h-[420px] lg:h-[540px]
-                object-cover
+                h-auto
+                object-contain
               "
             />
           </div>
