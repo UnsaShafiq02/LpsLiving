@@ -1,12 +1,20 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { Building2, Award } from "lucide-react";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import heroVideo from "../assets/bgVideo.mp4";
-import { ChevronDown, ArrowRight } from "lucide-react";
+import {
+  Building2,
+  ShieldCheck,
+  Calculator,
+  BriefcaseBusiness,
+  FileText,
+  ChevronDown,
+  ArrowRight,
+} from "lucide-react";
 
 // const buttonAnim = {
 //   hidden: {
@@ -73,6 +81,7 @@ const slides = [
 const serviceAreas = [
   {
     title: "Service Charge Accounts",
+     icon: Building2,
     link: "/servicecharge",
     items: [
       "Service Charge Accounts",
@@ -84,6 +93,7 @@ const serviceAreas = [
   },
   {
     title: "Audit & Assurance",
+     icon: ShieldCheck,
     link: "/audit-assurance",
     items: [
       "Statutory Audits",
@@ -94,6 +104,7 @@ const serviceAreas = [
   },
   {
     title: "Accounts & Taxation",
+     icon: Calculator,
     link: "/accounts-taxation",
     items: [
       "Year-End Accounts & Tax Returns",
@@ -105,6 +116,8 @@ const serviceAreas = [
   },
   {
     title: "Business Advisory & Support",
+     icon: BriefcaseBusiness,
+    
     link: "/business-advisory",
     items: [
       "Business Advisory",
@@ -116,6 +129,7 @@ const serviceAreas = [
   },
   {
     title: "Other Services",
+    icon: FileText,
     link: "/other-services",
     items: [
       "HMRC Investigations & Enquiries",
@@ -465,6 +479,8 @@ className="
 
       {serviceAreas.map((service, index) => {
         const isOpen = openService === index;
+        const Icon = service.icon;
+
 
         return (
           <motion.div
@@ -489,20 +505,44 @@ className="
               }
               className="w-full flex items-center justify-between px-6 sm:px-8 py-6 text-left bg-white"
             >
-              <h3
-                className={`
-                  text-lg sm:text-2xl font-semibold
-                  transition-colors
-                  duration-300
-                  ${
-                    isOpen
-                      ? "text-[#0E6E4F]"
-                      : "text-[#2D3436]"
-                  }
-                `}
-              >
-                {service.title}
-              </h3>
+              
+
+<div className="flex items-center gap-4">
+  <div
+    className={`
+      h-12
+      w-12
+      rounded-2xl
+      flex
+      items-center
+      justify-center
+      border
+      transition-all
+      duration-300
+      ${
+        isOpen
+          ? "bg-[#0F6B4B] border-[#0F6B4B] text-white shadow-lg"
+          : "bg-[#F7F7F4] border-[#D9DDDE] text-[#0F6B4B]"
+      }
+    `}
+  >
+    <Icon size={22} strokeWidth={1.8} />
+  </div>
+
+  <h3
+    className={`
+      text-lg sm:text-2xl font-semibold
+      transition-colors duration-300
+      ${
+        isOpen
+          ? "text-[#0F6B4B]"
+          : "text-[#2F3437]"
+      }
+    `}
+  >
+    {service.title}
+  </h3>
+</div>
 
               <motion.div
                 animate={{
