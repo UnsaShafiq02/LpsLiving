@@ -156,15 +156,18 @@ function FlipServiceCard({ service }) {
           className="
             absolute inset-0
             rounded-[28px]
-            border border-[#D9DDDE]
-            bg-[#F7F7F4]
+           border border-[#C8A15A]/60
+bg-[#F7F7F4]
+shadow-[0_10px_30px_rgba(200,161,90,0.08)]
+group-hover:border-[#C8A15A]
+group-hover:shadow-[0_20px_50px_rgba(200,161,90,0.18)]
             p-8
             flex flex-col items-center justify-between
             text-center
             [backface-visibility:hidden]
           "
         >
-          <div className="w-24 h-24 rounded-full bg-[#EAF1EC] flex items-center justify-center">
+          <div className="w-24 h-24 rounded-full  bg-[#F7F7F4] border border-[#C8A15A]/50 flex items-center justify-center">
             <Icon size={48} className="text-[#0F6B4B]" />
           </div>
 
