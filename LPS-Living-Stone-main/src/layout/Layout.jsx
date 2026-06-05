@@ -785,7 +785,7 @@ const currentTestimonial =
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
 {/* ───────────────── SOFTWARE / ACCREDITATIONS ───────────────── */}
 <section className="py-16 bg-white border-t border-[#D9DDDE]">
-  <div className="max-w-7xl mx-auto px-6 lg:px-10">
+  <div className="w-full px-2 lg:px-4">
 
     <div className="text-center mb-14">
       <h2 className="text-3xl lg:text-5xl font-bold text-[#0F6B4B]">
@@ -806,6 +806,7 @@ const currentTestimonial =
     sm:grid-cols-3
     lg:grid-cols-4
     xl:grid-cols-6
+    2xl:grid-cols-6
     gap-2 lg:gap-4
     items-center
   "
@@ -835,8 +836,8 @@ const currentTestimonial =
   alt={item.name}
   className="
     h-[390px]
-    w-auto
-    object-contain
+   w-full
+object-contain
     transition-transform duration-300
     hover:scale-105
   "
