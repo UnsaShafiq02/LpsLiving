@@ -13,6 +13,8 @@ import {
   UsersRound,
   FolderOpen,
   ArrowRight,
+  Plus,
+  Minus
 } from "lucide-react";
 
 // const buttonAnim = {
@@ -240,8 +242,191 @@ group-hover:shadow-[0_20px_50px_rgba(200,161,90,0.18)]
     </div>
   );
 }
+function MobileServicesAccordion({
+  openService,
+  setOpenService,
+})  {
+  return (
+    <div className="space-y-4">
+      {serviceAreas.map((service, index) => {
+        const Icon = service.icon;
+        const isOpen = openService === index;
+
+        return (
+          <motion.div
+            key={service.title}
+            layout
+            className={`
+              overflow-hidden
+              rounded-[22px]
+              border
+              transition-all
+              duration-300
+              ${
+                isOpen
+                  ? "border-[#C8A15A] shadow-[0_10px_30px_rgba(200,161,90,0.15)]"
+                  : "border-[#C8A15A]/40"
+              }
+            `}
+          >
+            <button
+              onClick={() =>
+                setOpenService(
+                  isOpen ? null : index
+                )
+              }
+              className="
+                w-full
+                px-5
+                py-5
+                flex
+                items-center
+                justify-between
+                bg-[#F7F7F4]
+              "
+            >
+              <div className="flex items-center gap-4">
+
+                <div
+                  className="
+                    w-12
+                    h-12
+                    rounded-2xl
+                    border
+                    border-[#C8A15A]/40
+                    bg-white
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
+                  <Icon
+                    size={22}
+                    className="text-[#0F6B4B]"
+                  />
+                </div>
+
+                <h3
+                  className="
+                    text-left
+                    text-[17px]
+                    font-semibold
+                    text-[#2F3437]
+                  "
+                >
+                  {service.title}
+                </h3>
+              </div>
+
+              <div
+                className="
+                  w-9
+                  h-9
+                  rounded-full
+                  border
+                  border-[#C8A15A]
+                  flex
+                  items-center
+                  justify-center
+                  text-[#B58B3C]
+                "
+              >
+                {isOpen
+                  ? <Minus size={16} />
+                  : <Plus size={16} />}
+              </div>
+            </button>
+
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{
+                    height: 0,
+                    opacity: 0,
+                  }}
+                  animate={{
+                    height: "auto",
+                    opacity: 1,
+                  }}
+                  exit={{
+                    height: 0,
+                    opacity: 0,
+                  }}
+                  transition={{
+                    duration: 0.3,
+                  }}
+                >
+                  <div className="px-5 pb-6">
+
+                    <div className="h-px bg-[#D9DDDE] mb-5" />
+
+                    <div className="space-y-4">
+
+                      {service.items.map((item) => (
+                        <div
+                          key={item}
+                          className="
+                            flex
+                            items-start
+                            gap-4
+                          "
+                        >
+                          <div
+                            className="
+                              h-2
+                              w-2
+                              rotate-45
+                              bg-[#C8A15A]
+                              mt-2
+                              shrink-0
+                            "
+                          />
+
+                          <span
+                            className="
+                              text-[#2F3437]
+                              text-base
+                              leading-7
+                            "
+                          >
+                            {item}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Link
+                      to={service.link}
+                      className="
+                        mt-6
+                        inline-flex
+                        items-center
+                        gap-2
+                        px-5
+                        py-3
+                        rounded-full
+                        bg-[#0F6B4B]
+                        text-white
+                        font-medium
+                      "
+                    >
+                      Learn More
+                      <ArrowRight size={16} />
+                    </Link>
+
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        );
+      })}
+    </div>
+  );
+}
 const HomeServices = () => {
   const [current, setCurrent] = useState(0);
+  const [openService, setOpenService] = useState(null);
   
 
 useEffect(() => {
@@ -779,8 +964,15 @@ className="
         delivered with expertise, clarity, and care.
       </p>
     </div>
+{/* Mobile Accordion */}
+  <div className="xl:hidden">
+   <MobileServicesAccordion
+  openService={openService}
+  setOpenService={setOpenService}
+/>
+  </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-8">
+    <div className="hidden xl:grid xl:grid-cols-5 gap-8">
       {serviceAreas.map((service) => (
         <FlipServiceCard
           key={service.title}
