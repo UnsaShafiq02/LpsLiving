@@ -83,7 +83,7 @@ const serviceAreas = [
      icon: Building2,
     link: "/servicecharge",
     items: [
-      "Service Charge Accounts",
+      
       "Service Charge Audits & Reviews",
       "Section 21 Reports & Factual Findings",
       "Developer Handovers",
