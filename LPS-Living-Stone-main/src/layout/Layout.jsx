@@ -16,6 +16,7 @@ import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
 import docuwareLogo from '../assets/logo/docuware.png';
 import clientt from '../assets/Clientt.jpg';
 import Approach from '../assets/Approach.jpeg';
+import Landlord from '../assets/Landlord.png';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -305,7 +306,7 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
 const testimonialGroups = [
   {
     category: "Self Employed",
-    icon: "👤",
+   image: Landlord,
     description: "Supporting self-employed professionals across the UK.",
     testimonials: [
       {
@@ -333,7 +334,7 @@ const testimonialGroups = [
 
   {
     category: "Directors",
-    icon: "💼",
+   image: Landlord,
     description: "Helping company directors stay compliant and grow confidently.",
     testimonials: [
       {
@@ -648,7 +649,7 @@ const currentTestimonial =
     >
       <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
 
-      <div className="grid lg:grid-cols-[1.4fr_0.6fr] gap-8 items-stretch">
+      <div className="grid lg:grid-cols-[1fr_0.85fr] gap-8 items-stretch">
 
         {/* TESTIMONIAL CARD */}
 
@@ -702,50 +703,72 @@ const currentTestimonial =
 
         {/* CATEGORY CARD */}
 
-        <AnimatePresence mode="wait">
+        {/* CATEGORY IMAGE */}
 
-          <motion.div
-            key={currentGroup.category}
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -60 }}
-            transition={{ duration: 0.5 }}
-            className="
-              rounded-[24px]
-              bg-[#0F6B4B]
-              text-white
-              p-8
-              flex
-              flex-col
-              justify-center
-              items-center
-              text-center
-              relative
-              overflow-hidden
-            "
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0F6B4B] to-[#084C35]" />
+<AnimatePresence mode="wait">
+  <motion.div
+    key={currentGroup.category}
+    initial={{ opacity: 0, x: 60 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -60 }}
+    transition={{ duration: 0.5 }}
+    className="
+      relative
+      overflow-hidden
+      rounded-[24px]
+      border border-[#C8A15A]
+      bg-white
+      shadow-sm
+      h-full
+    "
+  >
+    <img
+      src={currentGroup.image}
+      alt={currentGroup.category}
+      className="
+        w-full
+        h-full
+        object-cover
+      "
+    />
 
-            <div className="relative z-10">
+    {/* Overlay */}
 
-              <div className="text-6xl mb-5">
-                {currentGroup.icon}
-              </div>
+    <div
+      className="
+        absolute
+        inset-0
+        bg-gradient-to-t
+        from-[#084C35]/80
+        via-transparent
+        to-transparent
+      "
+    />
 
-              <h3 className="text-3xl font-bold mb-4">
-                {currentGroup.category}
-              </h3>
+    {/* Text */}
 
-              <div className="w-12 h-[3px] bg-[#C8A15A] mx-auto mb-5 rounded-full" />
+    <div
+      className="
+        absolute
+        bottom-0
+        left-0
+        right-0
+        p-6
+        text-white
+      "
+    >
+      <h3 className="text-3xl font-bold">
+        {currentGroup.category}
+      </h3>
 
-              <p className="text-white/80 leading-7">
-                {currentGroup.description}
-              </p>
+      <div className="w-12 h-[3px] bg-[#C8A15A] mt-3 mb-3 rounded-full" />
 
-            </div>
-          </motion.div>
-
-        </AnimatePresence>
+      <p className="text-white/90 leading-7">
+        {currentGroup.description}
+      </p>
+    </div>
+  </motion.div>
+</AnimatePresence>
 
       </div>
     </div>
