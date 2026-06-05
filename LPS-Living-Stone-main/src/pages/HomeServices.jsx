@@ -142,7 +142,7 @@ function FlipServiceCard({ service }) {
   const Icon = service.icon;
 
   return (
-    <div className="group h-[380px] [perspective:1200px]">
+    <div className="group h-[400px] [perspective:1200px]">
       <div
         className="
           relative h-full w-full
@@ -158,7 +158,7 @@ function FlipServiceCard({ service }) {
             rounded-[28px]
             border border-[#D9DDDE]
             bg-[#F7F7F4]
-            p-6
+            p-8
             flex flex-col items-center justify-between
             text-center
             [backface-visibility:hidden]
@@ -742,7 +742,7 @@ className="
   </div>
 </section> */}
 <section className="bg-white px-4 sm:px-6 lg:px-10 py-16">
-  <div className="max-w-7xl mx-auto">
+<div className="max-w-[1900px] mx-auto">
 
     <div className="text-center mb-12">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
@@ -752,7 +752,7 @@ className="
       <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-8">
       {serviceAreas.map((service) => (
         <FlipServiceCard
           key={service.title}
