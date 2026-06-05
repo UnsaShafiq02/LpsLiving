@@ -805,7 +805,7 @@ const currentTestimonial =
     grid-cols-2
     sm:grid-cols-3
     lg:grid-cols-4
-    xl:grid-cols-7
+    xl:grid-cols-6
     gap-2 lg:gap-4
     items-center
   "
@@ -815,7 +815,7 @@ const currentTestimonial =
         { name: "HMRC", src: HMRCbg },
         { name: "ACSP", src: ACSP },
         { name: "ICO", src: ICObg },
-        { name: "Xero", src: L1xero },
+        // { name: "Xero", src: L1xero },
         { name: "Xero Advisor", src: L2xero },
         { name: "Xero Bronze", src: XeroBronze },
       ].map((item) => (
@@ -834,7 +834,7 @@ const currentTestimonial =
   src={item.src}
   alt={item.name}
   className="
-    h-[290px]
+    h-[390px]
     w-auto
     object-contain
     transition-transform duration-300
