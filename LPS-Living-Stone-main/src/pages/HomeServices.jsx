@@ -8,11 +8,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import heroVideo from "../assets/bgVideo.mp4";
 import {
   Building2,
-  ShieldCheck,
+  FileSearch,
   Calculator,
-  BriefcaseBusiness,
-  FileText,
-  ChevronDown,
+  UsersRound,
+  FolderOpen,
   ArrowRight,
 } from "lucide-react";
 
@@ -93,7 +92,7 @@ const serviceAreas = [
   },
   {
     title: "Audit & Assurance",
-     icon: ShieldCheck,
+     icon: FileSearch,
     link: "/audit-assurance",
     items: [
       "Statutory Audits",
@@ -116,7 +115,7 @@ const serviceAreas = [
   },
   {
     title: "Business Advisory & Support",
-     icon: BriefcaseBusiness,
+     icon: UsersRound,
     
     link: "/business-advisory",
     items: [
@@ -129,7 +128,7 @@ const serviceAreas = [
   },
   {
     title: "Other Services",
-    icon: FileText,
+    icon: FolderOpen,
     link: "/other-services",
     items: [
       "HMRC Investigations & Enquiries",
@@ -139,9 +138,98 @@ const serviceAreas = [
     ],
   },
 ];
+function FlipServiceCard({ service }) {
+  const Icon = service.icon;
+
+  return (
+    <div className="group h-[380px] [perspective:1200px]">
+      <div
+        className="
+          relative h-full w-full
+          transition-all duration-700
+          [transform-style:preserve-3d]
+          group-hover:[transform:rotateY(180deg)]
+        "
+      >
+        {/* Front */}
+        <div
+          className="
+            absolute inset-0
+            rounded-[28px]
+            border border-[#D9DDDE]
+            bg-[#F7F7F4]
+            p-6
+            flex flex-col items-center justify-between
+            text-center
+            [backface-visibility:hidden]
+          "
+        >
+          <div className="w-24 h-24 rounded-full bg-[#EAF1EC] flex items-center justify-center">
+            <Icon size={48} className="text-[#0F6B4B]" />
+          </div>
+
+          <h3 className="text-[#0F6B4B] text-2xl font-bold leading-tight">
+            {service.title}
+          </h3>
+
+          <div className="w-12 h-[2px] bg-[#C8A15A]" />
+
+          <div className="w-12 h-12 rounded-full bg-[#0F6B4B] flex items-center justify-center">
+            <ArrowRight size={18} className="text-white" />
+          </div>
+        </div>
+
+        {/* Back */}
+        <div
+          className="
+            absolute inset-0
+            rounded-[28px]
+            bg-[#0F6B4B]
+            text-white
+            p-6
+            [transform:rotateY(180deg)]
+            [backface-visibility:hidden]
+            flex flex-col
+          "
+        >
+          <h3 className="text-xl font-bold mb-6">
+            {service.title}
+          </h3>
+
+          <div className="space-y-3 flex-1">
+            {service.items.map((item) => (
+              <div key={item} className="flex gap-3">
+                <div className="w-2 h-2 bg-[#C8A15A] rotate-45 mt-2 shrink-0" />
+                <span className="text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          <Link
+            to={service.link}
+            className="
+              mt-6
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              rounded-xl
+              bg-[#C8A15A]
+              text-white
+              py-3
+              font-medium
+            "
+          >
+            Learn More
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 const HomeServices = () => {
   const [current, setCurrent] = useState(0);
-  const [openService, setOpenService] = useState(null);
+  
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -465,7 +553,7 @@ className="
 
   </div>
 </section>
-<section className="bg-white px-4 sm:px-6 lg:px-10 py-10 sm:py-16">
+{/* <section className="bg-white px-4 sm:px-6 lg:px-10 py-10 sm:py-16">
   <div className="max-w-6xl mx-auto">
 
     <div className="text-center mb-10">
@@ -651,6 +739,28 @@ className="
         );
       })}
     </div>
+  </div>
+</section> */}
+<section className="bg-white px-4 sm:px-6 lg:px-10 py-16">
+  <div className="max-w-7xl mx-auto">
+
+    <div className="text-center mb-12">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
+        How We Can Help
+      </h2>
+
+      <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
+      {serviceAreas.map((service) => (
+        <FlipServiceCard
+          key={service.title}
+          service={service}
+        />
+      ))}
+    </div>
+
   </div>
 </section>
   
