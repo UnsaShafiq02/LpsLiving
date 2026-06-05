@@ -806,7 +806,7 @@ const currentTestimonial =
     sm:grid-cols-3
     lg:grid-cols-4
     xl:grid-cols-7
-    gap-10 lg:gap-12
+    gap-2 lg:gap-4
     items-center
   "
 >
@@ -834,7 +834,7 @@ const currentTestimonial =
   src={item.src}
   alt={item.name}
   className="
-    h-[200px]
+    h-[290px]
     w-auto
     object-contain
     transition-transform duration-300
