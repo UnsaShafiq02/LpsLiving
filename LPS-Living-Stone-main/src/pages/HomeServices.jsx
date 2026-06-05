@@ -755,7 +755,7 @@ className="
   </div>
 </section> */}
 <section className="bg-white px-4 sm:px-6 lg:px-10 py-16">
-<div className="max-w-[1900px] mx-auto">
+  <div className="max-w-[1900px] mx-auto">
 
     <div className="text-center mb-12">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
@@ -763,6 +763,21 @@ className="
       </h2>
 
       <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
+
+      <p
+        className="
+          mt-6
+          max-w-3xl
+          mx-auto
+          text-[#5F6B6D]
+          text-base
+          sm:text-lg
+          leading-8
+        "
+      >
+        A full range of accounting, tax advisory and assurance services,
+        delivered with expertise, clarity, and care.
+      </p>
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-8">
