@@ -17,6 +17,13 @@ import docuwareLogo from '../assets/logo/docuware.png';
 import clientt from '../assets/Clientt.jpg';
 import Approach from '../assets/Approach.jpeg';
 import Landlord from '../assets/Landlord.png';
+import L1xero from '../assets/L1xero.png';
+import L2xero from '../assets/L2xero.png';
+import ICAEWBG from '../assets/ICAEW-BG.png';
+import HMRCbg from '../assets/HMRC-bg.png';
+import ICObg from '../assets/ICO-bg.png';
+import ACSP from '../assets/ACSP.png';
+import XeroBronze from '../assets/XeroBronze.png';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -777,332 +784,129 @@ const currentTestimonial =
 </section>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
 {/* ───────────────── SOFTWARE / ACCREDITATIONS ───────────────── */}
-<section className="w-full px-6 lg:px-10 py-14 bg-white border-t border-[#D9DDDE]">
-  <div className="max-w-5xl mx-auto">
+<section className="py-16 bg-white border-t border-[#D9DDDE]">
+  <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-    {/* Top two-column */}
-    {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start mb-12"> */}
-    {/* XERO FEATURE SECTION */}
-
-<div
-  className="
-    mb-14
-
-    p-[2px]
-
-    rounded-[36px]
-   bg-[#C49A4A]
-    
-  "
->
-
-  <div
-    className="
-      rounded-[32px]
-
-      border border-[#0E6E4F]
-
-      overflow-hidden
-
-      bg-white
-
-      flex flex-col lg:flex-row
-      items-center
-
-      min-h-[260px]
-    "
-  >
-
-    {/* LEFT */}
-
-    <div className="flex-1 px-6 lg:px-14 py-7 lg:py-10">
-      <div className="w-10 h-[3px] bg-[#C49A4A] rounded-full mb-4" />
-
-      <p
-        className="
-          uppercase
-
-          tracking-[3px]
-
-          text-[#0E6E4F]
-
-          text-[10px] lg:text-[11px]
-
-          font-semibold
-
-          mb-3
-        "
-      >
-        Cloud Accounting · Technology
-      </p>
-
-      <h2
-        className="
-         text-[28px] sm:text-[32px] lg:text-4xl
-
-          font-black
-
-          text-[#2D3436]
-
-          mb-4
-
-          leading-[1.15]
-        "
-       
-      >
-        Certified Xero Advisors
+    <div className="text-center mb-14">
+      <h2 className="text-3xl lg:text-5xl font-bold text-[#0F6B4B]">
+        Accreditations & Partnerships
       </h2>
 
-      <p
-        className="
-          text-[#5F6B6D]
+      <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
 
-          text-[14px] lg:text-[15px]
-
-          leading-7
-
-          max-w-2xl
-        "
-      >
-        LPS Livingstone includes Certified Xero Advisors,
-        supporting businesses with efficient cloud accounting,
-        financial reporting and modern bookkeeping solutions.
+      <p className="mt-5 text-[#5F6B6D] max-w-2xl mx-auto">
+        Working with trusted industry bodies, regulators and technology partners.
       </p>
-
-      <div
-        className="
-          inline-flex items-center gap-2
-
-          mt-6
-
-          px-4 py-2.5
-
-          rounded-xl
-
-          bg-[#F8F8F5]
-
-          border border-[#D9DDDE]
-        "
-      >
-        {/* FIX 3: border-[#0E6E4F]/20 → border-[#D9DDDE] */}
-        <div className="w-2 h-2 rounded-full bg-[#C49A4A]" />
-
-        <span
-          className="
-            text-xs
-
-            font-bold
-
-            text-[#0E6E4F]
-          "
-        >
-          Xero Certified Advisor
-        </span>
-      </div>
-
-      {/* MOBILE XERO */}
-
-      {/* MOBILE CERTIFICATION */}
-
-<div
-  className="
-    lg:hidden
-
-    mt-7
-
-    bg-[#F8FBFC]
-
-    border border-[#D9DDDE]
-
-    rounded-2xl
-
-    p-5
-
-    text-center
-  "
->
-
-  <h3
-    className="
-      text-[44px]
-
-      leading-none
-
-      font-light
-
-      tracking-tight
-
-      text-[#13B5EA]
-
-      lowercase
-    "
-    style={{
-      fontFamily: "'Segoe UI', sans-serif"
-    }}
-  >
-    xero
-  </h3>
-
-  <p
-    className="
-      mt-2
-
-      text-[10px]
-
-      font-bold
-
-      uppercase
-
-      tracking-[0.22em]
-
-      text-[#2D3436]
-    "
-  >
-    Platinum Partner
-  </p>
-
-  <div
-    className="
-      w-10 h-px
-
-      bg-[#13B5EA]/30
-
-      mx-auto
-
-      my-3
-    "
-  />
-
-  <div
-    className="
-      inline-flex items-center gap-2
-
-      px-3 py-1.5
-
-      rounded-full
-
-      bg-[#EBF9FF]
-
-      border border-[#CFEFFC]
-    "
-  >
-
-    <div className="w-1.5 h-1.5 rounded-full bg-[#13B5EA]" />
-
-    <span
-      className="
-        text-[10px]
-
-        font-semibold
-
-        text-[#2D3436]
-      "
-    >
-      Certified Advisor
-    </span>
-
-  </div>
-
-</div>
-
     </div>
 
-    {/* DESKTOP RIGHT */}
+   <div
+  className="
+    grid
+    grid-cols-2
+    sm:grid-cols-3
+    lg:grid-cols-4
+    xl:grid-cols-7
+    gap-10 lg:gap-12
+    items-center
+  "
+>
+      {[
+        { name: "ICAEW", src: ICAEWBG },
+        { name: "HMRC", src: HMRCbg },
+        { name: "ACSP", src: ACSP },
+        { name: "ICO", src: ICObg },
+        { name: "Xero", src: L1xero },
+        { name: "Xero Advisor", src: L2xero },
+        { name: "Xero Bronze", src: XeroBronze },
+      ].map((item) => (
+        <div
+          key={item.name}
+          className="
+            flex
+            items-center
+            justify-center
+            transition-all
+            duration-300
+            hover:scale-105
+          "
+        >
+         <img
+  src={item.src}
+  alt={item.name}
+  className="
+    h-[200px]
+    w-auto
+    object-contain
+    transition-transform duration-300
+    hover:scale-105
+  "
+/>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+{/* <section className="py-16 bg-white border-t border-[#D9DDDE]">
+  <div className="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <div className="text-center mb-16">
+      <h2 className="text-3xl lg:text-5xl font-bold text-[#0F6B4B]">
+        Accreditations & Partnerships
+      </h2>
+
+      <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
+
+      <p className="mt-5 text-[#5F6B6D] max-w-2xl mx-auto">
+        Working with trusted industry bodies, regulators and technology partners.
+      </p>
+    </div>
 
     <div
       className="
-        hidden lg:flex
-
-        w-[420px]
-
-        h-[260px]
-
-        bg-gradient-to-br
-        from-[#F8F8F5]
-        to-white
-
-        items-center justify-center
-
-        relative
+        grid
+        grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-3
+        gap-14
+        items-center
       "
     >
-      {/* FIX 4: from-[#f8fffe] → from-[#F8F8F5] */}
-
-      <div className="text-center">
-
-        <h2
-          className="
-            text-[72px]
-
-            leading-none
-
-            font-light
-
-            tracking-tight
-
-            text-[#13B5EA]
-
-            lowercase
-          "
-          style={{
-            fontFamily: "'Segoe UI', sans-serif"
-          }}
-        >
-          xero
-        </h2>
-
+      {[
+        { name: "ICAEW", src: ICAEWBG },
+        { name: "HMRC", src: HMRCbg },
+        { name: "ACSP", src: ACSP },
+        { name: "ICO", src: ICObg },
+        { name: "Xero", src: L1xero },
+        { name: "Xero Advisor", src: L2xero },
+        { name: "Xero Bronze", src: XeroBronze },
+      ].map((item) => (
         <div
+          key={item.name}
           className="
-            w-16 h-[2px]
-
-            bg-[#13B5EA]/30
-
-            mx-auto
-
-            my-4
-          "
-        />
-
-        <p
-          className="
-            text-[#2D3436]
-
-            font-bold
-
-            uppercase
-
-            tracking-[0.25em]
-
-            text-xs
+            flex
+            items-center
+            justify-center
           "
         >
-          Platinum Partner
-        </p>
-
-        <p
-          className="
-            mt-3
-
-            text-[#0D2040]/60
-
-            text-[11px]
-
-            uppercase
-
-            tracking-[0.2em]
-          "
-        >
-          Cloud Accounting Experts
-        </p>
- 
-            </div>
-
+          <img
+            src={item.src}
+            alt={item.name}
+            className="
+              h-[220px]
+              w-auto
+              object-contain
+              transition-transform
+              duration-300
+              hover:scale-105
+            "
+          />
+        </div>
+      ))}
     </div>
 
   </div>
-</div>
-</div>
-</section>
+</section> */}
 <section className="mb-8 lg:mb-24">
 
   <div
