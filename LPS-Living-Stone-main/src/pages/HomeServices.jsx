@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 import heroVideo from "../assets/bgVideo.mp4";
+import introImage from "../assets/IntroImage.png";
 import {
   Building2,
   FileSearch,
@@ -741,14 +743,90 @@ className="
 
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
-<section className="py-8 sm:py-14 bg-white px-3 sm:px-6 lg:px-10">
-  <div className="w-full max-w-none text-left">
+<section className="px-0 lg:px-0 py-16 bg-white">
+  <div className="w-full mx-auto">
+    <div
+      className="
+        relative overflow-hidden
+        rounded-[22px]
+        border border-[#D9DDDE]
+        bg-gradient-to-br
+        from-[#F8F8F5]
+        via-white
+        to-[#F8F8F5]
+        p-6 lg:p-10
+      "
+    >
+      {/* Decorative Glow */}
+      <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
 
-<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#2D3436] leading-[1.5] tracking-tight">  <span className="text-[#0E6E4F] font-bold">
-        
-      </span>{" "}
-  We deliver modern accounting, taxation, advisory and assurance services to businesses, property investors, managing agents, residential and commercial developments, and individuals.    </h1>
+      <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-center">
 
+        {/* TEXT SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="w-12 h-[4px] rounded-full bg-[#C8A15A] mb-5" />
+
+          <h2
+            className="
+              text-3xl lg:text-5xl
+              font-black
+              text-[#2F3437]
+              leading-tight
+              mb-6
+            "
+          >
+            Modern Accounting,
+            <br />
+            Advisory &
+            <br />
+            Assurance Services.
+          </h2>
+
+          <p
+            className="
+              text-[#5F6B6D]
+              text-[16px] lg:text-lg
+              leading-8
+              max-w-[620px]
+            "
+          >
+            We deliver modern accounting, taxation, advisory and assurance
+            services to businesses, property investors, managing agents,
+            residential and commercial developments, and individuals.
+          </p>
+        </motion.div>
+
+        {/* IMAGE SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative"
+        >
+          {/* Gold Border Layer */}
+          <div className="absolute inset-0 -translate-x-4 translate-y-4 rounded-[36px] border border-[#C8A15A]" />
+
+          <div className="overflow-hidden rounded-[26px] relative z-10 shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]">
+            <img
+              src={introImage}
+              alt="Accounting and Advisory Services"
+              className="
+                w-full
+                h-[420px] lg:h-[540px]
+                object-cover
+              "
+            />
+          </div>
+        </motion.div>
+
+      </div>
+    </div>
   </div>
 </section>
 {/* <section className="bg-white px-4 sm:px-6 lg:px-10 py-10 sm:py-16">
