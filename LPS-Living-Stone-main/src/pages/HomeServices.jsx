@@ -174,9 +174,19 @@ function FlipServiceCard({ service }) {
 
           <div className="w-12 h-[2px] bg-[#C8A15A]" />
 
-          <div className="w-12 h-12 rounded-full bg-[#0F6B4B] flex items-center justify-center">
-            <ArrowRight size={18} className="text-white" />
-          </div>
+         <motion.div
+  animate={{
+    x: [0, 6, 0],
+  }}
+  transition={{
+    duration: 1.5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="w-12 h-12 rounded-full bg-[#0F6B4B] flex items-center justify-center"
+>
+  <ArrowRight size={18} className="text-white" />
+</motion.div>
         </div>
 
         {/* Back */}
@@ -196,11 +206,11 @@ function FlipServiceCard({ service }) {
             {service.title}
           </h3>
 
-          <div className="space-y-3 flex-1">
+          <div className="space-y-5 flex-1">
             {service.items.map((item) => (
               <div key={item} className="flex gap-3">
                 <div className="w-2 h-2 bg-[#C8A15A] rotate-45 mt-2 shrink-0" />
-                <span className="text-sm">{item}</span>
+               <span className="text-base leading-7 font-medium">{item} </span>
               </div>
             ))}
           </div>
