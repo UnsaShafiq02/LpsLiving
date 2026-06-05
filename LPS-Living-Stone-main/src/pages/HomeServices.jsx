@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import heroVideo from "../assets/bgVideo.mp4";
+import { ChevronDown, ArrowRight } from "lucide-react";
 
 // const buttonAnim = {
 //   hidden: {
@@ -69,9 +70,64 @@ const slides = [
     bg: "bg-[#071A2B]",
   },
 ];
-
+const serviceAreas = [
+  {
+    title: "Service Charge Accounts",
+    link: "/servicecharge",
+    items: [
+      "Service Charge Accounts",
+      "Service Charge Audits & Reviews",
+      "Section 21 Reports & Factual Findings",
+      "Developer Handovers",
+      "RTM, RMC & Freehold Companies",
+    ],
+  },
+  {
+    title: "Audit & Assurance",
+    link: "/audit-assurance",
+    items: [
+      "Statutory Audits",
+      "Independent Examinations",
+      "Internal Control Reviews",
+      "Assurance & Agreed-Upon Procedures",
+    ],
+  },
+  {
+    title: "Accounts & Taxation",
+    link: "/accounts-taxation",
+    items: [
+      "Year-End Accounts & Tax Returns",
+      "Bookkeeping",
+      "Payroll",
+      "VAT",
+      "Self Assessment",
+    ],
+  },
+  {
+    title: "Business Advisory & Support",
+    link: "/business-advisory",
+    items: [
+      "Business Advisory",
+      "Business Start-Up",
+      "Company Formation",
+      "Contractors & Freelancers",
+      "IR35 Reviews",
+    ],
+  },
+  {
+    title: "Other Services",
+    link: "/other-services",
+    items: [
+      "HMRC Investigations & Enquiries",
+      "Urgent Deadlines & Same-Day Services",
+      "Registered Office & Mail Forwarding",
+      "Company Secretarial Services",
+    ],
+  },
+];
 const HomeServices = () => {
   const [current, setCurrent] = useState(0);
+  const [openService, setOpenService] = useState(null);
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -117,8 +173,7 @@ useEffect(() => {
           // className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
            className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-black leading-tight"
           >
-            Charted accountants built on trusted relationships, responsive service, and specialist expertise.
-          </motion.h1>
+          Built on trusted relationships, responsive service, and specialist expertise.          </motion.h1>
 
           {/* <motion.div
            
@@ -129,11 +184,9 @@ useEffect(() => {
             </h2>
           </motion.div> */}
 
-          <motion.p
-           
- className="mt-3 sm:mt-5 text-[#2D3436] text-sm sm:text-lg font-normal leading-6 sm:leading-8 max-w-2xl mx-auto px-4"
->            Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
-          </motion.p>
+         <motion.p className="mt-3 sm:mt-5 text-[#2D3436] text-sm sm:text-lg font-normal leading-6 sm:leading-8 max-w-2xl mx-auto px-4">
+  Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
+</motion.p>
 
           {/* BUTTONS */}
 {/* <motion.div
@@ -311,11 +364,11 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          For Service Charge Accounting
+          Service Charge Accounts
         </h3>
 
         <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
-          Specialist reporting & compliance
+          Service charge accounts, audits & compliance
         </p>
       </div>
 
@@ -341,11 +394,11 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          For Business Services
+          Businesses
         </h3>
 
         <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
-          Strategic accounting & advisory
+          Accounting, taxation & business advisory
         </p>
       </div>
 
@@ -371,11 +424,11 @@ className="
 
       <div className="relative z-10">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-         For Individual Tax
+         Individuals 
         </h3>
 
         <p className="text-[#D9C08A] text-sm sm:text-base mt-1 font-bold">
-          Efficient personal tax planning
+          Personal tax, property tax & compliance
         </p>
       </div>
 
@@ -391,16 +444,180 @@ className="
 <section className="py-8 sm:py-14 bg-white px-3 sm:px-6 lg:px-10">
   <div className="w-full max-w-none text-left">
 
-<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#2D3436] leading-[1.5] tracking-tight">      At <span className="text-[#0E6E4F] font-bold">
-        LPS Livingstone,
+<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-[#2D3436] leading-[1.5] tracking-tight">  <span className="text-[#0E6E4F] font-bold">
+        
       </span>{" "}
-  we deliver modern accounting and tax solutions that help businesses and individuals achieve clarity, maintain compliance, plan strategically, and build long-term success.    </h1>
+  We deliver modern accounting, taxation, advisory and assurance services to businesses, property investors, managing agents, residential and commercial developments, and individuals.    </h1>
 
+  </div>
+</section>
+<section className="bg-white px-4 sm:px-6 lg:px-10 py-10 sm:py-16">
+  <div className="max-w-6xl mx-auto">
+
+    <div className="text-center mb-10">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0E6E4F]">
+        How We Can Help
+      </h2>
+
+<div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />    </div>
+
+    <div className="space-y-4">
+
+      {serviceAreas.map((service, index) => {
+        const isOpen = openService === index;
+
+        return (
+          <motion.div
+            key={service.title}
+            layout
+            className={`
+              overflow-hidden
+              rounded-[24px]
+              border
+              transition-all
+              duration-500
+              ${
+                isOpen
+                  ? "border-[#C8A15A] shadow-[0_20px_50px_rgba(14,110,79,0.12)]"
+                  : "border-[#EAEAEA] hover:border-[#C8A15A]"
+              }
+            `}
+          >
+            <button
+              onClick={() =>
+                setOpenService(isOpen ? null : index)
+              }
+              className="w-full flex items-center justify-between px-6 sm:px-8 py-6 text-left bg-white"
+            >
+              <h3
+                className={`
+                  text-lg sm:text-2xl font-semibold
+                  transition-colors
+                  duration-300
+                  ${
+                    isOpen
+                      ? "text-[#0E6E4F]"
+                      : "text-[#2D3436]"
+                  }
+                `}
+              >
+                {service.title}
+              </h3>
+
+              <motion.div
+                animate={{
+                  rotate: isOpen ? 180 : 0,
+                  y: [0, -4, 0],
+                }}
+                transition={{
+                  rotate: {
+                    duration: 0.3,
+                  },
+                  y: {
+                    repeat: Infinity,
+                    duration: 1.8,
+                  },
+                }}
+                className="
+                  h-10
+                  w-10
+                  rounded-full
+                  border
+                  border-[#C8A15A]
+                  flex
+                  items-center
+                  justify-center
+                  text-[#B58B3C]
+                "
+              >
+                <ChevronDown size={18} />
+              </motion.div>
+            </button>
+
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{
+                    height: 0,
+                    opacity: 0,
+                  }}
+                  animate={{
+                    height: "auto",
+                    opacity: 1,
+                  }}
+                  exit={{
+                    height: 0,
+                    opacity: 0,
+                  }}
+                  transition={{
+                    duration: 0.35,
+                  }}
+                >
+                  <div className="px-6 sm:px-8 pb-8">
+
+                    <div className="h-px bg-[#EAEAEA] mb-6" />
+
+                    <div className="grid sm:grid-cols-2 gap-4">
+
+                      {service.items.map((item) => (
+                        <div
+                          key={item}
+                          className="flex gap-3 items-start"
+                        >
+                          <div
+                            className="
+                              h-2
+                              w-2
+                              rotate-45
+                              bg-[#C8A15A]
+                              mt-2
+                              shrink-0
+                            "
+                          />
+
+                          <span className="text-[#2D3436]">
+                            {item}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Link
+                      to={service.link}
+                      className="
+                        mt-8
+                        inline-flex
+                        items-center
+                        gap-2
+                        px-6
+                        py-3
+                        rounded-full
+                        bg-[#0E6E4F]
+                        text-white
+                        font-medium
+                        hover:scale-105
+                        transition
+                      "
+                    >
+                      Learn More
+                      <ArrowRight size={16} />
+                    </Link>
+
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        );
+      })}
+    </div>
   </div>
 </section>
   
 
     </section>
+
+    
   );
 };
 

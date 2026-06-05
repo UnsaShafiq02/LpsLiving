@@ -396,66 +396,28 @@ const Layout = ({ children }) => {
     <div
       className="
         relative overflow-hidden
-
         rounded-[22px]
-
         border border-[#D9DDDE]
-
         bg-gradient-to-br
         from-[#F8F8F5]
         via-white
         to-[#F8F8F5]
-
         p-6 lg:p-10
       "
     >
-
       {/* Decorative Glow */}
+      <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
 
-      <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C49A4A]/10 blur-3xl" />
+      <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-16 items-center">
 
-     <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-16 items-center">
-
-        {/* IMAGE SIDE */}
-
+        {/* CONTENT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="relative"
         >
-
-          {/* Gold Border Layer */}
-
-           <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[36px] border border-[#C49A4A]" /> 
-
-          <div className="overflow-hidden rounded-[26px] relative z-10 shadow-[0_30px_80px_-20px_rgba(14,110,79,0.15)]">
-
-            <img
-              src={Approach}
-              alt="Trusted Relationships"
-             className="
-  w-full
-  h-[420px] lg:h-[540px]
-  object-cover
-"
-            />
-
-          </div>
-
-        </motion.div>
-
-        {/* CONTENT SIDE */}
-
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-
-          <div className="w-12 h-[4px] rounded-full bg-[#C49A4A] mb-5" />
+          <div className="w-12 h-[4px] rounded-full bg-[#C8A15A] mb-5" />
 
           <p
             className="
@@ -463,7 +425,7 @@ const Layout = ({ children }) => {
               tracking-[0.22em]
               text-[11px]
               font-semibold
-              text-[#0E6E4F]
+              text-[#0F6B4B]
               mb-4
             "
           >
@@ -473,16 +435,11 @@ const Layout = ({ children }) => {
           <h2
             className="
               text-3xl lg:text-5xl
-
               font-black
-
-              text-[#2D3436]
-
+              text-[#2F3437]
               leading-tight
-
               mb-6
             "
-          
           >
             Trusted Relationships.
             <br />
@@ -494,13 +451,9 @@ const Layout = ({ children }) => {
           <p
             className="
               text-[#5F6B6D]
-
               text-[15px] lg:text-base
-
               leading-8
-
               max-w-[620px]
-
               mb-8
             "
           >
@@ -511,9 +464,7 @@ const Layout = ({ children }) => {
           </p>
 
           {/* TRUST LIST */}
-
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-
+          {/* <div className="grid sm:grid-cols-2 gap-4 mb-8">
             {[
               "Long-term Relationships",
               "Reliable Support",
@@ -524,58 +475,65 @@ const Layout = ({ children }) => {
                 key={item}
                 className="
                   flex items-center gap-3
-
                   bg-white
-                  font-bold
                   border border-[#D9DDDE]
-
                   rounded-2xl
-
                   px-4 py-3
-
                   shadow-sm
                 "
               >
-                <div className="w-2 h-2 rounded-full bg-[#C49A4A]" />
+                <div className="w-2 h-2 rounded-full bg-[#C8A15A]" />
 
-                <span className="text-[#2D3436] text-sm font-medium">
+                <span className="text-[#2F3437] text-sm font-medium">
                   {item}
                 </span>
               </div>
             ))}
-
-          </div>
+          </div> */}
 
           <button
             className="
               inline-flex items-center gap-2
-
               px-6 py-3
-
               rounded-xl
-
-              bg-[#0E6E4F]
-
+              bg-[#0F6B4B]
               text-white
-
               font-medium
-
               transition-all duration-300
-
               hover:bg-[#0A5A3E]
-
               hover:-translate-y-1
             "
           >
             Discover Our Approach →
           </button>
+        </motion.div>
 
+        {/* IMAGE SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative"
+        >
+          {/* Gold Border Layer */}
+          <div className="absolute inset-0 -translate-x-4 translate-y-4 rounded-[36px] border border-[#C8A15A]" />
+
+          <div className="overflow-hidden rounded-[26px] relative z-10 shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]">
+            <img
+              src={Approach}
+              alt="Trusted Relationships"
+              className="
+                w-full
+                h-[420px] lg:h-[540px]
+                object-cover
+              "
+            />
+          </div>
         </motion.div>
 
       </div>
-
     </div>
-
   </div>
 </section>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
