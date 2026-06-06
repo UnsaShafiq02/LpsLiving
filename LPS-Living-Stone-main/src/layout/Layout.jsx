@@ -1265,11 +1265,10 @@ const currentTestimonial =
   </div>
 
 </section>
-<section className="py-20 bg-white">
+<section className="py-16 lg:py-20 bg-white">
 
-  <div className="max-w-6xl mx-auto px-6 lg:px-10">
+  <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
 
-    {/* Gold Outer Border */}
     <div
       className="
         p-[2px]
@@ -1288,8 +1287,10 @@ const currentTestimonial =
           from-[#F8F8F5]
           via-white
           to-[#F8F8F5]
-          p-8
-          lg:p-14
+          px-8
+          py-8
+          lg:px-14
+          lg:py-10
           shadow-[0_30px_80px_-20px_rgba(15,107,75,0.08)]
         "
       >
@@ -1297,56 +1298,76 @@ const currentTestimonial =
         {/* Gold Glow */}
         <div className="absolute -top-20 -right-20 w-[280px] h-[280px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
 
-        <div className="relative z-10 text-center max-w-3xl mx-auto">
+        <div
+          className="
+            relative z-10
+            flex flex-col
+            lg:flex-row
+            lg:items-center
+            lg:justify-between
+            gap-10
+          "
+        >
 
-          <div className="w-14 h-[4px] rounded-full bg-[#C8A15A] mx-auto mb-6" />
+          {/* LEFT CONTENT */}
+          <div className="lg:max-w-[720px]">
 
-          <p
+            <div className="w-14 h-[4px] rounded-full bg-[#C8A15A] mb-5" />
+
+            <p
+              className="
+                uppercase
+                tracking-[0.22em]
+                text-[11px]
+                font-semibold
+                text-[#0F6B4B]
+                mb-4
+              "
+            >
+              Contact Us
+            </p>
+
+            <h2
+              className="
+                text-3xl
+                lg:text-5xl
+                font-black
+                text-[#2F3437]
+                leading-tight
+                mb-5
+              "
+            >
+              Ready to Discuss
+              <br />
+              Your Requirements?
+            </h2>
+
+            <p
+              className="
+                text-[#5F6B6D]
+                text-[15px]
+                lg:text-lg
+                leading-8
+              "
+            >
+              Whether you're a business owner, property professional or
+              individual, our team is here to provide practical advice,
+              responsive support and tailored accounting, taxation and
+              advisory services.
+            </p>
+
+          </div>
+
+          {/* RIGHT BUTTONS */}
+          <div
             className="
-              uppercase
-              tracking-[0.22em]
-              text-[11px]
-              font-semibold
-              text-[#0F6B4B]
-              mb-4
+              flex flex-col
+              sm:flex-row
+              lg:flex-col
+              gap-4
+              shrink-0
             "
           >
-            Contact Us
-          </p>
-
-          <h2
-            className="
-              text-3xl
-              lg:text-5xl
-              font-black
-              text-[#2F3437]
-              leading-tight
-              mb-6
-            "
-          >
-            Ready to Discuss
-            <br />
-            Your Requirements?
-          </h2>
-
-          <p
-            className="
-              text-[#5F6B6D]
-              text-base
-              lg:text-lg
-              leading-8
-              max-w-2xl
-              mx-auto
-              mb-10
-            "
-          >
-            Whether you're a business owner, property professional or
-            individual, our team is here to provide practical advice,
-            responsive support and tailored accounting, taxation and
-            advisory services.
-          </p>
-
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
 
             <Link
               to="/contact"
@@ -1361,6 +1382,7 @@ const currentTestimonial =
                 bg-[#0F6B4B]
                 text-white
                 font-semibold
+                whitespace-nowrap
                 hover:bg-[#0A5A3E]
                 hover:-translate-y-1
                 transition-all duration-300
@@ -1383,6 +1405,7 @@ const currentTestimonial =
                 border border-[#C8A15A]
                 text-[#2F3437]
                 font-semibold
+                whitespace-nowrap
                 hover:bg-[#F7F7F4]
                 hover:-translate-y-1
                 transition-all duration-300
