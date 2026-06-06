@@ -651,42 +651,41 @@ const currentTestimonial =
     </div>
   </div>
 </section>
-<section className="py-0 bg-white">
+<section className="py-4 bg-white">
   <div className="w-full mx-auto">
-
-    {/* Heading */}
-
-    <div className="text-center mb-12">
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
-        What Our Clients Say
-      </h2>
-
-      <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
-
-      <p className="mt-6 text-[#5F6B6D] max-w-3xl mx-auto text-lg">
-        Trusted by self-employed professionals, directors and business owners
-        across the UK.
-      </p>
-    </div>
 
     <div
       className="
-        relative overflow-hidden
+        relative
+        overflow-hidden
         rounded-[22px]
         border border-[#D9DDDE]
-        bg-gradient-to-br
-        from-[#F8F8F5]
-        via-white
-        to-[#F8F8F5]
+        bg-white
         p-6 lg:p-10
       "
     >
+
       <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
 
-      <div className="grid lg:grid-cols-[1fr_0.85fr] gap-8 items-stretch">
+      {/* HEADING */}
+      <div className="relative z-10 text-center mb-10">
+
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
+          What Our Clients Say
+        </h2>
+
+        <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
+
+        <p className="mt-5 text-[#5F6B6D] max-w-3xl mx-auto text-lg">
+          Trusted by self-employed professionals, directors and business owners
+          across the UK.
+        </p>
+
+      </div>
+
+      <div className="grid lg:grid-cols-[1.25fr_0.75fr] gap-8 items-stretch">
 
         {/* TESTIMONIAL CARD */}
-
         <AnimatePresence mode="wait">
 
           <motion.div
@@ -699,7 +698,7 @@ const currentTestimonial =
               bg-white
               border border-[#D9DDDE]
               rounded-[24px]
-              p-8
+              p-8 lg:p-10
               shadow-sm
               flex
               flex-col
@@ -714,6 +713,7 @@ const currentTestimonial =
               className="
                 text-[#2F3437]
                 text-lg
+                lg:text-xl
                 leading-9
                 italic
                 mb-8
@@ -731,67 +731,69 @@ const currentTestimonial =
                 {currentTestimonial.role}
               </p>
             </div>
+
           </motion.div>
 
         </AnimatePresence>
 
         {/* CATEGORY CARD */}
+        <AnimatePresence mode="wait">
 
-        {/* CATEGORY IMAGE */}
+          <motion.div
+            key={currentGroup.category}
+            initial={{ opacity: 0, x: 60 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -60 }}
+            transition={{ duration: 0.5 }}
+            className="
+              relative
+              overflow-hidden
+              rounded-[24px]
+              border border-[#C8A15A]
+              bg-gradient-to-br
+              from-[#0F6B4B]
+              to-[#084C35]
+              text-white
+              shadow-sm
+              flex
+              items-center
+              justify-center
+              p-6
+            "
+          >
 
-<AnimatePresence mode="wait">
-  <motion.div
-    key={currentGroup.category}
-    initial={{ opacity: 0, x: 60 }}
-    animate={{ opacity: 1, x: 0 }}
-    exit={{ opacity: 0, x: -60 }}
-    transition={{ duration: 0.5 }}
-    className="
-      relative
-      overflow-hidden
-      rounded-[24px]
-      border border-[#C8A15A]
-      bg-gradient-to-br
-      from-[#0F6B4B]
-      to-[#084C35]
-      text-white
-      shadow-sm
-      h-full
-      flex
-      items-center
-      justify-center
-      p-8
-    "
-  >
-    {/* Decorative Pattern */}
-    <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-white/5" />
-    <div className="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-white/5" />
+            {/* Decorative Circles */}
+            <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-white/5" />
+            <div className="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-white/5" />
 
-    <div className="relative z-10 text-center">
+            <div className="relative z-10 text-center">
 
-      <div className="flex justify-center mb-6">
-        {React.createElement(currentGroup.icon, {
-          size: 70,
-          strokeWidth: 1.5,
-          className: "text-[#C8A15A]",
-        })}
+              <div className="flex justify-center mb-5">
+                {React.createElement(currentGroup.icon, {
+                  size: 56,
+                  strokeWidth: 1.5,
+                  className: "text-[#C8A15A]",
+                })}
+              </div>
+
+              <h3 className="text-3xl font-black mb-4">
+                {currentGroup.category}
+              </h3>
+
+              <div className="w-14 h-[3px] bg-[#C8A15A] mx-auto mb-4 rounded-full" />
+
+              <p className="text-white/85 leading-7 max-w-xs mx-auto">
+                {currentGroup.description}
+              </p>
+
+            </div>
+
+          </motion.div>
+
+        </AnimatePresence>
+
       </div>
 
-      <h3 className="text-4xl font-black mb-4">
-        {currentGroup.category}
-      </h3>
-
-      <div className="w-14 h-[3px] bg-[#C8A15A] mx-auto mb-5 rounded-full" />
-
-      <p className="text-white/85 leading-7 max-w-sm mx-auto">
-        {currentGroup.description}
-      </p>
-
-    </div>
-  </motion.div>
-</AnimatePresence>
-
-      </div>
     </div>
 
   </div>
@@ -1198,12 +1200,25 @@ const currentTestimonial =
         py-6
         lg:px-12
         lg:py-8
-        shadow-[0_20px_60px_-20px_rgba(15,107,75,0.08)]
+        shadow-[0_35px_90px_-25px_rgba(15,107,75,0.12)]
+
+        before:absolute
+        before:inset-0
+        before:bg-[radial-gradient(circle_at_top_right,rgba(200,161,90,0.08),transparent_40%)]
+        before:pointer-events-none
       "
     >
 
-      {/* Glow */}
+      {/* Gold Glow */}
       <div className="absolute -top-20 -right-20 w-[240px] h-[240px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
+
+      {/* Green Glow */}
+      <div className="absolute -bottom-16 -left-16 w-[220px] h-[220px] rounded-full bg-[#0F6B4B]/5 blur-3xl" />
+
+      {/* Decorative Rings */}
+      <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[300px] h-[300px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
+
+      <div className="absolute top-1/2 right-20 -translate-y-1/2 w-[220px] h-[220px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
 
       <div
         className="
@@ -1236,8 +1251,9 @@ const currentTestimonial =
 
           <h2
             className="
-              text-3xl
-              lg:text-5xl
+              text-2xl
+              lg:text-3xl
+              xl:text-4xl
               font-black
               text-[#2F3437]
               leading-tight
@@ -1274,7 +1290,8 @@ const currentTestimonial =
               whitespace-nowrap
               hover:bg-[#0A5A3E]
               hover:-translate-y-1
-              transition-all duration-300
+              transition-all
+              duration-300
             "
           >
             Get in Touch →
@@ -1297,7 +1314,8 @@ const currentTestimonial =
               whitespace-nowrap
               hover:bg-[#F7F7F4]
               hover:-translate-y-1
-              transition-all duration-300
+              transition-all
+              duration-300
             "
           >
             Explore Our Services →
