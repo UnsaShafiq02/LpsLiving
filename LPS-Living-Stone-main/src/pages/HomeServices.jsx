@@ -440,18 +440,100 @@ useEffect(() => {
   return (
     <section className="w-full bg-white overflow-hidden">
 
-      {/* ================= HERO ================= */}
+  {/* MOBILE HERO */}
+<div className="lg:hidden relative w-full h-[75vh] sm:h-[85vh] overflow-hidden">
+
+  <video
+    src={heroVideo}
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div className="absolute inset-0 bg-white/15" />
+
+  <div className="relative z-10 text-center px-5 pt-40">
+
+    <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mx-auto mb-5" />
+
+    <h1
+      className="
+        text-[#0F6B4B]
+        text-3xl
+        sm:text-5xl
+        font-black
+        leading-tight
+      "
+    >
+      Built on trusted relationships,
+      responsive service and
+      specialist expertise.
+    </h1>
+
+    <p
+      className="
+        mt-5
+        text-[#2F3437]
+        text-base
+        leading-7
+        max-w-xl
+        mx-auto
+      "
+    >
+      Supporting property professionals,
+      businesses and individuals with a
+      practical and modern approach to
+      compliance, growth and day-to-day
+      operations.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-3">
+
+      <Link
+        to="/services"
+        className="
+          px-6 py-3
+          rounded-xl
+          bg-[#0F6B4B]
+          text-white
+          font-semibold
+        "
+      >
+        Discover Our Services
+      </Link>
+
+      <Link
+        to="/contact"
+        className="
+          px-6 py-3
+          rounded-xl
+          bg-white
+          text-[#2F3437]
+          font-semibold
+          border border-[#C8A15A]
+        "
+      >
+        Get in Touch
+      </Link>
+
+    </div>
+
+  </div>
+
+</div>    {/* ================= HERO ================= */}
 <div
+ 
   className="
+    hidden lg:flex
     relative
     w-full
-    min-h-[95vh]
-    lg:min-h-[850px]
-    flex
+    min-h-[850px]
     overflow-hidden
-    rounded-b-[28px]
-    sm:rounded-b-[36px]
+    rounded-b-[36px]
   "
+
 >
   {/* ── LEFT: white text panel ── */}
   <div className="
@@ -465,7 +547,7 @@ useEffect(() => {
   px-6
   sm:px-10
   lg:px-16
-  pt-36
+  pt-90
   sm:pt-40
   lg:pt-20
   pb-16
@@ -533,7 +615,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
     <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/20 to-transparent" />
   </div>
 
-</div>
+</>
  
       {/* ================= SERVICES CARDS ================= */}
 <section className="w-full bg-white px-2 sm:px-4 lg:px-6 py-5 sm:py-8">
