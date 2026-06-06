@@ -441,207 +441,101 @@ useEffect(() => {
     <section className="w-full bg-white overflow-hidden">
 
       {/* ================= HERO ================= */}
-{/* <div className="relative w-full min-h-[30vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
-{/* <div className="relative w-full min-h-[75vh] md:min-h-[20vh] lg:min-h-[75vh] flex items-start justify-center pt-2 md:pt-4 overflow-hidden"> */}
-<div className="relative w-full h-[45vh] sm:h-[70vh] lg:h-[70vh] flex items-start lg:items-center justify-center overflow-hidden rounded-b-none sm:rounded-b-[30px]">      <video
-          src={heroVideo}
-          autoPlay
-          muted
-          loop
-          playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-white/10 sm:hidden" />
-
-        {/* <div className="absolute inset-0 bg-[#071A2B]/40" /> */}
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#071A2B]/30 via-[#071A2B]/10 to-transparent" /> */}
-        {/* <div className="absolute inset-0 bg-[#071A2B]/20" /> */}
-
-        {/* Glow */}
-        {/* <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#0E6E4F]/25 blur-3xl rounded-full" /> */}
-        {/* <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#0E6E4F]/30 blur-3xl rounded-full" /> */}
-        <div className="hidden sm:block absolute -top-40 -left-40 w-[500px] h-[500px] bg-[#0E6E4F]/25 blur-3xl rounded-full" />
-        <div className="hidden sm:block absolute -bottom-40 -right-40 w-[500px] h-[500px] bg-[#0E6E4F]/30 blur-3xl rounded-full" />
-        {/* CONTENT */}
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ staggerChildren: 0.12 }}
-         className="relative z-10 text-center w-full max-w-none px-4 pt-28 sm:pt-16 lg:pt-20 pb-6"       >
-          <motion.h1
-           
-          //  className="mt-2 sm:mt-8 text-[#0D2040] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight"
-          // className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-[0_2px_6px_rgba(255,255,255,0.35)]"
-           className="mt-6 sm:mt-10 text-[#0E6E4F] text-2xl sm:text-5xl lg:text-6xl font-black leading-tight"
-          >
-          Built on trusted relationships, responsive service, and specialist expertise.          </motion.h1>
-
-          {/* <motion.div
-           
-            className="mt-4 inline-block px-5 py-2.5 bg-[#0E6E4F]/50 rounded-lg border border-[#0E6E4F]/70"
-          >
-            <h2 className="text-white text-xl sm:text-3xl font-semibold">
-              for UK Businesses & Individuals
-            </h2>
-          </motion.div> */}
-
-         <motion.p className="mt-3 sm:mt-5 text-[#2D3436] text-sm sm:text-lg font-normal leading-6 sm:leading-8 max-w-2xl mx-auto px-4">
-  Supporting property professionals, businesses, and individuals with a practical and modern approach to compliance, growth and day-to-day operations.
-</motion.p>
-
-          {/* BUTTONS */}
-{/* <motion.div
-  initial="hidden"
-  animate="show"
-  variants={{
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  }}
- className="mt-14 sm:mt-16 flex flex-row flex-wrap justify-center items-center gap-3 sm:gap-5"
+<div
+  className="
+    relative
+    w-full
+    min-h-[95vh]
+    lg:min-h-[850px]
+    flex
+    overflow-hidden
+    rounded-b-[28px]
+    sm:rounded-b-[36px]
+  "
 >
+  {/* ── LEFT: white text panel ── */}
+  <div className="
+  relative
+  z-10
+  w-full
+  lg:w-[52%]
+  flex
+  flex-col
+  justify-center
+  px-6
+  sm:px-10
+  lg:px-16
+  pt-36
+  sm:pt-40
+  lg:pt-20
+  pb-16
+  bg-white
+">
+    <div className="max-w-[720px]">
+    <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
 
-  <motion.div variants={buttonAnim}>
-    <Link
-      to="/servicecharge"
-// className="
-//   w-[85%] sm:w-[260px]
-//   h-[42px] sm:min-h-[60px]
-//   flex items-center justify-center
-//   text-center
-
-//   px-4 sm:px-8
-//   text-xs sm:text-lg font-semibold
-//   whitespace-nowrap
-
-//   rounded-xl
-//   bg-[#224C26] text-white
-
-//   hover:bg-white hover:text-[#224C26]
-//   border border-transparent hover:border-[#0E6E4F]
-
-//   transition shadow-lg
-// "
-className="
-  w-[75px] h-[75px] sm:w-[150px] sm:h-[150px]
-  flex items-center justify-center
-  text-center
-
-  text-[10px] sm:text-base lg:text-lg
-  font-semibold leading-tight
-  px-3
-
-  rounded-full
-
-  bg-[#224C26] text-white
-
-  hover:bg-white hover:text-[#224C26]
-  border border-transparent hover:border-[#0E6E4F]
-
-  transition shadow-xl
-"
+    <motion.h1
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      className="text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[72px] font-black text-[#2F3437] leading-[1.15] mb-5"
     >
-      Service Charge Accounts
-    </Link>
-  </motion.div>
+      Accounting, Tax &amp;{" "}
+      <span className="text-[#0F6B4B]">Advisory Services</span>{" "}
+      Built Around Long-Term Relationships.
+    </motion.h1>
 
-  <motion.div variants={buttonAnim}>
-    <Link
-      to="/services"
-// className="
-//   w-[85%] sm:w-[260px]
-//   h-[42px] sm:min-h-[60px]
-//   flex items-center justify-center
-//   text-center
-
-//   px-4 sm:px-8
-//   text-xs sm:text-lg font-semibold
-//   whitespace-nowrap
-
-//   rounded-xl
-//   bg-[#224C26] text-white
-
-//   hover:bg-white hover:text-[#224C26]
-//   border border-transparent hover:border-[#0E6E4F]
-
-//   transition shadow-lg
-// "
-className="
-  w-[75px] h-[75px] sm:w-[150px] sm:h-[150px]
-  flex items-center justify-center
-  text-center
-
-  text-[10px] sm:text-base lg:text-lg
-  font-semibold leading-tight
-  px-3
-
-  rounded-full
-
-  bg-[#224C26] text-white
-
-  hover:bg-white hover:text-[#224C26]
-  border border-transparent hover:border-[#0E6E4F]
-
-  transition shadow-xl
-"
+    <motion.p
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+      className="text-[#5F6B6D] text-base sm:text-lg lg:text-[20px] leading-7 lg:leading-8 max-w-md mb-8"
     >
-      Business Services
-    </Link>
-  </motion.div>
+      Supporting property professionals, businesses and individuals with accounting, taxation, audit and advisory services delivered with practical expertise, responsive support and a commitment to long-term client relationships.
+    </motion.p>
 
-  <motion.div variants={buttonAnim}>
-    <Link
-      to="/services/personal-tax"
-// className="
-//   w-[85%] sm:w-[260px]
-//   h-[42px] sm:min-h-[60px]
-//   flex items-center justify-center
-//   text-center
-
-//   px-4 sm:px-8
-//   text-xs sm:text-lg font-semibold
-//   whitespace-nowrap
-
-//   rounded-xl
-//   bg-[#224C26] text-white
-
-//   hover:bg-white hover:text-[#224C26]
-//   border border-transparent hover:border-[#0E6E4F]
-
-//   transition shadow-lg
-// "
-className="
-  w-[75px] h-[75px] sm:w-[150px] sm:h-[150px]
-  flex items-center justify-center
-  text-center
-
-  text-[10px] sm:text-base lg:text-lg
-  font-semibold leading-tight
-  px-3
-
-  rounded-full
-
-  bg-[#224C26] text-white
-
-  hover:bg-white hover:text-[#224C26]
-  border border-transparent hover:border-[#0E6E4F]
-
-  transition shadow-xl
-"
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.22 }}
+      className="flex flex-wrap gap-3"
     >
-      Personal Tax
-    </Link>
-  </motion.div>
+      <Link
+        to="/services"
+        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0F6B4B] text-white text-sm font-semibold hover:bg-[#0A5A3E] hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-[#0F6B4B]/20"
+      >
+        Discover Our Services →
+      </Link>
+      <Link
+        to="/contact"
+        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2F3437] text-sm font-semibold border border-[#D9DDDE] hover:border-[#0F6B4B] hover:-translate-y-0.5 transition-all duration-300"
+      >
+        Get in Touch →
+      </Link>
+    </motion.div>
+  </div>
+</div>
 
-</motion.div> */}
+  {/* ── RIGHT: video, full bleed ── */}
+  <div className="absolute inset-0 lg:left-[38%] z-0">
+    <video
+      src={heroVideo}
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover"
+    />
 
+    {/* Blend: white fades into video from left */}
+    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent lg:via-white/40" />
 
-        </motion.div>
-      </div>
+    {/* Subtle dark vignette on far right edge */}
+    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/20 to-transparent" />
+  </div>
+
+</div>
+ 
       {/* ================= SERVICES CARDS ================= */}
 <section className="w-full bg-white px-2 sm:px-4 lg:px-6 py-5 sm:py-8">
 
@@ -1072,7 +966,7 @@ className="
 </section>
   
 
-    </section>
+  </section>  
 
     
   );
