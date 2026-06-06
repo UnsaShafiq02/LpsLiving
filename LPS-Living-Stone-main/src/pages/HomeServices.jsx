@@ -441,7 +441,7 @@ useEffect(() => {
     <section className="w-full bg-white overflow-hidden">
 
   {/* MOBILE HERO */}
-<div className="lg:hidden relative w-full h-[75vh] sm:h-[85vh] overflow-hidden">
+<div className="lg:hidden relative w-full h-[75vh] sm:h-[40vh] overflow-hidden">
 
   <video
     src={heroVideo}
