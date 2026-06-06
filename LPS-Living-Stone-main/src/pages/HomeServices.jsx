@@ -585,7 +585,7 @@ useEffect(() => {
       lg:text-[38px]
       xl:text-[44px]
       font-bold
-      text-[#2F3437]
+      text-[#0F6B4B]
     "
   >
     built around long-term relationships.
