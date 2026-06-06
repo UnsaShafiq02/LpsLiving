@@ -17,13 +17,12 @@ import docuwareLogo from '../assets/logo/docuware.png';
 import clientt from '../assets/Clientt.jpg';
 import Approach from '../assets/Approach.jpeg';
 import Landlord from '../assets/Landlord.png';
-import L1xero from '../assets/L1xero.png';
-import L2xero from '../assets/L2xero.png';
+
 import ICAEWBG from '../assets/ICAEW-BG.png';
 import HMRCbg from '../assets/HMRC-bg.png';
 import ICObg from '../assets/ICO-bg.png';
 import ACSP from '../assets/ACSP.png';
-import XeroBronze from '../assets/XeroBronze.png';
+import XeroLatest from '../assets/XeroLatest.png';
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -810,9 +809,9 @@ const currentTestimonial =
         grid
         grid-cols-2
         sm:grid-cols-3
-        lg:grid-cols-4
-        xl:grid-cols-6
-        2xl:grid-cols-6
+        lg:grid-cols-2
+        xl:grid-cols-5
+        2xl:grid-cols-5
         gap-3 lg:gap-4
         items-center
         px-3 lg:px-0
@@ -823,8 +822,8 @@ const currentTestimonial =
         { name: "HMRC",        src: HMRCbg     },
         { name: "ACSP",        src: ACSP       },
         { name: "ICO",         src: ICObg      },
-        { name: "Xero Advisor",src: L2xero     },
-        { name: "Xero Bronze", src: XeroBronze },
+        { name: "Xero Latest",src:  XeroLatest },
+       
       ].map((item) => (
         <div
           key={item.name}
