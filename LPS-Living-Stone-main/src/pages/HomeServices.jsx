@@ -659,7 +659,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
       {/* ================= SERVICES CARDS ================= */}
 <section className="w-full bg-white px-2 sm:px-4 lg:px-6 py-5 sm:py-8">
 
-   <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
 
     {/* CARD 1 */}
     <Link
@@ -670,7 +670,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
         bg-[#0E6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
-        flex items-center justify-between
+        flex items-center
         shadow-lg hover:shadow-2xl
         hover:-translate-y-1
         transition-all duration-500
@@ -678,17 +678,28 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
     >
       <div className="absolute right-[-40px] top-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex-1 text-center">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
           Service Charge Accounts
         </h3>
 
-        <p className="text-white text-sm sm:text-base mt-1 font-bold">
+        <p className="text-white text-sm sm:text-base mt-2 font-medium">
           Service charge accounts, audits & compliance
         </p>
       </div>
 
-      <span className="text-[#C49A4A] text-3xl">→</span>
+      <span
+        className="
+          absolute
+          right-6
+          top-1/2
+          -translate-y-1/2
+          text-[#C49A4A]
+          text-3xl
+        "
+      >
+        →
+      </span>
     </Link>
 
     {/* CARD 2 */}
@@ -700,7 +711,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
         bg-[#0B5D47]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
-        flex items-center justify-between
+        flex items-center
         shadow-lg hover:shadow-2xl
         hover:-translate-y-1
         transition-all duration-500
@@ -708,17 +719,28 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
     >
       <div className="absolute left-[-40px] bottom-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex-1 text-center">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
           Businesses
         </h3>
 
-        <p className="text-white text-sm sm:text-base mt-1 font-bold">
+        <p className="text-white text-sm sm:text-base mt-2 font-medium">
           Accounting, taxation & business advisory
         </p>
       </div>
 
-      <span className="text-[#C49A4A] text-3xl">→</span>
+      <span
+        className="
+          absolute
+          right-6
+          top-1/2
+          -translate-y-1/2
+          text-[#C49A4A]
+          text-3xl
+        "
+      >
+        →
+      </span>
     </Link>
 
     {/* CARD 3 */}
@@ -730,7 +752,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
         bg-[#0E6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
-        flex items-center justify-between
+        flex items-center
         shadow-lg hover:shadow-2xl
         hover:-translate-y-1
         transition-all duration-500
@@ -738,17 +760,28 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
     >
       <div className="absolute right-[-40px] bottom-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex-1 text-center">
         <h3 className="text-white text-xl sm:text-3xl font-semibold">
-         Individuals 
+          Individuals
         </h3>
 
-        <p className="text-white text-sm sm:text-base mt-1 font-bold">
+        <p className="text-white text-sm sm:text-base mt-2 font-medium">
           Personal tax, property tax & compliance
         </p>
       </div>
 
-      <span className="text-[#C49A4A] text-3xl">→</span>
+      <span
+        className="
+          absolute
+          right-6
+          top-1/2
+          -translate-y-1/2
+          text-[#C49A4A]
+          text-3xl
+        "
+      >
+        →
+      </span>
     </Link>
 
   </div>
