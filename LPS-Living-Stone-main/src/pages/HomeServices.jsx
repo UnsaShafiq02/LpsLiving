@@ -567,15 +567,28 @@ useEffect(() => {
       Built Around Long-Term Relationships.
     </motion.h1>
 
-    <motion.p
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
-      className="text-[#5F6B6D] text-base sm:text-lg lg:text-[20px] leading-7 lg:leading-8 max-w-md mb-8"
-    >
-      Supporting property professionals, businesses and individuals with accounting, taxation, audit and advisory services delivered with practical expertise, responsive support and a commitment to long-term client relationships.
-    </motion.p>
-
+   <motion.p
+  initial={{ opacity: 0, y: 16 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+  className="
+    text-[#5F6B6D]
+    text-base
+    sm:text-lg
+    lg:text-[20px]
+    leading-7
+    lg:leading-8
+    max-w-[700px]
+    mb-8
+  "
+>
+  Supporting property professionals, businesses and individuals
+  <br />
+  with accounting, taxation, audit and advisory services
+  <br />
+  delivered with practical expertise, responsive support and a commitment to
+  long-term client relationships.
+</motion.p>
     <motion.div
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
