@@ -1027,7 +1027,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
     </div>
   </div>
 </section> */}
-<section className="bg-white px-4 sm:px-6 lg:px-10 py-16">
+<section className="bg-white px-4 sm:px-6 lg:px-10 py-10">
   <div className="max-w-[1900px] mx-auto">
 
     <div className="text-center mb-12">

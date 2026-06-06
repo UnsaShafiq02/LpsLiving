@@ -651,7 +651,7 @@ const currentTestimonial =
     </div>
   </div>
 </section>
-<section className="py-16 bg-white">
+<section className="py-0 bg-white">
   <div className="w-full mx-auto">
 
     {/* Heading */}
@@ -798,15 +798,17 @@ const currentTestimonial =
 </section>
       {/* ───────────────── TRUST / ACCREDITATIONS ───────────────── */}
 {/* ───────────────── SOFTWARE / ACCREDITATIONS ───────────────── */}
-<section className="py-16 bg-white border-t border-[#D9DDDE]">
+<section className="py-4 bg-white border-t border-[#D9DDDE]">
   <div className="w-full px-2 lg:px-4">
 
-    <div className="text-center mb-14">
+    <div className="text-center mb-4 lg:mb-6">
       <h2 className="text-3xl lg:text-5xl font-bold text-[#0F6B4B]">
         Accreditations & Partnerships
       </h2>
+
       <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
-      <p className="mt-5 text-[#5F6B6D] max-w-2xl mx-auto">
+
+      <p className="mt-3 text-[#5F6B6D] max-w-2xl mx-auto">
         Working with trusted industry bodies, regulators and technology partners.
       </p>
     </div>
@@ -818,31 +820,21 @@ const currentTestimonial =
         sm:grid-cols-3
         lg:grid-cols-2
         xl:grid-cols-5
-        2xl:grid-cols-5
-        gap-3 lg:gap-4
+        gap-2 lg:gap-3
         items-center
-        px-3 lg:px-0
       "
     >
       {[
-        { name: "ICAEW",       src: ICAEWBG    },
-        { name: "HMRC",        src: HMRCbg     },
-        { name: "ACSP",        src: ACSP       },
-        { name: "ICO",         src: ICObg      },
-        { name: "Xero Latest",src:  XeroLatest },
-       
+        { name: "ICAEW", src: ICAEWBG },
+        { name: "HMRC", src: HMRCbg },
+        { name: "ACSP", src: ACSP },
+        { name: "ICO", src: ICObg },
+        { name: "Xero Latest", src: XeroLatest },
       ].map((item) => (
         <div
           key={item.name}
           className="
-            flex flex-col items-center justify-center gap-2
-            bg-[#F8F8F5]
-            border border-[#E5E7EB]
-            rounded-2xl
-            p-3 lg:p-0
-            lg:bg-transparent
-            lg:border-none
-            lg:rounded-none
+            flex items-center justify-center
             transition-all duration-300
             hover:scale-105
           "
@@ -851,23 +843,20 @@ const currentTestimonial =
             src={item.src}
             alt={item.name}
             className="
-              h-14 lg:h-[390px]
-              w-full
+              h-16
+              sm:h-20
+              lg:h-[240px]
+              w-auto
               object-contain
-              transition-transform duration-300
             "
           />
-          <span className="lg:hidden text-[10px] font-semibold text-[#5F6B6D] text-center">
-            {item.name}
-          </span>
         </div>
       ))}
     </div>
 
   </div>
 </section>
-
-<section className="mb-8 lg:mb-24">
+<section className="mb-3 lg:mb-4">
 
   <div
     className="
@@ -1191,156 +1180,128 @@ const currentTestimonial =
   </div>
 
 </section>
-<section className="py-16 lg:py-20 bg-white">
+<section className="py-0 bg-white">
 
-  <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+  <div className="w-full px-0">
 
     <div
       className="
-        p-[2px]
-        rounded-[38px]
-        bg-[#B58B3C]
+        relative
+        overflow-hidden
+        rounded-[32px]
+        border border-[#D9DDDE]
+        bg-gradient-to-br
+        from-[#F8F8F5]
+        via-white
+        to-[#F8F8F5]
+        px-6
+        py-6
+        lg:px-12
+        lg:py-8
+        shadow-[0_20px_60px_-20px_rgba(15,107,75,0.08)]
       "
     >
 
+      {/* Glow */}
+      <div className="absolute -top-20 -right-20 w-[240px] h-[240px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
+
       <div
         className="
-          relative
-          overflow-hidden
-          rounded-[36px]
-          border border-[#D9DDDE]
-          bg-gradient-to-br
-          from-[#F8F8F5]
-          via-white
-          to-[#F8F8F5]
-          px-8
-          py-8
-          lg:px-14
-          lg:py-10
-          shadow-[0_30px_80px_-20px_rgba(15,107,75,0.08)]
+          relative z-10
+          flex flex-col
+          lg:flex-row
+          lg:items-center
+          lg:justify-between
+          gap-6 lg:gap-10
         "
       >
 
-        {/* Gold Glow */}
-        <div className="absolute -top-20 -right-20 w-[280px] h-[280px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
+        {/* LEFT CONTENT */}
+        <div className="lg:max-w-[850px]">
 
+          <div className="w-14 h-[4px] rounded-full bg-[#C8A15A] mb-4" />
+
+          <p
+            className="
+              uppercase
+              tracking-[0.22em]
+              text-[11px]
+              font-semibold
+              text-[#0F6B4B]
+              mb-3
+            "
+          >
+            Contact Us
+          </p>
+
+          <h2
+            className="
+              text-3xl
+              lg:text-5xl
+              font-black
+              text-[#2F3437]
+              leading-tight
+            "
+          >
+            Ready to Discuss Your Requirements?
+          </h2>
+
+        </div>
+
+        {/* RIGHT BUTTONS */}
         <div
           className="
-            relative z-10
             flex flex-col
-            lg:flex-row
-            lg:items-center
-            lg:justify-between
-            gap-10
+            sm:flex-row
+            gap-4
+            shrink-0
           "
         >
 
-          {/* LEFT CONTENT */}
-          <div className="lg:max-w-[720px]">
-
-            <div className="w-14 h-[4px] rounded-full bg-[#C8A15A] mb-5" />
-
-            <p
-              className="
-                uppercase
-                tracking-[0.22em]
-                text-[11px]
-                font-semibold
-                text-[#0F6B4B]
-                mb-4
-              "
-            >
-              Contact Us
-            </p>
-
-            <h2
-              className="
-                text-3xl
-                lg:text-5xl
-                font-black
-                text-[#2F3437]
-                leading-tight
-                mb-5
-              "
-            >
-              Ready to Discuss
-              <br />
-              Your Requirements?
-            </h2>
-
-            <p
-              className="
-                text-[#5F6B6D]
-                text-[15px]
-                lg:text-lg
-                leading-8
-              "
-            >
-              Whether you're a business owner, property professional or
-              individual, our team is here to provide practical advice,
-              responsive support and tailored accounting, taxation and
-              advisory services.
-            </p>
-
-          </div>
-
-          {/* RIGHT BUTTONS */}
-          <div
+          <Link
+            to="/contact"
             className="
-              flex flex-col
-              sm:flex-row
-              lg:flex-col
-              gap-4
-              shrink-0
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              px-8
+              py-3.5
+              rounded-xl
+              bg-[#0F6B4B]
+              text-white
+              font-semibold
+              whitespace-nowrap
+              hover:bg-[#0A5A3E]
+              hover:-translate-y-1
+              transition-all duration-300
             "
           >
+            Get in Touch →
+          </Link>
 
-            <Link
-              to="/contact"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                px-8
-                py-3.5
-                rounded-xl
-                bg-[#0F6B4B]
-                text-white
-                font-semibold
-                whitespace-nowrap
-                hover:bg-[#0A5A3E]
-                hover:-translate-y-1
-                transition-all duration-300
-              "
-            >
-              Get in Touch →
-            </Link>
-
-            <Link
-              to="/services"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                px-8
-                py-3.5
-                rounded-xl
-                bg-white
-                border border-[#C8A15A]
-                text-[#2F3437]
-                font-semibold
-                whitespace-nowrap
-                hover:bg-[#F7F7F4]
-                hover:-translate-y-1
-                transition-all duration-300
-              "
-            >
-              Explore Our Services →
-            </Link>
-
-          </div>
+          <Link
+            to="/services"
+            className="
+              inline-flex
+              items-center
+              justify-center
+              gap-2
+              px-8
+              py-3.5
+              rounded-xl
+              bg-white
+              border border-[#C8A15A]
+              text-[#2F3437]
+              font-semibold
+              whitespace-nowrap
+              hover:bg-[#F7F7F4]
+              hover:-translate-y-1
+              transition-all duration-300
+            "
+          >
+            Explore Our Services →
+          </Link>
 
         </div>
 
