@@ -588,7 +588,7 @@ useEffect(() => {
       text-[#2F3437]
     "
   >
-    Built Around Long-Term Relationships.
+    built around long-term relationships.
   </span>
 </motion.h1>
 
