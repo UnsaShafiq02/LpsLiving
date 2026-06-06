@@ -592,7 +592,7 @@ useEffect(() => {
   </span>
 </motion.h1>
 
-   <motion.p
+  <motion.p
   initial={{ opacity: 0, y: 16 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
@@ -601,18 +601,22 @@ useEffect(() => {
     text-base
     sm:text-lg
     lg:text-[20px]
-    leading-7
-    lg:leading-8
     max-w-[700px]
     mb-8
   "
 >
-  Supporting property professionals, businesses and individuals
-  <br />
-  with accounting, taxation, audit and advisory services,
-  <br />
-  delivered with practical expertise, responsive support and a commitment to
-  long-term client relationships.
+  <span className="block mb-4">
+    Supporting property professionals, businesses and individuals
+  </span>
+
+  <span className="block mb-4">
+    with accounting, taxation, audit and advisory services
+  </span>
+
+  <span className="block">
+    delivered with practical expertise, responsive support and a commitment to
+    long-term client relationships.
+  </span>
 </motion.p>
     <motion.div
       initial={{ opacity: 0, y: 12 }}
