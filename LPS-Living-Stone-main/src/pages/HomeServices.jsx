@@ -508,8 +508,7 @@ useEffect(() => {
       </Link>
       <Link
         to="/contact"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2F3437] text-sm font-semibold border border-[#D9DDDE] hover:border-[#0F6B4B] hover:-translate-y-0.5 transition-all duration-300"
-      >
+className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2F3437] text-sm font-semibold border border-[#C8A15A] hover:bg-[#F7F7F4] hover:border-[#B58B3C] hover:-translate-y-0.5 transition-all duration-300"      >
         Get in Touch →
       </Link>
     </motion.div>
