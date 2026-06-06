@@ -666,7 +666,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0B5D47]
+        bg-[#0E6E4F]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
@@ -696,7 +696,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
       className="
         group relative overflow-hidden
         rounded-2xl
-        bg-[#0E6E4F]
+        bg-[#0B5D47]
         min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
         px-6 py-5
         flex items-center justify-between
