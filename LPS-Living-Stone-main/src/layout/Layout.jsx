@@ -1265,6 +1265,143 @@ const currentTestimonial =
   </div>
 
 </section>
+<section className="py-20 bg-white">
+
+  <div className="max-w-6xl mx-auto px-6 lg:px-10">
+
+    {/* Gold Outer Border */}
+    <div
+      className="
+        p-[2px]
+        rounded-[38px]
+        bg-[#B58B3C]
+      "
+    >
+
+      <div
+        className="
+          relative
+          overflow-hidden
+          rounded-[36px]
+          border border-[#D9DDDE]
+          bg-gradient-to-br
+          from-[#F8F8F5]
+          via-white
+          to-[#F8F8F5]
+          p-8
+          lg:p-14
+          shadow-[0_30px_80px_-20px_rgba(15,107,75,0.08)]
+        "
+      >
+
+        {/* Gold Glow */}
+        <div className="absolute -top-20 -right-20 w-[280px] h-[280px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
+
+        <div className="relative z-10 text-center max-w-3xl mx-auto">
+
+          <div className="w-14 h-[4px] rounded-full bg-[#C8A15A] mx-auto mb-6" />
+
+          <p
+            className="
+              uppercase
+              tracking-[0.22em]
+              text-[11px]
+              font-semibold
+              text-[#0F6B4B]
+              mb-4
+            "
+          >
+            Contact Us
+          </p>
+
+          <h2
+            className="
+              text-3xl
+              lg:text-5xl
+              font-black
+              text-[#2F3437]
+              leading-tight
+              mb-6
+            "
+          >
+            Ready to Discuss
+            <br />
+            Your Requirements?
+          </h2>
+
+          <p
+            className="
+              text-[#5F6B6D]
+              text-base
+              lg:text-lg
+              leading-8
+              max-w-2xl
+              mx-auto
+              mb-10
+            "
+          >
+            Whether you're a business owner, property professional or
+            individual, our team is here to provide practical advice,
+            responsive support and tailored accounting, taxation and
+            advisory services.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+            <Link
+              to="/contact"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                px-8
+                py-3.5
+                rounded-xl
+                bg-[#0F6B4B]
+                text-white
+                font-semibold
+                hover:bg-[#0A5A3E]
+                hover:-translate-y-1
+                transition-all duration-300
+              "
+            >
+              Get in Touch →
+            </Link>
+
+            <Link
+              to="/services"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                px-8
+                py-3.5
+                rounded-xl
+                bg-white
+                border border-[#C8A15A]
+                text-[#2F3437]
+                font-semibold
+                hover:bg-[#F7F7F4]
+                hover:-translate-y-1
+                transition-all duration-300
+              "
+            >
+              Explore Our Services →
+            </Link>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 </div>
   );
