@@ -23,6 +23,9 @@ import HMRCbg from '../assets/HMRC-bg.png';
 import ICObg from '../assets/ICO-bg.png';
 import ACSP from '../assets/ACSP.png';
 import XeroLatest from '../assets/XeroLatest.png';
+import DwellantLogo from "../assets/DwellantLogo.png";
+import MoneyLogo from "../assets/MoneyLogo.png";
+import IRISLogo from "../assets/IRISLogo.png";
 
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
@@ -924,74 +927,22 @@ const currentTestimonial =
   <div
     className="
       relative
-
       overflow-hidden
-
       rounded-[42px]
-
       border border-[#D9DDDE]
-
       bg-gradient-to-br
       from-[#F8F8F5]
-via-white
-to-[#F8F8F5]
-
-
-
-      px-6 lg:px-5
-
-      py-6 lg:py-5
-
-       lg:min-h-[400px]
+      via-white
+      to-[#F8F8F5]
+      px-6 lg:px-10
+      py-8 lg:py-10
     "
   >
-    {/* FIX 5: border-[#DDE7E2] → border-[#D9DDDE] */}
-
-    {/* Decorative Shape */}
-
-   <div
-  className="
-    absolute
-
-    right-[-120px]
-    top-[-80px]
-
-    w-[680px]
-    h-[680px]
-
-    rounded-full
-
-    overflow-hidden
-
-    bg-[#F8F8F5]
-
-    hidden lg:block
-  "
->
-
-  <img
-    src={clientt}
-    alt="LPS Livingstone"
-
-    className="
-      w-full
-      h-full
-
-      object-cover
-
-      object-center
-    "
-  />
-
-</div>
-
-    {/* CONTENT */}
 
     <div
       className="
         relative z-20
-
-        lg:w-[58%]
+        max-w-[1200px]
       "
     >
 
@@ -1000,15 +951,10 @@ to-[#F8F8F5]
       <p
         className="
           uppercase
-
           tracking-[0.22em]
-
           text-[11px]
-
           font-semibold
-
           text-[#0E6E4F]
-
           mb-4
         "
       >
@@ -1018,16 +964,11 @@ to-[#F8F8F5]
       <h2
         className="
           text-3xl lg:text-5xl
-
           font-bold
-
           text-[#2D3436]
-
           leading-tight
-
           mb-5
         "
-        
       >
         Working With The Systems
         <br />
@@ -1037,13 +978,9 @@ to-[#F8F8F5]
       <p
         className="
           text-[#5F6B6D]
-
           text-[15px] lg:text-base
-
           leading-8
-
-          max-w-[620px]
-
+          max-w-[800px]
           mb-10
         "
       >
@@ -1052,63 +989,98 @@ to-[#F8F8F5]
         and property professionals throughout the UK.
       </p>
 
-{/* DESKTOP LOGO WALL */}
+      {/* DESKTOP LOGO WALL */}
+
+     {/* DESKTOP LOGO WALL */}
 
 <div
   className="
     hidden md:grid
-
-    grid-cols-3
-
+    grid-cols-5
     gap-4
-
-    max-w-[700px]
+    max-w-[1100px]
   "
 >
   {[
-    { name: "Sage", src: sageLogo },
-    { name: "QuickBooks", src: intuitLogo },
-    { name: "PropMan", src: propmanLogo },
-    { name: "Blockman", src: blockmanLogo },
-    { name: "Qube", src: qubeLogo },
-    { name: "Docuware", src: docuwareLogo },
-    { name: "FreeAgent", src: FREEAGENT },
+    {
+      name: "Sage",
+      src: sageLogo,
+      website: "https://www.sage.com",
+    },
+    {
+      name: "QuickBooks",
+      src: intuitLogo,
+      website: "https://quickbooks.intuit.com",
+    },
+    {
+      name: "PropMan",
+      src: propmanLogo,
+      website: "https://www.propman.co.uk",
+    },
+    {
+      name: "Blockman",
+      src: blockmanLogo,
+      website: "https://www.blockman.co.uk",
+    },
+    {
+      name: "Qube",
+      src: qubeLogo,
+      website: "https://www.qubeglobal.com",
+    },
+    {
+      name: "DocuWare",
+      src: docuwareLogo,
+      website: "https://start.docuware.com",
+    },
+    {
+      name: "FreeAgent",
+      src: FREEAGENT,
+      website: "https://www.freeagent.com",
+    },
+    {
+      name: "Dwellant",
+      src: DwellantLogo,
+      website: "https://www.dwellant.com",
+    },
+    {
+      name: "Moneysoft",
+      src: MoneyLogo,
+      website: "https://www.moneysoft.co.uk",
+    },
+    {
+      name: "IRIS",
+      src: IRISLogo,
+      website: "https://www.iris.co.uk",
+    },
   ].map((item) => (
 
-    <div
+    <a
       key={item.name}
+      href={item.website}
+      target="_blank"
+      rel="noopener noreferrer"
       className="
-        bg-white/95
-
-        backdrop-blur-md
-
+        bg-white
         border border-[#D9DDDE]
-
         rounded-2xl
-
-        h-[82px]
-
+        h-[90px]
         flex flex-col
         items-center
         justify-center
-
         shadow-sm
-
         hover:-translate-y-1
         hover:border-[#C49A4A]
         hover:shadow-xl
-
         transition-all duration-300
+        cursor-pointer
       "
     >
       <img
         src={item.src}
         alt={item.name}
         className="
-          max-h-8
-
-          max-w-[95px]
-
+          max-h-10
+          max-w-[110px]
           object-contain
         "
       />
@@ -1116,98 +1088,179 @@ to-[#F8F8F5]
       <span
         className="
           mt-2
-
           text-[11px]
-
           font-semibold
-
           text-[#5F6B6D]
         "
       >
         {item.name}
       </span>
 
-    </div>
+    </a>
 
   ))}
 </div>
 
-{/* MOBILE LOGO BELT */}
+      {/* MOBILE LOGO BELT */}
 
-<div className="md:hidden mt-6 relative overflow-hidden">
+      <div className="md:hidden mt-6 relative overflow-hidden">
 
-  <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent z-10" />
 
-  <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent z-10" />
 
-  <div className="flex gap-3 w-max logo-marquee">
+        <div className="flex gap-3 w-max logo-marquee">
 
-    {[
-      { name: "Sage", src: sageLogo },
-      { name: "QuickBooks", src: intuitLogo },
-      { name: "PropMan", src: propmanLogo },
-      { name: "Blockman", src: blockmanLogo },
-      { name: "Qube", src: qubeLogo },
-      { name: "Docuware", src: docuwareLogo },
-      { name: "FreeAgent", src: FREEAGENT },
+          {[
+  {
+    name: "Sage",
+    src: sageLogo,
+    website: "https://www.sage.com",
+  },
+  {
+    name: "QuickBooks",
+    src: intuitLogo,
+    website: "https://quickbooks.intuit.com",
+  },
+  {
+    name: "PropMan",
+    src: propmanLogo,
+    website: "https://www.propman.co.uk",
+  },
+  {
+    name: "Blockman",
+    src: blockmanLogo,
+    website: "https://www.blockman.co.uk",
+  },
+  {
+    name: "Qube",
+    src: qubeLogo,
+    website: "https://www.qubeglobal.com",
+  },
+  {
+    name: "DocuWare",
+    src: docuwareLogo,
+    website: "https://start.docuware.com",
+  },
+  {
+    name: "FreeAgent",
+    src: FREEAGENT,
+    website: "https://www.freeagent.com",
+  },
+  {
+    name: "Dwellant",
+    src: DwellantLogo,
+    website: "https://www.dwellant.com",
+  },
+  {
+    name: "Moneysoft",
+    src: MoneyLogo,
+    website: "https://www.moneysoft.co.uk",
+  },
+  {
+    name: "IRIS",
+    src: IRISLogo,
+    website: "https://www.iris.co.uk",
+  },
 
-      { name: "Sage", src: sageLogo },
-      { name: "QuickBooks", src: intuitLogo },
-      { name: "PropMan", src: propmanLogo },
-      { name: "Blockman", src: blockmanLogo },
-      { name: "Qube", src: qubeLogo },
-      { name: "Docuware", src: docuwareLogo },
-      { name: "FreeAgent", src: FREEAGENT },
-    ].map((item, i) => (
+  // duplicate for marquee
+  {
+    name: "Sage",
+    src: sageLogo,
+    website: "https://www.sage.com",
+  },
+  {
+    name: "QuickBooks",
+    src: intuitLogo,
+    website: "https://quickbooks.intuit.com",
+  },
+  {
+    name: "PropMan",
+    src: propmanLogo,
+    website: "https://www.propman.co.uk",
+  },
+  {
+    name: "Blockman",
+    src: blockmanLogo,
+    website: "https://www.blockman.co.uk",
+  },
+  {
+    name: "Qube",
+    src: qubeLogo,
+    website: "https://www.qubeglobal.com",
+  },
+  {
+    name: "DocuWare",
+    src: docuwareLogo,
+    website: "https://start.docuware.com",
+  },
+  {
+    name: "FreeAgent",
+    src: FREEAGENT,
+    website: "https://www.freeagent.com",
+  },
+  {
+    name: "Dwellant",
+    src: DwellantLogo,
+    website: "https://www.dwellant.com",
+  },
+  {
+    name: "Moneysoft",
+    src: MoneyLogo,
+    website: "https://www.moneysoft.co.uk",
+  },
+  {
+    name: "IRIS",
+    src: IRISLogo,
+    website: "https://www.iris.co.uk",
+  },
+].map((item, i) => (
 
-      <div
-        key={i}
-        className="
-          min-w-[120px]
+  <a
+    key={i}
+    href={item.website}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      min-w-[120px]
+      h-[80px]
+      bg-white
+      border border-[#D9DDDE]
+      rounded-2xl
+      flex items-center justify-center
+      shadow-sm
+      hover:border-[#C49A4A]
+      transition-all duration-300
+    "
+  >
+              <img
+                src={item.src}
+                alt={item.name}
+                className="
+                  max-h-8
+                  max-w-[80px]
+                  object-contain
+                "
+              />
+            </a>
 
-          h-[80px]
-S
-          bg-white
+          ))}
 
-          border border-[#D9DDDE]
+        </div>
 
-          rounded-2xl
-
-          flex items-center justify-center
-
-          shadow-sm
-        "
-      >
-        <img
-          src={item.src}
-          alt={item.name}
-          className="
-            max-h-8
-
-            max-w-[80px]
-
-            object-contain
-          "
-        />
       </div>
 
-    ))}
-
-  </div>
-
-</div>
       <p
         className="
-          mt-2
-
+          mt-4
           text-[11px]
-
           text-[#5F6B6D]
         "
       >
         Software logos shown for illustrative purposes only.
       </p>
-       </div>
+
+    </div>
 
   </div>
 
