@@ -557,15 +557,40 @@ useEffect(() => {
     <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
 
     <motion.h1
-      initial={{ opacity: 0, y: 24 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[72px] font-black text-[#2F3437] leading-[1.15] mb-5"
-    >
-      Accounting, Tax &amp;{" "}
-      <span className="text-[#0F6B4B]">Advisory Services</span>{" "}
-      Built Around Long-Term Relationships.
-    </motion.h1>
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+  className="
+    text-[36px]
+    sm:text-[48px]
+    lg:text-[60px]
+    xl:text-[72px]
+    font-black
+    text-[#2F3437]
+    leading-[1.15]
+    mb-5
+  "
+>
+  Accounting, Tax &{" "}
+  <span className="text-[#0F6B4B]">
+    Advisory Services
+  </span>
+
+  <span
+    className="
+      block
+      mt-2
+      text-[24px]
+      sm:text-[30px]
+      lg:text-[38px]
+      xl:text-[44px]
+      font-bold
+      text-[#2F3437]
+    "
+  >
+    Built Around Long-Term Relationships.
+  </span>
+</motion.h1>
 
    <motion.p
   initial={{ opacity: 0, y: 16 }}
