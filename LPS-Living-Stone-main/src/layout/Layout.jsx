@@ -526,7 +526,7 @@ const currentTestimonial =
 
       {/* ───────────────── OUR APPROACH ───────────────── */}
 
-<section className="px-0 lg:px-0 py-16 bg-white">
+<section className="px-0 lg:px-0 py-0 bg-white">
   <div className="w-full mx-auto">
     <div
       className="
