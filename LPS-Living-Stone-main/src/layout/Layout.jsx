@@ -15,7 +15,7 @@ import qubeLogo     from '../assets/logo/Qube_Cinema_logo.png';
 // import dwellantLogo from '../assets/logo/dwellant.png';
 import docuwareLogo from '../assets/logo/docuware.png';
 import clientt from '../assets/Clientt.jpg';
-import Approach from '../assets/Approach.jpeg';
+import Approach from '../assets/OurApproach.png';
 import Landlord from '../assets/Landlord.png';
 
 import ICAEWBG from '../assets/ICAEW-BG.png';
@@ -543,7 +543,7 @@ const currentTestimonial =
       {/* Decorative Glow */}
       <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
 
-      <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-16 items-center">
+      <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-10 lg:gap-14 items-center">
 
         {/* CONTENT SIDE */}
         <motion.div
@@ -586,9 +586,10 @@ const currentTestimonial =
           <p
             className="
               text-[#5F6B6D]
-              text-[15px] lg:text-base
+              text-[15px]
+              lg:text-[17px]
               leading-8
-              max-w-[620px]
+              max-w-[760px]
               mb-8
             "
           >
@@ -597,34 +598,6 @@ const currentTestimonial =
             providing reliable support, practical solutions and proactive
             advice that helps them grow with confidence.
           </p>
-
-          {/* TRUST LIST */}
-          {/* <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {[
-              "Long-term Relationships",
-              "Reliable Support",
-              "Practical Solutions",
-              "Proactive Advice",
-            ].map((item) => (
-              <div
-                key={item}
-                className="
-                  flex items-center gap-3
-                  bg-white
-                  border border-[#D9DDDE]
-                  rounded-2xl
-                  px-4 py-3
-                  shadow-sm
-                "
-              >
-                <div className="w-2 h-2 rounded-full bg-[#C8A15A]" />
-
-                <span className="text-[#2F3437] text-sm font-medium">
-                  {item}
-                </span>
-              </div>
-            ))}
-          </div> */}
 
           <button
             className="
@@ -643,37 +616,36 @@ const currentTestimonial =
           </button>
         </motion.div>
 
-    
-       {/* IMAGE SIDE */}
- <motion.div
-  initial={{ opacity: 0, x: 40 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.7 }}
-  className="relative"
->
-  <div
-    className="
-      overflow-hidden
-      rounded-[26px]
-      border-[2px]
-      border-[#C8A15A]
-      relative
-      z-10
-      shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]
-    "
-  >
-    <img
-      src={Approach}
-      alt="Trusted Relationships"
-      className="
-        w-full
-        h-auto
-        object-contain
-      "
-    />
-  </div>
-</motion.div>
+        {/* IMAGE SIDE */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="relative"
+        >
+          <div
+            className="
+              overflow-hidden
+              rounded-[26px]
+              border-[2px]
+              border-[#C8A15A]
+              relative
+              z-10
+              shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]
+            "
+          >
+            <img
+              src={Approach}
+              alt="Trusted Relationships"
+              className="
+                w-full
+                h-auto
+                object-contain
+              "
+            />
+          </div>
+        </motion.div>
 
       </div>
     </div>
