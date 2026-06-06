@@ -573,7 +573,7 @@ useEffect(() => {
 >
   Accounting, tax &{" "}
   <span className="text-[#0F6B4B]">
-    advisory services
+    advisory services,
   </span>
 
   <span
