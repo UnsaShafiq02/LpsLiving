@@ -791,57 +791,61 @@ const currentTestimonial =
       <h2 className="text-3xl lg:text-5xl font-bold text-[#0F6B4B]">
         Accreditations & Partnerships
       </h2>
-
       <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
-
       <p className="mt-5 text-[#5F6B6D] max-w-2xl mx-auto">
         Working with trusted industry bodies, regulators and technology partners.
       </p>
     </div>
 
-   <div
-  className="
-    grid
-    grid-cols-2
-    sm:grid-cols-3
-    lg:grid-cols-4
-    xl:grid-cols-6
-    2xl:grid-cols-6
-    gap-2 lg:gap-4
-    items-center
-  "
->
+    <div
+      className="
+        grid
+        grid-cols-2
+        sm:grid-cols-3
+        lg:grid-cols-4
+        xl:grid-cols-6
+        2xl:grid-cols-6
+        gap-3 lg:gap-4
+        items-center
+        px-3 lg:px-0
+      "
+    >
       {[
-        { name: "ICAEW", src: ICAEWBG },
-        { name: "HMRC", src: HMRCbg },
-        { name: "ACSP", src: ACSP },
-        { name: "ICO", src: ICObg },
-        // { name: "Xero", src: L1xero },
-        { name: "Xero Advisor", src: L2xero },
+        { name: "ICAEW",       src: ICAEWBG    },
+        { name: "HMRC",        src: HMRCbg     },
+        { name: "ACSP",        src: ACSP       },
+        { name: "ICO",         src: ICObg      },
+        { name: "Xero Advisor",src: L2xero     },
         { name: "Xero Bronze", src: XeroBronze },
       ].map((item) => (
         <div
           key={item.name}
           className="
-            flex
-            items-center
-            justify-center
-            transition-all
-            duration-300
+            flex flex-col items-center justify-center gap-2
+            bg-[#F8F8F5]
+            border border-[#E5E7EB]
+            rounded-2xl
+            p-3 lg:p-0
+            lg:bg-transparent
+            lg:border-none
+            lg:rounded-none
+            transition-all duration-300
             hover:scale-105
           "
         >
-         <img
-  src={item.src}
-  alt={item.name}
-  className="
-    h-[390px]
-   w-full
-object-contain
-    transition-transform duration-300
-    hover:scale-105
-  "
-/>
+          <img
+            src={item.src}
+            alt={item.name}
+            className="
+              h-14 lg:h-[390px]
+              w-full
+              object-contain
+              transition-transform duration-300
+            "
+          />
+          <span className="lg:hidden text-[10px] font-semibold text-[#5F6B6D] text-center">
+            {item.name}
+          </span>
         </div>
       ))}
     </div>
