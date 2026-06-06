@@ -441,7 +441,7 @@ useEffect(() => {
     <section className="w-full bg-white overflow-hidden">
 
   {/* MOBILE HERO */}
-<div className="lg:hidden relative w-full h-[75vh] sm:h-[40vh] overflow-hidden">
+<div className="lg:hidden relative w-full h-[65vh] sm:h-[75vh] overflow-hidden">
 
   <video
     src={heroVideo}
@@ -454,7 +454,7 @@ useEffect(() => {
 
   <div className="absolute inset-0 bg-white/15" />
 
-  <div className="relative z-10 text-center px-5 pt-40">
+  <div className="relative z-10 text-center px-5 pt-25">
 
     <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mx-auto mb-5" />
 
