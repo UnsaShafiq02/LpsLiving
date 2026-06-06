@@ -26,7 +26,12 @@ import XeroLatest from '../assets/XeroLatest.png';
 import DwellantLogo from "../assets/DwellantLogo.png";
 import MoneyLogo from "../assets/MoneyLogo.png";
 import IRISLogo from "../assets/IRISLogo.png";
-
+import {
+  Building2,
+  BriefcaseBusiness,
+  Landmark,
+  UserRound,
+} from "lucide-react";
 // ─── Slide data ────────────────────────────────────────────────────────────────
 
 const row1Slides = [
@@ -314,37 +319,48 @@ const InfoCard = ({ title, subtitle, tags, link }) => (
 // ─── Layout ────────────────────────────────────────────────────────────────────
 const testimonialGroups = [
   {
-    category: "Self Employed",
-   image: Landlord,
-    description: "Supporting self-employed professionals across the UK.",
+    category: "Landlords",
+    icon: Landmark,
+    description:
+      "Helping landlords manage tax, rental income and property finances with confidence.",
     testimonials: [
       {
-        name: "A Hussain",
-        role: "Self Employed - Luton",
-        text: "I have been delighted with the service. Mr Shahbaz was easy to understand and very knowledgeable. Very highly recommend.",
+        name: "Sarah Mitchell",
+        role: "Property Investor",
+        text: "LPS has been invaluable in helping me manage my rental portfolio and tax obligations efficiently.",
       },
       {
-        name: "Waheed Hassan",
-        role: "Sole Trader - Derby",
-        text: "I have been with LPS for quite some time now, very professional and friendly people - always prepared to help. Highly recommend for accounting related services.",
+        name: "David Clarke",
+        role: "Landlord - Birmingham",
+        text: "Professional, responsive and always available when advice is needed.",
+      },
+    ],
+  },
+
+  {
+    category: "Managing Agents",
+    icon: Building2,
+    description:
+      "Specialist accounting and reporting support for managing agents and residential developments.",
+    testimonials: [
+      {
+        name: "James Thornton",
+        role: "Managing Agent",
+        text: "The team understands service charge accounting inside out and consistently delivers high-quality reporting.",
       },
       {
-        name: "Dr Asad",
-        role: "Locum Doctor - London",
-        text: "For the past 5 years, LPS has handled my tax affairs quickly, efficiently and professionally.",
-      },
-      {
-        name: "Sophie B Walker",
-        role: "Childcare Business Co Owner",
-        text: "The service I receive is second to none and I know everything is done properly.",
+        name: "Emma Richardson",
+        role: "Property Manager",
+        text: "Reliable support and excellent communication throughout the year.",
       },
     ],
   },
 
   {
     category: "Directors",
-   image: Landlord,
-    description: "Helping company directors stay compliant and grow confidently.",
+    icon: BriefcaseBusiness,
+    description:
+      "Supporting directors with compliance, growth and strategic financial advice.",
     testimonials: [
       {
         name: "Mr. Chaudhary",
@@ -360,6 +376,35 @@ const testimonialGroups = [
         name: "S Khan",
         role: "Project Manager - Lloyds Bank",
         text: "They never fail to impress me with their diligent, detail-oriented and customer-focused approach.",
+      },
+    ],
+  },
+
+  {
+    category: "Self-Employed",
+    icon: UserRound,
+    description:
+      "Trusted support for sole traders, contractors and self-employed professionals.",
+    testimonials: [
+      {
+        name: "A Hussain",
+        role: "Self Employed - Luton",
+        text: "I have been delighted with the service. Mr Shahbaz was easy to understand and very knowledgeable.",
+      },
+      {
+        name: "Waheed Hassan",
+        role: "Sole Trader - Derby",
+        text: "Very professional and friendly people, always prepared to help.",
+      },
+      {
+        name: "Dr Asad",
+        role: "Locum Doctor - London",
+        text: "For the past 5 years, LPS has handled my tax affairs quickly, efficiently and professionally.",
+      },
+      {
+        name: "Sophie B Walker",
+        role: "Childcare Business Co Owner",
+        text: "The service I receive is second to none and I know everything is done properly.",
       },
     ],
   },
@@ -734,55 +779,42 @@ const currentTestimonial =
       overflow-hidden
       rounded-[24px]
       border border-[#C8A15A]
-      bg-white
+      bg-gradient-to-br
+      from-[#0F6B4B]
+      to-[#084C35]
+      text-white
       shadow-sm
       h-full
+      flex
+      items-center
+      justify-center
+      p-8
     "
   >
-    <img
-      src={currentGroup.image}
-      alt={currentGroup.category}
-      className="
-        w-full
-        h-full
-        object-cover
-      "
-    />
+    {/* Decorative Pattern */}
+    <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-white/5" />
+    <div className="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-white/5" />
 
-    {/* Overlay */}
+    <div className="relative z-10 text-center">
 
-    <div
-      className="
-        absolute
-        inset-0
-        bg-gradient-to-t
-        from-[#084C35]/80
-        via-transparent
-        to-transparent
-      "
-    />
+      <div className="flex justify-center mb-6">
+        {React.createElement(currentGroup.icon, {
+          size: 70,
+          strokeWidth: 1.5,
+          className: "text-[#C8A15A]",
+        })}
+      </div>
 
-    {/* Text */}
-
-    <div
-      className="
-        absolute
-        bottom-0
-        left-0
-        right-0
-        p-6
-        text-white
-      "
-    >
-      <h3 className="text-3xl font-bold">
+      <h3 className="text-4xl font-black mb-4">
         {currentGroup.category}
       </h3>
 
-      <div className="w-12 h-[3px] bg-[#C8A15A] mt-3 mb-3 rounded-full" />
+      <div className="w-14 h-[3px] bg-[#C8A15A] mx-auto mb-5 rounded-full" />
 
-      <p className="text-white/90 leading-7">
+      <p className="text-white/85 leading-7 max-w-sm mx-auto">
         {currentGroup.description}
       </p>
+
     </div>
   </motion.div>
 </AnimatePresence>
@@ -862,66 +894,7 @@ const currentTestimonial =
 
   </div>
 </section>
-{/* <section className="py-16 bg-white border-t border-[#D9DDDE]">
-  <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-    <div className="text-center mb-16">
-      <h2 className="text-3xl lg:text-5xl font-bold text-[#0F6B4B]">
-        Accreditations & Partnerships
-      </h2>
-
-      <div className="w-20 h-[3px] bg-[#C8A15A] mx-auto mt-4 rounded-full" />
-
-      <p className="mt-5 text-[#5F6B6D] max-w-2xl mx-auto">
-        Working with trusted industry bodies, regulators and technology partners.
-      </p>
-    </div>
-
-    <div
-      className="
-        grid
-        grid-cols-1
-        md:grid-cols-2
-        lg:grid-cols-3
-        gap-14
-        items-center
-      "
-    >
-      {[
-        { name: "ICAEW", src: ICAEWBG },
-        { name: "HMRC", src: HMRCbg },
-        { name: "ACSP", src: ACSP },
-        { name: "ICO", src: ICObg },
-        { name: "Xero", src: L1xero },
-        { name: "Xero Advisor", src: L2xero },
-        { name: "Xero Bronze", src: XeroBronze },
-      ].map((item) => (
-        <div
-          key={item.name}
-          className="
-            flex
-            items-center
-            justify-center
-          "
-        >
-          <img
-            src={item.src}
-            alt={item.name}
-            className="
-              h-[220px]
-              w-auto
-              object-contain
-              transition-transform
-              duration-300
-              hover:scale-105
-            "
-          />
-        </div>
-      ))}
-    </div>
-
-  </div>
-</section> */}
 <section className="mb-8 lg:mb-24">
 
   <div
@@ -997,8 +970,10 @@ const currentTestimonial =
   className="
     hidden md:grid
     grid-cols-5
-    gap-4
-    max-w-[1100px]
+    gap-x-10
+    gap-y-8
+    items-center
+    max-w-[1300px]
   "
 >
   {[
@@ -1053,51 +1028,30 @@ const currentTestimonial =
       website: "https://www.iris.co.uk",
     },
   ].map((item) => (
-
     <a
       key={item.name}
       href={item.website}
       target="_blank"
       rel="noopener noreferrer"
       className="
-        bg-white
-        border border-[#D9DDDE]
-        rounded-2xl
-        h-[90px]
-        flex flex-col
+        flex
         items-center
         justify-center
-        shadow-sm
-        hover:-translate-y-1
-        hover:border-[#C49A4A]
-        hover:shadow-xl
-        transition-all duration-300
-        cursor-pointer
+        transition-all
+        duration-300
+        hover:scale-110
       "
     >
       <img
         src={item.src}
         alt={item.name}
         className="
-          max-h-10
-          max-w-[110px]
+          h-[90px]
+          w-auto
           object-contain
         "
       />
-
-      <span
-        className="
-          mt-2
-          text-[11px]
-          font-semibold
-          text-[#5F6B6D]
-        "
-      >
-        {item.name}
-      </span>
-
     </a>
-
   ))}
 </div>
 
