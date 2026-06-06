@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 import heroVideo from "../assets/bgVideo.mp4";
-import introImage from "../assets/IntroImage.png";
+import ServicechargeSec from "../assets/ServicechargeSec.png";
 import {
   Building2,
   FileSearch,
@@ -718,100 +718,54 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
 
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
-<section className="px-0 lg:px-0 py-16 bg-white">
-  <div className="w-full mx-auto">
-    <div
-      className="
-        relative overflow-hidden
-        rounded-[22px]
-        border border-[#D9DDDE]
-        bg-gradient-to-br
-        from-[#F8F8F5]
-        via-white
-        to-[#F8F8F5]
-        p-6 lg:p-10
-      "
-    >
-      {/* Decorative Glow */}
-      <div className="absolute -top-24 -right-24 w-[320px] h-[350px] rounded-full bg-[#C8A15A]/10 blur-3xl" />
+<section className="relative w-full overflow-hidden bg-white py-0 min-h-[480px] lg:min-h-[560px]">
 
-      <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-16 items-center">
-
-        {/* TEXT SIDE */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="w-12 h-[4px] rounded-full bg-[#C8A15A] mb-5" />
-
-          <h2
-            className="
-              text-3xl lg:text-5xl
-              font-black
-              text-[#2F3437]
-              leading-tight
-              mb-6
-            "
-          >
-            Modern Accounting,
-            <br />
-            Advisory &
-            <br />
-            Assurance Services.
-          </h2>
-
-          <p
-            className="
-              text-[#5F6B6D]
-              text-[16px] lg:text-lg
-              leading-8
-              max-w-[620px]
-            "
-          >
-            We deliver modern accounting, taxation, advisory and assurance
-            services to businesses, property investors, managing agents,
-            residential and commercial developments, and individuals.
-          </p>
-        </motion.div>
-
-        {/* IMAGE SIDE */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="relative"
-        >
-          {/* Gold Border Layer */}
-
-<div
-  className="
-    overflow-hidden
-    rounded-[26px]
-    border-[2px]
-    border-[#C8A15A]
-    relative
-    z-10
-    shadow-[0_30px_80px_-20px_rgba(15,107,75,0.15)]
-  "
->
-              <img
-              src={introImage}
-              alt="Accounting and Advisory Services"
-              className="
-                w-full
-                h-auto
-                object-contain
-              "
-            />
-          </div>
-        </motion.div>
-
-      </div>
-    </div>
+  {/* ── full-bleed image, anchored right ── */}
+  <div className="absolute inset-0 lg:left-[40%] z-0">
+    <img
+      src={ServicechargeSec}
+      alt="Specialist Service Charge Accountants"
+      className="w-full h-full object-cover object-center"
+    />
+    {/* blend: image fades into white on the left */}
+    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent" />
+    {/* soft vignette on far right */}
+    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/10 to-transparent" />
   </div>
+
+  {/* ── text panel, sits above image ── */}
+  <motion.div
+    initial={{ opacity: 0, x: -40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.7 }}
+    className="relative z-10 w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-10 lg:px-14 py-16 lg:py-24"
+  >
+    <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
+
+    <h2 className="text-3xl lg:text-5xl font-black text-[#2F3437] leading-tight mb-4">
+      Specialist Service Charge Accountants
+    </h2>
+
+    <h3 className="text-lg lg:text-2xl font-bold text-[#2F3437] leading-snug mb-5">
+      Service charge accounting is at the heart of our practice.
+    </h3>
+
+    <p className="text-[#5F6B6D] text-base lg:text-lg leading-8 max-w-[520px] mb-8">
+      We support managing agents, RTM companies, RMCs, freehold companies
+      and self-managed developments across the UK, delivering specialist
+      accounting, audit and compliance services for residential, commercial
+      and mixed-use developments.
+    </p>
+
+    <Link
+      to="/servicecharge"
+      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0F6B4B] text-white text-sm font-semibold w-fit hover:bg-[#0A5A3E] hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-[#0F6B4B]/20"
+    >
+      Learn More About Our Services →
+    </Link>
+  </motion.div>
+
 </section>
 {/* <section className="bg-white px-4 sm:px-6 lg:px-10 py-10 sm:py-16">
   <div className="max-w-6xl mx-auto">
