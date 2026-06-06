@@ -571,9 +571,9 @@ useEffect(() => {
     mb-5
   "
 >
-  Accounting, Tax &{" "}
+  Accounting, tax &{" "}
   <span className="text-[#0F6B4B]">
-    Advisory Services
+    advisory services
   </span>
 
   <span
