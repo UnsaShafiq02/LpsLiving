@@ -572,8 +572,8 @@ useEffect(() => {
   "
 >
   Accounting, tax &{" "}
-  <span className="text-[#0F6B4B]">
-    advisory services,
+  <span className="text-[#2F3437]">
+    advisory services
   </span>
 
   <span
@@ -609,7 +609,7 @@ useEffect(() => {
 >
   Supporting property professionals, businesses and individuals
   <br />
-  with accounting, taxation, audit and advisory services
+  with accounting, taxation, audit and advisory services,
   <br />
   delivered with practical expertise, responsive support and a commitment to
   long-term client relationships.
