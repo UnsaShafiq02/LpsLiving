@@ -661,7 +661,14 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
 
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
-<section className="relative w-full overflow-hidden bg-white py-0 min-h-[480px] lg:min-h-[560px]">
+<section className="relative w-full overflow-hidden bg-[#F8F8F5] py-0 min-h-[480px] lg:min-h-[560px]">
+
+  {/* Premium Divider */}
+  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C8A15A] to-transparent" />
+
+  {/* Decorative Glow */}
+  <div className="absolute left-[-150px] top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#C8A15A]/8 blur-[120px]" />
+
   {/* ── full-bleed image, anchored right ── */}
   <div className="absolute inset-0 lg:left-[40%] z-0">
     <img
@@ -669,19 +676,27 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
       alt="Specialist Service Charge Accountants"
       className="w-full h-full object-cover object-center"
     />
-    {/* blend: image fades into white on the left */}
-    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent" />
-    {/* soft vignette on far right */}
-    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/10 to-transparent" />
+
+    {/* stronger blend into text area */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#F8F8F5] via-[#F8F8F5]/20 to-transparent" />
+
+    {/* vignette */}
+    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/15 to-transparent" />
   </div>
 
-  {/* ── text panel, sits above image ── */}
+  {/* ── text panel ── */}
   <motion.div
     initial={{ opacity: 0, x: -40 }}
     whileInView={{ opacity: 1, x: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.7 }}
-    className="relative z-10 w-full lg:w-[52%] flex flex-col justify-center px-6 sm:px-10 lg:px-14 py-16 lg:py-24"
+    className="
+      relative z-10
+      w-full lg:w-[52%]
+      flex flex-col justify-center
+      px-6 sm:px-10 lg:px-14
+      py-16 lg:py-24
+    "
   >
     <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
 
@@ -702,10 +717,24 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
 
     <Link
       to="/servicecharge"
-      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0F6B4B] text-white text-sm font-semibold w-fit hover:bg-[#0A5A3E] hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-[#0F6B4B]/20"
+      className="
+        inline-flex items-center gap-2
+        px-6 py-3
+        rounded-xl
+        bg-[#0F6B4B]
+        text-white
+        text-sm
+        font-semibold
+        w-fit
+        hover:bg-[#0A5A3E]
+        hover:-translate-y-0.5
+        transition-all duration-300
+        shadow-lg shadow-[#0F6B4B]/20
+      "
     >
       Learn More About Our Services →
     </Link>
+
   </motion.div>
 
 </section>
