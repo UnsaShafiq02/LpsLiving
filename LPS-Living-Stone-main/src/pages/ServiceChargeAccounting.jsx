@@ -544,114 +544,76 @@ const ServiceChargeAccounting = () => {
       {/* ── INTRO ────────────────────────────────────────────────────────── */}
    <section className="py-16 lg:py-20 border-b border-[#D9DDDE] bg-white">
 
-  <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+  <div
+    className="
+      relative
+      overflow-hidden
+      bg-gradient-to-br
+      from-[#F8F8F5]
+      via-white
+      to-[#F8F8F5]
+      px-6 sm:px-10 lg:px-20 xl:px-32
+      py-10 lg:py-14
+    "
+  >
 
-    <div
-      className="
-        relative
-        overflow-hidden
-        rounded-[32px]
-        border border-[#D9DDDE]
-        bg-gradient-to-br
-        from-[#F8F8F5]
-        via-white
-        to-[#F8F8F5]
-        px-8
-        py-10
-        lg:px-16
-        lg:py-14
-      "
-    >
+    {/* Decorative Glow */}
+    <div className="absolute -top-20 right-0 w-[350px] h-[350px] rounded-full bg-[#C49A4A]/10 blur-[120px]" />
 
-      {/* Decorative Glow */}
-      <div className="absolute -top-20 right-0 w-[350px] h-[350px] rounded-full bg-[#C49A4A]/10 blur-[120px]" />
+    <div className="relative z-10 text-center">
 
-      <div className="relative z-10 max-w-[1200px] mx-auto text-center">
+      <div className="w-14 h-[4px] rounded-full bg-[#C49A4A] mx-auto mb-8" />
 
-        <div className="w-14 h-[4px] rounded-full bg-[#C49A4A] mx-auto mb-8" />
+      <h2
+        className="
+          text-[24px] sm:text-[30px] lg:text-[40px] xl:text-[46px]
+          font-medium
+          leading-[1.6]
+          text-[#2D3436]
+        "
+      >
+        LPS Livingstone provides specialist service charge accounting,
+        independent examinations, audits, reports of factual findings and
+        financial reporting services for residential, mixed-use and
+        commercial properties throughout the UK.
+      </h2>
 
-        <h2
+      <p
+        className="
+          mt-8
+          text-lg lg:text-[22px]
+          leading-[1.9]
+          text-[#5F6B6D]
+        "
+      >
+        With sector experience dating back to{" "}
+        <span className="text-[#0E6E4F] font-semibold">1995</span>{" "}
+        and{" "}
+        <span className="text-[#0E6E4F] font-semibold">over 100 years of combined team experience</span>
+        , we support managing agents, RTM companies, resident management
+        companies, freehold companies and self-managed blocks across more than{" "}
+        <span className="text-[#0E6E4F] font-semibold">1,000 properties</span>.
+      </p>
+
+      <div className="mt-12">
+        <Link
+          to="/contact"
           className="
-            text-[24px]
-            sm:text-[30px]
-            lg:text-[40px]
-            xl:text-[46px]
-            font-medium
-            leading-[1.6]
-            text-[#2D3436]
+            inline-flex items-center gap-3
+            px-10 py-5
+            rounded-xl
+            bg-[#0B5D47] text-white
+            text-lg font-semibold
+            shadow-lg shadow-[#0B5D47]/20
+            hover:bg-[#084937] hover:-translate-y-1
+            transition-all duration-300
           "
         >
-          LPS Livingstone provides specialist service charge accounting,
-          independent examinations, audits, reports of factual findings and
-          financial reporting services for residential, mixed-use and
-          commercial properties throughout the UK.
-        </h2>
-
-        <p
-          className="
-            mt-8
-            text-lg
-            lg:text-[22px]
-            leading-[1.9]
-            text-[#5F6B6D]
-            max-w-[1100px]
-            mx-auto
-          "
-        >
-          With sector experience dating back to{" "}
-          <span className="text-[#0E6E4F] font-semibold">
-            1995
-          </span>{" "}
-          and{" "}
-          <span className="text-[#0E6E4F] font-semibold">
-            over 100 years of combined team experience
-          </span>
-          , we support managing agents, RTM companies, resident management
-          companies, freehold companies and self-managed blocks across more than{" "}
-          <span className="text-[#0E6E4F] font-semibold">
-            1,000 properties
-          </span>.
-        </p>
-
-        <div className="mt-12">
-
-          <Link
-            to="/contact"
-            className="
-              inline-flex
-              items-center
-              gap-3
-
-              px-10
-              py-5
-
-              rounded-xl
-
-              bg-[#0B5D47]
-              text-white
-
-              text-lg
-              font-semibold
-
-              shadow-lg
-              shadow-[#0B5D47]/20
-
-              hover:bg-[#084937]
-              hover:-translate-y-1
-
-              transition-all
-              duration-300
-            "
-          >
-            Book a Consultation →
-          </Link>
-
-        </div>
-
+          Book a Consultation →
+        </Link>
       </div>
 
     </div>
-
   </div>
 
 </section>
