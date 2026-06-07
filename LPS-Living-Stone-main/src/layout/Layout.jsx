@@ -1281,37 +1281,37 @@ const currentTestimonial =
         >
 
           <Link
-            to="/contact"
-            className="
-              inline-flex
-              items-center
-              justify-center
-              gap-2
+  to="/contact"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    gap-3
 
-              px-12
-              py-5
+    px-16
+    py-7
 
-              rounded-xl
-              bg-[#0F6B4B]
+    rounded-xl
+    bg-[#0F6B4B]
 
-              text-white
-              text-lg
-              font-semibold
+    text-white
+    text-xl
+    font-semibold
 
-              whitespace-nowrap
+    whitespace-nowrap
 
-              hover:bg-[#0A5A3E]
-              hover:-translate-y-1
+    hover:bg-[#0A5A3E]
+    hover:-translate-y-1
 
-              transition-all
-              duration-300
+    transition-all
+    duration-300
 
-              shadow-lg
-              shadow-[#0F6B4B]/20
-            "
-          >
-            Get in Touch →
-          </Link>
+    shadow-lg
+    shadow-[#0F6B4B]/20
+  "
+>
+  Get in Touch →
+</Link>
 
           <Link
             to="/services"

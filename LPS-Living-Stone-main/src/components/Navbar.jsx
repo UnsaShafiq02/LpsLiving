@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronRight } from 'lucide-react';
 
-import logo from '../assets/LPSLOGO.png';
+import logo from '../assets/LPSLOGO1.png';
 
 const navLinks = [
   // { name: 'HOME', href: '/' },
@@ -79,7 +79,7 @@ className={`
     }`}
   />
 
-  <div className="leading-none">
+  {/* <div className="leading-none">
     <h1 className="text-[#2D3436] font-black text-xl sm:text-2xl tracking-wide">
       Livingstone
     </h1>
@@ -87,7 +87,7 @@ className={`
     <p className="text-[#0E6E4F] text-xs font-semibold tracking-[0.25em] uppercase">
       Chartered Accountants
     </p>
-  </div>
+  </div> */}
 </a>
 
             {/* DESKTOP NAV */}
