@@ -433,7 +433,7 @@ const ServiceChargeAccounting = () => {
     <div className="bg-white overflow-hidden text-[#2D3436] font-['Neogrotesk']">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section
+     <section
   className="
     relative
     w-full
@@ -443,149 +443,8 @@ const ServiceChargeAccounting = () => {
   "
 >
 
-  {/* LEFT CONTENT PANEL */}
-  <div
-    className="
-      relative
-      z-10
-      w-full
-      lg:w-[52%]
-      flex
-      flex-col
-      justify-center
-
-      px-6
-      sm:px-10
-      lg:px-16
-
-      pt-36
-      sm:pt-40
-      lg:pt-20
-
-      pb-16
-
-      bg-white
-    "
-  >
-
-    <div className="max-w-[760px]">
-
-      <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
-
-      <p
-        className="
-          uppercase
-          tracking-[0.22em]
-          text-[11px]
-          font-semibold
-          text-[#0F6B4B]
-          mb-4
-        "
-      >
-        Specialist Accountants Since 1995
-      </p>
-
-      <h1
-        className="
-          text-[36px]
-          sm:text-[48px]
-          lg:text-[60px]
-          xl:text-[72px]
-
-          font-black
-          text-[#2F3437]
-
-          leading-[1.1]
-          mb-4
-        "
-      >
-        Service Charge
-        <span
-          className="
-            block
-            mt-2
-
-            text-[24px]
-            sm:text-[30px]
-            lg:text-[38px]
-            xl:text-[44px]
-
-            font-bold
-            text-[#0F6B4B]
-          "
-        >
-          Accounting Specialists
-        </span>
-      </h1>
-
-      <p
-        className="
-          text-[#5F6B6D]
-          text-base
-          sm:text-lg
-          lg:text-[20px]
-
-          leading-8
-          lg:leading-9
-
-          max-w-[700px]
-          mb-10
-        "
-      >
-        Specialist service charge accounting, independent examinations,
-        audits and financial reporting for residential, mixed-use and
-        commercial developments across London and the UK.
-      </p>
-
-      {/* STATS */}
-
-      <div className="grid grid-cols-3 gap-4 max-w-[700px]">
-
-        {[
-          { target: 1995, suffix: "", label: "Est. Year" },
-          { target: 1000, suffix: "+", label: "Properties" },
-          { target: 100, suffix: "+", label: "Years Experience" },
-        ].map(({ target, suffix, label }) => (
-
-          <div
-            key={label}
-            className="
-              bg-[#F8F8F5]
-              border border-[#D9DDDE]
-              rounded-2xl
-              p-4
-              text-center
-            "
-          >
-            <div className="text-3xl lg:text-4xl font-black text-[#C49A4A]">
-              <CountUp target={target} suffix={suffix} />
-            </div>
-
-            <div
-              className="
-                mt-2
-                text-[11px]
-                uppercase
-                tracking-wider
-                text-[#5F6B6D]
-              "
-            >
-              {label}
-            </div>
-          </div>
-
-        ))}
-
-      </div>
-
-    </div>
-
-  </div>
-
-  {/* VIDEO SIDE */}
-
-  <div className="absolute inset-0 lg:left-[38%] z-0">
-
+  {/* ── VIDEO: true full bleed, behind everything ── */}
+  <div className="absolute inset-0 z-0">
     <video
       src={serviceChargeVideo}
       autoPlay
@@ -594,13 +453,90 @@ const ServiceChargeAccounting = () => {
       playsInline
       className="w-full h-full object-cover"
     />
+  </div>
 
-    {/* White fade */}
-    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent lg:via-white/40" />
+  {/* ── BLEND: multi-stop white → transparent, does all the merging ── */}
+  <div
+    className="absolute inset-0 z-10 pointer-events-none"
+    style={{
+      background: `linear-gradient(
+        to right,
+        #ffffff        0%,
+        #ffffff        25%,
+        rgba(255,255,255,0.95) 34%,
+        rgba(255,255,255,0.72) 44%,
+        rgba(255,255,255,0.30) 56%,
+        transparent            70%
+      )`,
+    }}
+  />
 
-    {/* Right vignette */}
-    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/20 to-transparent" />
+  {/* ── Right-edge vignette ── */}
+  <div
+    className="absolute inset-y-0 right-0 w-1/4 z-10 pointer-events-none"
+    style={{ background: "linear-gradient(to left, rgba(0,0,0,0.18), transparent)" }}
+  />
 
+  {/* ── CONTENT: NO bg-white, floats above the blend ── */}
+  <div
+    className="
+      relative z-20
+      w-full lg:w-[56%]
+      flex flex-col justify-center
+
+      px-6 sm:px-10 lg:px-16
+      pt-36 sm:pt-40 lg:pt-20
+      pb-16
+    "
+  >
+    <div className="max-w-[760px]">
+
+      <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
+
+      <p className="uppercase tracking-[0.22em] text-[11px] font-semibold text-[#0F6B4B] mb-4">
+        Specialist Accountants Since 1995
+      </p>
+
+      <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[72px] font-black text-[#2F3437] leading-[1.1] mb-4">
+        Service Charge
+        <span className="block mt-2 text-[24px] sm:text-[30px] lg:text-[38px] xl:text-[44px] font-bold text-[#0F6B4B]">
+          Accounting Specialists
+        </span>
+      </h1>
+
+      <p className="text-[#5F6B6D] text-base sm:text-lg lg:text-[20px] leading-8 lg:leading-9 max-w-[700px] mb-10">
+        Specialist service charge accounting, independent examinations,
+        audits and financial reporting for residential, mixed-use and
+        commercial developments across London and the UK.
+      </p>
+
+      {/* STATS */}
+      <div className="grid grid-cols-3 gap-4 max-w-[700px]">
+        {[
+          { target: 1995, suffix: "", label: "Est. Year" },
+          { target: 1000, suffix: "+", label: "Properties" },
+          { target: 100, suffix: "+", label: "Years Experience" },
+        ].map(({ target, suffix, label }) => (
+          <div
+            key={label}
+            className="
+              rounded-2xl p-4 text-center
+              border border-[#D9DDDE]/70
+              backdrop-blur-sm
+            "
+            style={{ background: "rgba(248,248,245,0.82)" }}
+          >
+            <div className="text-3xl lg:text-4xl font-black text-[#C49A4A]">
+              <CountUp target={target} suffix={suffix} />
+            </div>
+            <div className="mt-2 text-[11px] uppercase tracking-wider text-[#5F6B6D]">
+              {label}
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
   </div>
 
 </section>
