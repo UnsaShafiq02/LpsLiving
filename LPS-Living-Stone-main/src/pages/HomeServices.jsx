@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 
-import heroVideo from "../assets/HomeVideo.mp4";
+import heroVideo from "../assets/bgVideo.mp4";
 import ServicechargeSec from "../assets/ServicechargeSec.png";
 import {
   Building2,
@@ -657,136 +657,7 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
 </div>
  
       {/* ================= SERVICES CARDS ================= */}
-<section className="w-full bg-white px-2 sm:px-4 lg:px-6 py-5 sm:py-8">
 
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-5">
-
-    {/* CARD 1 */}
-    <Link
-      to="/servicecharge"
-      className="
-        group relative overflow-hidden
-        rounded-2xl
-        bg-[#0E6E4F]
-        min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
-        px-6 py-5
-        flex items-center
-        shadow-lg hover:shadow-2xl
-        hover:-translate-y-1
-        transition-all duration-500
-      "
-    >
-      <div className="absolute right-[-40px] top-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
-
-      <div className="relative z-10 flex-1 text-center">
-        <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          Service Charge Accounts
-        </h3>
-
-        <p className="text-white text-sm sm:text-base mt-2 font-medium">
-          Service charge accounts, audits & compliance
-        </p>
-      </div>
-
-      <span
-        className="
-          absolute
-          right-6
-          top-1/2
-          -translate-y-1/2
-          text-[#C49A4A]
-          text-3xl
-        "
-      >
-        →
-      </span>
-    </Link>
-
-    {/* CARD 2 */}
-    <Link
-      to="/services"
-      className="
-        group relative overflow-hidden
-        rounded-2xl
-        bg-[#0B5D47]
-        min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
-        px-6 py-5
-        flex items-center
-        shadow-lg hover:shadow-2xl
-        hover:-translate-y-1
-        transition-all duration-500
-      "
-    >
-      <div className="absolute left-[-40px] bottom-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
-
-      <div className="relative z-10 flex-1 text-center">
-        <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          Businesses
-        </h3>
-
-        <p className="text-white text-sm sm:text-base mt-2 font-medium">
-          Accounting, taxation & business advisory
-        </p>
-      </div>
-
-      <span
-        className="
-          absolute
-          right-6
-          top-1/2
-          -translate-y-1/2
-          text-[#C49A4A]
-          text-3xl
-        "
-      >
-        →
-      </span>
-    </Link>
-
-    {/* CARD 3 */}
-    <Link
-      to="/services/personal-tax"
-      className="
-        group relative overflow-hidden
-        rounded-2xl
-        bg-[#0E6E4F]
-        min-h-[95px] sm:min-h-[110px] lg:min-h-[150px]
-        px-6 py-5
-        flex items-center
-        shadow-lg hover:shadow-2xl
-        hover:-translate-y-1
-        transition-all duration-500
-      "
-    >
-      <div className="absolute right-[-40px] bottom-[-40px] w-[140px] h-[140px] bg-white/10 blur-3xl rounded-full group-hover:scale-125 transition duration-700" />
-
-      <div className="relative z-10 flex-1 text-center">
-        <h3 className="text-white text-xl sm:text-3xl font-semibold">
-          Individuals
-        </h3>
-
-        <p className="text-white text-sm sm:text-base mt-2 font-medium">
-          Personal tax, property tax & compliance
-        </p>
-      </div>
-
-      <span
-        className="
-          absolute
-          right-6
-          top-1/2
-          -translate-y-1/2
-          text-[#C49A4A]
-          text-3xl
-        "
-      >
-        →
-      </span>
-    </Link>
-
-  </div>
-
-</section>
 
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
