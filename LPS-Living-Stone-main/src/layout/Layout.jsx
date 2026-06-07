@@ -599,7 +599,7 @@ const currentTestimonial =
             advice that helps them grow with confidence.
           </p>
 
-          <button
+          {/* <button
             className="
               inline-flex items-center gap-2
               px-6 py-3
@@ -613,7 +613,7 @@ const currentTestimonial =
             "
           >
             Discover Our Approach →
-          </button>
+          </button> */}
         </motion.div>
 
         {/* IMAGE SIDE */}

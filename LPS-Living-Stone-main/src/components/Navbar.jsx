@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronRight } from 'lucide-react';
 
-import logo from '../assets/logo.png';
+import logo from '../assets/LPSLOGO.png';
 
 const navLinks = [
   // { name: 'HOME', href: '/' },
@@ -68,27 +68,27 @@ className={`
 
 <div className="relative max-w-[1500px] mx-auto pl-3 pr-5 sm:px-6 flex items-center justify-between">
             {/* LOGO */}
-<a href="/" className="flex items-center gap-1 sm:gap-4">
-              <img
-                src={logo}
-                alt="logo"
-                className={`transition-all duration-300 ${
-  isScrolled
-    ? 'h-12 sm:h-16 lg:h-20'
-    : 'h-14 sm:h-18 lg:h-24'
-}`}
-              />
+<a href="/" className="flex items-center gap-1 sm:gap-2">
+  <img
+    src={logo}
+    alt="logo"
+    className={`transition-all duration-300 ${
+      isScrolled
+        ? 'h-12 sm:h-16 lg:h-20'
+        : 'h-14 sm:h-18 lg:h-24'
+    }`}
+  />
 
-              <div className="leading-tight">
-                <h1 className="text-[#2D3436] font-black text-xl sm:text-2xl tracking-wide">
-                  Livingstone
-                </h1>
-                <p className="text-[#0E6E4F] text-xs font-semibold tracking-[0.25em] uppercase">
-                  Chartered Accountants
-                </p>
-              </div>
+  <div className="leading-none">
+    <h1 className="text-[#2D3436] font-black text-xl sm:text-2xl tracking-wide">
+      Livingstone
+    </h1>
 
-            </a>
+    <p className="text-[#0E6E4F] text-xs font-semibold tracking-[0.25em] uppercase">
+      Chartered Accountants
+    </p>
+  </div>
+</a>
 
             {/* DESKTOP NAV */}
             <div className="hidden lg:flex items-center gap-4 mr-16">

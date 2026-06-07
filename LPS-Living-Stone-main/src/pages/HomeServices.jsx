@@ -662,7 +662,6 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
       {/* ================= STATS ================= */}
     {/* ================= BRAND STATEMENT ================= */}
 <section className="relative w-full overflow-hidden bg-white py-0 min-h-[480px] lg:min-h-[560px]">
-
   {/* ── full-bleed image, anchored right ── */}
   <div className="absolute inset-0 lg:left-[40%] z-0">
     <img
