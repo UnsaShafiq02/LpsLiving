@@ -19,9 +19,9 @@ import Approach from '../assets/OurApproach.png';
 import Landlord from '../assets/Landlord.png';
 
 import ICAEWBG from '../assets/ICAEW-BG.png';
-import HMRCbg from '../assets/HMRC-bg.png';
-import ICObg from '../assets/ICO-bg.png';
-import ACSP from '../assets/ACSP.png';
+import HMRCbg from '../assets/HMRC.png';
+import ICObg from '../assets/ico.png';
+import ACSP from '../assets/ACSP1.png';
 import XeroLatest from '../assets/XeroLatest.png';
 import DwellantLogo from "../assets/DwellantLogo.png";
 import MoneyLogo from "../assets/MoneyLogo.png";
