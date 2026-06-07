@@ -1196,10 +1196,14 @@ const currentTestimonial =
         from-[#F8F8F5]
         via-white
         to-[#F8F8F5]
+
         px-6
-        py-6
+        py-10
         lg:px-12
-        lg:py-8
+        lg:py-12
+
+        min-h-[240px]
+
         shadow-[0_35px_90px_-25px_rgba(15,107,75,0.12)]
 
         before:absolute
@@ -1217,7 +1221,6 @@ const currentTestimonial =
 
       {/* Decorative Rings */}
       <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[300px] h-[300px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
-
       <div className="absolute top-1/2 right-20 -translate-y-1/2 w-[220px] h-[220px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
 
       <div
@@ -1227,7 +1230,7 @@ const currentTestimonial =
           lg:flex-row
           lg:items-center
           lg:justify-between
-          gap-6 lg:gap-10
+          gap-8 lg:gap-12
         "
       >
 
@@ -1259,7 +1262,7 @@ const currentTestimonial =
               leading-tight
             "
           >
-            Ready to Discuss Your Requirements?
+            Ready to discuss your requirements?
           </h2>
 
         </div>
@@ -1269,8 +1272,9 @@ const currentTestimonial =
           className="
             flex flex-col
             sm:flex-row
-            gap-4
+            gap-5
             shrink-0
+            lg:mr-10
           "
         >
 
@@ -1281,17 +1285,26 @@ const currentTestimonial =
               items-center
               justify-center
               gap-2
-              px-8
-              py-3.5
+
+              px-10
+              py-4
+
               rounded-xl
               bg-[#0F6B4B]
               text-white
+              text-base
               font-semibold
+
               whitespace-nowrap
+
               hover:bg-[#0A5A3E]
               hover:-translate-y-1
+
               transition-all
               duration-300
+
+              shadow-lg
+              shadow-[#0F6B4B]/20
             "
           >
             Get in Touch →
@@ -1304,16 +1317,23 @@ const currentTestimonial =
               items-center
               justify-center
               gap-2
-              px-8
-              py-3.5
+
+              px-10
+              py-4
+
               rounded-xl
               bg-white
               border border-[#C8A15A]
+
               text-[#2F3437]
+              text-base
               font-semibold
+
               whitespace-nowrap
+
               hover:bg-[#F7F7F4]
               hover:-translate-y-1
+
               transition-all
               duration-300
             "
