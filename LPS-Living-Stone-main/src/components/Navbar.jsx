@@ -74,8 +74,8 @@ className={`
     alt="logo"
     className={`transition-all duration-300 ${
   isScrolled
-    ? 'h-16 sm:h-20 lg:h-24'
-    : 'h-20 sm:h-24 lg:h-32'
+    ? 'h-12 sm:h-16 lg:h-22'
+    : 'h-16 sm:h-20 lg:h-26'
 }`}
   />
 

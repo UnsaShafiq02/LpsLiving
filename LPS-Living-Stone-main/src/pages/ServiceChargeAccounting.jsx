@@ -210,8 +210,9 @@
 // export default ServiceChargeAccounting;
 
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { CheckCircle2, ChevronRight } from 'lucide-react';
+import serviceChargeVideo from "../assets/serviceChargeVideo.mp4";
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
@@ -432,121 +433,288 @@ const ServiceChargeAccounting = () => {
     <div className="bg-white overflow-hidden text-[#2D3436] font-['Neogrotesk']">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)' }}>
-        <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-white/5" />
-        <div className="absolute -bottom-16 -right-16 w-64 h-64 rounded-full bg-white/5" />
+      <section
+  className="
+    relative
+    w-full
+    min-h-[850px]
+    overflow-hidden
+    rounded-b-[36px]
+  "
+>
 
-        <div className="relative max-w-5xl mx-auto px-6 text-center">
-          <div className="inline-block bg-white/10 border border-white/25 text-white text-xs tracking-widest uppercase px-5 py-2 rounded-full mb-6 font-medium">
-            Specialist Accountants Since 1995
+  {/* LEFT CONTENT PANEL */}
+  <div
+    className="
+      relative
+      z-10
+      w-full
+      lg:w-[52%]
+      flex
+      flex-col
+      justify-center
+
+      px-6
+      sm:px-10
+      lg:px-16
+
+      pt-36
+      sm:pt-40
+      lg:pt-20
+
+      pb-16
+
+      bg-white
+    "
+  >
+
+    <div className="max-w-[760px]">
+
+      <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
+
+      <p
+        className="
+          uppercase
+          tracking-[0.22em]
+          text-[11px]
+          font-semibold
+          text-[#0F6B4B]
+          mb-4
+        "
+      >
+        Specialist Accountants Since 1995
+      </p>
+
+      <h1
+        className="
+          text-[36px]
+          sm:text-[48px]
+          lg:text-[60px]
+          xl:text-[72px]
+
+          font-black
+          text-[#2F3437]
+
+          leading-[1.1]
+          mb-4
+        "
+      >
+        Service Charge
+        <span
+          className="
+            block
+            mt-2
+
+            text-[24px]
+            sm:text-[30px]
+            lg:text-[38px]
+            xl:text-[44px]
+
+            font-bold
+            text-[#0F6B4B]
+          "
+        >
+          Accounting Specialists
+        </span>
+      </h1>
+
+      <p
+        className="
+          text-[#5F6B6D]
+          text-base
+          sm:text-lg
+          lg:text-[20px]
+
+          leading-8
+          lg:leading-9
+
+          max-w-[700px]
+          mb-10
+        "
+      >
+        Specialist service charge accounting, independent examinations,
+        audits and financial reporting for residential, mixed-use and
+        commercial developments across London and the UK.
+      </p>
+
+      {/* STATS */}
+
+      <div className="grid grid-cols-3 gap-4 max-w-[700px]">
+
+        {[
+          { target: 1995, suffix: "", label: "Est. Year" },
+          { target: 1000, suffix: "+", label: "Properties" },
+          { target: 100, suffix: "+", label: "Years Experience" },
+        ].map(({ target, suffix, label }) => (
+
+          <div
+            key={label}
+            className="
+              bg-[#F8F8F5]
+              border border-[#D9DDDE]
+              rounded-2xl
+              p-4
+              text-center
+            "
+          >
+            <div className="text-3xl lg:text-4xl font-black text-[#C49A4A]">
+              <CountUp target={target} suffix={suffix} />
+            </div>
+
+            <div
+              className="
+                mt-2
+                text-[11px]
+                uppercase
+                tracking-wider
+                text-[#5F6B6D]
+              "
+            >
+              {label}
+            </div>
           </div>
 
-          <h1 className="font-black text-4xl md:text-6xl text-white leading-tight"
-            style={{ fontFamily: 'Georgia, serif' }}>
-            Service Charge Accounting
-          </h1>
+        ))}
 
-          <p className="mt-5 text-white/80 text-base md:text-lg leading-8 max-w-2xl mx-auto">
-            Specialist service charge accounting, independent examinations, audits, and financial
-            reporting for residential, mixed-use, and commercial developments across London and the UK.
-          </p>
+      </div>
 
- <div className="mt-10 border-t border-white/20 pt-6 sm:pt-8">
+    </div>
 
-  <div className="grid grid-cols-3 gap-2 sm:gap-0 text-center">
+  </div>
 
-    {[
-      { target: 1995, suffix: "", label: "Est. year" },
-      { target: 1000, suffix: "+", label: "Properties" },
-      { target: 100, suffix: "+", label: "Years combined experience" },
-    ].map(({ target, suffix, label }, index) => (
+  {/* VIDEO SIDE */}
 
-      <div
-        key={label}
-        className={`
-          px-2 sm:px-8
-          ${index !== 2 ? "border-r border-white/20" : ""}
-        `}
-      >
+  <div className="absolute inset-0 lg:left-[38%] z-0">
 
-        <div
+    <video
+      src={serviceChargeVideo}
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover"
+    />
+
+    {/* White fade */}
+    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent lg:via-white/40" />
+
+    {/* Right vignette */}
+    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/20 to-transparent" />
+
+  </div>
+
+</section>
+
+      {/* ── INTRO ────────────────────────────────────────────────────────── */}
+   <section className="py-16 lg:py-20 border-b border-[#D9DDDE] bg-white">
+
+  <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+
+    <div
+      className="
+        relative
+        overflow-hidden
+        rounded-[32px]
+        border border-[#D9DDDE]
+        bg-gradient-to-br
+        from-[#F8F8F5]
+        via-white
+        to-[#F8F8F5]
+        px-8
+        py-10
+        lg:px-16
+        lg:py-14
+      "
+    >
+
+      {/* Decorative Glow */}
+      <div className="absolute -top-20 right-0 w-[350px] h-[350px] rounded-full bg-[#C49A4A]/10 blur-[120px]" />
+
+      <div className="relative z-10 max-w-[1200px] mx-auto text-center">
+
+        <div className="w-14 h-[4px] rounded-full bg-[#C49A4A] mx-auto mb-8" />
+
+        <h2
           className="
-            text-2xl sm:text-5xl
-            font-black
-            text-[#C49A4A]
-            leading-tight
-            break-words
+            text-[24px]
+            sm:text-[30px]
+            lg:text-[40px]
+            xl:text-[46px]
+            font-medium
+            leading-[1.6]
+            text-[#2D3436]
           "
-          
         >
-          <CountUp
-            target={target}
-            suffix={suffix}
-          />
-        </div>
+          LPS Livingstone provides specialist service charge accounting,
+          independent examinations, audits, reports of factual findings and
+          financial reporting services for residential, mixed-use and
+          commercial properties throughout the UK.
+        </h2>
 
-        <div
+        <p
           className="
-            mt-1
-            text-[9px] sm:text-xs
-            text-[#C49A4A]
-            uppercase
-            tracking-wide sm:tracking-wider
-            leading-4
-            break-words
+            mt-8
+            text-lg
+            lg:text-[22px]
+            leading-[1.9]
+            text-[#5F6B6D]
+            max-w-[1100px]
+            mx-auto
           "
         >
-          {label}
+          With sector experience dating back to{" "}
+          <span className="text-[#0E6E4F] font-semibold">
+            1995
+          </span>{" "}
+          and{" "}
+          <span className="text-[#0E6E4F] font-semibold">
+            over 100 years of combined team experience
+          </span>
+          , we support managing agents, RTM companies, resident management
+          companies, freehold companies and self-managed blocks across more than{" "}
+          <span className="text-[#0E6E4F] font-semibold">
+            1,000 properties
+          </span>.
+        </p>
+
+        <div className="mt-12">
+
+          <Link
+            to="/contact"
+            className="
+              inline-flex
+              items-center
+              gap-3
+
+              px-10
+              py-5
+
+              rounded-xl
+
+              bg-[#0B5D47]
+              text-white
+
+              text-lg
+              font-semibold
+
+              shadow-lg
+              shadow-[#0B5D47]/20
+
+              hover:bg-[#084937]
+              hover:-translate-y-1
+
+              transition-all
+              duration-300
+            "
+          >
+            Book a Consultation →
+          </Link>
+
         </div>
 
       </div>
 
-    ))}
-
-  </div>
-
-</div>
-        </div>
-      </section>
-
-      {/* ── INTRO ────────────────────────────────────────────────────────── */}
-   <section className="py-10 px-6 border-b border-[#D9DDDE]">
-
-  <div className="max-w-5xl mx-auto">
-
-    <h4
-      className="
-        text-lg sm:text-xl md:text-2xl lg:text-[34px] xl:text-[38px]
-        font-medium
-        leading-[1.7]
-        tracking-tight
-        text-[#2D3436]
-      "
-    >
-
-      LPS Livingstone provides specialist service charge accounting,
-      independent examinations, audits, reports of factual findings,
-      and financial reporting services for residential, mixed-use,
-      and commercial developments across London and the UK.
-
-      <br />
-      <br />
-
-      With sector experience dating back to 1995 and{" "}
-
-      <span className="text-[#0E6E4F] font-semibold">
-        over 100 years of combined team experience
-      </span>
-
-      , we support managing agents, RTMs, RMCs, freeholders,
-      and self-managed developments across more than{" "}
-
-      <span className="text-[#0E6E4F] font-semibold">
-        1,000 properties
-      </span>.
-
-    </h4>
+    </div>
 
   </div>
 
