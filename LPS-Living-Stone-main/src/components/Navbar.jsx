@@ -73,10 +73,10 @@ className={`
     src={logo}
     alt="logo"
     className={`transition-all duration-300 ${
-      isScrolled
-        ? 'h-12 sm:h-16 lg:h-20'
-        : 'h-14 sm:h-18 lg:h-24'
-    }`}
+  isScrolled
+    ? 'h-16 sm:h-20 lg:h-24'
+    : 'h-20 sm:h-24 lg:h-32'
+}`}
   />
 
   {/* <div className="leading-none">
