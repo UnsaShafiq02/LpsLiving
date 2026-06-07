@@ -1199,10 +1199,10 @@ const currentTestimonial =
 
         px-6
         py-10
-        lg:px-12
+        lg:px-14
         lg:py-12
 
-        min-h-[240px]
+        min-h-[260px]
 
         shadow-[0_35px_90px_-25px_rgba(15,107,75,0.12)]
 
@@ -1220,8 +1220,8 @@ const currentTestimonial =
       <div className="absolute -bottom-16 -left-16 w-[220px] h-[220px] rounded-full bg-[#0F6B4B]/5 blur-3xl" />
 
       {/* Decorative Rings */}
-      <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[300px] h-[300px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
-      <div className="absolute top-1/2 right-20 -translate-y-1/2 w-[220px] h-[220px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
+      <div className="absolute top-1/2 right-10 -translate-y-1/2 w-[320px] h-[320px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
+      <div className="absolute top-1/2 right-20 -translate-y-1/2 w-[240px] h-[240px] border border-[#C8A15A]/10 rounded-full hidden lg:block" />
 
       <div
         className="
@@ -1229,13 +1229,14 @@ const currentTestimonial =
           flex flex-col
           lg:flex-row
           lg:items-center
-          lg:justify-between
-          gap-8 lg:gap-12
+          lg:justify-start
+          gap-8
+          lg:gap-24
         "
       >
 
         {/* LEFT CONTENT */}
-        <div className="lg:max-w-[850px]">
+        <div className="lg:max-w-[900px]">
 
           <div className="w-14 h-[4px] rounded-full bg-[#C8A15A] mb-4" />
 
@@ -1255,8 +1256,9 @@ const currentTestimonial =
           <h2
             className="
               text-2xl
-              lg:text-3xl
-              xl:text-4xl
+              lg:text-4xl
+              xl:text-5xl
+              2xl:text-[56px]
               font-black
               text-[#2F3437]
               leading-tight
@@ -1274,7 +1276,7 @@ const currentTestimonial =
             sm:flex-row
             gap-5
             shrink-0
-            lg:mr-10
+            lg:ml-20
           "
         >
 
@@ -1286,13 +1288,14 @@ const currentTestimonial =
               justify-center
               gap-2
 
-              px-10
-              py-4
+              px-12
+              py-5
 
               rounded-xl
               bg-[#0F6B4B]
+
               text-white
-              text-base
+              text-lg
               font-semibold
 
               whitespace-nowrap
@@ -1318,15 +1321,15 @@ const currentTestimonial =
               justify-center
               gap-2
 
-              px-10
-              py-4
+              px-12
+              py-5
 
               rounded-xl
               bg-white
               border border-[#C8A15A]
 
               text-[#2F3437]
-              text-base
+              text-lg
               font-semibold
 
               whitespace-nowrap
