@@ -1,218 +1,28 @@
-// import React from 'react';
-// import { motion } from 'framer-motion';
-// import { CheckCircle2 } from 'lucide-react';
-
-// import img from '../assets/flat.png';
-
-// const services = [
-//   'Preparation & certification of service charge accounts',
-//   'Financial statements for RMCs & RTMCos',
-//   'Corporation tax services',
-//   'Statutory & company secretarial services',
-//   'Trust tax returns',
-//   'Registered office & mail forwarding',
-//   'Accounting system implementation',
-//   'Assistance in management handovers',
-//   'Training for in-house accountants/bookkeepers',
-//   'Lease-based service charge advisory',
-// ];
-
-// const ServiceChargeAccounting = () => {
-//   return (
-//     <div className="bg-white overflow-hidden">
-
-//       {/* ================= HERO ================= */}
-//       <section className="relative py-28 overflow-hidden bg-white">
-
-//         <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-[#F9FAFB]" />
-
-//         {/* soft glow */}
-//         <div className="absolute -top-40 left-[-120px] w-[520px] h-[520px] bg-[#0E6E4F]/5 blur-3xl rounded-full" />
-//         <div className="absolute bottom-[-180px] right-[-120px] w-[520px] h-[520px] bg-[#0D2040]/5 blur-3xl rounded-full" />
-
-//         <div className="relative max-w-5xl mx-auto px-6 text-center">
-
-//           <h1 className="text-4xl md:text-6xl font-black leading-tight text-[#0D2040]">
-//             Service Charge Accounting
-//           </h1>
-
-//           <p className="mt-6 text-[#0E6E4F] text-lg md:text-xl leading-8 max-w-3xl mx-auto">
-//             Leading specialists in service charge accounting for residential and
-//             commercial properties across London and the UK.
-//           </p>
-
-//         </div>
-//       </section>
-
-//       {/* ================= INTRO ================= */}
-//       <section className="py-14 bg-white">
-
-//         <div className="max-w-5xl mx-auto px-6 text-[#0D2040] text-base leading-8">
-
-//           <p>
-//             We are recognised specialists in service charge accounting, supporting
-//             residential and commercial property portfolios — from small self-managed
-//             blocks to large managing agents.
-//           </p>
-
-//           <p className="mt-5 text-[#0E6E4F] font-medium">
-//             We currently support over <b className="text-[#0D2040]">600+ service charge clients</b>
-//             nationwide with accuracy, compliance, and transparent reporting.
-//           </p>
-
-//         </div>
-//       </section>
-
-//       {/* ================= IMAGE + SERVICES ================= */}
-//       <section className="py-20 md:py-28 bg-white">
-
-//         <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
-
-//           {/* IMAGE */}
-//           <motion.div
-//             initial={{ opacity: 0, x: -60 }}
-//             whileInView={{ opacity: 1, x: 0 }}
-//             transition={{ duration: 0.7 }}
-//           >
-//             <img
-//               src={img}
-//               alt="Service charge accounting illustration"
-//               className="rounded-3xl shadow-lg w-full object-cover h-[440px]"
-//             />
-//           </motion.div>
-
-//           {/* SERVICES */}
-//           <motion.div
-//             initial={{ opacity: 0, x: 60 }}
-//             whileInView={{ opacity: 1, x: 0 }}
-//             transition={{ duration: 0.7 }}
-//           >
-
-//             <h2 className="text-3xl md:text-4xl font-black text-[#0D2040]">
-//               Complete Service Charge Solutions
-//             </h2>
-
-//             <p className="mt-4 text-[#0E6E4F] leading-7">
-//               End-to-end accounting solutions designed for landlords, managing agents,
-//               and property professionals.
-//             </p>
-
-//             <div className="mt-8 space-y-4">
-
-//               {services.map((item, i) => (
-//                 <div
-//                   key={i}
-//                   className="
-//                     flex items-start gap-3
-//                     bg-white
-//                     border border-[#D9DDDE]
-//                     p-5 rounded-2xl
-//                     hover:bg-[#0E6E4F]/5
-//                     hover:border-[#0E6E4F]
-//                     hover:shadow-md
-//                     transition-all duration-300
-//                     cursor-pointer
-//                   "
-//                 >
-//                   <CheckCircle2 className="text-[#0E6E4F] mt-1" size={18} />
-
-//                   <span className="text-[#0D2040] text-base leading-7 font-medium group-hover:text-[#0E6E4F]">
-//                     {item}
-//                   </span>
-
-//                 </div>
-//               ))}
-
-//             </div>
-
-//           </motion.div>
-
-//         </div>
-//       </section>
-
-//       {/* ================= GUIDANCE ================= */}
-//       <section className="py-20 bg-white border-t border-[#D9DDDE]">
-
-//         <div className="max-w-5xl mx-auto px-6 space-y-12 text-[#0D2040] text-base leading-8">
-
-//           <div>
-//             <h3 className="text-2xl font-black text-[#0D2040] mb-3">
-//               Guidance & Standards
-//             </h3>
-//             <p className="text-[#0E6E4F]">
-//               Accounting and reporting is prepared in line with industry standards issued by
-//               ACCA, ICAEW, ICAS, ARMA, and RICS.
-//             </p>
-//           </div>
-
-//           <div>
-//             <h3 className="text-2xl font-black text-[#0D2040] mb-3">
-//               Legal Framework
-//             </h3>
-//             <ul className="list-disc pl-6 space-y-2 text-[#0D2040]">
-//               <li className="hover:text-[#0E6E4F] transition">Landlord and Tenant Act 1985</li>
-//               <li className="hover:text-[#0E6E4F] transition">Landlord and Tenant Act 1987</li>
-//               <li className="hover:text-[#0E6E4F] transition">Commonhold and Leasehold Reform Act 2002</li>
-//               <li className="hover:text-[#0E6E4F] transition">Service Charge Management Code (2009)</li>
-//             </ul>
-//           </div>
-
-//           <div>
-//             <h3 className="text-2xl font-black text-[#0D2040] mb-3">
-//               Tribunal Support
-//             </h3>
-//             <p className="text-[#0E6E4F]">
-//               We assist landlords and managing agents in interpreting tribunal decisions
-//               and ensuring compliance with lease obligations.
-//             </p>
-//           </div>
-
-//         </div>
-//       </section>
-
-//       {/* ================= CTA ================= */}
-//       <section className="relative py-24 overflow-hidden bg-white">
-
-//         <div className="absolute inset-0 bg-gradient-to-r from-[#0D2040] to-[#0E6E4F]" />
-
-//         <div className="relative max-w-3xl mx-auto px-6 text-center text-white">
-
-//           <h2 className="text-3xl md:text-5xl font-black">
-//             Need Expert Service Charge Support?
-//           </h2>
-
-//           <p className="mt-6 text-white/80 text-lg leading-7">
-//             Speak to our specialists for accurate, compliant and efficient reporting.
-//           </p>
-
-//           <button
-//             className="
-//               mt-10
-//               px-10 py-4
-//               rounded-2xl
-//               bg-[#0E6E4F]
-//               hover:bg-[#0b5c42]
-//               font-bold
-//               shadow-md
-//               transition
-//             "
-//           >
-//             Book Consultation
-//           </button>
-
-//         </div>
-//       </section>
-
-//     </div>
-//   );
-// };
-
-// export default ServiceChargeAccounting;
-
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CheckCircle2, ChevronRight } from 'lucide-react';
+import {
+  CheckCircle2,
+  ChevronRight,
+  FileText,
+  Building2,
+  RefreshCcw,
+  BriefcaseBusiness,
+  Users,
+  Handshake,
+  ClipboardCheck,
+  Layers3,
+  PieChart,
+  FileSearch,
+  CalendarDays,
+   House,
+  ListChecks,
+  UserRound,
+  Clock3,
+  Laptop,
+} from "lucide-react";
+
 import serviceChargeVideo from "../assets/serviceChargeVideo.mp4";
+import { motion } from "framer-motion";
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
@@ -433,803 +243,1654 @@ const ServiceChargeAccounting = () => {
     <div className="bg-white overflow-hidden text-[#2D3436] font-['Neogrotesk']">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-     <section
-  className="
-    relative
-    w-full
-    min-h-[850px]
-    overflow-hidden
-    rounded-b-[36px]
-  "
+    <section
+  className="relative overflow-hidden"
+  style={{
+    background:
+      "linear-gradient(135deg,#fafaf8 0%,#ffffff 45%,#f8f8f5 100%)",
+  }}
 >
+  <div className="grid lg:grid-cols-[56%_44%] min-h-[580px]">
 
-  {/* ── VIDEO: true full bleed, behind everything ── */}
-  <div className="absolute inset-0 z-0">
-    <video
-      src={serviceChargeVideo}
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-full object-cover"
-    />
-  </div>
+    {/* LEFT CONTENT */}
+    <div
+      className="
+        relative
+        flex items-center
+        px-8 sm:px-12 lg:px-16 xl:px-24
+        py-14 lg:py-16
+      "
+    >
 
-  {/* ── BLEND: multi-stop white → transparent, does all the merging ── */}
-  <div
-    className="absolute inset-0 z-10 pointer-events-none"
-    style={{
-      background: `linear-gradient(
-        to right,
-        #ffffff        0%,
-        #ffffff        25%,
-        rgba(255,255,255,0.95) 34%,
-        rgba(255,255,255,0.72) 44%,
-        rgba(255,255,255,0.30) 56%,
-        transparent            70%
-      )`,
-    }}
-  />
+      {/* Soft luxury glow */}
+      <div className="absolute top-0 left-0 w-[350px] h-[350px] bg-[#C49A4A]/6 blur-[100px]" />
 
-  {/* ── Right-edge vignette ── */}
-  <div
-    className="absolute inset-y-0 right-0 w-1/4 z-10 pointer-events-none"
-    style={{ background: "linear-gradient(to left, rgba(0,0,0,0.18), transparent)" }}
-  />
+      <div className="relative z-20 max-w-[680px]">
 
-  {/* ── CONTENT: NO bg-white, floats above the blend ── */}
-  <div
-    className="
-      relative z-20
-      w-full lg:w-[56%]
-      flex flex-col justify-center
+        {/* Accent */}
+        <div className="w-12 h-[3px] rounded-full bg-[#C49A4A] mb-6" />
 
-      px-6 sm:px-10 lg:px-16
-      pt-36 sm:pt-40 lg:pt-20
-      pb-16
-    "
-  >
-    <div className="max-w-[760px]">
-
-      <div className="w-10 h-[3px] rounded-full bg-[#C8A15A] mb-5" />
-
-      <p className="uppercase tracking-[0.22em] text-[11px] font-semibold text-[#0F6B4B] mb-4">
-        Specialist Accountants Since 1995
-      </p>
-
-      <h1 className="text-[36px] sm:text-[48px] lg:text-[60px] xl:text-[72px] font-black text-[#2F3437] leading-[1.1] mb-4">
-        Service Charge
-        <span className="block mt-2 text-[24px] sm:text-[30px] lg:text-[38px] xl:text-[44px] font-bold text-[#0F6B4B]">
-          Accounting Specialists
-        </span>
-      </h1>
-
-      <p className="text-[#5F6B6D] text-base sm:text-lg lg:text-[20px] leading-8 lg:leading-9 max-w-[700px] mb-10">
-        Specialist service charge accounting, independent examinations,
-        audits and financial reporting for residential, mixed-use and
-        commercial developments across London and the UK.
-      </p>
-
-      {/* STATS */}
-      <div className="grid grid-cols-3 gap-4 max-w-[700px]">
-        {[
-          { target: 1995, suffix: "", label: "Est. Year" },
-          { target: 1000, suffix: "+", label: "Properties" },
-          { target: 100, suffix: "+", label: "Years Experience" },
-        ].map(({ target, suffix, label }) => (
-          <div
-            key={label}
-            className="
-              rounded-2xl p-4 text-center
-              border border-[#D9DDDE]/70
-              backdrop-blur-sm
-            "
-            style={{ background: "rgba(248,248,245,0.82)" }}
-          >
-            <div className="text-3xl lg:text-4xl font-black text-[#C49A4A]">
-              <CountUp target={target} suffix={suffix} />
-            </div>
-            <div className="mt-2 text-[11px] uppercase tracking-wider text-[#5F6B6D]">
-              {label}
-            </div>
-          </div>
-        ))}
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-      {/* ── INTRO ────────────────────────────────────────────────────────── */}
-   <section className="py-16 lg:py-20 border-b border-[#D9DDDE] bg-white">
-
-  <div
-    className="
-      relative
-      overflow-hidden
-      bg-gradient-to-br
-      from-[#F8F8F5]
-      via-white
-      to-[#F8F8F5]
-      px-6 sm:px-10 lg:px-20 xl:px-32
-      py-10 lg:py-14
-    "
-  >
-
-    {/* Decorative Glow */}
-    <div className="absolute -top-20 right-0 w-[350px] h-[350px] rounded-full bg-[#C49A4A]/10 blur-[120px]" />
-
-    <div className="relative z-10 text-center">
-
-      <div className="w-14 h-[4px] rounded-full bg-[#C49A4A] mx-auto mb-8" />
-
-      <h2
-        className="
-          text-[24px] sm:text-[30px] lg:text-[40px] xl:text-[46px]
-          font-medium
-          leading-[1.6]
-          text-[#2D3436]
-        "
-      >
-        LPS Livingstone provides specialist service charge accounting,
-        independent examinations, audits, reports of factual findings and
-        financial reporting services for residential, mixed-use and
-        commercial properties throughout the UK.
-      </h2>
-
-      <p
-        className="
-          mt-8
-          text-lg lg:text-[22px]
-          leading-[1.9]
-          text-[#5F6B6D]
-        "
-      >
-        With sector experience dating back to{" "}
-        <span className="text-[#0E6E4F] font-semibold">1995</span>{" "}
-        and{" "}
-        <span className="text-[#0E6E4F] font-semibold">over 100 years of combined team experience</span>
-        , we support managing agents, RTM companies, resident management
-        companies, freehold companies and self-managed blocks across more than{" "}
-        <span className="text-[#0E6E4F] font-semibold">1,000 properties</span>.
-      </p>
-
-      <div className="mt-12">
-        <Link
-          to="/contact"
+        {/* Heading */}
+        <h1
           className="
-            inline-flex items-center gap-3
-            px-10 py-5
-            rounded-xl
-            bg-[#0B5D47] text-white
-            text-lg font-semibold
-            shadow-lg shadow-[#0B5D47]/20
-            hover:bg-[#084937] hover:-translate-y-1
-            transition-all duration-300
+            text-[42px]
+            sm:text-[52px]
+            lg:text-[62px]
+            xl:text-[72px]
+
+            font-black
+            tracking-[-0.04em]
+            leading-[1.02]
+
+            text-[#0B5D47]
           "
         >
-          Book a Consultation →
-        </Link>
-      </div>
+          Service Charge
+          <br />
+          Accounting
+        </h1>
 
-    </div>
-  </div>
-
-</section>
-<section className="py-16 md:py-20 px-6 bg-white">
-
-  <div className="max-w-6xl mx-auto">
-
-    {/* heading */}
-    <div className="text-center mb-12">
-
-      <div className="inline-flex items-center gap-2 mb-5">
-        <div className="w-10 h-[2px] bg-[#C49A4A]" />
-        <span className="text-[11px] tracking-[0.25em] uppercase font-semibold text-[#0E6E4F]">
-          Tailored Support
-        </span>
-        <div className="w-10 h-[2px] bg-[#C49A4A]" />
-      </div>
-
-      <h2
-        className="
-          text-3xl md:text-5xl xl:text-6xl
-
-          font-medium
-
-          text-[#2D3436]
-
-          leading-tight
-
-          tracking-tight
-        "
-        
-      >
-        Explore Tailored Support
-      </h2>
-
-      <p
-        className="
-          mt-5
-
-          max-w-3xl mx-auto
-
-         text-base md:text-xl xl:text-[22px]
-
-          leading-8
-
-          text-[#2D3436]
-        "
-      >
-        Specialist support tailored to managing agents,
-        resident management companies, and self-managed
-        developments across residential and mixed-use portfolios.
-      </p>
-
-    </div>
-
-    {/* premium cards */}
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-      {[
-        {
-          title: "Managing Agents",
-
-          desc:
-            "Responsive and practical support for managing agents, portfolio operators, and property professionals.",
-
-          path: "/managing-agents",
-
-          gradient:
-            "linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)"
-
-         
-        },
-
-        {
-          title: "Self Managed",
-
-          desc:
-                'Clear and practical accounting support for RTMs, RMCs, and resident-led developments, including compliance, reporting, governance, and company administration support.',
-          path: "/self-managed",
-
-          gradient:
-            "linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)"
-
-         
-        },
-
-        {
-          title: "FAQs",
-
-          desc:
-            "Answers to common questions around reporting requirements, accounting obligations, and service charge compliance.",
-
-          path: "/faqs",
-
-          gradient:
-            "linear-gradient(135deg, #0A5A3E 0%, #0E6E4F 100%)"
-
-        
-        }
-
-      ].map((card, i) => (
-
-        <div
-          key={i}
-
-          onClick={() => navigate(card.path)}
-
+        {/* Description */}
+        <p
           className="
-            group
+            mt-7
 
-            relative
+            text-[17px]
+            lg:text-[19px]
 
-            overflow-hidden
+            leading-[1.9]
 
-            rounded-[30px]
+            text-[#556063]
 
-            cursor-pointer
-
-            transition-all duration-500
-
-            hover:-translate-y-2
-            hover:shadow-[0_30px_60px_-25px_rgba(13,32,64,0.25)]
+            max-w-[620px]
           "
         >
+          Specialist service charge accountants providing
+          independent examinations, audits, service charge
+          accounts and financial reporting for residential,
+          mixed-use and commercial properties throughout
+          London and the UK.
+        </p>
 
-          {/* background */}
+        {/* Stats */}
+        <div className="flex flex-wrap gap-4 mt-10">
+
           <div
             className="
-              absolute inset-0
-            "
-            style={{
-              background: card.gradient
-            }}
-          />
+              px-5 py-4
 
-          {/* glow */}
-          <div
-            className="
-              absolute
-              -top-16
-              -right-16
+              rounded-2xl
 
-              w-48 h-48
+              bg-white/90
 
-              rounded-full
+              border border-[#ECE7DE]
 
-              bg-white/10
-
-              blur-3xl
-
-              opacity-0
-              group-hover:opacity-100
-
-              transition duration-700
-            "
-          />
-
-          {/* content */}
-          <div
-            className="
-              relative
-
-              h-full
-
-              p-8 md:p-10
-
-              flex flex-col
+              shadow-[0_10px_30px_rgba(0,0,0,0.04)]
             "
           >
+            <div className="text-[34px] font-black text-[#0B5D47] leading-none">
+              <CountUp target={1995} />
+            </div>
 
-           <div className="mb-2" />
-           
-
-            {/* title */}
-            <h3
-              className="
-               text-3xl xl:text-4xl
-
-                font-medium
-
-                text-white
-
-                leading-tight
-
-                tracking-tight
-              "
-              style={{ fontFamily: 'Georgia, serif' }}
-            >
-              {card.title}
-            </h3>
-
-            {/* description */}
-            <p
-              className="
-                mt-5
-
-                text-white/80
-
-                text-base md:text-lg xl:text-xl
-
-                leading-8
-              "
-            >
-              {card.desc}
+            <p className="mt-2 text-sm text-[#6A7375]">
+              Sector experience since
             </p>
-
-            {/* footer */}
-            <div
-              className="
-                mt-10
-
-                flex items-center justify-between
-              "
-            >
-
-              <span
-                className="
-                  text-2xl
-                  font-semibold
-
-                  tracking-wide
-
-                  text-[#D9C08A]
-                "
-              >
-                Explore Section
-              </span>
-
-              <div
-                className="
-                  w-11 h-11
-
-                  rounded-full
-
-                  bg-[#C49A4A]
-
-                  border border-[#D9C08A]/30
-
-                  text-white
-                  flex items-center justify-center
-
-                  group-hover:bg-white
-                  group-hover:text-[#2D3436]
-
-                  transition-all duration-300
-                "
-              >
-                <ChevronRight size={18} />
-              </div>
-
-            </div>
-
           </div>
-
-        </div>
-
-      ))}
-
-    </div>
-
-  </div>
-
-</section>
-      {/* ── WHY US ───────────────────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-b border-[#D9DDDE]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Why Clients Work With Us</SectionTitle>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {whyItems.map((item, i) => (
-              <div key={i}
-                className="flex items-start gap-3 p-4 bg-white border border-[#D9DDDE] rounded-xl hover:bg-[#0E6E4F]/5 hover:border-[#0E6E4F] transition-all">
-                <CheckCircle2 size={17} className="text-[#C49A4A] mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-[#5F6B6D] leading-6">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── PRACTICAL EXPERIENCE ─────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-b border-[#D9DDDE]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Practical Industry Experience</SectionTitle>
-          <p className="text-sm text-[#5F6B6D] leading-7 mb-5">
-            Service charge accounting often involves more than preparing year-end accounts. We regularly assist with:
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {practicalItems.map((item, i) => <Tag key={i} label={item} />)}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CLIENTS ──────────────────────────────────────────────────────── */}
- <section className="py-14 px-6 border-b border-[#D9DDDE]">
-
-  <div className="max-w-6xl mx-auto">
-
-    {/* DESKTOP — circle layout */}
-    <div className="hidden md:flex justify-center">
-
-      <div className="relative w-[700px] h-[700px]">
-
-        {/* dashed ring */}
-        <div
-          className="
-            absolute top-1/2 left-1/2
-            -translate-x-1/2 -translate-y-1/2
-
-            w-[540px] h-[540px]
-            rounded-full
-
-            border border-dashed
-            border-[#C49A4A]/40
-          "
-        />
-
-        {/* center circle */}
-        <div
-          className="
-            absolute top-1/2 left-1/2
-            -translate-x-1/2 -translate-y-1/2
-
-            w-[200px] h-[200px]
-            rounded-full
-
-            bg-[#0E6E4F]
-
-            flex items-center justify-center
-            text-center
-
-            p-6
-            z-10
-          "
-        >
-
-          <p className="text-2xl font-semibold text-white leading-7 tracking-wide">
-            Developments &amp; Clients We Support
-          </p>
-
-        </div>
-
-        {/* outer cards */}
-        {clientTypes.map((label, i) => {
-
-          const angle =
-            (i / clientTypes.length) * 2 * Math.PI - Math.PI / 2;
-
-          const r = 270;
-
-          const cx = 350;
-          const cy = 350;
-
-          const x = cx + r * Math.cos(angle);
-
-          const y = cy + r * Math.sin(angle);
-
-          return (
-
-            <div
-              key={i}
-
-              className="
-                absolute
-                group
-
-                flex items-center justify-center
-
-                w-[175px]
-                h-[56px]
-
-               bg-[#C49A4A]
-               
-                border border-[#d9ddde]
-
-                rounded-xl
-
-                px-4
-
-                text-center
-
-                cursor-pointer
-
-                hover:bg-[#0A5A3E]
-                hover:border-[#0E6E4F]
-
-                shadow-md
-                hover:shadow-xl
-
-                transition-all duration-300
-
-                z-20
-              "
-
-              style={{
-                left: x,
-                top: y,
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-
-              <span
-                className="
-                  text-[18px]
-                  font-semibold
-                  leading-tight
-
-                  text-white
-
-                  transition-colors
-                "
-              >
-                {label}
-              </span>
-
-            </div>
-
-          );
-
-        })}
-
-      </div>
-
-    </div>
-
-    {/* MOBILE VERSION */}
-    <div className="md:hidden">
-
-      <SectionTitle>
-        Developments &amp; Clients We Support
-      </SectionTitle>
-
-      <div className="grid grid-cols-2 gap-3">
-
-        {clientTypes.map((label, i) => (
 
           <div
-            key={i}
-
             className="
-              group
+              px-5 py-4
 
-              flex items-center justify-center
+              rounded-2xl
 
-              p-4
+              bg-white/90
 
-              bg-[#0E6E4F]
+              border border-[#ECE7DE]
 
-              border border-[#d9ddde]
+              shadow-[0_10px_30px_rgba(0,0,0,0.04)]
+            "
+          >
+            <div className="text-[34px] font-black text-[#0B5D47] leading-none">
+              <CountUp target={1000} suffix="+" />
+            </div>
+
+            <p className="mt-2 text-sm text-[#6A7375]">
+              Properties supported
+            </p>
+          </div>
+
+          <div
+            className="
+              px-5 py-4
+
+              rounded-2xl
+
+              bg-white/90
+
+              border border-[#ECE7DE]
+
+              shadow-[0_10px_30px_rgba(0,0,0,0.04)]
+            "
+          >
+            <div className="text-[34px] font-black text-[#0B5D47] leading-none">
+              <CountUp target={100} suffix="+" />
+            </div>
+
+            <p className="mt-2 text-sm text-[#6A7375]">
+              Years combined experience
+            </p>
+          </div>
+
+        </div>
+
+        {/* CTA */}
+        <div className="mt-12">
+
+          <Link
+            to="/contact"
+            className="
+              inline-flex
+              items-center
+              gap-2
+
+              px-8
+              py-4
 
               rounded-xl
 
-             hover:bg-[#0A5A3E]
-              hover:border-[#0E6E4F]
+              bg-[#0B5D47]
 
-              transition-all duration-300
+              text-white
+              font-semibold
 
-              cursor-pointer
+              shadow-xl
+              shadow-[#0B5D47]/20
 
-              text-center
+              hover:bg-[#094d3b]
+              hover:-translate-y-1
+
+              transition-all
+              duration-300
             "
           >
+            Book a Consultation
+            <ChevronRight size={18} />
+          </Link>
 
-            <span
-              className="
-                text-xs
-                font-semibold
+        </div>
 
-                text-white
+      </div>
 
-                leading-tight
-              "
-            >
-              {label}
-            </span>
+    </div>
 
-          </div>
+    {/* VIDEO SIDE */}
+    <div
+      className="
+        relative
+        min-h-[420px]
+        lg:min-h-full
 
-        ))}
+        -ml-12
+
+        overflow-hidden
+      "
+    >
+
+      {/* VIDEO */}
+      <video
+        src={serviceChargeVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className="
+          absolute
+          inset-0
+
+          w-full
+          h-full
+
+          object-cover
+
+          scale-[1.01]
+        "
+      />
+
+      {/* SOFT BLEND INTO CONTENT */}
+      <div
+        className="absolute inset-0 z-10 pointer-events-none"
+        style={{
+          background: `
+            linear-gradient(
+              to right,
+              rgba(250,250,248,1) 0%,
+              rgba(250,250,248,0.75) 8%,
+              rgba(250,250,248,0.35) 15%,
+              rgba(250,250,248,0.08) 22%,
+              transparent 30%
+            )
+          `,
+        }}
+      />
+
+      {/* LIGHT DEPTH OVERLAY */}
+      <div
+        className="
+          absolute
+          inset-0
+          z-[5]
+
+          bg-gradient-to-t
+          from-black/[0.08]
+          via-transparent
+          to-transparent
+        "
+      />
+
+      {/* TRUST CARD */}
+      <div
+        className="
+          absolute
+
+          bottom-10
+          right-10
+
+          z-20
+
+          max-w-[320px]
+
+          bg-white/90
+          backdrop-blur-lg
+
+          border border-white/60
+
+          rounded-3xl
+
+          px-6
+          py-5
+
+          shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+        "
+      >
+
+        <div className="w-8 h-[2px] bg-[#C49A4A] mb-3" />
+
+        <p
+          className="
+            text-[#2D3436]
+
+            text-sm
+            leading-7
+
+            font-medium
+          "
+        >
+          Trusted by managing agents,
+          RTMs, RMCs, freehold companies
+          and self-managed developments
+          throughout the UK.
+        </p>
 
       </div>
 
     </div>
 
   </div>
+</section>
+
+      {/* ── INTRO ────────────────────────────────────────────────────────── */}
+
+ <section className="relative py-8 lg:py-12 overflow-hidden bg-[#FAFAF8] border-b border-[#E7E2D8]">
+
+{/* Premium Background Glow */}
+
+  <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#C49A4A]/8 blur-[160px]" />
+
+  <div className="relative max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-20">
+
+
+{/* Accent Line */}
+<div className="w-16 h-[3px] rounded-full bg-[#C49A4A] mb-8" />
+
+{/* Main Heading */}
+<h2
+  className="
+    w-full
+
+    text-[24px]
+    sm:text-[28px]
+    lg:text-[32px]
+    xl:text-[36px]
+
+    font-medium
+
+    leading-[1.45]
+
+    tracking-[-0.015em]
+
+    text-[#2D3436]
+
+    text-justify
+  "
+  style={{ fontFamily: "Georgia, serif" }}
+>
+  LPS Livingstone provides specialist service charge accounting,
+  independent examinations, audits, reports of factual findings and
+  financial reporting services for residential, mixed-use and
+  commercial properties throughout the United Kingdom.
+</h2>
+
+{/* Supporting Content */}
+<div className="mt-10">
+
+  <p
+    className="
+      w-full
+
+      text-[18px]
+      lg:text-[22px]
+
+      leading-[1.9]
+
+      text-[#5F6B6D]
+
+      text-justify
+    "
+  >
+    With sector experience dating back to
+    <span className="font-semibold text-[#0B5D47]"> 1995</span>
+    {" "}and
+    <span className="font-semibold text-[#0B5D47]">
+      {" "}over 100 years of combined team experience
+    </span>,
+    we support managing agents, RTM companies, resident management
+    companies, freehold companies and self-managed developments across
+    more than
+    <span className="font-semibold text-[#0B5D47]">
+      {" "}1,000 properties
+    </span>
+    throughout the United Kingdom.
+  </p>
+
+</div>
+
+{/* CTA */}
+<div className="mt-14">
+
+  <Link
+    to="/contact"
+    className="
+      inline-flex
+      items-center
+      gap-3
+
+      px-8
+      py-4
+
+      rounded-xl
+
+      bg-[#0B5D47]
+      text-white
+
+      font-semibold
+
+      shadow-xl
+      shadow-[#0B5D47]/20
+
+      hover:bg-[#094d3b]
+      hover:-translate-y-1
+
+      transition-all duration-300
+    "
+  >
+    Book a Consultation
+    <ChevronRight size={18} />
+  </Link>
+
+</div>
+
+  </div>
 
 </section>
-      {/* ── REGULATORY ───────────────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-b border-[#D9DDDE]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Regulatory &amp; Professional Framework</SectionTitle>
-          <ul className="divide-y divide-[#D9DDDE]">
-            {regulatoryItems.map((item, i) => (
-              <li key={i} className="flex items-center gap-3 py-3 text-sm text-[#5F6B6D]">
-                <span className="text-[#C49A4A] font-bold text-base w-4 flex-shrink-0">§</span>
+
+
+
+
+<section className="relative py-0 lg:py-2 overflow-hidden bg-[#F7F7F4] border-y border-[#D9DDDE]">
+
+  {/* Ambient glows */}
+  <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
+    style={{ background: "radial-gradient(circle, rgba(200,161,90,0.07) 0%, transparent 70%)" }} />
+  <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+    style={{ background: "radial-gradient(circle, rgba(15,107,75,0.05) 0%, transparent 70%)" }} />
+
+  <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+
+    {/* ── Heading ── */}
+    <div className="text-center mb-8">
+      <div className="inline-flex items-center gap-3 mb-5">
+        <div className="w-8 h-px bg-[#C8A15A]" />
+        <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-[#B58B3C]">
+          Sector Experience
+        </span>
+        <div className="w-8 h-px bg-[#C8A15A]" />
+      </div>
+      <h2
+        className="text-[30px] md:text-[40px] lg:text-[46px] font-medium tracking-[-0.02em] text-[#0F6B4B]"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        Who We Work With
+      </h2>
+      <p className="mt-4 text-[#5F6B6D] text-lg max-w-2xl mx-auto">
+        We work with a diverse range of organisations and properties across the UK.
+      </p>
+    </div>
+
+    {/* ── Card Grid ── */}
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 items-stretch">
+
+      {/* ── CARD 1: Client Types ── */}
+      <div
+        className="
+          group
+          relative
+          rounded-[20px]
+          p-7
+          flex
+          flex-col
+          h-full
+          transition-all
+          duration-500
+          hover:-translate-y-1
+        "
+        style={{
+          background: "#FFFFFF",
+          border: "1px solid #C8A15A",
+          boxShadow: "0 2px 16px rgba(15,107,75,0.05)",
+        }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div
+          className="
+            w-16
+            h-16
+            rounded-2xl
+            flex
+            items-center
+            justify-center
+            mx-auto
+            mb-6
+            shrink-0
+          "
+          style={{
+            background: "#EBF3EF",
+            border: "1px solid rgba(15,107,75,0.15)",
+          }}
+        >
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <circle cx="9" cy="8" r="3" stroke="#0F6B4B" strokeWidth="1.7"/>
+            <circle cx="16" cy="8" r="3" stroke="#0F6B4B" strokeWidth="1.7"/>
+            <path d="M3 20c0-3 2.5-5 6-5s6 2 6 5" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round"/>
+            <path d="M17 15c1.5 0 3.5 1 3.8 5" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round"/>
+          </svg>
+        </div>
+
+        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+          Client Types
+        </h3>
+        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+          Who we serve
+        </p>
+
+        <div className="w-full h-px bg-[#D9DDDE] mb-5" />
+
+        <div className="flex-grow">
+          <ul className="space-y-3">
+            {[
+              "Managing Agents",
+              "RTM Companies",
+              "Resident Management Companies",
+              "Freehold Companies",
+              "Self-Managed Blocks",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-3 text-[13.5px] text-[#5F6B6D]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
             ))}
           </ul>
         </div>
-      </section>
+      </div>
+
+      {/* ── CARD 2: Property Types ── */}
+      <div
+        className="
+          group
+          relative
+          rounded-[20px]
+          p-7
+          flex
+          flex-col
+          h-full
+          transition-all
+          duration-500
+          hover:-translate-y-1
+        "
+        style={{
+          background: "#FFFFFF",
+          border: "1px solid #C8A15A",
+          boxShadow: "0 2px 16px rgba(15,107,75,0.05)",
+        }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div
+          className="
+            w-16
+            h-16
+            rounded-2xl
+            flex
+            items-center
+            justify-center
+            mx-auto
+            mb-6
+            shrink-0
+          "
+          style={{
+            background: "#EBF3EF",
+            border: "1px solid rgba(15,107,75,0.15)",
+          }}
+        >
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <path d="M3 21h18M5 21V8.5l7-5 7 5V21" stroke="#0F6B4B" strokeWidth="1.7" strokeLinejoin="round"/>
+            <rect x="9" y="14" width="6" height="7" rx="0.8" stroke="#0F6B4B" strokeWidth="1.5"/>
+            <rect x="7" y="10" width="3" height="2.5" rx="0.5" stroke="#0F6B4B" strokeWidth="1.3"/>
+            <rect x="14" y="10" width="3" height="2.5" rx="0.5" stroke="#0F6B4B" strokeWidth="1.3"/>
+          </svg>
+        </div>
+
+        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+          Property Types
+        </h3>
+        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+          What we cover
+        </p>
+
+        <div className="w-full h-px bg-[#D9DDDE] mb-5" />
+
+        <div className="flex-grow">
+          <ul className="space-y-3">
+            {[
+              "Residential Blocks",
+              "Mixed-Use Developments",
+              "Commercial Properties",
+              "Large Multi-Schedule Estates",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-3 text-[13.5px] text-[#5F6B6D]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* ── CARD 3: Scale & Complexity ── */}
+      <div
+        className="
+          group
+          relative
+          rounded-[20px]
+          p-7
+          flex
+          flex-col
+          h-full
+          transition-all
+          duration-500
+          hover:-translate-y-1
+        "
+        style={{
+          background: "#FFFFFF",
+          border: "1px solid #C8A15A",
+          boxShadow: "0 2px 16px rgba(15,107,75,0.05)",
+        }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div
+          className="
+            w-16
+            h-16
+            rounded-2xl
+            flex
+            items-center
+            justify-center
+            mx-auto
+            mb-6
+            shrink-0
+          "
+          style={{
+            background: "#EBF3EF",
+            border: "1px solid rgba(15,107,75,0.15)",
+          }}
+        >
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <path d="M3 3v18h18" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round"/>
+            <path d="M7 16l4-4.5 4 2.5 4.5-6" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+
+        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+          Scale & Complexity
+        </h3>
+        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+          Our range
+        </p>
+
+        <div className="w-full h-px bg-[#D9DDDE] mb-5" />
+
+        <div className="flex-grow">
+          <ul className="space-y-3">
+            {[
+              "Single-schedule schemes",
+              "Multi-schedule estates",
+              "Resident-managed blocks",
+              "Mixed-use properties",
+              "Commercial portfolios",
+              "Complex estate structures",
+            ].map((item) => (
+              <li key={item} className="flex items-center gap-3 text-[13.5px] text-[#5F6B6D]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* ── CARD 4: Our Experience ── */}
+      <div
+        className="
+          group
+          relative
+          rounded-[20px]
+          p-7
+          flex
+          flex-col
+          h-full
+          transition-all
+          duration-500
+          hover:-translate-y-1
+        "
+        style={{
+          background: "#FFFFFF",
+          border: "1px solid #C8A15A",
+          boxShadow: "0 2px 16px rgba(15,107,75,0.05)",
+        }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div
+          className="
+            w-16
+            h-16
+            rounded-2xl
+            flex
+            items-center
+            justify-center
+            mx-auto
+            mb-6
+            shrink-0
+          "
+          style={{
+            background: "#EBF3EF",
+            border: "1px solid rgba(15,107,75,0.15)",
+          }}
+        >
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <path
+              d="M12 2L3 6v6c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V6L12 2z"
+              stroke="#0F6B4B" strokeWidth="1.7" strokeLinejoin="round"
+            />
+            <path d="M9 12l2 2 4-4" stroke="#0F6B4B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+
+        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+          Our Experience
+        </h3>
+        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+          Depth of expertise
+        </p>
+
+        <div className="w-full h-px bg-[#D9DDDE] mb-5" />
+
+        <div className="flex-grow">
+          <p className="text-[13.5px] text-[#5F6B6D] leading-7">
+            Our experience ranges from small blocks of three flats through to large
+            residential, commercial and mixed-use estates comprising several hundred
+            units and multiple service charge schedules.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* ── SERVICES ───────────────────────────────────────────────────── */}
+<section className="py-5 px-6 border-b border-[#D9DDDE] bg-[#F8F8F5]">
+  <div className="max-w-7xl mx-auto">
+
+    {/* Heading */}
+    <div className="text-center mb-8">
+      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0E6E4F]/8 text-[#0E6E4F] text-xs font-semibold tracking-[0.15em] uppercase">
+        Our Expertise
+      </span>
+
+      <h2 className="mt-6 text-4xl md:text-5xl font-light text-[#1A1A1A] leading-tight">
+        Comprehensive Service Charge
+        <span className="block text-[#0E6E4F] font-medium mt-2">
+          Accounting & Compliance Solutions
+        </span>
+      </h2>
+
+      <p className="max-w-3xl mx-auto mt-6 text-[#5F6B6D] leading-8">
+        Supporting managing agents, RTMs, RMCs, freehold companies and
+        self-managed developments with specialist accounting,
+        compliance and reporting services.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+      {/* CARD 1 */}
+      <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <summary className="list-none cursor-pointer p-7 h-[340px] flex flex-col">
+          
+          <div className="w-14 h-14 rounded-2xl bg-[#0E6E4F]/8 flex items-center justify-center mb-5">
+            <FileText className="w-6 h-6 text-[#0E6E4F]" />
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">
+            Accounting & Reporting
+          </h3>
+
+          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
+            <li>• Service Charge Accounts</li>
+            <li>• Independent Examinations</li>
+            <li>• Service Charge Audits</li>
+            <li>• Reports of Factual Findings</li>
+            <li>• Section 21 Reporting</li>
+          </ul>
+
+          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+            View Services →
+          </div>
+        </summary>
+
+        <div className="px-7 pb-7 border-t border-[#F0ECE4]">
+          <ul className="space-y-3 text-sm text-[#5F6B6D] pt-5">
+            <li>• Year-End Surplus & Deficit Apportionment</li>
+            <li>• Section 20 Major Works Reconciliations</li>
+            <li>• Reserve Fund Reconciliations</li>
+            <li>• Sinking Fund Analysis</li>
+            <li>• Designated Fund Reporting</li>
+          </ul>
+        </div>
+      </details>
+
+      {/* CARD 2 */}
+      <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <summary className="list-none cursor-pointer p-7 h-[340px] flex flex-col">
+
+          <div className="w-14 h-14 rounded-2xl bg-[#0E6E4F]/8 flex items-center justify-center mb-5">
+            <Building2 className="w-6 h-6 text-[#0E6E4F]" />
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">
+            Tax & Company Services
+          </h3>
+
+          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
+            <li>• Dormant Company Accounts</li>
+            <li>• Freehold Company Accounts</li>
+            <li>• Ground Rent Reporting</li>
+            <li>• Corporation Tax Returns</li>
+            <li>• VAT Advice</li>
+          </ul>
+
+          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+            View Services →
+          </div>
+        </summary>
+
+        <div className="px-7 pb-7 border-t border-[#F0ECE4]">
+          <ul className="space-y-3 text-sm text-[#5F6B6D] pt-5">
+            <li>• Capital Gains Tax Computations</li>
+            <li>• Trust Tax Registration</li>
+            <li>• HMRC Filing Support</li>
+          </ul>
+        </div>
+      </details>
+
+      {/* CARD 3 */}
+      <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <summary className="list-none cursor-pointer p-7 h-[340px] flex flex-col">
+
+          <div className="w-14 h-14 rounded-2xl bg-[#0E6E4F]/8 flex items-center justify-center mb-5">
+            <RefreshCcw className="w-6 h-6 text-[#0E6E4F]" />
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">
+            Reconciliations & Historic Issues
+          </h3>
+
+          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
+            <li>• Bank Reconciliations</li>
+            <li>• Client Money Reconciliations</li>
+            <li>• Balancing Differences</li>
+            <li>• Historic Corrections</li>
+            <li>• Backlog Accounts</li>
+          </ul>
+
+          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+            View Services →
+          </div>
+        </summary>
+      </details>
+
+      {/* CARD 4 */}
+      <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
+        <summary className="list-none cursor-pointer p-7 h-[340px] flex flex-col">
+
+          <div className="w-14 h-14 rounded-2xl bg-[#0E6E4F]/8 flex items-center justify-center mb-5">
+            <BriefcaseBusiness className="w-6 h-6 text-[#0E6E4F]" />
+          </div>
+
+          <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">
+            Additional Support
+          </h3>
+
+          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
+            <li>• Managing Agent Handovers</li>
+            <li>• Developer Handovers</li>
+            <li>• Opening Balance Reviews</li>
+            <li>• First-Year Set-Up</li>
+            <li>• Multi-Schedule Estates</li>
+          </ul>
+
+          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+            View Services →
+          </div>
+        </summary>
+
+        <div className="px-7 pb-7 border-t border-[#F0ECE4]">
+          <ul className="space-y-3 text-sm text-[#5F6B6D] pt-5">
+            <li>• Portfolio Accounting Support</li>
+            <li>• Urgent Flat Sale Requirements</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+{/* ── ADDITIONAL SUPPORT FOR MANAGING AGENTS ───────────────────────── */}
+<section
+  className="relative overflow-hidden"
+  style={{
+    background:
+      "linear-gradient(135deg, #003D2D 0%, #00543F 45%, #003D2D 100%)",
+  }}
+>
+  {/* Luxury Glow */}
+  <div className="absolute inset-0">
+    <div className="absolute left-0 top-0 w-[400px] h-[400px] bg-[#C49A4A]/10 blur-[120px]" />
+    <div className="absolute right-0 bottom-0 w-[400px] h-[400px] bg-[#0E6E4F]/20 blur-[120px]" />
+  </div>
+
+  <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-8">
+
+    <div className="grid lg:grid-cols-[420px_1fr] gap-12 items-center">
+
+      {/* LEFT CONTENT */}
+      <div className="flex gap-5">
+
+        <div
+          className="
+            w-16 h-16
+            rounded-full
+            bg-[#DDE9C8]
+            flex items-center justify-center
+            flex-shrink-0
+          "
+        >
+          <Users className="w-8 h-8 text-[#0B5D47]" />
+        </div>
+
+        <div>
+
+          <h2
+            className="
+              text-white
+              text-3xl
+              lg:text-4xl
+              font-semibold
+              leading-tight
+              mb-4
+            "
+            
+          >
+            Additional Support for
+            <br />
+            Managing Agents
+          </h2>
+
+          <p
+            className="
+              text-white/80
+              text-sm
+              leading-7
+              max-w-md
+            "
+          >
+            Alongside our core accounting and reporting services,
+            we provide practical support to managing agents dealing
+            with portfolio changes, operational challenges and
+            complex service charge arrangements.
+          </p>
+
+        </div>
+
+      </div>
+
+      {/* RIGHT SERVICES GRID */}
+      <div
+        className="
+          grid
+          grid-cols-2
+          md:grid-cols-4
+          gap-x-10
+          gap-y-8
+          lg:pl-12
+          lg:border-l
+          border-white/15
+        "
+      >
+
+        <div className="text-center">
+          <Handshake className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            Managing Agent
+            <br />
+            Handovers
+          </p>
+        </div>
+
+        <div className="text-center">
+          <Building2 className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            Developer
+            <br />
+            Handovers
+          </p>
+        </div>
+
+        <div className="text-center">
+          <ClipboardCheck className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            Opening Balance
+            <br />
+            Reviews
+          </p>
+        </div>
+
+        <div className="text-center">
+          <FileSearch className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            First-Year Service
+            <br />
+            Charge Set-Up
+          </p>
+        </div>
+
+        <div className="text-center">
+          <Layers3 className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            Multi-Schedule
+            <br />
+            Estates
+          </p>
+        </div>
+
+        <div className="text-center">
+          <PieChart className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            Portfolio Accounting
+            <br />
+            Support
+          </p>
+        </div>
+
+        <div className="text-center">
+          <FileSearch className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-sm leading-5">
+            Urgent Flat Sale
+            <br />
+            Requirements
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+      {/* ── WHY US ───────────────────────────────────────────────────────── */}
+    {/* ── WHY CLIENTS WORK WITH US ───────────────────────────────────── */}
+<section className="py-10 bg-white border-b border-[#E7E2D8]">
+
+  <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+
+    {/* Heading */}
+    <div className="text-center mb-8">
+
+      <h2
+        className="
+          text-[34px]
+          md:text-[42px]
+          font-medium
+          text-[#0B5D47]
+        "
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        Why Clients Work With Us
+      </h2>
+
+    </div>
+
+    {/* Feature Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8">
+
+      {[
+        {
+          icon: CalendarDays,
+          text: "Sector experience dating back to 1995",
+        },
+        {
+          icon: Users,
+          text: "Over 100 years of combined team experience",
+        },
+        {
+          icon: Building2,
+          text: "Experience across more than 1,000 properties",
+        },
+        {
+          icon: House,
+          text: "Experience with blocks ranging from 3 flats to several hundred units",
+        },
+        {
+          icon: ListChecks,
+          text: "Experience with single-schedule and complex multi-schedule estates",
+        },
+        {
+          icon: UserRound,
+          text: "Partner-led and responsive service",
+        },
+        {
+          icon: Clock3,
+          text: "Flexible turnaround for urgent deadlines",
+        },
+        {
+          icon: Laptop,
+          text: "Familiarity with leading property management systems",
+        },
+      ].map((item, i) => {
+        const Icon = item.icon;
+
+        return (
+          <div
+            key={i}
+            className="
+              relative
+              text-center
+              px-5
+              py-4
+            "
+          >
+
+            {/* Divider */}
+            {i !== 0 && (
+              <div
+                className="
+                  hidden xl:block
+                  absolute
+                  left-0
+                  top-8
+                  bottom-8
+                  w-px
+                  bg-[#C8A15A]
+                "
+              />
+            )}
+
+            {/* Icon */}
+            <div
+              className="
+                w-16 h-16
+                mx-auto mb-5
+
+                rounded-full
+
+                bg-[#EEF5E8]
+
+                flex items-center justify-center
+              "
+            >
+              <Icon
+                size={28}
+                className="text-[#0B5D47]"
+                strokeWidth={1.8}
+              />
+            </div>
+
+            {/* Text */}
+            <p
+              className="
+                text-[13px]
+                leading-6
+                text-[#5F6B6D]
+              "
+            >
+              {item.text}
+            </p>
+
+          </div>
+        );
+      })}
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* ── REGULATORY & PROFESSIONAL FRAMEWORK + FAQ ───────────────────── */}
+<section className="py-16 bg-[#FAFAF8] border-b border-[#E7E2D8]">
+
+  <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+
+    <div className="grid lg:grid-cols-2 gap-12">
+
+      {/* LEFT COLUMN */}
+      <div>
+
+        <div className="w-12 h-[3px] bg-[#C49A4A] rounded-full mb-6" />
+
+        <h2
+          className="
+            text-[34px]
+            md:text-[42px]
+            font-medium
+            text-[#0B5D47]
+            leading-tight
+            mb-6
+          "
+          style={{ fontFamily: "Georgia, serif" }}
+        >
+          Regulatory &amp; Professional Framework
+        </h2>
+
+        <p
+          className="
+            text-[#5F6B6D]
+            text-[16px]
+            leading-8
+            mb-10
+          "
+        >
+          Our work is performed with reference to relevant legislation,
+          professional guidance and industry standards, including:
+        </p>
+
+        <div className="space-y-5">
+
+          {[
+            "Landlord & Tenant legislation",
+            "Leasehold and Freehold Reform legislation",
+            "ICAEW TECH 03/11 and TECH 09/14 guidance",
+            "RICS Professional Standards",
+            "Building Safety legislation",
+            "Statutory trust and client money requirements",
+            "Companies Act and UK Accounting Standards",
+            "HMRC trust and taxation guidance",
+            "Relevant tribunal decisions and case law developments",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="flex items-start gap-4"
+            >
+              <div
+                className="
+                  w-7 h-7
+                  rounded-full
+                  bg-[#EEF5E8]
+
+                  flex items-center justify-center
+                  flex-shrink-0
+                  mt-0.5
+                "
+              >
+                <span className="text-[#C8A15A] text-xs font-bold">
+                  ✓
+                </span>
+              </div>
+
+              <span
+                className="
+                  text-[#5F6B6D]
+                  leading-7
+                "
+              >
+                {item}
+              </span>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
+      {/* RIGHT COLUMN */}
+      <div className="lg:border-l border-[#E3E3E3] lg:pl-16">
+
+        <div className="w-12 h-[3px] bg-[#C49A4A] rounded-full mb-6" />
+
+        <h2
+          className="
+            text-[34px]
+            md:text-[42px]
+            font-medium
+            text-[#0B5D47]
+            leading-tight
+            mb-10
+          "
+          
+        >
+          Frequently Asked Questions
+        </h2>
+
+        <div className="divide-y divide-[#E5E5E5]">
+
+          {/* FAQ 1 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Do we require a service charge audit or an independent examination?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              The answer depends on the lease, governing documents and reporting requirements applicable to the property.
+            </p>
+
+          </details>
+
+          {/* FAQ 2 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Can you assist with backlog service charge accounts?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              Yes. We regularly assist clients with overdue accounts, historic accounting issues and balancing differences.
+            </p>
+
+          </details>
+
+          {/* FAQ 3 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Can you review reserve funds and sinking funds?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              Yes. We regularly assist with reserve fund reconciliations, designated fund analysis and historic fund reviews.
+            </p>
+
+          </details>
+
+          {/* FAQ 4 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Do you work with self-managed blocks?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              Yes. We support RTMs, RMCs, freehold companies and resident-managed properties throughout the UK.
+            </p>
+
+          </details>
+
+          {/* FAQ 5 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Can you assist when a new managing agent takes over?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              Yes. We regularly assist with managing agent handovers, opening balance reviews and developer handovers.
+            </p>
+
+          </details>
+
+          {/* FAQ 6 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Do you work with commercial and mixed-use properties?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              Yes. Our experience includes residential, mixed-use and commercial properties of varying sizes and complexity.
+            </p>
+
+          </details>
+
+          {/* FAQ 7 */}
+          <details className="group py-6">
+
+            <summary
+              className="
+                flex
+                justify-between
+                items-start
+                cursor-pointer
+                list-none
+                gap-6
+              "
+            >
+              <span
+                className="
+                  text-[#2D3436]
+                  font-semibold
+                  leading-7
+                "
+              >
+                Do you work outside London?
+              </span>
+
+              <span
+                className="
+                  text-[#C8A15A]
+                  text-2xl
+                  font-light
+                  transition-transform
+                  duration-300
+                  group-open:rotate-45
+                "
+              >
+                +
+              </span>
+            </summary>
+
+            <p
+              className="
+                mt-5
+                text-[#5F6B6D]
+                leading-8
+                pr-8
+              "
+            >
+              Yes. We support clients throughout London and across the UK.
+            </p>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
      
+   
 
-      {/* ── SERVICES ─────────────────────────────────────────────────────── */}
-      <section className="py-14 px-6 border-t border-[#D9DDDE]">
-        <div className="max-w-5xl mx-auto">
-          <SectionTitle>Our Services</SectionTitle>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {services.map(({ icon, title, items }, i) => (
-              <div key={i}
-                className="bg-white border border-[#D9DDDE] rounded-2xl p-5 hover:border-[#C49A4A] hover:bg-[#F8F8F5] transition-all">
-                <div className="flex items-center gap-2 mb-3 pb-3 border-b border-[#D9DDDE]">
-                  <span className="text-lg">{icon}</span>
-                 <h4
-  className="
-    text-lg md:text-xl
-    font-bold
-    leading-7
-    text-[#2D3436]
-  "
->{title}</h4>
-                </div>
-                <ul className="space-y-1">
-                  {items.map((item, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm leading-7">
-  <span
-    className="
-      w-6 h-6
-      rounded-full
-
-     bg-[#C49A4A]/35
-text-[#C49A4A]
-
-      flex items-center justify-center
-
-      flex-shrink-0
-
-      mt-0.5
-
-      text-xs
-      font-bold
-    "
-  >
-    →
-  </span>
-
-  <span>{item}</span>
-</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── FINAL CTA ────────────────────────────────────────────────────── */}
-      <section className="relative py-20 px-6 overflow-hidden">
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #0E6E4F 0%, #0A5A3E 100%)' }} />
-        <div className="relative max-w-2xl mx-auto text-center text-white">
-          <h2 className="text-3xl xl:text-4xl md:text-4xl font-black mb-4" style={{ fontFamily: 'Georgia, serif' }}>
-            Need Expert Service Charge Support?
-          </h2>
-          <p className="text-white/80 text-base leading-7 mb-8">
-            Speak to our specialists for accurate, compliant and efficient reporting across your entire portfolio.
-          </p>
-         <div className="flex flex-col sm:flex-row justify-center gap-4">
-
-  <button
-   onClick={() => navigate('/contact')}
-    className="
-      px-8 py-3
-
-      rounded-xl
-
-      bg-white
-
-      text-[#2D3436]
-
-      font-bold
-      text-sm
-
-      hover:bg-gray-100
-
-      transition
-    "
-  >
-    Book Consultation
-  </button>
-
-  <button
-    onClick={() => navigate('/contact')}
-
-    className="
-      px-8 py-3
-
-      rounded-xl
-
-      border-2 border-white/50
-
-      text-white
-
-      font-bold
-      text-sm
-
-      hover:bg-white/10
-
-      transition
-    "
-  >
-    Enquire Now
-  </button>
-
-</div>
-        </div>
-      </section>
+    
 
     </div>
   );

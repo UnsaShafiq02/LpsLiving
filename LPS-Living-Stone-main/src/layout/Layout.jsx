@@ -525,7 +525,7 @@ const currentTestimonial =
       </div>
 
       {/* ───────────────── OUR APPROACH ───────────────── */}
-
+{location.pathname === "/" && (
 <section className="px-0 lg:px-0 py-0 bg-white">
   <div className="w-full mx-auto">
     <div
@@ -651,6 +651,7 @@ const currentTestimonial =
     </div>
   </div>
 </section>
+)}
 <section className="py-4 bg-white">
   <div className="w-full mx-auto">
 
