@@ -9,6 +9,7 @@ import {
   Landmark,
   FileCheck2,
   ChevronRight,
+   Building2,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -28,6 +29,32 @@ const serviceColumns = [
       { name: "Contractors & Freelancers", slug: "contractors-freelancers" },
     ],
   },
+  {
+  title: "Service Charge Accounting",
+  icon: Building2,
+  route: "/servicecharge",
+  items: [
+    { name: "Service Charge Accounts", slug: "service-charge-accounts" },
+    { name: "Independent Examinations", slug: "independent-examinations" },
+    { name: "Service Charge Audits", slug: "service-charge-audits" },
+    { name: "Reports of Factual Findings", slug: "reports-factual-findings" },
+    { name: "Company & Tax Services", slug: "company-tax-services" },
+    { name: "Handover & Compliance Support", slug: "handover-compliance-support" },
+  ],
+},
+{
+  title: "Audit & Assurance",
+  icon: ShieldCheck,
+  route: "/audit-assurance",
+  items: [
+    { name: "Statutory Audits", slug: "statutory-audits" },
+    { name: "Independent Examinations", slug: "audit-independent-examinations" },
+    { name: "Service Charge Audits", slug: "audit-service-charge-audits" },
+    { name: "Internal Control Reviews", slug: "internal-control-reviews" },
+    { name: "Charity & Grant Audits", slug: "charity-grant-audits" },
+    { name: "Audit Support & Compliance Reviews", slug: "audit-support-compliance-reviews" },
+  ],
+},
   {
     title: "Business Advisory & Support",
     icon: BriefcaseBusiness,
@@ -194,8 +221,7 @@ const Services = () => {
           </h2>
         </div>
 
-        <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1450px] mx-auto px-6">
-
+<div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-[1900px] mx-auto px-6">
           {serviceColumns.map((column, index) => {
             const Icon = column.icon;
 
