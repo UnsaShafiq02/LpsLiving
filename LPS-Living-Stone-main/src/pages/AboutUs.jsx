@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import officePhoto from '../assets/AboutusHero.png';
 import teamPhoto from '../assets/AboutUsTeam.png';
+import {
+  Handshake,
+  PhoneCall,
+  Lightbulb,
+  ShieldCheck,
+  TrendingUp,
+} from "lucide-react";
 
 // ── COLOUR TOKENS ────────────────────────────────────────────────
 const G = {
@@ -83,6 +90,13 @@ const approachCards = [
     title: 'Professional & Approachable',
     desc: 'High professional standards combined with responsive and personal service.',
   },
+];
+const whyCards = [
+  { icon: Handshake, title: "Long-Term Relationships" },
+  { icon: PhoneCall, title: "Responsive Support" },
+  { icon: Lightbulb, title: "Practical Advice" },
+  { icon: ShieldCheck, title: "Trusted Expertise" },
+  { icon: TrendingUp, title: "Business Growth" },
 ];
 
 const whyPoints = [
@@ -385,7 +399,7 @@ const AboutUs = () => {
         on trust, consistency and a genuine understanding of the client's circumstances.
       </p>
 <br />
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      {/* <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
         {whyPoints.map((pt, i) => (
           <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
             <Tick />
@@ -411,7 +425,65 @@ const AboutUs = () => {
             </div>
           </div>
         ))}
+      </div> */}
+      <div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+    gap: 18,
+    marginTop: 40,
+  }}
+>
+  {whyCards.map((item, i) => {
+    const Icon = item.icon;
+
+    return (
+      <div
+        key={i}
+        style={{
+          background: '#F8F8F5',
+          border: '1px solid #E7E2D8',
+          borderRadius: 20,
+          padding: '24px 18px',
+          textAlign: 'center',
+          transition: 'all 0.3s ease',
+        }}
+      >
+        <div
+          style={{
+            width: 64,
+            height: 64,
+            margin: '0 auto 16px',
+            borderRadius: 18,
+            background: '#EBF3EF',
+            border: '1px solid rgba(15,107,75,0.15)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Icon
+            size={30}
+            color="#0F6B4B"
+            strokeWidth={2}
+          />
+        </div>
+
+        <h4
+          style={{
+            fontSize: 17,
+            fontWeight: 700,
+            color: '#0F6B4B',
+            lineHeight: 1.4,
+            margin: 0,
+          }}
+        >
+          {item.title}
+        </h4>
       </div>
+    );
+  })}
+</div>
     </div>
 
   </div>
