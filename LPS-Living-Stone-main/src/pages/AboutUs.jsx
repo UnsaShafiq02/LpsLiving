@@ -284,51 +284,158 @@ const AboutUs = () => {
   </div>
 </section>
       {/* ── OUR APPROACH ─────────────────────────────────────── */}
-      <section style={{ background: '#FAFAFA', padding: '80px 5%' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <SectionLabel>Our Approach</SectionLabel>
-          <H2 style={{ textAlign: 'center', marginBottom: 10 }}>Our Approach</H2>
-          <p style={{
-            textAlign: 'center', fontSize: 15.5, color: '#555', lineHeight: 1.7,
-            maxWidth: 680, margin: '0 auto 52px',
-          }}>
-            Building lasting relationships is at the heart of what we do. We take the time to
-            understand our clients, their objectives and the challenges they face, enabling us to
-            provide practical advice and dependable support tailored to their circumstances.
-          </p>
+    <section className="relative py-16 overflow-hidden bg-[#F7F7F4] border-y border-[#D9DDDE]">
 
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: 20,
-          }}>
-            {approachCards.map((card, i) => (
-              <div key={i} style={{
-                background: '#fff',
-                border: `1px solid ${G.border}`,
-                borderRadius: 14,
-                padding: '32px 24px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 16,
-              }}>
-                <div style={{
-                  width: 52, height: 52, borderRadius: 12,
-                  background: G.light,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                }}>{card.icon}</div>
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: G.primary, margin: 0 }}>
-                  {card.title}
-                </h3>
-                <p style={{ fontSize: 14.5, color: '#555', lineHeight: 1.65, margin: 0 }}>
-                  {card.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+  {/* Ambient glows */}
+  <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
+    style={{ background: "radial-gradient(circle, rgba(200,161,90,0.07) 0%, transparent 70%)" }} />
+  <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+    style={{ background: "radial-gradient(circle, rgba(15,107,75,0.05) 0%, transparent 70%)" }} />
+
+  <div className="relative max-w-[1900px] mx-auto px-4 sm:px-6 lg:px-10">
+
+    {/* ── Heading ── */}
+    <div className="text-center mb-8">
+      <div className="inline-flex items-center gap-3 mb-5">
+        <div className="w-8 h-px bg-[#C8A15A]" />
+        <span className="text-[13px] uppercase tracking-[0.25em] font-semibold text-[#B58B3C]">
+          How We Work
+        </span>
+        <div className="w-8 h-px bg-[#C8A15A]" />
+      </div>
+      <h2 className="text-[30px] md:text-[40px] lg:text-[46px] font-medium tracking-[-0.02em] text-[#0F6B4B]">
+        Our Approach
+      </h2>
+      <p className="mt-4 text-[#5F6B6D] text-[20px] max-w-2xl mx-auto">
+        Building lasting relationships is at the heart of what we do.
+      </p>
+    </div>
+
+    {/* ── Card Grid ── */}
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 items-stretch">
+
+      {/* CARD 1 */}
+      <div
+        className="group relative rounded-[20px] p-7 flex flex-col h-full transition-all duration-500 hover:-translate-y-1"
+        style={{ background: "#FFFFFF", border: "1px solid #C8A15A", boxShadow: "0 2px 16px rgba(15,107,75,0.05)" }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shrink-0"
+          style={{ background: "#EBF3EF", border: "1px solid rgba(15,107,75,0.15)" }}>
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="3.5" stroke="#0F6B4B" strokeWidth="1.7" />
+            <path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round" />
+            <path d="M4 9h2M4 12h3" stroke="#0F6B4B" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M20 9h-2M20 12h-3" stroke="#0F6B4B" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
         </div>
-      </section>
 
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
+          Straightforward & Impartial
+        </h3>
+       
+
+        <div className="flex-grow">
+          <p className="text-[18px] text-[#5F6B6D] leading-7">
+            Clear advice based on the facts and circumstances of each client,
+            free from bias and delivered with complete transparency.
+          </p>
+        </div>
+      </div>
+
+      {/* CARD 2 */}
+      <div
+        className="group relative rounded-[20px] p-7 flex flex-col h-full transition-all duration-500 hover:-translate-y-1"
+        style={{ background: "#FFFFFF", border: "1px solid #C8A15A", boxShadow: "0 2px 16px rgba(15,107,75,0.05)" }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shrink-0"
+          style={{ background: "#EBF3EF", border: "1px solid rgba(15,107,75,0.15)" }}>
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+              stroke="#0F6B4B" strokeWidth="1.7" strokeLinejoin="round" />
+            <path d="M8 10h8M8 13h5" stroke="#0F6B4B" strokeWidth="1.5" strokeLinecap="round" />
+          </svg>
+        </div>
+
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
+          Clear & Concise
+        </h3>
+       
+
+        <div className="flex-grow">
+          <p className="text-[18px] text-[#5F6B6D] leading-7">
+            Financial and tax matters explained in a practical and understandable
+            way — no unnecessary jargon, just meaningful guidance.
+          </p>
+        </div>
+      </div>
+
+      {/* CARD 3 */}
+      <div
+        className="group relative rounded-[20px] p-7 flex flex-col h-full transition-all duration-500 hover:-translate-y-1"
+        style={{ background: "#FFFFFF", border: "1px solid #C8A15A", boxShadow: "0 2px 16px rgba(15,107,75,0.05)" }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shrink-0"
+          style={{ background: "#EBF3EF", border: "1px solid rgba(15,107,75,0.15)" }}>
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <path d="M12 2l2.5 5.5H21l-5 4 2 6L12 14l-6 3.5 2-6-5-4h6.5z"
+              stroke="#0F6B4B" strokeWidth="1.7" strokeLinejoin="round" />
+          </svg>
+        </div>
+
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
+          Sophisticated, Not Complicated
+        </h3>
+       
+
+        <div className="flex-grow">
+          <p className="text-[18px] text-[#5F6B6D] leading-7">
+            Technical expertise delivered in an accessible and commercially
+            focused manner, tailored to each client's situation.
+          </p>
+        </div>
+      </div>
+
+      {/* CARD 4 */}
+      <div
+        className="group relative rounded-[20px] p-7 flex flex-col h-full transition-all duration-500 hover:-translate-y-1"
+        style={{ background: "#FFFFFF", border: "1px solid #C8A15A", boxShadow: "0 2px 16px rgba(15,107,75,0.05)" }}
+      >
+        <div className="absolute top-0 left-8 right-8 h-[2px] rounded-full bg-[#0F6B4B] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shrink-0"
+          style={{ background: "#EBF3EF", border: "1px solid rgba(15,107,75,0.15)" }}>
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <path
+              d="M12 2L3 6v6c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V6L12 2z"
+              stroke="#0F6B4B" strokeWidth="1.7" strokeLinejoin="round"
+            />
+            <path d="M9 12l2 2 4-4" stroke="#0F6B4B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
+          Professional & Approachable
+        </h3>
+       
+
+
+        <div className="flex-grow">
+          <p className="text-[18px] text-[#5F6B6D] leading-7">
+            High professional standards combined with responsive and personal
+            service — we are always accessible when clients need us.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* ── WHY CLIENTS WORK WITH US ─────────────────────────── */}
     <section style={{ padding: '80px 0' }}>
   <div style={{
