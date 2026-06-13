@@ -436,6 +436,7 @@ const ServiceChargeAccounting = () => {
       "
     >
 
+
       {/* VIDEO */}
       <video
         src={serviceChargeVideo}
@@ -455,10 +456,19 @@ const ServiceChargeAccounting = () => {
 
           scale-[1.01]
         "
+        
       />
-
+{/* <div
+  className="
+    relative
+    min-h-[420px]
+    lg:min-h-full
+    -ml-12
+    overflow-hidden
+  "
+></div> */}
       {/* SOFT BLEND INTO CONTENT */}
-      <div
+      {/* <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
           background: `
@@ -472,10 +482,11 @@ const ServiceChargeAccounting = () => {
             )
           `,
         }}
-      />
+      /> */}
+    
 
       {/* LIGHT DEPTH OVERLAY */}
-      <div
+      {/* <div
         className="
           absolute
           inset-0
@@ -486,7 +497,7 @@ const ServiceChargeAccounting = () => {
           via-transparent
           to-transparent
         "
-      />
+      /> */}
 
       {/* TRUST CARD */}
       <div
@@ -665,8 +676,7 @@ const ServiceChargeAccounting = () => {
   <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
     style={{ background: "radial-gradient(circle, rgba(15,107,75,0.05) 0%, transparent 70%)" }} />
 
-  <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-
+<div className="relative max-w-[1900px] mx-auto px-4 sm:px-6 lg:px-10">
     {/* ── Heading ── */}
     <div className="text-center mb-8">
       <div className="inline-flex items-center gap-3 mb-5">
@@ -682,14 +692,13 @@ const ServiceChargeAccounting = () => {
       >
         Who We Work With
       </h2>
-      <p className="mt-4 text-[#5F6B6D] text-lg max-w-2xl mx-auto">
+      <p className="mt-4 text-[#5F6B6D] text-[15px] max-w-2xl mx-auto">
         We work with a diverse range of organisations and properties across the UK.
       </p>
     </div>
 
     {/* ── Card Grid ── */}
-    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 items-stretch">
-
+  <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 items-stretch"> 
       {/* ── CARD 1: Client Types ── */}
       <div
         className="
@@ -755,7 +764,7 @@ const ServiceChargeAccounting = () => {
               "Freehold Companies",
               "Self-Managed Blocks",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-3 text-[13.5px] text-[#5F6B6D]">
+              <li key={item} className="flex items-center gap-3 text-[16px] text-[#5F6B6D]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
@@ -828,7 +837,7 @@ const ServiceChargeAccounting = () => {
               "Commercial Properties",
               "Large Multi-Schedule Estates",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-3 text-[13.5px] text-[#5F6B6D]">
+              <li key={item} className="flex items-center gap-3 text-[16px] text-[#5F6B6D]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
@@ -901,7 +910,7 @@ const ServiceChargeAccounting = () => {
               "Commercial portfolios",
               "Complex estate structures",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-3 text-[13.5px] text-[#5F6B6D]">
+              <li key={item} className="flex items-center gap-3 text-[16px] text-[#5F6B6D]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
@@ -968,7 +977,7 @@ const ServiceChargeAccounting = () => {
         <div className="w-full h-px bg-[#D9DDDE] mb-5" />
 
         <div className="flex-grow">
-          <p className="text-[13.5px] text-[#5F6B6D] leading-7">
+          <p className="text-[16px] text-[#5F6B6D] leading-7">
             Our experience ranges from small blocks of three flats through to large
             residential, commercial and mixed-use estates comprising several hundred
             units and multiple service charge schedules.
@@ -981,8 +990,8 @@ const ServiceChargeAccounting = () => {
 </section>
 
 {/* ── SERVICES ───────────────────────────────────────────────────── */}
-<section className="py-5 px-6 border-b border-[#D9DDDE] bg-[#F8F8F5]">
-  <div className="max-w-7xl mx-auto">
+<section className="bg-white px-4 sm:px-6 lg:px-10 py-10">
+  <div className="max-w-[1900px] mx-auto">
 
     {/* Heading */}
     <div className="text-center mb-8">
@@ -997,16 +1006,15 @@ const ServiceChargeAccounting = () => {
         </span>
       </h2>
 
-      <p className="max-w-3xl mx-auto mt-6 text-[#5F6B6D] leading-8">
+      <p className="max-w-3xl mx-auto mt-6 text-[15px] text-[#5F6B6D] leading-8">
         Supporting managing agents, RTMs, RMCs, freehold companies and
         self-managed developments with specialist accounting,
         compliance and reporting services.
       </p>
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-
-      {/* CARD 1 */}
+<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+        {/* CARD 1 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
         <summary className="list-none cursor-pointer p-7 h-[340px] flex flex-col">
           
@@ -1018,7 +1026,7 @@ const ServiceChargeAccounting = () => {
             Accounting & Reporting
           </h3>
 
-          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
+          <ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] flex-grow">
             <li>• Service Charge Accounts</li>
             <li>• Independent Examinations</li>
             <li>• Service Charge Audits</li>
@@ -1032,8 +1040,7 @@ const ServiceChargeAccounting = () => {
         </summary>
 
         <div className="px-7 pb-7 border-t border-[#F0ECE4]">
-          <ul className="space-y-3 text-sm text-[#5F6B6D] pt-5">
-            <li>• Year-End Surplus & Deficit Apportionment</li>
+<ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] pt-5">            <li>• Year-End Surplus & Deficit Apportionment</li>
             <li>• Section 20 Major Works Reconciliations</li>
             <li>• Reserve Fund Reconciliations</li>
             <li>• Sinking Fund Analysis</li>
@@ -1054,8 +1061,7 @@ const ServiceChargeAccounting = () => {
             Tax & Company Services
           </h3>
 
-          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
-            <li>• Dormant Company Accounts</li>
+<ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] flex-grow">            <li>• Dormant Company Accounts</li>
             <li>• Freehold Company Accounts</li>
             <li>• Ground Rent Reporting</li>
             <li>• Corporation Tax Returns</li>
@@ -1068,8 +1074,7 @@ const ServiceChargeAccounting = () => {
         </summary>
 
         <div className="px-7 pb-7 border-t border-[#F0ECE4]">
-          <ul className="space-y-3 text-sm text-[#5F6B6D] pt-5">
-            <li>• Capital Gains Tax Computations</li>
+<ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] pt-5">            <li>• Capital Gains Tax Computations</li>
             <li>• Trust Tax Registration</li>
             <li>• HMRC Filing Support</li>
           </ul>
@@ -1088,8 +1093,7 @@ const ServiceChargeAccounting = () => {
             Reconciliations & Historic Issues
           </h3>
 
-          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
-            <li>• Bank Reconciliations</li>
+<ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] flex-grow">            <li>• Bank Reconciliations</li>
             <li>• Client Money Reconciliations</li>
             <li>• Balancing Differences</li>
             <li>• Historic Corrections</li>
@@ -1114,8 +1118,7 @@ const ServiceChargeAccounting = () => {
             Additional Support
           </h3>
 
-          <ul className="space-y-3 text-sm text-[#5F6B6D] flex-grow">
-            <li>• Managing Agent Handovers</li>
+<ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] flex-grow">            <li>• Managing Agent Handovers</li>
             <li>• Developer Handovers</li>
             <li>• Opening Balance Reviews</li>
             <li>• First-Year Set-Up</li>
@@ -1128,8 +1131,7 @@ const ServiceChargeAccounting = () => {
         </summary>
 
         <div className="px-7 pb-7 border-t border-[#F0ECE4]">
-          <ul className="space-y-3 text-sm text-[#5F6B6D] pt-5">
-            <li>• Portfolio Accounting Support</li>
+<ul className="space-y-3 text-base leading-7 font-medium text-[#5F6B6D] pt-5">            <li>• Portfolio Accounting Support</li>
             <li>• Urgent Flat Sale Requirements</li>
           </ul>
         </div>
@@ -1295,8 +1297,7 @@ const ServiceChargeAccounting = () => {
     {/* ── WHY CLIENTS WORK WITH US ───────────────────────────────────── */}
 <section className="py-10 bg-white border-b border-[#E7E2D8]">
 
-  <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-
+<div className="max-w-[1900px] mx-auto px-4 sm:px-6 lg:px-10">
     {/* Heading */}
     <div className="text-center mb-8">
 
@@ -1315,8 +1316,7 @@ const ServiceChargeAccounting = () => {
     </div>
 
     {/* Feature Grid */}
-    <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8">
-
+<div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-2 w-full">
       {[
         {
           icon: CalendarDays,
@@ -1359,7 +1359,7 @@ const ServiceChargeAccounting = () => {
             className="
               relative
               text-center
-              px-5
+              px-2
               py-4
             "
           >

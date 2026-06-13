@@ -648,10 +648,10 @@ className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-[#2
     />
 
     {/* Blend: white fades into video from left */}
-    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent lg:via-white/40" />
+    {/* <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent lg:via-white/40" /> */}
 
     {/* Subtle dark vignette on far right edge */}
-    <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/20 to-transparent" />
+    {/* <div className="absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/20 to-transparent" /> */}
   </div>
 
 </div>
