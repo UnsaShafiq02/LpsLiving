@@ -306,7 +306,7 @@ const AboutUs = () => {
       <h2 className="text-[30px] md:text-[40px] lg:text-[46px] font-medium tracking-[-0.02em] text-[#0F6B4B]">
         Our Approach
       </h2>
-      <p className="mt-4 text-[#5F6B6D] text-[20px] max-w-2xl mx-auto">
+      <p className="mt-4 text-[#222] text-[20px] max-w-2xl mx-auto">
         Building lasting relationships is at the heart of what we do.
       </p>
     </div>
@@ -635,66 +635,83 @@ const AboutUs = () => {
       </section>
 
       {/* ── CLOSING CTA ──────────────────────────────────────── */}
-      <section style={{
-        padding: '64px 5%',
-        background: '#fff',
-        borderTop: `1px solid ${G.border}`,
-      }}>
-        <div style={{
-          maxWidth: 1200, margin: '0 auto',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: 40,
-          flexWrap: 'wrap',
-        }}>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20, flex: '1 1 480px' }}>
-            {/* icon */}
-            <div style={{
-              width: 52, height: 52, borderRadius: '50%',
-              background: G.light, display: 'flex', alignItems: 'center', justifyContent: 'center',
-              flexShrink: 0,
-            }}>
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
-                <circle cx="10" cy="9" r="4" stroke={G.primary} strokeWidth="1.5" />
-                <circle cx="18" cy="9" r="4" stroke={G.primary} strokeWidth="1.5" />
-                <path d="M2 22c0-4 3.6-7 8-7s8 3 8 7" stroke={G.primary} strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M18 15c2.5 0 6 1.8 6 7" stroke={G.primary} strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-            </div>
-            <div>
-              <h3 style={{ fontSize: 22, fontWeight: 700, color: G.primary, margin: '0 0 8px' }}>
-                Built Around Long-Term Relationships
-              </h3>
-              <p style={{ fontSize: 15, color: '#555', lineHeight: 1.75, margin: 0 }}>
-                At LPS Livingstone, we believe successful professional relationships are built over time.
-                Whether we are supporting a business owner, advising an entrepreneur, assisting a property
-                investor or helping a client navigate a complex financial matter, our objective remains the
-                same: to provide practical advice, responsive support and dependable expertise that clients
-                can rely on for the long term.
-              </p>
-            </div>
-          </div>
+    <section className="relative overflow-hidden bg-[#F7F7F4] border-t border-[#D9DDDE]">
 
-          <a href="/contact" style={{
-            display: 'inline-block',
-            background: G.primary,
-            color: '#fff',
-            padding: '14px 32px',
-            borderRadius: 8,
-            textDecoration: 'none',
-            fontSize: 15,
-            fontWeight: 600,
-            flexShrink: 0,
-            transition: 'background 0.2s',
-          }}
-            onMouseEnter={e => e.currentTarget.style.background = G.mid}
-            onMouseLeave={e => e.currentTarget.style.background = G.primary}
-          >
-            Contact Us →
-          </a>
+  {/* Ambient glows */}
+  <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none"
+    style={{ background: "radial-gradient(circle, rgba(200,161,90,0.07) 0%, transparent 70%)" }} />
+  <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+    style={{ background: "radial-gradient(circle, rgba(15,107,75,0.05) 0%, transparent 70%)" }} />
+
+  <div className="relative w-full px-4 sm:px-6 lg:px-10 py-16">
+    <div className="flex items-center justify-between gap-10 flex-wrap">
+
+      {/* Icon + Text */}
+      <div className="flex items-start gap-6 flex-1 min-w-[320px]">
+
+        <div
+          className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
+          style={{ background: "#EBF3EF", border: "1px solid rgba(15,107,75,0.15)" }}
+        >
+          <svg width="30" height="30" fill="none" viewBox="0 0 24 24">
+            <circle cx="9" cy="8" r="3" stroke="#0F6B4B" strokeWidth="1.7" />
+            <circle cx="16" cy="8" r="3" stroke="#0F6B4B" strokeWidth="1.7" />
+            <path d="M3 20c0-3 2.5-5 6-5s6 2 6 5" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round" />
+            <path d="M17 15c1.5 0 3.5 1 3.8 5" stroke="#0F6B4B" strokeWidth="1.7" strokeLinecap="round" />
+          </svg>
         </div>
-      </section>
+
+        <div>
+          <h3 className="text-[25px] font-semibold text-[#2F3437] mb-2">
+            Built Around Long-Term Relationships
+          </h3>
+          <p className="text-[18px] text-[#5F6B6D] leading-7 max-w-4xl">
+            At LPS Livingstone, we believe successful professional relationships are built over time.
+            Whether we are supporting a business owner, advising an entrepreneur, assisting a property
+            investor or helping a client navigate a complex financial matter, our objective remains the
+            same: to provide practical advice, responsive support and dependable expertise that clients
+            can rely on for the long term.
+          </p>
+        </div>
+
+      </div>
+
+      {/* CTA Button */}
+      
+      <a
+  href="/contact"
+  className="
+    shrink-0
+    inline-flex items-center gap-2
+    px-8 py-4
+    rounded-2xl
+    text-[18px] font-semibold
+    text-white
+    transition-all duration-300
+    hover:-translate-y-0.5
+  "
+  style={{
+    background: "#0F6B4B",
+    boxShadow: "0 2px 16px rgba(15,107,75,0.2)"
+  }}
+  onMouseEnter={e => e.currentTarget.style.background = "#0a5238"}
+  onMouseLeave={e => e.currentTarget.style.background = "#0F6B4B"}
+>
+  Contact Us
+  <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+    <path
+      d="M5 12h14M13 6l6 6-6 6"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</a>
+
+    </div>
+  </div>
+</section>
 
     </div>
   );
