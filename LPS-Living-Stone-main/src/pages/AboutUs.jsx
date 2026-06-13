@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import officePhoto from '../assets/AboutusHero.png';
-import teamPhoto from '../assets/AboutusTeam.png';
+import teamPhoto from '../assets/AboutUsTeam.png';
 
 // ── COLOUR TOKENS ────────────────────────────────────────────────
 const G = {
