@@ -95,7 +95,7 @@ const whyCards = [
   { icon: Handshake, title: "Long-Term Relationships" },
   { icon: PhoneCall, title: "Responsive Support" },
   { icon: Lightbulb, title: "Practical Advice" },
-  { icon: ShieldCheck, title: "Trusted Expertise" },
+  // { icon: ShieldCheck, title: "Trusted Expertise" },
   { icon: TrendingUp, title: "Business Growth" },
 ];
 
