@@ -995,13 +995,13 @@ const ServiceChargeAccounting = () => {
 
     {/* Heading */}
     <div className="text-center mb-8">
-      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0E6E4F]/8 text-[#0E6E4F] text-[13] font-semibold tracking-[0.15em] uppercase">
+      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0E6E4F]/8 text-[#0E6E4F] text-[13px] font-semibold tracking-[0.15em] uppercase">
         Our Expertise
       </span>
 
-      <h2 className="mt-6 text-[30] md:text-5xl font-light text-[#1A1A1A] leading-tight">
+      <h2 className="mt-6 text-[30px] md:text-5xl font-light text-[#1A1A1A] leading-tight">
         Comprehensive Service Charge
-        <span className="block  text-[30] text-[#0E6E4F] font-medium mt-2">
+        <span className="block  text-[30px] text-[#0E6E4F] font-medium mt-2">
           Accounting & Compliance Solutions
         </span>
       </h2>
@@ -1016,8 +1016,24 @@ const ServiceChargeAccounting = () => {
 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {/* CARD 1 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">          
-<div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">            <FileText className="w-9 h-9 text-[#0E6E4F]" />
+<summary className="list-none cursor-pointer p-8 h-[490px] flex flex-col">          
+<div
+  className="
+    w-20
+    h-20
+    rounded-3xl
+    flex
+    items-center
+    justify-center
+    mb-7
+    mx-auto
+    shrink-0
+  "
+  style={{
+    background: "#EBF3EF",
+    border: "1px solid rgba(15,107,75,0.15)",
+  }}
+>    <FileText className="w-11 h-11 text-[#0E6E4F]" />
           </div>
 
           <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
@@ -1032,7 +1048,7 @@ const ServiceChargeAccounting = () => {
             <li>• Section 21 Reporting</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20px]">
             View Services →
           </div>
         </summary>
@@ -1050,9 +1066,24 @@ const ServiceChargeAccounting = () => {
 
       {/* CARD 2 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">
-<div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">          
-  <Building2 className="w-9 h-9 text-[#0E6E4F]" />
+<summary className="list-none cursor-pointer p-8 h-[490px] flex flex-col">
+<div
+  className="
+    w-20
+    h-20
+    rounded-3xl
+    flex
+    items-center
+    justify-center
+    mb-7
+    mx-auto
+    shrink-0
+  "
+  style={{
+    background: "#EBF3EF",
+    border: "1px solid rgba(15,107,75,0.15)",
+  }}
+>  <Building2 className="w-11 h-11 text-[#0E6E4F]" />
           </div>
 
           <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
@@ -1066,7 +1097,7 @@ const ServiceChargeAccounting = () => {
             <li>• VAT Advice</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20px]">
             View Services →
           </div>
         </summary>
@@ -1081,9 +1112,24 @@ const ServiceChargeAccounting = () => {
 
       {/* CARD 3 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">
-<div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">      
-      <RefreshCcw className="w-9 h-9 text-[#0E6E4F]" />
+<summary className="list-none cursor-pointer p-8 h-[490px] flex flex-col">
+<div
+  className="
+    w-20
+    h-20
+    rounded-3xl
+    flex
+    items-center
+    justify-center
+    mb-7
+    mx-auto
+    shrink-0
+  "
+  style={{
+    background: "#EBF3EF",
+    border: "1px solid rgba(15,107,75,0.15)",
+  }}
+>      <RefreshCcw className="w-11 h-11 text-[#0E6E4F]" />
           </div>
 
           <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
@@ -1097,7 +1143,7 @@ const ServiceChargeAccounting = () => {
             <li>• Backlog Accounts</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20px]">
             View Services →
           </div>
         </summary>
@@ -1105,9 +1151,24 @@ const ServiceChargeAccounting = () => {
 
       {/* CARD 4 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">
-<div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">          
-  <BriefcaseBusiness className="w-9 h-9 text-[#0E6E4F]"/>
+<summary className="list-none cursor-pointer p-8 h-[490px] flex flex-col">
+<div
+  className="
+    w-20
+    h-20
+    rounded-3xl
+    flex
+    items-center
+    justify-center
+    mb-7
+    mx-auto
+    shrink-0
+  "
+  style={{
+    background: "#EBF3EF",
+    border: "1px solid rgba(15,107,75,0.15)",
+  }}
+>  <BriefcaseBusiness className="w-11 h-11 text-[#0E6E4F]"/>
           </div>
 
           <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
@@ -1121,7 +1182,7 @@ const ServiceChargeAccounting = () => {
             <li>• Multi-Schedule Estates</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20px]">
             View Services →
           </div>
         </summary>
