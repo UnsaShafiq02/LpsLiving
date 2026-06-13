@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import officePhoto from '../assets/AboutusHero.png';
+import teamPhoto from '../assets/AboutusTeam.png';
 
 // ── COLOUR TOKENS ────────────────────────────────────────────────
 const G = {
@@ -315,66 +316,68 @@ const AboutUs = () => {
       </section>
 
       {/* ── WHY CLIENTS WORK WITH US ─────────────────────────── */}
-      <section style={{ padding: '80px 5%' }}>
-        <div style={{
-          maxWidth: 1200, margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: 72,
-          alignItems: 'start',
-        }}>
-          {/* Left image placeholder — replace with a real team/meeting photo */}
-          <div style={{
-            borderRadius: 16, overflow: 'hidden',
-            background: G.light, border: `1px solid ${G.border}`,
-            aspectRatio: '3/4',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-          }}>
-            {/* Replace with: <img src={teamPhoto} alt="Team meeting" style={{ width:'100%', height:'100%', objectFit:'cover' }} /> */}
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
-              <rect x="10" y="20" width="60" height="45" rx="6" stroke={G.border} strokeWidth="2" />
-              <circle cx="28" cy="36" r="9" stroke={G.primary} strokeWidth="2" />
-              <circle cx="52" cy="36" r="9" stroke={G.primary} strokeWidth="2" />
-              <path d="M12 65c2-10 8-18 16-18s14 8 16 18" stroke={G.primary} strokeWidth="2" strokeLinecap="round" />
-              <path d="M36 65c2-10 8-18 16-18s14 8 16 18" stroke={G.primary} strokeWidth="2" strokeLinecap="round" />
-            </svg>
-          </div>
+    <section style={{ padding: '80px 0' }}>
+  <div style={{
+    display: 'grid',
+    gridTemplateColumns: '45% 55%',
+    alignItems: 'start',
+  }}>
 
-          {/* Right content */}
-          <div>
-            <H2 style={{ marginBottom: 16 }}>Why Clients Work With Us</H2>
-            <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
-              Choosing an accountant or adviser is rarely about finding someone to complete forms
-              or meet filing deadlines.
-            </p>
-            <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
-              Most clients are looking for a trusted professional who can provide clear advice,
-              respond when needed and help them navigate important financial decisions with confidence.
-            </p>
-            <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 36 }}>
-              Many of our client relationships have developed over a number of years. What often
-              begins as a specific engagement evolves into a broader advisory relationship built
-              on trust, consistency and a genuine understanding of the client's circumstances.
-            </p>
+    {/* LEFT — full bleed image, no margin/padding */}
+    <div style={{
+      overflow: 'hidden',
+      lineHeight: 0,
+    }}>
+      <img
+        src={teamPhoto}
+        alt="Team meeting"
+        style={{
+          width: '100%',
+          height: '100%',
+          minHeight: 640,
+          objectFit: 'cover',
+          display: 'block',
+        }}
+      />
+    </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-              {whyPoints.map((pt, i) => (
-                <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
-                  <Tick />
-                  <div>
-                    <p style={{ fontSize: 15, fontWeight: 700, color: G.primary, margin: '0 0 4px' }}>
-                      {pt.title}
-                    </p>
-                    <p style={{ fontSize: 14.5, color: '#555', lineHeight: 1.65, margin: 0 }}>
-                      {pt.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+    {/* RIGHT — content with inner padding */}
+    <div style={{ padding: '20px 5% 20px 72px' }}>
+      <H2 style={{ marginBottom: 16 }}>Why Clients Work With Us</H2>
+
+      <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
+        Choosing an accountant or adviser is rarely about finding someone to complete forms
+        or meet filing deadlines.
+      </p>
+      <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
+        Most clients are looking for a trusted professional who can provide clear advice,
+        respond when needed and help them navigate important financial decisions with confidence.
+      </p>
+      <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 36 }}>
+        Many of our client relationships have developed over a number of years. What often
+        begins as a specific engagement evolves into a broader advisory relationship built
+        on trust, consistency and a genuine understanding of the client's circumstances.
+      </p>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+        {whyPoints.map((pt, i) => (
+          <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
+            <Tick />
+            <div>
+              <p style={{ fontSize: 15, fontWeight: 700, color: G.primary, margin: '0 0 4px' }}>
+                {pt.title}
+              </p>
+              <p style={{ fontSize: 14.5, color: '#555', lineHeight: 1.65, margin: 0 }}>
+                {pt.desc}
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* ── MEET THE TEAM ────────────────────────────────────── */}
       <section style={{ background: '#FAFAFA', padding: '80px 5%' }}>
