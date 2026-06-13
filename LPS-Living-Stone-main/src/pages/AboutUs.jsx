@@ -665,7 +665,7 @@ const AboutUs = () => {
           <h3 className="text-[25px] font-semibold text-[#2F3437] mb-2">
             Built Around Long-Term Relationships
           </h3>
-          <p className="text-[18px] text-[#5F6B6D] leading-7 max-w-4xl">
+          <p className="text-[18px] text-[#222] leading-7 max-w-4xl">
             At LPS Livingstone, we believe successful professional relationships are built over time.
             Whether we are supporting a business owner, advising an entrepreneur, assisting a property
             investor or helping a client navigate a complex financial matter, our objective remains the
@@ -678,12 +678,12 @@ const AboutUs = () => {
 
       {/* CTA Button */}
       
-      <a
+<a
   href="/contact"
   className="
     shrink-0
-    inline-flex items-center gap-2
-    px-8 py-4
+    inline-flex items-center justify-center gap-3
+    px-14 py-5
     rounded-2xl
     text-[18px] font-semibold
     text-white
@@ -692,7 +692,8 @@ const AboutUs = () => {
   "
   style={{
     background: "#0F6B4B",
-    boxShadow: "0 2px 16px rgba(15,107,75,0.2)"
+    boxShadow: "0 2px 16px rgba(15,107,75,0.2)",
+    minWidth: "240px",
   }}
   onMouseEnter={e => e.currentTarget.style.background = "#0a5238"}
   onMouseLeave={e => e.currentTarget.style.background = "#0F6B4B"}
