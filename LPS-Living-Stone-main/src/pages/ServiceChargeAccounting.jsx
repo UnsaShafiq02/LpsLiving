@@ -295,8 +295,8 @@ const ServiceChargeAccounting = () => {
           className="
             mt-7
 
-            text-[17px]
-            lg:text-[19px]
+            text-[19px]
+            lg:text-[22px]
 
             leading-[1.9]
 
@@ -328,11 +328,11 @@ const ServiceChargeAccounting = () => {
               shadow-[0_10px_30px_rgba(0,0,0,0.04)]
             "
           >
-            <div className="text-[34px] font-black text-[#0B5D47] leading-none">
+            <div className="text-[36px] font-black text-[#0B5D47] leading-none">
               <CountUp target={1995} />
             </div>
 
-            <p className="mt-2 text-sm text-[#6A7375]">
+            <p className="mt-2 text-[18] text-[#6A7375]">
               Sector experience since
             </p>
           </div>
@@ -350,11 +350,11 @@ const ServiceChargeAccounting = () => {
               shadow-[0_10px_30px_rgba(0,0,0,0.04)]
             "
           >
-            <div className="text-[34px] font-black text-[#0B5D47] leading-none">
+            <div className="text-[36px] font-black text-[#0B5D47] leading-none">
               <CountUp target={1000} suffix="+" />
             </div>
 
-            <p className="mt-2 text-sm text-[#6A7375]">
+            <p className="mt-2 text-[18] text-[#6A7375]">
               Properties supported
             </p>
           </div>
@@ -372,11 +372,11 @@ const ServiceChargeAccounting = () => {
               shadow-[0_10px_30px_rgba(0,0,0,0.04)]
             "
           >
-            <div className="text-[34px] font-black text-[#0B5D47] leading-none">
+            <div className="text-[36px] font-black text-[#0B5D47] leading-none">
               <CountUp target={100} suffix="+" />
             </div>
 
-            <p className="mt-2 text-sm text-[#6A7375]">
+            <p className="mt-2 text-[18] text-[#6A7375]">
               Years combined experience
             </p>
           </div>
@@ -392,7 +392,7 @@ const ServiceChargeAccounting = () => {
               inline-flex
               items-center
               gap-2
-
+              text-[18]
               px-8
               py-4
 
@@ -531,7 +531,7 @@ const ServiceChargeAccounting = () => {
           className="
             text-[#2D3436]
 
-            text-sm
+            text-[18]
             leading-7
 
             font-medium
@@ -584,7 +584,7 @@ const ServiceChargeAccounting = () => {
 
     text-justify
   "
-  style={{ fontFamily: "Georgia, serif" }}
+ 
 >
   LPS Livingstone provides specialist service charge accounting,
   independent examinations, audits, reports of factual findings and
@@ -645,7 +645,7 @@ const ServiceChargeAccounting = () => {
       text-white
 
       font-semibold
-
+      text-[18]
       shadow-xl
       shadow-[#0B5D47]/20
 
@@ -681,18 +681,18 @@ const ServiceChargeAccounting = () => {
     <div className="text-center mb-8">
       <div className="inline-flex items-center gap-3 mb-5">
         <div className="w-8 h-px bg-[#C8A15A]" />
-        <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-[#B58B3C]">
+        <span className="text-[13px] uppercase tracking-[0.25em] font-semibold text-[#B58B3C]">
           Sector Experience
         </span>
         <div className="w-8 h-px bg-[#C8A15A]" />
       </div>
       <h2
         className="text-[30px] md:text-[40px] lg:text-[46px] font-medium tracking-[-0.02em] text-[#0F6B4B]"
-        style={{ fontFamily: "Georgia, serif" }}
+        
       >
         Who We Work With
       </h2>
-      <p className="mt-4 text-[#5F6B6D] text-[15px] max-w-2xl mx-auto">
+      <p className="mt-4 text-[#5F6B6D] text-[20px] max-w-2xl mx-auto">
         We work with a diverse range of organisations and properties across the UK.
       </p>
     </div>
@@ -746,10 +746,10 @@ const ServiceChargeAccounting = () => {
           </svg>
         </div>
 
-        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
           Client Types
         </h3>
-        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+        <p className="text-[15px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
           Who we serve
         </p>
 
@@ -764,7 +764,7 @@ const ServiceChargeAccounting = () => {
               "Freehold Companies",
               "Self-Managed Blocks",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-3 text-[16px] text-[#5F6B6D]">
+              <li key={item} className="flex items-center gap-3 text-[18px] text-[#5F6B6D]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
@@ -820,10 +820,10 @@ const ServiceChargeAccounting = () => {
           </svg>
         </div>
 
-        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
           Property Types
         </h3>
-        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+        <p className="text-[15px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
           What we cover
         </p>
 
@@ -837,7 +837,7 @@ const ServiceChargeAccounting = () => {
               "Commercial Properties",
               "Large Multi-Schedule Estates",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-3 text-[16px] text-[#5F6B6D]">
+              <li key={item} className="flex items-center gap-3 text-[18px] text-[#5F6B6D]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
@@ -891,10 +891,10 @@ const ServiceChargeAccounting = () => {
           </svg>
         </div>
 
-        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
           Scale & Complexity
         </h3>
-        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+        <p className="text-[15px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
           Our range
         </p>
 
@@ -910,7 +910,7 @@ const ServiceChargeAccounting = () => {
               "Commercial portfolios",
               "Complex estate structures",
             ].map((item) => (
-              <li key={item} className="flex items-center gap-3 text-[16px] text-[#5F6B6D]">
+              <li key={item} className="flex items-center gap-3 text-[18px] text-[#5F6B6D]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C8A15A] shrink-0" />
                 {item}
               </li>
@@ -967,17 +967,17 @@ const ServiceChargeAccounting = () => {
           </svg>
         </div>
 
-        <h3 className="text-[18px] font-semibold text-[#2F3437] text-center mb-1">
+        <h3 className="text-[25px] font-semibold text-[#2F3437] text-center mb-1">
           Our Experience
         </h3>
-        <p className="text-[11px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
+        <p className="text-[15px] text-[#B58B3C] mb-5 uppercase tracking-[0.18em] font-medium text-center">
           Depth of expertise
         </p>
 
         <div className="w-full h-px bg-[#D9DDDE] mb-5" />
 
         <div className="flex-grow">
-          <p className="text-[16px] text-[#5F6B6D] leading-7">
+          <p className="text-[18px] text-[#5F6B6D] leading-7">
             Our experience ranges from small blocks of three flats through to large
             residential, commercial and mixed-use estates comprising several hundred
             units and multiple service charge schedules.
@@ -995,18 +995,18 @@ const ServiceChargeAccounting = () => {
 
     {/* Heading */}
     <div className="text-center mb-8">
-      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0E6E4F]/8 text-[#0E6E4F] text-xs font-semibold tracking-[0.15em] uppercase">
+      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0E6E4F]/8 text-[#0E6E4F] text-[13] font-semibold tracking-[0.15em] uppercase">
         Our Expertise
       </span>
 
-      <h2 className="mt-6 text-4xl md:text-5xl font-light text-[#1A1A1A] leading-tight">
+      <h2 className="mt-6 text-[30] md:text-5xl font-light text-[#1A1A1A] leading-tight">
         Comprehensive Service Charge
-        <span className="block text-[#0E6E4F] font-medium mt-2">
+        <span className="block  text-[30] text-[#0E6E4F] font-medium mt-2">
           Accounting & Compliance Solutions
         </span>
       </h2>
 
-      <p className="max-w-3xl mx-auto mt-6 text-[15px] text-[#5F6B6D] leading-8">
+      <p className="max-w-3xl mx-auto mt-6 text-[20px] text-[#5F6B6D] leading-8">
         Supporting managing agents, RTMs, RMCs, freehold companies and
         self-managed developments with specialist accounting,
         compliance and reporting services.
@@ -1016,15 +1016,15 @@ const ServiceChargeAccounting = () => {
 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {/* CARD 1 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[420px] flex flex-col">          
+<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">          
 <div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">            <FileText className="w-9 h-9 text-[#0E6E4F]" />
           </div>
 
-          <h3 className="text-2xl text-center font-semibold text-[#1A1A1A] mb-4">
+          <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
             Accounting & Reporting
           </h3>
 
-          <ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] flex-grow">
+          <ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] flex-grow">
             <li>• Service Charge Accounts</li>
             <li>• Independent Examinations</li>
             <li>• Service Charge Audits</li>
@@ -1032,13 +1032,14 @@ const ServiceChargeAccounting = () => {
             <li>• Section 21 Reporting</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
             View Services →
           </div>
         </summary>
 
         <div className="px-7 pb-7 border-t border-[#F0ECE4]">
-<ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] pt-5">            <li>• Year-End Surplus & Deficit Apportionment</li>
+<ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] pt-5">       
+            <li>• Year-End Surplus & Deficit Apportionment</li>
             <li>• Section 20 Major Works Reconciliations</li>
             <li>• Reserve Fund Reconciliations</li>
             <li>• Sinking Fund Analysis</li>
@@ -1049,29 +1050,29 @@ const ServiceChargeAccounting = () => {
 
       {/* CARD 2 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[420px] flex flex-col">
+<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">
 <div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">          
   <Building2 className="w-9 h-9 text-[#0E6E4F]" />
           </div>
 
-          <h3 className="text-2xl text-center font-semibold text-[#1A1A1A] mb-4">
+          <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
             Tax & Company Services
           </h3>
 
-<ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] flex-grow">            <li>• Dormant Company Accounts</li>
+<ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] flex-grow">            <li>• Dormant Company Accounts</li>
             <li>• Freehold Company Accounts</li>
             <li>• Ground Rent Reporting</li>
             <li>• Corporation Tax Returns</li>
             <li>• VAT Advice</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
             View Services →
           </div>
         </summary>
 
         <div className="px-7 pb-7 border-t border-[#F0ECE4]">
-<ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] pt-5">            <li>• Capital Gains Tax Computations</li>
+<ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] pt-5">            <li>• Capital Gains Tax Computations</li>
             <li>• Trust Tax Registration</li>
             <li>• HMRC Filing Support</li>
           </ul>
@@ -1080,23 +1081,23 @@ const ServiceChargeAccounting = () => {
 
       {/* CARD 3 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[420px] flex flex-col">
+<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">
 <div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">      
       <RefreshCcw className="w-9 h-9 text-[#0E6E4F]" />
           </div>
 
-          <h3 className="text-2xl text-center font-semibold text-[#1A1A1A] mb-4">
+          <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
             Reconciliations & Historic Issues
           </h3>
 
-<ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] flex-grow">            <li>• Bank Reconciliations</li>
+<ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] flex-grow">            <li>• Bank Reconciliations</li>
             <li>• Client Money Reconciliations</li>
             <li>• Balancing Differences</li>
             <li>• Historic Corrections</li>
             <li>• Backlog Accounts</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
             View Services →
           </div>
         </summary>
@@ -1104,29 +1105,29 @@ const ServiceChargeAccounting = () => {
 
       {/* CARD 4 */}
       <details className="group bg-white rounded-3xl border border-[#E7E2D8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-<summary className="list-none cursor-pointer p-8 h-[420px] flex flex-col">
+<summary className="list-none cursor-pointer p-8 h-[445px] flex flex-col">
 <div className="w-20 h-20 rounded-3xl bg-[#0E6E4F]/8 flex items-center justify-center mb-7 mx-auto">          
   <BriefcaseBusiness className="w-9 h-9 text-[#0E6E4F]"/>
           </div>
 
-          <h3 className="text-2xl text-center font-semibold text-[#1A1A1A] mb-4">
+          <h3 className="text-3xl text-center font-semibold text-[#1A1A1A] mb-4">
             Additional Support
           </h3>
 
-<ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] flex-grow">            <li>• Managing Agent Handovers</li>
+<ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] flex-grow">            <li>• Managing Agent Handovers</li>
             <li>• Developer Handovers</li>
             <li>• Opening Balance Reviews</li>
             <li>• First-Year Set-Up</li>
             <li>• Multi-Schedule Estates</li>
           </ul>
 
-          <div className="mt-6 text-[#C49A4A] font-medium text-sm">
+          <div className="mt-6 text-[#C49A4A] font-medium text-[20]">
             View Services →
           </div>
         </summary>
 
         <div className="px-7 pb-7 border-t border-[#F0ECE4]">
-<ul className="space-y-3 text-[18px] leading-8 font-medium text-[#5F6B6D] pt-5">            <li>• Portfolio Accounting Support</li>
+<ul className="space-y-3 text-[19px] leading-8 font-medium text-[#5F6B6D] pt-5">            <li>• Portfolio Accounting Support</li>
             <li>• Urgent Flat Sale Requirements</li>
           </ul>
         </div>
@@ -1173,7 +1174,7 @@ const ServiceChargeAccounting = () => {
           <h2
             className="
               text-white
-              text-3xl
+              text-4xl
               lg:text-4xl
               font-semibold
               leading-tight
@@ -1188,8 +1189,8 @@ const ServiceChargeAccounting = () => {
 
           <p
             className="
-              text-white/80
-              text-[19px]
+              text-white/90
+              text-[20px]
               leading-7
               max-w-md
             "
@@ -1219,8 +1220,8 @@ const ServiceChargeAccounting = () => {
       >
 
         <div className="text-center">
-          <Handshake className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <Handshake className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             Managing Agent
             <br />
             Handovers
@@ -1228,8 +1229,8 @@ const ServiceChargeAccounting = () => {
         </div>
 
         <div className="text-center">
-          <Building2 className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <Building2 className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             Developer
             <br />
             Handovers
@@ -1237,8 +1238,8 @@ const ServiceChargeAccounting = () => {
         </div>
 
         <div className="text-center">
-          <ClipboardCheck className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <ClipboardCheck className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             Opening Balance
             <br />
             Reviews
@@ -1246,8 +1247,8 @@ const ServiceChargeAccounting = () => {
         </div>
 
         <div className="text-center">
-          <FileSearch className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <FileSearch className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             First-Year Service
             <br />
             Charge Set-Up
@@ -1255,8 +1256,8 @@ const ServiceChargeAccounting = () => {
         </div>
 
         <div className="text-center">
-          <Layers3 className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <Layers3 className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             Multi-Schedule
             <br />
             Estates
@@ -1264,8 +1265,8 @@ const ServiceChargeAccounting = () => {
         </div>
 
         <div className="text-center">
-          <PieChart className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <PieChart className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             Portfolio Accounting
             <br />
             Support
@@ -1273,8 +1274,8 @@ const ServiceChargeAccounting = () => {
         </div>
 
         <div className="text-center">
-          <FileSearch className="w-9 h-9 text-[#DDE9C8] mx-auto mb-3" />
-          <p className="text-white text-[16px] leading-5">
+          <FileSearch className="w-12 h-12 text-[#DDE9C8] mx-auto mb-3" />
+          <p className="text-white text-[19px] leading-5">
             Urgent Flat Sale
             <br />
             Requirements
@@ -1297,12 +1298,12 @@ const ServiceChargeAccounting = () => {
 
       <h2
         className="
-          text-[34px]
+          text-[36px]
           md:text-[42px]
           font-medium
           text-[#0B5D47]
         "
-        style={{ fontFamily: "Georgia, serif" }}
+       
       >
         Why Clients Work With Us
       </h2>
@@ -1376,7 +1377,7 @@ const ServiceChargeAccounting = () => {
             {/* Icon */}
             <div
               className="
-               w-20 h-20
+               w-22 h-22
                 mx-auto mb-5
 
                 rounded-full
@@ -1387,7 +1388,7 @@ const ServiceChargeAccounting = () => {
               "
             >
               <Icon
-                size={36}
+                size={38}
                 className="text-[#0B5D47]"
                 strokeWidth={1.8}
               />
@@ -1396,7 +1397,7 @@ const ServiceChargeAccounting = () => {
             {/* Text */}
             <p
               className="
-               text-[17px]
+               text-[19px]
 leading-8
 font-medium
                 text-[#5F6B6D]
@@ -1429,7 +1430,7 @@ font-medium
 
         <h2
           className="
-            text-[34px]
+            text-[36px]
             md:text-[42px]
             font-medium
             text-[#0B5D47]
@@ -1444,7 +1445,7 @@ font-medium
         <p
           className="
             text-[#5F6B6D]
-            text-[18px]
+            text-[22px]
 leading-9
             mb-10
           "
@@ -1487,7 +1488,7 @@ leading-9
               </div>
 
               <span
-                className="text-[17px] text-[#5F6B6D] leading-8">
+                className="text-[20px] text-[#5F6B6D] leading-8">
               
                 {item}
               </span>
@@ -1505,7 +1506,7 @@ leading-9
 
         <h2
           className="
-            text-[34px]
+            text-[36px]
             md:text-[42px]
             font-medium
             text-[#0B5D47]
@@ -1536,7 +1537,7 @@ leading-9
                 className="
                   text-[#2D3436]
                  font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1560,7 +1561,7 @@ leading-8
             <p
               className="
                 mt-5
-                text-[17px]
+                text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
@@ -1588,7 +1589,7 @@ leading-9
                 className="
                   text-[#2D3436]
                   font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1612,7 +1613,7 @@ leading-8
             <p
               className="
                 mt-5
-               text-[17px]
+               text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
@@ -1640,7 +1641,7 @@ leading-9
                 className="
                   text-[#2D3436]
                   font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1664,7 +1665,7 @@ leading-8
             <p
               className="
                 mt-5
-                text-[17px]
+                text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
@@ -1692,7 +1693,7 @@ leading-9
                 className="
                   text-[#2D3436]
                  font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1716,7 +1717,7 @@ leading-8
             <p
               className="
                 mt-5
-               text-[17px]
+               text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
@@ -1744,7 +1745,7 @@ leading-9
                 className="
                   text-[#2D3436]
                   font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1768,7 +1769,7 @@ leading-8
             <p
               className="
                 mt-5
-               text-[17px]
+               text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
@@ -1796,7 +1797,7 @@ leading-9
                 className="
                   text-[#2D3436]
                  font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1820,7 +1821,7 @@ leading-8
             <p
               className="
                 mt-5
-                text-[17px]
+                text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
@@ -1848,7 +1849,7 @@ leading-9
                 className="
                   text-[#2D3436]
                  font-semibold
-text-[18px]
+text-[20px]
 leading-8
                 "
               >
@@ -1872,7 +1873,7 @@ leading-8
             <p
               className="
                 mt-5
-               text-[17px]
+               text-[20px]
 text-[#5F6B6D]
 leading-9
                 pr-8
