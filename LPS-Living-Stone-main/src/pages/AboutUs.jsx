@@ -319,7 +319,7 @@ const AboutUs = () => {
     <section style={{ padding: '80px 0' }}>
   <div style={{
     display: 'grid',
-    gridTemplateColumns: '45% 55%',
+    gridTemplateColumns: '43% 57%',
     alignItems: 'start',
   }}>
 
@@ -334,8 +334,8 @@ const AboutUs = () => {
         style={{
           width: '100%',
           height: '100%',
-          minHeight: 640,
-          objectFit: 'cover',
+          minHeight: 700,
+          objectFit: 'contain',
           display: 'block',
         }}
       />
@@ -345,15 +345,15 @@ const AboutUs = () => {
     <div style={{ padding: '20px 5% 20px 72px' }}>
       <H2 style={{ marginBottom: 16 }}>Why Clients Work With Us</H2>
 
-      <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
+      <p style={{ fontSize: 18, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
         Choosing an accountant or adviser is rarely about finding someone to complete forms
         or meet filing deadlines.
       </p>
-      <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
+      <p style={{ fontSize: 18, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
         Most clients are looking for a trusted professional who can provide clear advice,
         respond when needed and help them navigate important financial decisions with confidence.
       </p>
-      <p style={{ fontSize: 15.5, color: '#555', lineHeight: 1.75, marginBottom: 36 }}>
+      <p style={{ fontSize: 18, color: '#555', lineHeight: 1.75, marginBottom: 36 }}>
         Many of our client relationships have developed over a number of years. What often
         begins as a specific engagement evolves into a broader advisory relationship built
         on trust, consistency and a genuine understanding of the client's circumstances.
@@ -364,10 +364,10 @@ const AboutUs = () => {
           <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
             <Tick />
             <div>
-              <p style={{ fontSize: 15, fontWeight: 700, color: G.primary, margin: '0 0 4px' }}>
+              <p style={{ fontSize: 16, fontWeight: 700, color: G.primary, margin: '0 0 4px' }}>
                 {pt.title}
               </p>
-              <p style={{ fontSize: 14.5, color: '#555', lineHeight: 1.65, margin: 0 }}>
+              <p style={{ fontSize: 16, color: '#555', lineHeight: 1.65, margin: 0 }}>
                 {pt.desc}
               </p>
             </div>
