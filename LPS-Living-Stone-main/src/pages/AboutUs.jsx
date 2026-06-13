@@ -336,6 +336,7 @@ const AboutUs = () => {
           height: '100%',
           minHeight: 700,
           objectFit: 'contain',
+
           display: 'block',
         }}
       />
@@ -343,32 +344,69 @@ const AboutUs = () => {
 
     {/* RIGHT — content with inner padding */}
     <div style={{ padding: '20px 5% 20px 72px' }}>
-      <H2 style={{ marginBottom: 16 }}>Why Clients Work With Us</H2>
-
-      <p style={{ fontSize: 18, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
-        Choosing an accountant or adviser is rarely about finding someone to complete forms
+  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F6B4B]">
+        Why Clients Work With Us
+      </h2> <br />
+<p
+        className="
+  mt-6
+  text-[#222]
+  text-base
+  sm:text-lg
+  leading-8
+"
+>     
+       Choosing an accountant or adviser is rarely about finding someone to complete forms
         or meet filing deadlines.
       </p>
-      <p style={{ fontSize: 18, color: '#555', lineHeight: 1.75, marginBottom: 12 }}>
-        Most clients are looking for a trusted professional who can provide clear advice,
+<p
+        className="
+  mt-6
+  text-[#222]
+  text-base
+  sm:text-lg
+  leading-8
+"
+>   
+      Most clients are looking for a trusted professional who can provide clear advice,
         respond when needed and help them navigate important financial decisions with confidence.
       </p>
-      <p style={{ fontSize: 18, color: '#555', lineHeight: 1.75, marginBottom: 36 }}>
-        Many of our client relationships have developed over a number of years. What often
+<p
+        className="
+  mt-6
+  text-[#222]
+  text-base
+  sm:text-lg
+  leading-8
+"
+>   
+     Many of our client relationships have developed over a number of years. What often
         begins as a specific engagement evolves into a broader advisory relationship built
         on trust, consistency and a genuine understanding of the client's circumstances.
       </p>
-
+<br />
       <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
         {whyPoints.map((pt, i) => (
           <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
             <Tick />
             <div>
-              <p style={{ fontSize: 16, fontWeight: 700, color: G.primary, margin: '0 0 4px' }}>
-                {pt.title}
+<p
+  className="
+    text-[18px]
+    font-semibold
+    text-[#0F6B4B]
+    mb-1
+  "
+>                {pt.title}
               </p>
-              <p style={{ fontSize: 16, color: '#555', lineHeight: 1.65, margin: 0 }}>
-                {pt.desc}
+<p
+  className="
+    text-[18px]
+    font-semibold
+    text-[#222]
+    mb-1
+  "
+>                {pt.desc}
               </p>
             </div>
           </div>
